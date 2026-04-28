@@ -1,0 +1,247 @@
+
+#nullable enable
+
+namespace Zoo
+{
+    /// <summary>
+    /// Text to CAD.
+    /// </summary>
+    public sealed partial class AsyncApiCallOutputVariant7
+    {
+        /// <summary>
+        /// The code for the model. This is optional but will be required in the future once we are at v1.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("code")]
+        public string? Code { get; set; }
+
+        /// <summary>
+        /// The time and date the API call was completed.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("completed_at")]
+        public global::System.DateTime? CompletedAt { get; set; }
+
+        /// <summary>
+        /// The conversation ID Conversations group different prompts together.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("conversation_id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Guid ConversationId { get; set; }
+
+        /// <summary>
+        /// The time and date the API call was created.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("created_at")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.DateTime CreatedAt { get; set; }
+
+        /// <summary>
+        /// The error the function returned, if any.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("error")]
+        public string? Error { get; set; }
+
+        /// <summary>
+        /// Feedback from the user, if any.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("feedback")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Zoo.JsonConverters.MlFeedbackJsonConverter))]
+        public global::Zoo.MlFeedback? Feedback { get; set; }
+
+        /// <summary>
+        /// The unique identifier of the API call.<br/>
+        /// This is the same as the API call ID.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Guid Id { get; set; }
+
+        /// <summary>
+        /// The version of kcl requested.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("kcl_version")]
+        public string? KclVersion { get; set; }
+
+        /// <summary>
+        /// The model being used.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("model")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Zoo.JsonConverters.TextToCadModelJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Zoo.TextToCadModel Model { get; set; }
+
+        /// <summary>
+        /// The version of the model.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("model_version")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ModelVersion { get; set; }
+
+        /// <summary>
+        /// The output format of the model.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("output_format")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Zoo.JsonConverters.FileExportFormatJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Zoo.FileExportFormat OutputFormat { get; set; }
+
+        /// <summary>
+        /// The output of the model in the given file format the user requested, base64 encoded. The key of the map is the path of the output file.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("outputs")]
+        public global::System.Collections.Generic.Dictionary<string, byte[]>? Outputs { get; set; }
+
+        /// <summary>
+        /// The prompt.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("prompt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Prompt { get; set; }
+
+        /// <summary>
+        /// The time and date the API call was started.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("started_at")]
+        public global::System.DateTime? StartedAt { get; set; }
+
+        /// <summary>
+        /// The status of the API call.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Zoo.JsonConverters.ApiCallStatusJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Zoo.ApiCallStatus Status { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Zoo.JsonConverters.AsyncApiCallOutputVariant7TypeJsonConverter))]
+        public global::Zoo.AsyncApiCallOutputVariant7Type Type { get; set; }
+
+        /// <summary>
+        /// The time and date the API call was last updated.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updated_at")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.DateTime UpdatedAt { get; set; }
+
+        /// <summary>
+        /// The user ID of the user who created the API call.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("user_id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Guid UserId { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AsyncApiCallOutputVariant7" /> class.
+        /// </summary>
+        /// <param name="conversationId">
+        /// The conversation ID Conversations group different prompts together.
+        /// </param>
+        /// <param name="createdAt">
+        /// The time and date the API call was created.
+        /// </param>
+        /// <param name="id">
+        /// The unique identifier of the API call.<br/>
+        /// This is the same as the API call ID.
+        /// </param>
+        /// <param name="model">
+        /// The model being used.
+        /// </param>
+        /// <param name="modelVersion">
+        /// The version of the model.
+        /// </param>
+        /// <param name="outputFormat">
+        /// The output format of the model.
+        /// </param>
+        /// <param name="prompt">
+        /// The prompt.
+        /// </param>
+        /// <param name="status">
+        /// The status of the API call.
+        /// </param>
+        /// <param name="updatedAt">
+        /// The time and date the API call was last updated.
+        /// </param>
+        /// <param name="userId">
+        /// The user ID of the user who created the API call.
+        /// </param>
+        /// <param name="code">
+        /// The code for the model. This is optional but will be required in the future once we are at v1.
+        /// </param>
+        /// <param name="completedAt">
+        /// The time and date the API call was completed.
+        /// </param>
+        /// <param name="error">
+        /// The error the function returned, if any.
+        /// </param>
+        /// <param name="feedback">
+        /// Feedback from the user, if any.
+        /// </param>
+        /// <param name="kclVersion">
+        /// The version of kcl requested.
+        /// </param>
+        /// <param name="outputs">
+        /// The output of the model in the given file format the user requested, base64 encoded. The key of the map is the path of the output file.
+        /// </param>
+        /// <param name="startedAt">
+        /// The time and date the API call was started.
+        /// </param>
+        /// <param name="type"></param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public AsyncApiCallOutputVariant7(
+            global::System.Guid conversationId,
+            global::System.DateTime createdAt,
+            global::System.Guid id,
+            global::Zoo.TextToCadModel model,
+            string modelVersion,
+            global::Zoo.FileExportFormat outputFormat,
+            string prompt,
+            global::Zoo.ApiCallStatus status,
+            global::System.DateTime updatedAt,
+            global::System.Guid userId,
+            string? code,
+            global::System.DateTime? completedAt,
+            string? error,
+            global::Zoo.MlFeedback? feedback,
+            string? kclVersion,
+            global::System.Collections.Generic.Dictionary<string, byte[]>? outputs,
+            global::System.DateTime? startedAt,
+            global::Zoo.AsyncApiCallOutputVariant7Type type)
+        {
+            this.Code = code;
+            this.CompletedAt = completedAt;
+            this.ConversationId = conversationId;
+            this.CreatedAt = createdAt;
+            this.Error = error;
+            this.Feedback = feedback;
+            this.Id = id;
+            this.KclVersion = kclVersion;
+            this.Model = model;
+            this.ModelVersion = modelVersion ?? throw new global::System.ArgumentNullException(nameof(modelVersion));
+            this.OutputFormat = outputFormat;
+            this.Outputs = outputs;
+            this.Prompt = prompt ?? throw new global::System.ArgumentNullException(nameof(prompt));
+            this.StartedAt = startedAt;
+            this.Status = status;
+            this.Type = type;
+            this.UpdatedAt = updatedAt;
+            this.UserId = userId;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AsyncApiCallOutputVariant7" /> class.
+        /// </summary>
+        public AsyncApiCallOutputVariant7()
+        {
+        }
+    }
+}

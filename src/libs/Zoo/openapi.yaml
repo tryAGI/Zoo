@@ -1,0 +1,4036 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "contact": {
+      "email": "api@zoo.dev",
+      "url": "https://zoo.dev"
+    },
+    "description": "Focused Zoo API surface for text-to-CAD generation and generated part retrieval.",
+    "title": "Zoo Text-to-CAD API",
+    "version": "0.1.0"
+  },
+  "servers": [
+    {
+      "url": "https://api.zoo.dev"
+    }
+  ],
+  "paths": {
+    "/ai/text-to-cad/{output_format}": {
+      "post": {
+        "description": "Because our source of truth for the resulting model is a STEP file, you will always have STEP file contents when you list your generated parts. Any other formats you request here will also be returned when you list your generated parts.\n\nThis operation is performed asynchronously, the `id` of the operation will be returned. You can use the `id` returned from the request to get status information about the async operation from the `/async/operations/{id}` endpoint.\n\nOne thing to note, if you hit the cache, this endpoint will return right away. So you only have to wait if the status is not `Completed` or `Failed`.",
+        "operationId": "create_text_to_cad",
+        "parameters": [
+          {
+            "description": "The format the output file should be converted to.",
+            "in": "path",
+            "name": "output_format",
+            "required": true,
+            "schema": {
+              "$ref": "#/components/schemas/FileExportFormat"
+            }
+          },
+          {
+            "description": "If we should output the kcl for the model.",
+            "in": "query",
+            "name": "kcl",
+            "schema": {
+              "nullable": true,
+              "type": "boolean"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TextToCadCreateBody"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TextToCad"
+                }
+              }
+            },
+            "description": "successful creation",
+            "headers": {
+              "Access-Control-Allow-Credentials": {
+                "description": "Access-Control-Allow-Credentials header.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Access-Control-Allow-Headers": {
+                "description": "Access-Control-Allow-Headers header. This is a comma-separated list of headers.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Access-Control-Allow-Methods": {
+                "description": "Access-Control-Allow-Methods header.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Access-Control-Allow-Origin": {
+                "description": "Access-Control-Allow-Origin header.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Content-Location": {
+                "description": "The Content-Location header for responses that are not the final destination. This is used to indicate where the resource can be found, when it is finished.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Location": {
+                "description": "The location header for redirects and letting users know if there is a websocket they can listen to for status updates on their operation.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Set-Cookie": {
+                "description": "Set-Cookie header.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "X-Api-Call-Id": {
+                "description": "ID for this request. We return it so that users can report this to us and help us debug their problems.",
+                "required": true,
+                "schema": {
+                  "type": "string"
+                },
+                "style": "simple"
+              }
+            }
+          },
+          "4XX": {
+            "$ref": "#/components/responses/Error"
+          },
+          "5XX": {
+            "$ref": "#/components/responses/Error"
+          }
+        },
+        "summary": "Generate a CAD model from text.",
+        "tags": [
+          "ml"
+        ]
+      }
+    },
+    "/ml/text-to-cad/iteration": {
+      "post": {
+        "deprecated": true,
+        "description": "Even if you give specific ranges to edit, the model might change more than just those in order to make the changes you requested without breaking the code.\n\nYou always get the whole code back, even if you only changed a small part of it.\n\nThis operation is performed asynchronously, the `id` of the operation will be returned. You can use the `id` returned from the request to get status information about the async operation from the `/async/operations/{id}` endpoint.\n\nThis endpoint will soon be deprecated in favor of the `/ml/text-to-cad/multi-file/iteration` endpoint. In that the endpoint path will remain but it will have the same behavior as `ml/text-to-cad/multi-file/iteration`.",
+        "operationId": "create_text_to_cad_iteration",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TextToCadIterationBody"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TextToCadIteration"
+                }
+              }
+            },
+            "description": "successful creation",
+            "headers": {
+              "Access-Control-Allow-Credentials": {
+                "description": "Access-Control-Allow-Credentials header.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Access-Control-Allow-Headers": {
+                "description": "Access-Control-Allow-Headers header. This is a comma-separated list of headers.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Access-Control-Allow-Methods": {
+                "description": "Access-Control-Allow-Methods header.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Access-Control-Allow-Origin": {
+                "description": "Access-Control-Allow-Origin header.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Content-Location": {
+                "description": "The Content-Location header for responses that are not the final destination. This is used to indicate where the resource can be found, when it is finished.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Location": {
+                "description": "The location header for redirects and letting users know if there is a websocket they can listen to for status updates on their operation.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Set-Cookie": {
+                "description": "Set-Cookie header.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "X-Api-Call-Id": {
+                "description": "ID for this request. We return it so that users can report this to us and help us debug their problems.",
+                "required": true,
+                "schema": {
+                  "type": "string"
+                },
+                "style": "simple"
+              }
+            }
+          },
+          "4XX": {
+            "$ref": "#/components/responses/Error"
+          },
+          "5XX": {
+            "$ref": "#/components/responses/Error"
+          }
+        },
+        "summary": "Iterate on a CAD model with a prompt.",
+        "tags": [
+          "ml"
+        ]
+      }
+    },
+    "/ml/text-to-cad/multi-file/iteration": {
+      "post": {
+        "description": "This endpoint can iterate on multi-file projects.\n\nEven if you give specific ranges to edit, the model might change more than just those in order to make the changes you requested without breaking the code.\n\nYou always get the whole code back, even if you only changed a small part of it. This endpoint will always return all the code back, including files that were not changed. If your original source code imported a stl/gltf/step/etc file, the output will not include that file since the model will never change non-kcl files. The endpoint will only return the kcl files that were changed.\n\nThis operation is performed asynchronously, the `id` of the operation will be returned. You can use the `id` returned from the request to get status information about the async operation from the `/async/operations/{id}` endpoint.\n\nInput filepaths will be normalized and re-canonicalized to be under the current working directory -- so returned paths may differ from provided paths, and care must be taken when handling user provided paths.",
+        "operationId": "create_text_to_cad_multi_file_iteration",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "format": "binary",
+                "type": "string"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TextToCadMultiFileIteration"
+                }
+              }
+            },
+            "description": "successful creation",
+            "headers": {
+              "Access-Control-Allow-Credentials": {
+                "description": "Access-Control-Allow-Credentials header.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Access-Control-Allow-Headers": {
+                "description": "Access-Control-Allow-Headers header. This is a comma-separated list of headers.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Access-Control-Allow-Methods": {
+                "description": "Access-Control-Allow-Methods header.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Access-Control-Allow-Origin": {
+                "description": "Access-Control-Allow-Origin header.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Content-Location": {
+                "description": "The Content-Location header for responses that are not the final destination. This is used to indicate where the resource can be found, when it is finished.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Location": {
+                "description": "The location header for redirects and letting users know if there is a websocket they can listen to for status updates on their operation.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Set-Cookie": {
+                "description": "Set-Cookie header.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "X-Api-Call-Id": {
+                "description": "ID for this request. We return it so that users can report this to us and help us debug their problems.",
+                "required": true,
+                "schema": {
+                  "type": "string"
+                },
+                "style": "simple"
+              }
+            }
+          },
+          "4XX": {
+            "$ref": "#/components/responses/Error"
+          },
+          "5XX": {
+            "$ref": "#/components/responses/Error"
+          }
+        },
+        "summary": "Iterate on a multi-file CAD model with a prompt.",
+        "tags": [
+          "ml"
+        ]
+      }
+    },
+    "/async/operations/{id}": {
+      "get": {
+        "description": "Get the status and output of an async operation.\n\nThis endpoint requires authentication by any Zoo user. It returns details of the requested async operation for the user.\n\nIf the user is not authenticated to view the specified async operation, then it is not returned.\n\nOnly Zoo employees with the proper access can view async operations for other users.",
+        "operationId": "get_async_operation",
+        "parameters": [
+          {
+            "description": "The ID of the async operation.",
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AsyncApiCallOutput"
+                }
+              }
+            },
+            "description": "successful operation",
+            "headers": {
+              "Access-Control-Allow-Credentials": {
+                "description": "Access-Control-Allow-Credentials header.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Access-Control-Allow-Headers": {
+                "description": "Access-Control-Allow-Headers header. This is a comma-separated list of headers.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Access-Control-Allow-Methods": {
+                "description": "Access-Control-Allow-Methods header.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Access-Control-Allow-Origin": {
+                "description": "Access-Control-Allow-Origin header.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Content-Location": {
+                "description": "The Content-Location header for responses that are not the final destination. This is used to indicate where the resource can be found, when it is finished.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Location": {
+                "description": "The location header for redirects and letting users know if there is a websocket they can listen to for status updates on their operation.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Set-Cookie": {
+                "description": "Set-Cookie header.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "X-Api-Call-Id": {
+                "description": "ID for this request. We return it so that users can report this to us and help us debug their problems.",
+                "required": true,
+                "schema": {
+                  "type": "string"
+                },
+                "style": "simple"
+              }
+            }
+          },
+          "4XX": {
+            "$ref": "#/components/responses/Error"
+          },
+          "5XX": {
+            "$ref": "#/components/responses/Error"
+          }
+        },
+        "summary": "Get an async operation.",
+        "tags": [
+          "api-calls"
+        ]
+      }
+    },
+    "/user/text-to-cad": {
+      "get": {
+        "description": "This will always return the STEP file contents as well as the format the user originally requested.\n\nThis endpoint requires authentication by any Zoo user. It returns the text-to-CAD parts for the authenticated user.\n\nThe text-to-CAD parts are returned in order of creation, with the most recently created text-to-CAD parts first.",
+        "operationId": "list_text_to_cad_parts_for_user",
+        "parameters": [
+          {
+            "description": "Maximum number of items returned by a single call",
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "format": "uint32",
+              "minimum": 1,
+              "nullable": true,
+              "type": "integer"
+            }
+          },
+          {
+            "description": "Token returned by previous call to retrieve the subsequent page",
+            "in": "query",
+            "name": "page_token",
+            "schema": {
+              "nullable": true,
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "sort_by",
+            "schema": {
+              "$ref": "#/components/schemas/CreatedAtSortMode"
+            }
+          },
+          {
+            "description": "DEPRECATED: This is the same as `no_parts`, and will be dropped in a future release. Please do not use this.",
+            "in": "query",
+            "name": "no_models",
+            "schema": {
+              "nullable": true,
+              "type": "boolean"
+            }
+          },
+          {
+            "description": "If we should return the part contents or just the metadata.",
+            "in": "query",
+            "name": "no_parts",
+            "schema": {
+              "nullable": true,
+              "type": "boolean"
+            }
+          },
+          {
+            "description": "If specified, only return the prompts for the conversation id given.",
+            "in": "query",
+            "name": "conversation_id",
+            "schema": {
+              "$ref": "#/components/schemas/Uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TextToCadResponseResultsPage"
+                }
+              }
+            },
+            "description": "successful operation",
+            "headers": {
+              "Access-Control-Allow-Credentials": {
+                "description": "Access-Control-Allow-Credentials header.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Access-Control-Allow-Headers": {
+                "description": "Access-Control-Allow-Headers header. This is a comma-separated list of headers.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Access-Control-Allow-Methods": {
+                "description": "Access-Control-Allow-Methods header.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Access-Control-Allow-Origin": {
+                "description": "Access-Control-Allow-Origin header.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Content-Location": {
+                "description": "The Content-Location header for responses that are not the final destination. This is used to indicate where the resource can be found, when it is finished.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Location": {
+                "description": "The location header for redirects and letting users know if there is a websocket they can listen to for status updates on their operation.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Set-Cookie": {
+                "description": "Set-Cookie header.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "X-Api-Call-Id": {
+                "description": "ID for this request. We return it so that users can report this to us and help us debug their problems.",
+                "required": true,
+                "schema": {
+                  "type": "string"
+                },
+                "style": "simple"
+              }
+            }
+          },
+          "4XX": {
+            "$ref": "#/components/responses/Error"
+          },
+          "5XX": {
+            "$ref": "#/components/responses/Error"
+          }
+        },
+        "summary": "List text-to-CAD parts you've generated.",
+        "tags": [
+          "ml"
+        ],
+        "x-dropshot-pagination": {
+          "required": []
+        }
+      }
+    },
+    "/user/text-to-cad/{id}": {
+      "get": {
+        "description": "This endpoint requires authentication by any Zoo user. The user must be the owner of the text-to-CAD model.",
+        "operationId": "get_text_to_cad_part_for_user",
+        "parameters": [
+          {
+            "description": "The id of the model to give feedback to.",
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "format": "uuid",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TextToCadResponse"
+                }
+              }
+            },
+            "description": "successful operation",
+            "headers": {
+              "Access-Control-Allow-Credentials": {
+                "description": "Access-Control-Allow-Credentials header.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Access-Control-Allow-Headers": {
+                "description": "Access-Control-Allow-Headers header. This is a comma-separated list of headers.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Access-Control-Allow-Methods": {
+                "description": "Access-Control-Allow-Methods header.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Access-Control-Allow-Origin": {
+                "description": "Access-Control-Allow-Origin header.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Content-Location": {
+                "description": "The Content-Location header for responses that are not the final destination. This is used to indicate where the resource can be found, when it is finished.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Location": {
+                "description": "The location header for redirects and letting users know if there is a websocket they can listen to for status updates on their operation.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "Set-Cookie": {
+                "description": "Set-Cookie header.",
+                "schema": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "style": "simple"
+              },
+              "X-Api-Call-Id": {
+                "description": "ID for this request. We return it so that users can report this to us and help us debug their problems.",
+                "required": true,
+                "schema": {
+                  "type": "string"
+                },
+                "style": "simple"
+              }
+            }
+          },
+          "4XX": {
+            "$ref": "#/components/responses/Error"
+          },
+          "5XX": {
+            "$ref": "#/components/responses/Error"
+          }
+        },
+        "summary": "Get a text-to-CAD response.",
+        "tags": [
+          "ml"
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Error": {
+        "description": "Error information from a response.",
+        "properties": {
+          "error_code": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "request_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "message",
+          "request_id"
+        ],
+        "type": "object"
+      },
+      "TextToCadResponse": {
+        "description": "Type that encompasses all Text-to-CAD response types, including iteration and multi-file iteration.",
+        "oneOf": [
+          {
+            "description": "A response from a text to CAD prompt.",
+            "properties": {
+              "code": {
+                "description": "The code for the model. This is optional but will be required in the future once we are at v1.",
+                "nullable": true,
+                "type": "string"
+              },
+              "completed_at": {
+                "description": "The time and date the API call was completed.",
+                "format": "date-time",
+                "nullable": true,
+                "title": "DateTime",
+                "type": "string"
+              },
+              "conversation_id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The conversation ID Conversations group different prompts together."
+              },
+              "created_at": {
+                "description": "The time and date the API call was created.",
+                "format": "date-time",
+                "title": "DateTime",
+                "type": "string"
+              },
+              "error": {
+                "description": "The error the function returned, if any.",
+                "nullable": true,
+                "type": "string"
+              },
+              "feedback": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/MlFeedback"
+                  }
+                ],
+                "description": "Feedback from the user, if any.",
+                "nullable": true
+              },
+              "id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The unique identifier of the API call.\n\nThis is the same as the API call ID."
+              },
+              "kcl_version": {
+                "description": "The version of kcl requested.",
+                "nullable": true,
+                "type": "string"
+              },
+              "model": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/TextToCadModel"
+                  }
+                ],
+                "description": "The model being used."
+              },
+              "model_version": {
+                "description": "The version of the model.",
+                "type": "string"
+              },
+              "output_format": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/FileExportFormat"
+                  }
+                ],
+                "description": "The output format of the model."
+              },
+              "outputs": {
+                "additionalProperties": {
+                  "format": "byte",
+                  "title": "String",
+                  "type": "string"
+                },
+                "description": "The output of the model in the given file format the user requested, base64 encoded. The key of the map is the path of the output file.",
+                "type": "object"
+              },
+              "prompt": {
+                "description": "The prompt.",
+                "type": "string"
+              },
+              "started_at": {
+                "description": "The time and date the API call was started.",
+                "format": "date-time",
+                "nullable": true,
+                "title": "DateTime",
+                "type": "string"
+              },
+              "status": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ApiCallStatus"
+                  }
+                ],
+                "description": "The status of the API call."
+              },
+              "type": {
+                "enum": [
+                  "text_to_cad"
+                ],
+                "type": "string"
+              },
+              "updated_at": {
+                "description": "The time and date the API call was last updated.",
+                "format": "date-time",
+                "title": "DateTime",
+                "type": "string"
+              },
+              "user_id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The user ID of the user who created the API call."
+              }
+            },
+            "required": [
+              "conversation_id",
+              "created_at",
+              "id",
+              "model",
+              "model_version",
+              "output_format",
+              "prompt",
+              "status",
+              "type",
+              "updated_at",
+              "user_id"
+            ],
+            "type": "object"
+          },
+          {
+            "description": "A response from a text to CAD iteration.",
+            "properties": {
+              "code": {
+                "description": "The code for the new model.",
+                "type": "string"
+              },
+              "completed_at": {
+                "description": "The time and date the API call was completed.",
+                "format": "date-time",
+                "nullable": true,
+                "title": "DateTime",
+                "type": "string"
+              },
+              "conversation_id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The conversation ID Conversations group different prompts together."
+              },
+              "created_at": {
+                "description": "The time and date the API call was created.",
+                "format": "date-time",
+                "title": "DateTime",
+                "type": "string"
+              },
+              "error": {
+                "description": "The error the function returned, if any.",
+                "nullable": true,
+                "type": "string"
+              },
+              "feedback": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/MlFeedback"
+                  }
+                ],
+                "description": "Feedback from the user, if any.",
+                "nullable": true
+              },
+              "id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The unique identifier of the API call.\n\nThis is the same as the API call ID."
+              },
+              "model": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/TextToCadModel"
+                  }
+                ],
+                "description": "The model being used."
+              },
+              "model_version": {
+                "description": "The version of the model.",
+                "type": "string"
+              },
+              "original_source_code": {
+                "description": "The original source code for the model, previous to the changes.",
+                "type": "string"
+              },
+              "prompt": {
+                "description": "The prompt for the overall changes. This is optional if you only want changes on specific source ranges.",
+                "nullable": true,
+                "type": "string"
+              },
+              "source_ranges": {
+                "description": "The source ranges the user suggested to change.",
+                "items": {
+                  "$ref": "#/components/schemas/SourceRangePrompt"
+                },
+                "type": "array"
+              },
+              "started_at": {
+                "description": "The time and date the API call was started.",
+                "format": "date-time",
+                "nullable": true,
+                "title": "DateTime",
+                "type": "string"
+              },
+              "status": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ApiCallStatus"
+                  }
+                ],
+                "description": "The status of the API call."
+              },
+              "type": {
+                "enum": [
+                  "text_to_cad_iteration"
+                ],
+                "type": "string"
+              },
+              "updated_at": {
+                "description": "The time and date the API call was last updated.",
+                "format": "date-time",
+                "title": "DateTime",
+                "type": "string"
+              },
+              "user_id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The user ID of the user who created the API call."
+              }
+            },
+            "required": [
+              "code",
+              "conversation_id",
+              "created_at",
+              "id",
+              "model",
+              "model_version",
+              "original_source_code",
+              "source_ranges",
+              "status",
+              "type",
+              "updated_at",
+              "user_id"
+            ],
+            "type": "object"
+          },
+          {
+            "description": "A response from a text to CAD multi-file iteration.",
+            "properties": {
+              "completed_at": {
+                "description": "The time and date the API call was completed.",
+                "format": "date-time",
+                "nullable": true,
+                "title": "DateTime",
+                "type": "string"
+              },
+              "conversation_id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The conversation ID Conversations group different prompts together."
+              },
+              "created_at": {
+                "description": "The time and date the API call was created.",
+                "format": "date-time",
+                "title": "DateTime",
+                "type": "string"
+              },
+              "error": {
+                "description": "The error the function returned, if any.",
+                "nullable": true,
+                "type": "string"
+              },
+              "feedback": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/MlFeedback"
+                  }
+                ],
+                "description": "Feedback from the user, if any.",
+                "nullable": true
+              },
+              "id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The unique identifier of the API call.\n\nThis is the same as the API call ID."
+              },
+              "kcl_version": {
+                "description": "The version of kcl to use. If empty, the latest version will be used.",
+                "nullable": true,
+                "type": "string"
+              },
+              "model": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/TextToCadModel"
+                  }
+                ],
+                "description": "The model being used."
+              },
+              "model_version": {
+                "description": "The version of the model.",
+                "type": "string"
+              },
+              "outputs": {
+                "additionalProperties": {
+                  "type": "string"
+                },
+                "description": "The output files. Returns a map of the file name to the file contents. The file contents are not encoded since kcl files are not binary.",
+                "type": "object"
+              },
+              "project_name": {
+                "description": "The project name. This is used to tie the prompt to a project. Which helps us make our models better over time.",
+                "nullable": true,
+                "type": "string"
+              },
+              "prompt": {
+                "description": "The prompt for the overall changes. This is optional if you only want changes on specific source ranges. This will apply to all the files.",
+                "nullable": true,
+                "type": "string"
+              },
+              "source_ranges": {
+                "description": "The source ranges the user suggested to change.",
+                "items": {
+                  "$ref": "#/components/schemas/SourceRangePrompt"
+                },
+                "type": "array"
+              },
+              "started_at": {
+                "description": "The time and date the API call was started.",
+                "format": "date-time",
+                "nullable": true,
+                "title": "DateTime",
+                "type": "string"
+              },
+              "status": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ApiCallStatus"
+                  }
+                ],
+                "description": "The status of the API call."
+              },
+              "type": {
+                "enum": [
+                  "text_to_cad_multi_file_iteration"
+                ],
+                "type": "string"
+              },
+              "updated_at": {
+                "description": "The time and date the API call was last updated.",
+                "format": "date-time",
+                "title": "DateTime",
+                "type": "string"
+              },
+              "user_id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The user ID of the user who created the API call."
+              }
+            },
+            "required": [
+              "conversation_id",
+              "created_at",
+              "id",
+              "model",
+              "model_version",
+              "source_ranges",
+              "status",
+              "type",
+              "updated_at",
+              "user_id"
+            ],
+            "type": "object"
+          }
+        ]
+      },
+      "Uuid": {
+        "description": "A UUID usually v4 or v7",
+        "format": "uuid",
+        "type": "string"
+      },
+      "ApiCallStatus": {
+        "description": "The status of an async API call.",
+        "oneOf": [
+          {
+            "description": "The async API call is queued.",
+            "enum": [
+              "queued"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "The async API call was uploaded to be converted.",
+            "enum": [
+              "uploaded"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "The async API call is in progress.",
+            "enum": [
+              "in_progress"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "The async API call has completed.",
+            "enum": [
+              "completed"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "The async API call has failed.",
+            "enum": [
+              "failed"
+            ],
+            "type": "string"
+          }
+        ]
+      },
+      "SourceRangePrompt": {
+        "description": "A source range and prompt for a text to CAD iteration.",
+        "properties": {
+          "file": {
+            "description": "The name of the file the source range applies to. This is the relative path to the file from the root of the project. This only applies to multi-file iterations.",
+            "nullable": true,
+            "type": "string"
+          },
+          "prompt": {
+            "description": "The prompt for the changes.",
+            "type": "string"
+          },
+          "range": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/SourceRange"
+              }
+            ],
+            "description": "The range of the source code to change. If you want to apply the prompt to the whole file, set the start to 0 and the end to the end of the file."
+          }
+        },
+        "required": [
+          "prompt",
+          "range"
+        ],
+        "type": "object"
+      },
+      "SourceRange": {
+        "description": "A source range of code.",
+        "properties": {
+          "end": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/SourcePosition"
+              }
+            ],
+            "description": "The end of the range."
+          },
+          "start": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/SourcePosition"
+              }
+            ],
+            "description": "The start of the range."
+          }
+        },
+        "required": [
+          "end",
+          "start"
+        ],
+        "type": "object"
+      },
+      "SourcePosition": {
+        "description": "A position in the source code.",
+        "properties": {
+          "column": {
+            "description": "The column number.",
+            "format": "uint32",
+            "minimum": 0,
+            "type": "integer"
+          },
+          "line": {
+            "description": "The line number.",
+            "format": "uint32",
+            "minimum": 0,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "column",
+          "line"
+        ],
+        "type": "object"
+      },
+      "TextToCadModel": {
+        "description": "A type of Text-to-CAD model.",
+        "oneOf": [
+          {
+            "description": "CAD.",
+            "enum": [
+              "cad"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "KCL.",
+            "enum": [
+              "kcl"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "KCL iteration.",
+            "enum": [
+              "kcl_iteration"
+            ],
+            "type": "string"
+          }
+        ]
+      },
+      "MlFeedback": {
+        "description": "Human feedback on an ML response.",
+        "oneOf": [
+          {
+            "description": "Thumbs up.",
+            "enum": [
+              "thumbs_up"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Thumbs down.",
+            "enum": [
+              "thumbs_down"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Accepted.",
+            "enum": [
+              "accepted"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Rejected.",
+            "enum": [
+              "rejected"
+            ],
+            "type": "string"
+          }
+        ]
+      },
+      "FileExportFormat": {
+        "description": "The valid types of output file formats.",
+        "oneOf": [
+          {
+            "description": "Autodesk Filmbox (FBX) format. <https://en.wikipedia.org/wiki/FBX>",
+            "enum": [
+              "fbx"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Binary glTF 2.0.\n\nThis is a single binary with .glb extension.\n\nThis is better if you want a compressed format as opposed to the human readable glTF that lacks compression.",
+            "enum": [
+              "glb"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "glTF 2.0. Embedded glTF 2.0 (pretty printed).\n\nSingle JSON file with .gltf extension binary data encoded as base64 data URIs.\n\nThe JSON contents are pretty printed.\n\nIt is human readable, single file, and you can view the diff easily in a git commit.",
+            "enum": [
+              "gltf"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "The OBJ file format. <https://en.wikipedia.org/wiki/Wavefront_.obj_file> It may or may not have an an attached material (mtl // mtllib) within the file, but we interact with it as if it does not.",
+            "enum": [
+              "obj"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "The PLY file format. <https://en.wikipedia.org/wiki/PLY_(file_format)>",
+            "enum": [
+              "ply"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "The STEP file format. <https://en.wikipedia.org/wiki/ISO_10303-21>",
+            "enum": [
+              "step"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "The STL file format. <https://en.wikipedia.org/wiki/STL_(file_format)>",
+            "enum": [
+              "stl"
+            ],
+            "type": "string"
+          }
+        ]
+      },
+      "TextToCadResponseResultsPage": {
+        "description": "A single page of results",
+        "properties": {
+          "items": {
+            "description": "list of items on this page of results",
+            "items": {
+              "$ref": "#/components/schemas/TextToCadResponse"
+            },
+            "type": "array"
+          },
+          "next_page": {
+            "description": "token used to fetch the next page of results (if any)",
+            "nullable": true,
+            "type": "string"
+          }
+        },
+        "required": [
+          "items"
+        ],
+        "type": "object"
+      },
+      "CreatedAtSortMode": {
+        "description": "Supported set of sort modes for scanning by created_at only.\n\nCurrently, we only support scanning in ascending order.",
+        "oneOf": [
+          {
+            "description": "Sort in increasing order of \"created_at\".",
+            "enum": [
+              "created_at_ascending"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Sort in decreasing order of \"created_at\".",
+            "enum": [
+              "created_at_descending"
+            ],
+            "type": "string"
+          }
+        ]
+      },
+      "AsyncApiCallOutput": {
+        "description": "The output from the async API call.",
+        "oneOf": [
+          {
+            "description": "A file conversion.",
+            "properties": {
+              "completed_at": {
+                "description": "The time and date the API call was completed.",
+                "format": "date-time",
+                "nullable": true,
+                "title": "DateTime",
+                "type": "string"
+              },
+              "created_at": {
+                "description": "The time and date the API call was created.",
+                "format": "date-time",
+                "title": "DateTime",
+                "type": "string"
+              },
+              "error": {
+                "description": "The error the function returned, if any.",
+                "nullable": true,
+                "type": "string"
+              },
+              "id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The unique identifier of the API call.\n\nThis is the same as the API call ID."
+              },
+              "output_format": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/FileExportFormat"
+                  }
+                ],
+                "description": "The output format of the file conversion."
+              },
+              "output_format_options": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/OutputFormat3d"
+                  }
+                ],
+                "description": "The output format options of the file conversion.",
+                "nullable": true
+              },
+              "outputs": {
+                "additionalProperties": {
+                  "format": "byte",
+                  "title": "String",
+                  "type": "string"
+                },
+                "description": "The converted files (if multiple file conversion), if completed, base64 encoded. The key of the map is the path of the output file.",
+                "type": "object"
+              },
+              "src_format": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/FileImportFormat"
+                  }
+                ],
+                "description": "The source format of the file conversion."
+              },
+              "src_format_options": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/InputFormat3d"
+                  }
+                ],
+                "description": "The source format options of the file conversion.",
+                "nullable": true
+              },
+              "started_at": {
+                "description": "The time and date the API call was started.",
+                "format": "date-time",
+                "nullable": true,
+                "title": "DateTime",
+                "type": "string"
+              },
+              "status": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ApiCallStatus"
+                  }
+                ],
+                "description": "The status of the API call."
+              },
+              "type": {
+                "enum": [
+                  "file_conversion"
+                ],
+                "type": "string"
+              },
+              "updated_at": {
+                "description": "The time and date the API call was last updated.",
+                "format": "date-time",
+                "title": "DateTime",
+                "type": "string"
+              },
+              "user_id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The user ID of the user who created the API call."
+              }
+            },
+            "required": [
+              "created_at",
+              "id",
+              "output_format",
+              "src_format",
+              "status",
+              "type",
+              "updated_at",
+              "user_id"
+            ],
+            "type": "object"
+          },
+          {
+            "description": "File center of mass.",
+            "properties": {
+              "center_of_mass": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Point3d"
+                  }
+                ],
+                "description": "The resulting center of mass.",
+                "nullable": true
+              },
+              "completed_at": {
+                "description": "The time and date the API call was completed.",
+                "format": "date-time",
+                "nullable": true,
+                "title": "DateTime",
+                "type": "string"
+              },
+              "created_at": {
+                "description": "The time and date the API call was created.",
+                "format": "date-time",
+                "title": "DateTime",
+                "type": "string"
+              },
+              "error": {
+                "description": "The error the function returned, if any.",
+                "nullable": true,
+                "type": "string"
+              },
+              "id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The unique identifier of the API call.\n\nThis is the same as the API call ID."
+              },
+              "output_unit": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/UnitLength"
+                  }
+                ],
+                "description": "The output unit for the center of mass."
+              },
+              "src_format": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/FileImportFormat"
+                  }
+                ],
+                "description": "The source format of the file."
+              },
+              "started_at": {
+                "description": "The time and date the API call was started.",
+                "format": "date-time",
+                "nullable": true,
+                "title": "DateTime",
+                "type": "string"
+              },
+              "status": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ApiCallStatus"
+                  }
+                ],
+                "description": "The status of the API call."
+              },
+              "type": {
+                "enum": [
+                  "file_center_of_mass"
+                ],
+                "type": "string"
+              },
+              "updated_at": {
+                "description": "The time and date the API call was last updated.",
+                "format": "date-time",
+                "title": "DateTime",
+                "type": "string"
+              },
+              "user_id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The user ID of the user who created the API call."
+              }
+            },
+            "required": [
+              "created_at",
+              "id",
+              "output_unit",
+              "src_format",
+              "status",
+              "type",
+              "updated_at",
+              "user_id"
+            ],
+            "type": "object"
+          },
+          {
+            "description": "A file mass.",
+            "properties": {
+              "completed_at": {
+                "description": "The time and date the API call was completed.",
+                "format": "date-time",
+                "nullable": true,
+                "title": "DateTime",
+                "type": "string"
+              },
+              "created_at": {
+                "description": "The time and date the API call was created.",
+                "format": "date-time",
+                "title": "DateTime",
+                "type": "string"
+              },
+              "error": {
+                "description": "The error the function returned, if any.",
+                "nullable": true,
+                "type": "string"
+              },
+              "id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The unique identifier of the API call.\n\nThis is the same as the API call ID."
+              },
+              "mass": {
+                "description": "The resulting mass.",
+                "format": "double",
+                "nullable": true,
+                "type": "number"
+              },
+              "material_density": {
+                "default": 0.0,
+                "description": "The material density as denoted by the user.",
+                "format": "double",
+                "type": "number"
+              },
+              "material_density_unit": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/UnitDensity"
+                  }
+                ],
+                "description": "The material density unit."
+              },
+              "output_unit": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/UnitMass"
+                  }
+                ],
+                "description": "The output unit for the mass."
+              },
+              "src_format": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/FileImportFormat"
+                  }
+                ],
+                "description": "The source format of the file."
+              },
+              "started_at": {
+                "description": "The time and date the API call was started.",
+                "format": "date-time",
+                "nullable": true,
+                "title": "DateTime",
+                "type": "string"
+              },
+              "status": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ApiCallStatus"
+                  }
+                ],
+                "description": "The status of the API call."
+              },
+              "type": {
+                "enum": [
+                  "file_mass"
+                ],
+                "type": "string"
+              },
+              "updated_at": {
+                "description": "The time and date the API call was last updated.",
+                "format": "date-time",
+                "title": "DateTime",
+                "type": "string"
+              },
+              "user_id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The user ID of the user who created the API call."
+              }
+            },
+            "required": [
+              "created_at",
+              "id",
+              "material_density_unit",
+              "output_unit",
+              "src_format",
+              "status",
+              "type",
+              "updated_at",
+              "user_id"
+            ],
+            "type": "object"
+          },
+          {
+            "description": "A file volume.",
+            "properties": {
+              "completed_at": {
+                "description": "The time and date the API call was completed.",
+                "format": "date-time",
+                "nullable": true,
+                "title": "DateTime",
+                "type": "string"
+              },
+              "created_at": {
+                "description": "The time and date the API call was created.",
+                "format": "date-time",
+                "title": "DateTime",
+                "type": "string"
+              },
+              "error": {
+                "description": "The error the function returned, if any.",
+                "nullable": true,
+                "type": "string"
+              },
+              "id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The unique identifier of the API call.\n\nThis is the same as the API call ID."
+              },
+              "output_unit": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/UnitVolume"
+                  }
+                ],
+                "description": "The output unit for the volume."
+              },
+              "src_format": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/FileImportFormat"
+                  }
+                ],
+                "description": "The source format of the file."
+              },
+              "started_at": {
+                "description": "The time and date the API call was started.",
+                "format": "date-time",
+                "nullable": true,
+                "title": "DateTime",
+                "type": "string"
+              },
+              "status": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ApiCallStatus"
+                  }
+                ],
+                "description": "The status of the API call."
+              },
+              "type": {
+                "enum": [
+                  "file_volume"
+                ],
+                "type": "string"
+              },
+              "updated_at": {
+                "description": "The time and date the API call was last updated.",
+                "format": "date-time",
+                "title": "DateTime",
+                "type": "string"
+              },
+              "user_id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The user ID of the user who created the API call."
+              },
+              "volume": {
+                "description": "The resulting volume.",
+                "format": "double",
+                "nullable": true,
+                "type": "number"
+              }
+            },
+            "required": [
+              "created_at",
+              "id",
+              "output_unit",
+              "src_format",
+              "status",
+              "type",
+              "updated_at",
+              "user_id"
+            ],
+            "type": "object"
+          },
+          {
+            "description": "A file density.",
+            "properties": {
+              "completed_at": {
+                "description": "The time and date the API call was completed.",
+                "format": "date-time",
+                "nullable": true,
+                "title": "DateTime",
+                "type": "string"
+              },
+              "created_at": {
+                "description": "The time and date the API call was created.",
+                "format": "date-time",
+                "title": "DateTime",
+                "type": "string"
+              },
+              "density": {
+                "description": "The resulting density.",
+                "format": "double",
+                "nullable": true,
+                "type": "number"
+              },
+              "error": {
+                "description": "The error the function returned, if any.",
+                "nullable": true,
+                "type": "string"
+              },
+              "id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The unique identifier of the API call.\n\nThis is the same as the API call ID."
+              },
+              "material_mass": {
+                "default": 0.0,
+                "description": "The material mass as denoted by the user.",
+                "format": "double",
+                "type": "number"
+              },
+              "material_mass_unit": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/UnitMass"
+                  }
+                ],
+                "description": "The material mass unit."
+              },
+              "output_unit": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/UnitDensity"
+                  }
+                ],
+                "description": "The output unit for the density."
+              },
+              "src_format": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/FileImportFormat"
+                  }
+                ],
+                "description": "The source format of the file."
+              },
+              "started_at": {
+                "description": "The time and date the API call was started.",
+                "format": "date-time",
+                "nullable": true,
+                "title": "DateTime",
+                "type": "string"
+              },
+              "status": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ApiCallStatus"
+                  }
+                ],
+                "description": "The status of the API call."
+              },
+              "type": {
+                "enum": [
+                  "file_density"
+                ],
+                "type": "string"
+              },
+              "updated_at": {
+                "description": "The time and date the API call was last updated.",
+                "format": "date-time",
+                "title": "DateTime",
+                "type": "string"
+              },
+              "user_id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The user ID of the user who created the API call."
+              }
+            },
+            "required": [
+              "created_at",
+              "id",
+              "material_mass_unit",
+              "output_unit",
+              "src_format",
+              "status",
+              "type",
+              "updated_at",
+              "user_id"
+            ],
+            "type": "object"
+          },
+          {
+            "description": "A file surface area.",
+            "properties": {
+              "completed_at": {
+                "description": "The time and date the API call was completed.",
+                "format": "date-time",
+                "nullable": true,
+                "title": "DateTime",
+                "type": "string"
+              },
+              "created_at": {
+                "description": "The time and date the API call was created.",
+                "format": "date-time",
+                "title": "DateTime",
+                "type": "string"
+              },
+              "error": {
+                "description": "The error the function returned, if any.",
+                "nullable": true,
+                "type": "string"
+              },
+              "id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The unique identifier of the API call.\n\nThis is the same as the API call ID."
+              },
+              "output_unit": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/UnitArea"
+                  }
+                ],
+                "description": "The output unit for the surface area."
+              },
+              "src_format": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/FileImportFormat"
+                  }
+                ],
+                "description": "The source format of the file."
+              },
+              "started_at": {
+                "description": "The time and date the API call was started.",
+                "format": "date-time",
+                "nullable": true,
+                "title": "DateTime",
+                "type": "string"
+              },
+              "status": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ApiCallStatus"
+                  }
+                ],
+                "description": "The status of the API call."
+              },
+              "surface_area": {
+                "description": "The resulting surface area.",
+                "format": "double",
+                "nullable": true,
+                "type": "number"
+              },
+              "type": {
+                "enum": [
+                  "file_surface_area"
+                ],
+                "type": "string"
+              },
+              "updated_at": {
+                "description": "The time and date the API call was last updated.",
+                "format": "date-time",
+                "title": "DateTime",
+                "type": "string"
+              },
+              "user_id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The user ID of the user who created the API call."
+              }
+            },
+            "required": [
+              "created_at",
+              "id",
+              "output_unit",
+              "src_format",
+              "status",
+              "type",
+              "updated_at",
+              "user_id"
+            ],
+            "type": "object"
+          },
+          {
+            "description": "Text to CAD.",
+            "properties": {
+              "code": {
+                "description": "The code for the model. This is optional but will be required in the future once we are at v1.",
+                "nullable": true,
+                "type": "string"
+              },
+              "completed_at": {
+                "description": "The time and date the API call was completed.",
+                "format": "date-time",
+                "nullable": true,
+                "title": "DateTime",
+                "type": "string"
+              },
+              "conversation_id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The conversation ID Conversations group different prompts together."
+              },
+              "created_at": {
+                "description": "The time and date the API call was created.",
+                "format": "date-time",
+                "title": "DateTime",
+                "type": "string"
+              },
+              "error": {
+                "description": "The error the function returned, if any.",
+                "nullable": true,
+                "type": "string"
+              },
+              "feedback": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/MlFeedback"
+                  }
+                ],
+                "description": "Feedback from the user, if any.",
+                "nullable": true
+              },
+              "id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The unique identifier of the API call.\n\nThis is the same as the API call ID."
+              },
+              "kcl_version": {
+                "description": "The version of kcl requested.",
+                "nullable": true,
+                "type": "string"
+              },
+              "model": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/TextToCadModel"
+                  }
+                ],
+                "description": "The model being used."
+              },
+              "model_version": {
+                "description": "The version of the model.",
+                "type": "string"
+              },
+              "output_format": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/FileExportFormat"
+                  }
+                ],
+                "description": "The output format of the model."
+              },
+              "outputs": {
+                "additionalProperties": {
+                  "format": "byte",
+                  "title": "String",
+                  "type": "string"
+                },
+                "description": "The output of the model in the given file format the user requested, base64 encoded. The key of the map is the path of the output file.",
+                "type": "object"
+              },
+              "prompt": {
+                "description": "The prompt.",
+                "type": "string"
+              },
+              "started_at": {
+                "description": "The time and date the API call was started.",
+                "format": "date-time",
+                "nullable": true,
+                "title": "DateTime",
+                "type": "string"
+              },
+              "status": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ApiCallStatus"
+                  }
+                ],
+                "description": "The status of the API call."
+              },
+              "type": {
+                "enum": [
+                  "text_to_cad"
+                ],
+                "type": "string"
+              },
+              "updated_at": {
+                "description": "The time and date the API call was last updated.",
+                "format": "date-time",
+                "title": "DateTime",
+                "type": "string"
+              },
+              "user_id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The user ID of the user who created the API call."
+              }
+            },
+            "required": [
+              "conversation_id",
+              "created_at",
+              "id",
+              "model",
+              "model_version",
+              "output_format",
+              "prompt",
+              "status",
+              "type",
+              "updated_at",
+              "user_id"
+            ],
+            "type": "object"
+          },
+          {
+            "description": "Text to CAD iteration.",
+            "properties": {
+              "code": {
+                "description": "The code for the new model.",
+                "type": "string"
+              },
+              "completed_at": {
+                "description": "The time and date the API call was completed.",
+                "format": "date-time",
+                "nullable": true,
+                "title": "DateTime",
+                "type": "string"
+              },
+              "conversation_id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The conversation ID Conversations group different prompts together."
+              },
+              "created_at": {
+                "description": "The time and date the API call was created.",
+                "format": "date-time",
+                "title": "DateTime",
+                "type": "string"
+              },
+              "error": {
+                "description": "The error the function returned, if any.",
+                "nullable": true,
+                "type": "string"
+              },
+              "feedback": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/MlFeedback"
+                  }
+                ],
+                "description": "Feedback from the user, if any.",
+                "nullable": true
+              },
+              "id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The unique identifier of the API call.\n\nThis is the same as the API call ID."
+              },
+              "model": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/TextToCadModel"
+                  }
+                ],
+                "description": "The model being used."
+              },
+              "model_version": {
+                "description": "The version of the model.",
+                "type": "string"
+              },
+              "original_source_code": {
+                "description": "The original source code for the model, previous to the changes.",
+                "type": "string"
+              },
+              "prompt": {
+                "description": "The prompt for the overall changes. This is optional if you only want changes on specific source ranges.",
+                "nullable": true,
+                "type": "string"
+              },
+              "source_ranges": {
+                "description": "The source ranges the user suggested to change.",
+                "items": {
+                  "$ref": "#/components/schemas/SourceRangePrompt"
+                },
+                "type": "array"
+              },
+              "started_at": {
+                "description": "The time and date the API call was started.",
+                "format": "date-time",
+                "nullable": true,
+                "title": "DateTime",
+                "type": "string"
+              },
+              "status": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ApiCallStatus"
+                  }
+                ],
+                "description": "The status of the API call."
+              },
+              "type": {
+                "enum": [
+                  "text_to_cad_iteration"
+                ],
+                "type": "string"
+              },
+              "updated_at": {
+                "description": "The time and date the API call was last updated.",
+                "format": "date-time",
+                "title": "DateTime",
+                "type": "string"
+              },
+              "user_id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The user ID of the user who created the API call."
+              }
+            },
+            "required": [
+              "code",
+              "conversation_id",
+              "created_at",
+              "id",
+              "model",
+              "model_version",
+              "original_source_code",
+              "source_ranges",
+              "status",
+              "type",
+              "updated_at",
+              "user_id"
+            ],
+            "type": "object"
+          },
+          {
+            "description": "Text to CAD multi-file iteration.",
+            "properties": {
+              "completed_at": {
+                "description": "The time and date the API call was completed.",
+                "format": "date-time",
+                "nullable": true,
+                "title": "DateTime",
+                "type": "string"
+              },
+              "conversation_id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The conversation ID Conversations group different prompts together."
+              },
+              "created_at": {
+                "description": "The time and date the API call was created.",
+                "format": "date-time",
+                "title": "DateTime",
+                "type": "string"
+              },
+              "error": {
+                "description": "The error the function returned, if any.",
+                "nullable": true,
+                "type": "string"
+              },
+              "feedback": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/MlFeedback"
+                  }
+                ],
+                "description": "Feedback from the user, if any.",
+                "nullable": true
+              },
+              "id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The unique identifier of the API call.\n\nThis is the same as the API call ID."
+              },
+              "kcl_version": {
+                "description": "The version of kcl to use. If empty, the latest version will be used.",
+                "nullable": true,
+                "type": "string"
+              },
+              "model": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/TextToCadModel"
+                  }
+                ],
+                "description": "The model being used."
+              },
+              "model_version": {
+                "description": "The version of the model.",
+                "type": "string"
+              },
+              "outputs": {
+                "additionalProperties": {
+                  "type": "string"
+                },
+                "description": "The output files. Returns a map of the file name to the file contents. The file contents are not encoded since kcl files are not binary.",
+                "type": "object"
+              },
+              "project_name": {
+                "description": "The project name. This is used to tie the prompt to a project. Which helps us make our models better over time.",
+                "nullable": true,
+                "type": "string"
+              },
+              "prompt": {
+                "description": "The prompt for the overall changes. This is optional if you only want changes on specific source ranges. This will apply to all the files.",
+                "nullable": true,
+                "type": "string"
+              },
+              "source_ranges": {
+                "description": "The source ranges the user suggested to change.",
+                "items": {
+                  "$ref": "#/components/schemas/SourceRangePrompt"
+                },
+                "type": "array"
+              },
+              "started_at": {
+                "description": "The time and date the API call was started.",
+                "format": "date-time",
+                "nullable": true,
+                "title": "DateTime",
+                "type": "string"
+              },
+              "status": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ApiCallStatus"
+                  }
+                ],
+                "description": "The status of the API call."
+              },
+              "type": {
+                "enum": [
+                  "text_to_cad_multi_file_iteration"
+                ],
+                "type": "string"
+              },
+              "updated_at": {
+                "description": "The time and date the API call was last updated.",
+                "format": "date-time",
+                "title": "DateTime",
+                "type": "string"
+              },
+              "user_id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The user ID of the user who created the API call."
+              }
+            },
+            "required": [
+              "conversation_id",
+              "created_at",
+              "id",
+              "model",
+              "model_version",
+              "source_ranges",
+              "status",
+              "type",
+              "updated_at",
+              "user_id"
+            ],
+            "type": "object"
+          }
+        ]
+      },
+      "FileImportFormat": {
+        "description": "The valid types of source file formats.",
+        "oneOf": [
+          {
+            "description": "Autodesk Filmbox (FBX) format. <https://en.wikipedia.org/wiki/FBX>",
+            "enum": [
+              "fbx"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "glTF 2.0.",
+            "enum": [
+              "gltf"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "The OBJ file format. <https://en.wikipedia.org/wiki/Wavefront_.obj_file> It may or may not have an an attached material (mtl // mtllib) within the file, but we interact with it as if it does not.",
+            "enum": [
+              "obj"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "The PLY file format. <https://en.wikipedia.org/wiki/PLY_(file_format)>",
+            "enum": [
+              "ply"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "SolidWorks part (SLDPRT) format.",
+            "enum": [
+              "sldprt"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "The STEP file format. <https://en.wikipedia.org/wiki/ISO_10303-21>",
+            "enum": [
+              "step"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "The STL file format. <https://en.wikipedia.org/wiki/STL_(file_format)>",
+            "enum": [
+              "stl"
+            ],
+            "type": "string"
+          }
+        ]
+      },
+      "UnitArea": {
+        "description": "The valid types of area units.",
+        "oneOf": [
+          {
+            "description": "Square centimeters <https://en.wikipedia.org/wiki/Square_centimeter>",
+            "enum": [
+              "cm2"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Square decimeters <https://en.wikipedia.org/wiki/Square_decimeter>",
+            "enum": [
+              "dm2"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Square feet <https://en.wikipedia.org/wiki/Square_foot>",
+            "enum": [
+              "ft2"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Square inches <https://en.wikipedia.org/wiki/Square_inch>",
+            "enum": [
+              "in2"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Square kilometers <https://en.wikipedia.org/wiki/Square_kilometer>",
+            "enum": [
+              "km2"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Square meters <https://en.wikipedia.org/wiki/Square_meter>",
+            "enum": [
+              "m2"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Square millimeters <https://en.wikipedia.org/wiki/Square_millimeter>",
+            "enum": [
+              "mm2"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Square yards <https://en.wikipedia.org/wiki/Square_mile>",
+            "enum": [
+              "yd2"
+            ],
+            "type": "string"
+          }
+        ]
+      },
+      "UnitDensity": {
+        "description": "The valid types for density units.",
+        "oneOf": [
+          {
+            "description": "Pounds per cubic feet.",
+            "enum": [
+              "lb:ft3"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Kilograms per cubic meter.",
+            "enum": [
+              "kg:m3"
+            ],
+            "type": "string"
+          }
+        ]
+      },
+      "UnitMass": {
+        "description": "The valid types of mass units.",
+        "oneOf": [
+          {
+            "description": "Grams <https://en.wikipedia.org/wiki/Gram>",
+            "enum": [
+              "g"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Kilograms <https://en.wikipedia.org/wiki/Kilogram>",
+            "enum": [
+              "kg"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Pounds <https://en.wikipedia.org/wiki/Pound_(mass)>",
+            "enum": [
+              "lb"
+            ],
+            "type": "string"
+          }
+        ]
+      },
+      "UnitVolume": {
+        "description": "The valid types of volume units.",
+        "oneOf": [
+          {
+            "description": "Cubic centimeters (cc or cm\u00b3) <https://en.wikipedia.org/wiki/Cubic_centimeter>",
+            "enum": [
+              "cm3"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Cubic feet (ft\u00b3) <https://en.wikipedia.org/wiki/Cubic_foot>",
+            "enum": [
+              "ft3"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Cubic inches (cu in or in\u00b3) <https://en.wikipedia.org/wiki/Cubic_inch>",
+            "enum": [
+              "in3"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Cubic meters (m\u00b3) <https://en.wikipedia.org/wiki/Cubic_meter>",
+            "enum": [
+              "m3"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Cubic yards (yd\u00b3) <https://en.wikipedia.org/wiki/Cubic_yard>",
+            "enum": [
+              "yd3"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "US Fluid Ounces (fl oz) <https://en.wikipedia.org/wiki/Fluid_ounce>",
+            "enum": [
+              "usfloz"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "US Gallons (gal US) <https://en.wikipedia.org/wiki/Gallon>",
+            "enum": [
+              "usgal"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Liters (l) <https://en.wikipedia.org/wiki/Litre>",
+            "enum": [
+              "l"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Milliliters (ml) <https://en.wikipedia.org/wiki/Litre>",
+            "enum": [
+              "ml"
+            ],
+            "type": "string"
+          }
+        ]
+      },
+      "UnitLength": {
+        "description": "The valid types of length units.",
+        "oneOf": [
+          {
+            "description": "Centimeters <https://en.wikipedia.org/wiki/Centimeter>",
+            "enum": [
+              "cm"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Feet <https://en.wikipedia.org/wiki/Foot_(unit)>",
+            "enum": [
+              "ft"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Inches <https://en.wikipedia.org/wiki/Inch>",
+            "enum": [
+              "in"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Meters <https://en.wikipedia.org/wiki/Meter>",
+            "enum": [
+              "m"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Millimeters <https://en.wikipedia.org/wiki/Millimeter>",
+            "enum": [
+              "mm"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Yards <https://en.wikipedia.org/wiki/Yard>",
+            "enum": [
+              "yd"
+            ],
+            "type": "string"
+          }
+        ]
+      },
+      "Point3d": {
+        "description": "A point in 3D space",
+        "properties": {
+          "x": {
+            "format": "float",
+            "type": "number"
+          },
+          "y": {
+            "format": "float",
+            "type": "number"
+          },
+          "z": {
+            "format": "float",
+            "type": "number"
+          }
+        },
+        "required": [
+          "x",
+          "y",
+          "z"
+        ],
+        "type": "object"
+      },
+      "InputFormat3d": {
+        "description": "Input format specifier.",
+        "oneOf": [
+          {
+            "description": "Autodesk Filmbox (FBX) format.",
+            "properties": {
+              "type": {
+                "enum": [
+                  "fbx"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "type"
+            ],
+            "type": "object"
+          },
+          {
+            "description": "Binary glTF 2.0. We refer to this as glTF since that is how our customers refer to it, but this can also import binary glTF (glb).",
+            "properties": {
+              "type": {
+                "enum": [
+                  "gltf"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "type"
+            ],
+            "type": "object"
+          },
+          {
+            "description": "Wavefront OBJ format.",
+            "properties": {
+              "coords": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/CoordinateSystem"
+                  }
+                ],
+                "description": "Co-ordinate system of input data.\n\nDefaults to the [KittyCAD co-ordinate system].\n\n[KittyCAD co-ordinate system]: ../coord/constant.KITTYCAD.html"
+              },
+              "type": {
+                "enum": [
+                  "obj"
+                ],
+                "type": "string"
+              },
+              "units": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/UnitLength"
+                  }
+                ],
+                "description": "The units of the input data.\n\nThis is very important for correct scaling and when calculating physics properties like mass, etc.\n\nDefaults to millimeters."
+              }
+            },
+            "required": [
+              "coords",
+              "type",
+              "units"
+            ],
+            "type": "object"
+          },
+          {
+            "description": "The PLY Polygon File Format.",
+            "properties": {
+              "coords": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/CoordinateSystem"
+                  }
+                ],
+                "description": "Co-ordinate system of input data.\n\nDefaults to the [KittyCAD co-ordinate system].\n\n[KittyCAD co-ordinate system]: ../coord/constant.KITTYCAD.html"
+              },
+              "type": {
+                "enum": [
+                  "ply"
+                ],
+                "type": "string"
+              },
+              "units": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/UnitLength"
+                  }
+                ],
+                "description": "The units of the input data.\n\nThis is very important for correct scaling and when calculating physics properties like mass, etc.\n\nDefaults to millimeters."
+              }
+            },
+            "required": [
+              "coords",
+              "type",
+              "units"
+            ],
+            "type": "object"
+          },
+          {
+            "description": "SolidWorks part (SLDPRT) format.",
+            "properties": {
+              "split_closed_faces": {
+                "default": false,
+                "description": "Splits all closed faces into two open faces.\n\nDefaults to `false` but is implicitly `true` when importing into the engine.",
+                "type": "boolean"
+              },
+              "type": {
+                "enum": [
+                  "sldprt"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "type"
+            ],
+            "type": "object"
+          },
+          {
+            "description": "ISO 10303-21 (STEP) format.",
+            "properties": {
+              "coords": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/CoordinateSystem"
+                  }
+                ],
+                "default": {
+                  "forward": {
+                    "axis": "y",
+                    "direction": "negative"
+                  },
+                  "up": {
+                    "axis": "z",
+                    "direction": "positive"
+                  }
+                },
+                "description": "Co-ordinate system of input data.\n\nDefaults to the [KittyCAD co-ordinate system].\n\n[KittyCAD co-ordinate system]: ../coord/constant.KITTYCAD.html"
+              },
+              "split_closed_faces": {
+                "default": false,
+                "description": "Splits all closed faces into two open faces.\n\nDefaults to `false` but is implicitly `true` when importing into the engine.",
+                "type": "boolean"
+              },
+              "type": {
+                "enum": [
+                  "step"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "type"
+            ],
+            "type": "object"
+          },
+          {
+            "description": "*ST**ereo**L**ithography format.",
+            "properties": {
+              "coords": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/CoordinateSystem"
+                  }
+                ],
+                "description": "Co-ordinate system of input data.\n\nDefaults to the [KittyCAD co-ordinate system].\n\n[KittyCAD co-ordinate system]: ../coord/constant.KITTYCAD.html"
+              },
+              "type": {
+                "enum": [
+                  "stl"
+                ],
+                "type": "string"
+              },
+              "units": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/UnitLength"
+                  }
+                ],
+                "description": "The units of the input data.\n\nThis is very important for correct scaling and when calculating physics properties like mass, etc.\n\nDefaults to millimeters."
+              }
+            },
+            "required": [
+              "coords",
+              "type",
+              "units"
+            ],
+            "type": "object"
+          }
+        ]
+      },
+      "CoordinateSystem": {
+        "description": "Co-ordinate system definition.\n\nThe `up` axis must be orthogonal to the `forward` axis.\n\nSee [cglearn.eu] for background reading.\n\n[cglearn.eu](https://cglearn.eu/pub/computer-graphics/introduction-to-geometry#material-coordinate-systems-1)",
+        "properties": {
+          "forward": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AxisDirectionPair"
+              }
+            ],
+            "description": "Axis the front face of a model looks along."
+          },
+          "up": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/AxisDirectionPair"
+              }
+            ],
+            "description": "Axis pointing up and away from a model."
+          }
+        },
+        "required": [
+          "forward",
+          "up"
+        ],
+        "type": "object"
+      },
+      "AxisDirectionPair": {
+        "description": "An [`Axis`] paired with a [`Direction`].",
+        "properties": {
+          "axis": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Axis"
+              }
+            ],
+            "description": "Axis specifier."
+          },
+          "direction": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Direction"
+              }
+            ],
+            "description": "Specifies which direction the axis is pointing."
+          }
+        },
+        "required": [
+          "axis",
+          "direction"
+        ],
+        "type": "object"
+      },
+      "Direction": {
+        "description": "Specifies the sign of a co-ordinate axis.",
+        "oneOf": [
+          {
+            "description": "Increasing numbers.",
+            "enum": [
+              "positive"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Decreasing numbers.",
+            "enum": [
+              "negative"
+            ],
+            "type": "string"
+          }
+        ]
+      },
+      "Axis": {
+        "description": "Co-ordinate axis specifier.\n\nSee [cglearn.eu] for background reading.\n\n[cglearn.eu]: https://cglearn.eu/pub/computer-graphics/introduction-to-geometry#material-coordinate-systems-1",
+        "oneOf": [
+          {
+            "description": "'Y' axis.",
+            "enum": [
+              "y"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "'Z' axis.",
+            "enum": [
+              "z"
+            ],
+            "type": "string"
+          }
+        ]
+      },
+      "OutputFormat3d": {
+        "description": "Output 3D format specifier.",
+        "oneOf": [
+          {
+            "description": "Autodesk Filmbox (FBX) format.",
+            "properties": {
+              "created": {
+                "description": "Timestamp override.",
+                "format": "date-time",
+                "nullable": true,
+                "type": "string"
+              },
+              "storage": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/FbxStorage"
+                  }
+                ],
+                "description": "Specifies which kind of FBX will be exported."
+              },
+              "type": {
+                "enum": [
+                  "fbx"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "storage",
+              "type"
+            ],
+            "type": "object"
+          },
+          {
+            "description": "glTF 2.0. We refer to this as glTF since that is how our customers refer to it, although by default it will be in binary format and thus technically (glb). If you prefer ASCII output, you can set that option for the export.",
+            "properties": {
+              "presentation": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GltfPresentation"
+                  }
+                ],
+                "description": "Specifies how the JSON will be presented."
+              },
+              "storage": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/GltfStorage"
+                  }
+                ],
+                "description": "Specifies which kind of glTF 2.0 will be exported."
+              },
+              "type": {
+                "enum": [
+                  "gltf"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "presentation",
+              "storage",
+              "type"
+            ],
+            "type": "object"
+          },
+          {
+            "description": "Wavefront OBJ format.",
+            "properties": {
+              "coords": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/CoordinateSystem"
+                  }
+                ],
+                "description": "Co-ordinate system of output data.\n\nDefaults to the [KittyCAD co-ordinate system].\n\n[KittyCAD co-ordinate system]: ../coord/constant.KITTYCAD.html"
+              },
+              "type": {
+                "enum": [
+                  "obj"
+                ],
+                "type": "string"
+              },
+              "units": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/UnitLength"
+                  }
+                ],
+                "description": "Export length unit.\n\nDefaults to millimeters."
+              }
+            },
+            "required": [
+              "coords",
+              "type",
+              "units"
+            ],
+            "type": "object"
+          },
+          {
+            "description": "The PLY Polygon File Format.",
+            "properties": {
+              "coords": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/CoordinateSystem"
+                  }
+                ],
+                "description": "Co-ordinate system of output data.\n\nDefaults to the [KittyCAD co-ordinate system].\n\n[KittyCAD co-ordinate system]: ../coord/constant.KITTYCAD.html"
+              },
+              "selection": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Selection"
+                  }
+                ],
+                "description": "Export selection."
+              },
+              "storage": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PlyStorage"
+                  }
+                ],
+                "description": "The storage for the output PLY file."
+              },
+              "type": {
+                "enum": [
+                  "ply"
+                ],
+                "type": "string"
+              },
+              "units": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/UnitLength"
+                  }
+                ],
+                "description": "Export length unit.\n\nDefaults to millimeters."
+              }
+            },
+            "required": [
+              "coords",
+              "selection",
+              "storage",
+              "type",
+              "units"
+            ],
+            "type": "object"
+          },
+          {
+            "description": "ISO 10303-21 (STEP) format.",
+            "properties": {
+              "coords": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/CoordinateSystem"
+                  }
+                ],
+                "default": {
+                  "forward": {
+                    "axis": "y",
+                    "direction": "negative"
+                  },
+                  "up": {
+                    "axis": "z",
+                    "direction": "positive"
+                  }
+                },
+                "description": "Co-ordinate system of output data.\n\nDefaults to the [KittyCAD co-ordinate system].\n\n[KittyCAD co-ordinate system]: ../coord/constant.KITTYCAD.html"
+              },
+              "created": {
+                "default": null,
+                "description": "Timestamp override.",
+                "format": "date-time",
+                "nullable": true,
+                "type": "string"
+              },
+              "presentation": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/StepPresentation"
+                  }
+                ],
+                "default": "pretty",
+                "description": "Presentation style."
+              },
+              "type": {
+                "enum": [
+                  "step"
+                ],
+                "type": "string"
+              },
+              "units": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/UnitLength"
+                  }
+                ],
+                "default": "m",
+                "description": "Export length unit.\n\nDefaults to meters."
+              }
+            },
+            "required": [
+              "type"
+            ],
+            "type": "object"
+          },
+          {
+            "description": "*ST**ereo**L**ithography format.",
+            "properties": {
+              "coords": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/CoordinateSystem"
+                  }
+                ],
+                "description": "Co-ordinate system of output data.\n\nDefaults to the [KittyCAD co-ordinate system].\n\n[KittyCAD co-ordinate system]: ../coord/constant.KITTYCAD.html"
+              },
+              "selection": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Selection"
+                  }
+                ],
+                "description": "Export selection."
+              },
+              "storage": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/StlStorage"
+                  }
+                ],
+                "description": "Export storage."
+              },
+              "type": {
+                "enum": [
+                  "stl"
+                ],
+                "type": "string"
+              },
+              "units": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/UnitLength"
+                  }
+                ],
+                "description": "Export length unit.\n\nDefaults to millimeters."
+              }
+            },
+            "required": [
+              "coords",
+              "selection",
+              "storage",
+              "type",
+              "units"
+            ],
+            "type": "object"
+          }
+        ]
+      },
+      "StlStorage": {
+        "description": "Export storage.",
+        "oneOf": [
+          {
+            "description": "Plaintext encoding.",
+            "enum": [
+              "ascii"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Binary STL encoding.\n\nThis is the default setting.",
+            "enum": [
+              "binary"
+            ],
+            "type": "string"
+          }
+        ]
+      },
+      "Selection": {
+        "description": "Data item selection.",
+        "oneOf": [
+          {
+            "description": "Visit the default scene.",
+            "properties": {
+              "type": {
+                "enum": [
+                  "default_scene"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "type"
+            ],
+            "type": "object"
+          },
+          {
+            "description": "Visit the indexed scene.",
+            "properties": {
+              "index": {
+                "description": "The index.",
+                "format": "uint",
+                "minimum": 0,
+                "type": "integer"
+              },
+              "type": {
+                "enum": [
+                  "scene_by_index"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "index",
+              "type"
+            ],
+            "type": "object"
+          },
+          {
+            "description": "Visit the first scene with the given name.",
+            "properties": {
+              "name": {
+                "description": "The name.",
+                "type": "string"
+              },
+              "type": {
+                "enum": [
+                  "scene_by_name"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "type"
+            ],
+            "type": "object"
+          },
+          {
+            "description": "Visit the indexed mesh.",
+            "properties": {
+              "index": {
+                "description": "The index.",
+                "format": "uint",
+                "minimum": 0,
+                "type": "integer"
+              },
+              "type": {
+                "enum": [
+                  "mesh_by_index"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "index",
+              "type"
+            ],
+            "type": "object"
+          },
+          {
+            "description": "Visit the first mesh with the given name.",
+            "properties": {
+              "name": {
+                "description": "The name.",
+                "type": "string"
+              },
+              "type": {
+                "enum": [
+                  "mesh_by_name"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "type"
+            ],
+            "type": "object"
+          }
+        ]
+      },
+      "StepPresentation": {
+        "description": "Describes the presentation style of the EXPRESS exchange format.",
+        "oneOf": [
+          {
+            "description": "Condenses the text to reduce the size of the file.",
+            "enum": [
+              "compact"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Add extra spaces to make the text more easily readable.\n\nThis is the default setting.",
+            "enum": [
+              "pretty"
+            ],
+            "type": "string"
+          }
+        ]
+      },
+      "PlyStorage": {
+        "description": "The storage for the output PLY file.",
+        "oneOf": [
+          {
+            "description": "Write numbers in their ascii representation (e.g. -13, 6.28, etc.). Properties are separated by spaces and elements are separated by line breaks.",
+            "enum": [
+              "ascii"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Encode payload as binary using little endian.",
+            "enum": [
+              "binary_little_endian"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Encode payload as binary using big endian.",
+            "enum": [
+              "binary_big_endian"
+            ],
+            "type": "string"
+          }
+        ]
+      },
+      "GltfStorage": {
+        "description": "Describes the storage format of a glTF 2.0 scene.",
+        "oneOf": [
+          {
+            "description": "Binary glTF 2.0.\n\nThis is a single binary with .glb extension.",
+            "enum": [
+              "binary"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Standard glTF 2.0.\n\nThis is a JSON file with .gltf extension paired with a separate binary blob file with .bin extension.",
+            "enum": [
+              "standard"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Embedded glTF 2.0.\n\nSingle JSON file with .gltf extension binary data encoded as base64 data URIs.\n\nThis is the default setting.",
+            "enum": [
+              "embedded"
+            ],
+            "type": "string"
+          }
+        ]
+      },
+      "GltfPresentation": {
+        "description": "Describes the presentation style of the glTF JSON.",
+        "oneOf": [
+          {
+            "description": "Condense the JSON into the smallest possible size.",
+            "enum": [
+              "compact"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Expand the JSON into a more human readable format.\n\nThis is the default setting.",
+            "enum": [
+              "pretty"
+            ],
+            "type": "string"
+          }
+        ]
+      },
+      "FbxStorage": {
+        "description": "Describes the storage format of an FBX file.",
+        "oneOf": [
+          {
+            "description": "ASCII FBX encoding.",
+            "enum": [
+              "ascii"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Binary FBX encoding.",
+            "enum": [
+              "binary"
+            ],
+            "type": "string"
+          }
+        ]
+      },
+      "TextToCadMultiFileIteration": {
+        "description": "A response from a text to CAD multi-file iteration.",
+        "properties": {
+          "completed_at": {
+            "description": "The time and date the API call was completed.",
+            "format": "date-time",
+            "nullable": true,
+            "title": "DateTime",
+            "type": "string"
+          },
+          "conversation_id": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Uuid"
+              }
+            ],
+            "description": "The conversation ID Conversations group different prompts together."
+          },
+          "created_at": {
+            "description": "The time and date the API call was created.",
+            "format": "date-time",
+            "title": "DateTime",
+            "type": "string"
+          },
+          "error": {
+            "description": "The error the function returned, if any.",
+            "nullable": true,
+            "type": "string"
+          },
+          "feedback": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/MlFeedback"
+              }
+            ],
+            "description": "Feedback from the user, if any.",
+            "nullable": true
+          },
+          "id": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Uuid"
+              }
+            ],
+            "description": "The unique identifier of the API call.\n\nThis is the same as the API call ID."
+          },
+          "kcl_version": {
+            "description": "The version of kcl to use. If empty, the latest version will be used.",
+            "nullable": true,
+            "type": "string"
+          },
+          "model": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/TextToCadModel"
+              }
+            ],
+            "description": "The model being used."
+          },
+          "model_version": {
+            "description": "The version of the model.",
+            "type": "string"
+          },
+          "outputs": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "The output files. Returns a map of the file name to the file contents. The file contents are not encoded since kcl files are not binary.",
+            "type": "object"
+          },
+          "project_name": {
+            "description": "The project name. This is used to tie the prompt to a project. Which helps us make our models better over time.",
+            "nullable": true,
+            "type": "string"
+          },
+          "prompt": {
+            "description": "The prompt for the overall changes. This is optional if you only want changes on specific source ranges. This will apply to all the files.",
+            "nullable": true,
+            "type": "string"
+          },
+          "source_ranges": {
+            "description": "The source ranges the user suggested to change.",
+            "items": {
+              "$ref": "#/components/schemas/SourceRangePrompt"
+            },
+            "type": "array"
+          },
+          "started_at": {
+            "description": "The time and date the API call was started.",
+            "format": "date-time",
+            "nullable": true,
+            "title": "DateTime",
+            "type": "string"
+          },
+          "status": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/ApiCallStatus"
+              }
+            ],
+            "description": "The status of the API call."
+          },
+          "updated_at": {
+            "description": "The time and date the API call was last updated.",
+            "format": "date-time",
+            "title": "DateTime",
+            "type": "string"
+          },
+          "user_id": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Uuid"
+              }
+            ],
+            "description": "The user ID of the user who created the API call."
+          }
+        },
+        "required": [
+          "conversation_id",
+          "created_at",
+          "id",
+          "model",
+          "model_version",
+          "source_ranges",
+          "status",
+          "updated_at",
+          "user_id"
+        ],
+        "type": "object"
+      },
+      "TextToCadIteration": {
+        "description": "A response from a text to CAD iteration.",
+        "properties": {
+          "code": {
+            "description": "The code for the new model.",
+            "type": "string"
+          },
+          "completed_at": {
+            "description": "The time and date the API call was completed.",
+            "format": "date-time",
+            "nullable": true,
+            "title": "DateTime",
+            "type": "string"
+          },
+          "conversation_id": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Uuid"
+              }
+            ],
+            "description": "The conversation ID Conversations group different prompts together."
+          },
+          "created_at": {
+            "description": "The time and date the API call was created.",
+            "format": "date-time",
+            "title": "DateTime",
+            "type": "string"
+          },
+          "error": {
+            "description": "The error the function returned, if any.",
+            "nullable": true,
+            "type": "string"
+          },
+          "feedback": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/MlFeedback"
+              }
+            ],
+            "description": "Feedback from the user, if any.",
+            "nullable": true
+          },
+          "id": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Uuid"
+              }
+            ],
+            "description": "The unique identifier of the API call.\n\nThis is the same as the API call ID."
+          },
+          "model": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/TextToCadModel"
+              }
+            ],
+            "description": "The model being used."
+          },
+          "model_version": {
+            "description": "The version of the model.",
+            "type": "string"
+          },
+          "original_source_code": {
+            "description": "The original source code for the model, previous to the changes.",
+            "type": "string"
+          },
+          "prompt": {
+            "description": "The prompt for the overall changes. This is optional if you only want changes on specific source ranges.",
+            "nullable": true,
+            "type": "string"
+          },
+          "source_ranges": {
+            "description": "The source ranges the user suggested to change.",
+            "items": {
+              "$ref": "#/components/schemas/SourceRangePrompt"
+            },
+            "type": "array"
+          },
+          "started_at": {
+            "description": "The time and date the API call was started.",
+            "format": "date-time",
+            "nullable": true,
+            "title": "DateTime",
+            "type": "string"
+          },
+          "status": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/ApiCallStatus"
+              }
+            ],
+            "description": "The status of the API call."
+          },
+          "updated_at": {
+            "description": "The time and date the API call was last updated.",
+            "format": "date-time",
+            "title": "DateTime",
+            "type": "string"
+          },
+          "user_id": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Uuid"
+              }
+            ],
+            "description": "The user ID of the user who created the API call."
+          }
+        },
+        "required": [
+          "code",
+          "conversation_id",
+          "created_at",
+          "id",
+          "model",
+          "model_version",
+          "original_source_code",
+          "source_ranges",
+          "status",
+          "updated_at",
+          "user_id"
+        ],
+        "type": "object"
+      },
+      "TextToCadIterationBody": {
+        "description": "Body for generating parts from text.",
+        "properties": {
+          "kcl_version": {
+            "description": "The version of kcl to use. If empty, the latest version will be used.",
+            "nullable": true,
+            "type": "string"
+          },
+          "original_source_code": {
+            "description": "The source code for the model (in kcl) that is to be edited.",
+            "type": "string"
+          },
+          "project_name": {
+            "description": "The project name. This is used to tie the prompt to a project. Which helps us make our models better over time.",
+            "nullable": true,
+            "type": "string"
+          },
+          "prompt": {
+            "description": "The prompt for the model, if not using source ranges.",
+            "nullable": true,
+            "type": "string"
+          },
+          "source_ranges": {
+            "description": "The source ranges the user suggested to change. If empty, the prompt will be used and is required.",
+            "items": {
+              "$ref": "#/components/schemas/SourceRangePrompt"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "original_source_code",
+          "source_ranges"
+        ],
+        "type": "object"
+      },
+      "TextToCad": {
+        "description": "A response from a text to CAD prompt.",
+        "properties": {
+          "code": {
+            "description": "The code for the model. This is optional but will be required in the future once we are at v1.",
+            "nullable": true,
+            "type": "string"
+          },
+          "completed_at": {
+            "description": "The time and date the API call was completed.",
+            "format": "date-time",
+            "nullable": true,
+            "title": "DateTime",
+            "type": "string"
+          },
+          "conversation_id": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Uuid"
+              }
+            ],
+            "description": "The conversation ID Conversations group different prompts together."
+          },
+          "created_at": {
+            "description": "The time and date the API call was created.",
+            "format": "date-time",
+            "title": "DateTime",
+            "type": "string"
+          },
+          "error": {
+            "description": "The error the function returned, if any.",
+            "nullable": true,
+            "type": "string"
+          },
+          "feedback": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/MlFeedback"
+              }
+            ],
+            "description": "Feedback from the user, if any.",
+            "nullable": true
+          },
+          "id": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Uuid"
+              }
+            ],
+            "description": "The unique identifier of the API call.\n\nThis is the same as the API call ID."
+          },
+          "kcl_version": {
+            "description": "The version of kcl requested.",
+            "nullable": true,
+            "type": "string"
+          },
+          "model": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/TextToCadModel"
+              }
+            ],
+            "description": "The model being used."
+          },
+          "model_version": {
+            "description": "The version of the model.",
+            "type": "string"
+          },
+          "output_format": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/FileExportFormat"
+              }
+            ],
+            "description": "The output format of the model."
+          },
+          "outputs": {
+            "additionalProperties": {
+              "format": "byte",
+              "title": "String",
+              "type": "string"
+            },
+            "description": "The output of the model in the given file format the user requested, base64 encoded. The key of the map is the path of the output file.",
+            "type": "object"
+          },
+          "prompt": {
+            "description": "The prompt.",
+            "type": "string"
+          },
+          "started_at": {
+            "description": "The time and date the API call was started.",
+            "format": "date-time",
+            "nullable": true,
+            "title": "DateTime",
+            "type": "string"
+          },
+          "status": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/ApiCallStatus"
+              }
+            ],
+            "description": "The status of the API call."
+          },
+          "updated_at": {
+            "description": "The time and date the API call was last updated.",
+            "format": "date-time",
+            "title": "DateTime",
+            "type": "string"
+          },
+          "user_id": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Uuid"
+              }
+            ],
+            "description": "The user ID of the user who created the API call."
+          }
+        },
+        "required": [
+          "conversation_id",
+          "created_at",
+          "id",
+          "model",
+          "model_version",
+          "output_format",
+          "prompt",
+          "status",
+          "updated_at",
+          "user_id"
+        ],
+        "type": "object"
+      },
+      "TextToCadCreateBody": {
+        "description": "Body for generating parts from text.",
+        "properties": {
+          "kcl_version": {
+            "description": "The version of kcl to use. If empty, the latest version will be used.",
+            "nullable": true,
+            "type": "string"
+          },
+          "model_version": {
+            "description": "Zoo provided model, or custom model which should be used to process this request.",
+            "nullable": true,
+            "type": "string"
+          },
+          "project_name": {
+            "description": "The project name. This is used to tie the prompt to a project. Which helps us make our models better over time.",
+            "nullable": true,
+            "type": "string"
+          },
+          "prompt": {
+            "description": "The prompt for the desired part.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "prompt"
+        ],
+        "type": "object"
+      }
+    },
+    "responses": {
+      "Error": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            }
+          }
+        },
+        "description": "Error"
+      }
+    }
+  },
+  "tags": [
+    {
+      "description": "API calls that have been performed by users can be queried by the API. This is helpful for debugging as well as billing.",
+      "externalDocs": {
+        "url": "https://zoo.dev/docs/api/api-calls"
+      },
+      "name": "api-calls"
+    },
+    {
+      "description": "Machine learning to generate CAD models and other things.",
+      "externalDocs": {
+        "url": "https://zoo.dev/docs/api/ml"
+      },
+      "name": "ml"
+    }
+  ]
+}
