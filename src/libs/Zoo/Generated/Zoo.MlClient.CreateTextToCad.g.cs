@@ -184,7 +184,7 @@ namespace Zoo
                 PrepareCreateTextToCadRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    outputFormat: outputFormat,
+                    outputFormat: outputFormat!,
                     kcl: kcl,
                     request: request);
 
