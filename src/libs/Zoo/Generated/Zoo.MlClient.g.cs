@@ -73,10 +73,10 @@ namespace Zoo
         /// <param name="options">Client-wide request defaults such as headers, query parameters, retries, and timeout.</param>
         /// <param name="disposeHttpClient">Dispose the HttpClient when the instance is disposed. True by default.</param>
         public MlClient(
-            global::System.Net.Http.HttpClient? httpClient = null,
-            global::System.Uri? baseUri = null,
-            global::System.Collections.Generic.List<global::Zoo.EndPointAuthorization>? authorizations = null,
-            global::Zoo.AutoSDKClientOptions? options = null,
+            global::System.Net.Http.HttpClient? httpClient,
+            global::System.Uri? baseUri,
+            global::System.Collections.Generic.List<global::Zoo.EndPointAuthorization>? authorizations,
+            global::Zoo.AutoSDKClientOptions? options,
             bool disposeHttpClient = true)
         {
 
