@@ -126,6 +126,17 @@ namespace Zoo.JsonConverters
                     }
                 }
             }
+            var __score9 = 0;
+            {
+                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.UnitVolumeVariant10), options);
+                if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
+                {
+                    foreach (var __prop in __ti.Properties)
+                    {
+                        if (__jsonProps.Contains(__prop.Name)) __score9++;
+                    }
+                }
+            }
             var __bestScore = 0;
             var __bestIndex = -1;
             if (__score0 > __bestScore) { __bestScore = __score0; __bestIndex = 0; }
@@ -137,6 +148,7 @@ namespace Zoo.JsonConverters
             if (__score6 > __bestScore) { __bestScore = __score6; __bestIndex = 6; }
             if (__score7 > __bestScore) { __bestScore = __score7; __bestIndex = 7; }
             if (__score8 > __bestScore) { __bestScore = __score8; __bestIndex = 8; }
+            if (__score9 > __bestScore) { __bestScore = __score9; __bestIndex = 9; }
 
             global::Zoo.UnitVolumeVariant1? unitVolumeVariant1 = default;
             global::Zoo.UnitVolumeVariant2? unitVolumeVariant2 = default;
@@ -147,6 +159,7 @@ namespace Zoo.JsonConverters
             global::Zoo.UnitVolumeVariant7? unitVolumeVariant7 = default;
             global::Zoo.UnitVolumeVariant8? unitVolumeVariant8 = default;
             global::Zoo.UnitVolumeVariant9? unitVolumeVariant9 = default;
+            global::Zoo.UnitVolumeVariant10? unitVolumeVariant10 = default;
             if (__bestIndex >= 0)
             {
                 if (__bestIndex == 0)
@@ -301,9 +314,26 @@ namespace Zoo.JsonConverters
                     {
                     }
                 }
+
+                else if (__bestIndex == 9)
+                {
+                    try
+                    {
+
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.UnitVolumeVariant10), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.UnitVolumeVariant10> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.UnitVolumeVariant10).Name}");
+                        unitVolumeVariant10 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
             }
 
-            if (unitVolumeVariant1 == null && unitVolumeVariant2 == null && unitVolumeVariant3 == null && unitVolumeVariant4 == null && unitVolumeVariant5 == null && unitVolumeVariant6 == null && unitVolumeVariant7 == null && unitVolumeVariant8 == null && unitVolumeVariant9 == null)
+            if (unitVolumeVariant1 == null && unitVolumeVariant2 == null && unitVolumeVariant3 == null && unitVolumeVariant4 == null && unitVolumeVariant5 == null && unitVolumeVariant6 == null && unitVolumeVariant7 == null && unitVolumeVariant8 == null && unitVolumeVariant9 == null && unitVolumeVariant10 == null)
             {
                 try
                 {
@@ -430,6 +460,20 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.UnitVolumeVariant10), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.UnitVolumeVariant10> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.UnitVolumeVariant10).Name}");
+                    unitVolumeVariant10 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
             }
 
             var __value = new global::Zoo.UnitVolume(
@@ -449,7 +493,9 @@ namespace Zoo.JsonConverters
 
                 unitVolumeVariant8,
 
-                unitVolumeVariant9
+                unitVolumeVariant9,
+
+                unitVolumeVariant10
                 );
 
             return __value;
@@ -517,6 +563,12 @@ namespace Zoo.JsonConverters
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.UnitVolumeVariant9), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.UnitVolumeVariant9> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.UnitVolumeVariant9).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.UnitVolumeVariant9!.Value, typeInfo);
+            }
+            else if (value.IsUnitVolumeVariant10)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.UnitVolumeVariant10), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.UnitVolumeVariant10> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.UnitVolumeVariant10).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UnitVolumeVariant10!.Value, typeInfo);
             }
         }
     }

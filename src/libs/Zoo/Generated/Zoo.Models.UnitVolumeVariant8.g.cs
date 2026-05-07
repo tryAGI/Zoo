@@ -4,14 +4,14 @@
 namespace Zoo
 {
     /// <summary>
-    /// Liters (l) &lt;https://en.wikipedia.org/wiki/Litre&gt;
+    /// US Gallons (gal US) &lt;https://en.wikipedia.org/wiki/Gallon&gt;
     /// </summary>
     public enum UnitVolumeVariant8
     {
         /// <summary>
-        /// //en.wikipedia.org/wiki/Litre&gt;
+        /// 
         /// </summary>
-        L,
+        Usgal,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Zoo
         {
             return value switch
             {
-                UnitVolumeVariant8.L => "l",
+                UnitVolumeVariant8.Usgal => "usgal",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Zoo
         {
             return value switch
             {
-                "l" => UnitVolumeVariant8.L,
+                "usgal" => UnitVolumeVariant8.Usgal,
                 _ => null,
             };
         }

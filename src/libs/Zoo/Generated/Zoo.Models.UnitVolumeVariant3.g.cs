@@ -4,14 +4,14 @@
 namespace Zoo
 {
     /// <summary>
-    /// Cubic inches (cu in or in³) &lt;https://en.wikipedia.org/wiki/Cubic_inch&gt;
+    /// Cubic feet (ft³) &lt;https://en.wikipedia.org/wiki/Cubic_foot&gt;
     /// </summary>
     public enum UnitVolumeVariant3
     {
         /// <summary>
         /// 
         /// </summary>
-        In3,
+        Ft3,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Zoo
         {
             return value switch
             {
-                UnitVolumeVariant3.In3 => "in3",
+                UnitVolumeVariant3.Ft3 => "ft3",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Zoo
         {
             return value switch
             {
-                "in3" => UnitVolumeVariant3.In3,
+                "ft3" => UnitVolumeVariant3.Ft3,
                 _ => null,
             };
         }

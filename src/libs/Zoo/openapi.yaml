@@ -2644,6 +2644,13 @@
         "description": "The valid types of volume units.",
         "oneOf": [
           {
+            "description": "Cubic millimeters (mm\u00b3)",
+            "enum": [
+              "mm3"
+            ],
+            "type": "string"
+          },
+          {
             "description": "Cubic centimeters (cc or cm\u00b3) <https://en.wikipedia.org/wiki/Cubic_centimeter>",
             "enum": [
               "cm3"
