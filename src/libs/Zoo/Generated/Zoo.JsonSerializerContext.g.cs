@@ -261,6 +261,10 @@ namespace Zoo
 
             typeof(global::Zoo.JsonConverters.UnitVolumeVariant9NullableJsonConverter),
 
+            typeof(global::Zoo.JsonConverters.UnitVolumeVariant10JsonConverter),
+
+            typeof(global::Zoo.JsonConverters.UnitVolumeVariant10NullableJsonConverter),
+
             typeof(global::Zoo.JsonConverters.UnitLengthVariant1JsonConverter),
 
             typeof(global::Zoo.JsonConverters.UnitLengthVariant1NullableJsonConverter),
@@ -585,6 +589,7 @@ namespace Zoo
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.UnitVolumeVariant7), TypeInfoPropertyName = "UnitVolumeVariant72")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.UnitVolumeVariant8), TypeInfoPropertyName = "UnitVolumeVariant82")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.UnitVolumeVariant9), TypeInfoPropertyName = "UnitVolumeVariant92")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.UnitVolumeVariant10), TypeInfoPropertyName = "UnitVolumeVariant102")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.UnitLengthVariant1), TypeInfoPropertyName = "UnitLengthVariant12")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.UnitLengthVariant2), TypeInfoPropertyName = "UnitLengthVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.UnitLengthVariant3), TypeInfoPropertyName = "UnitLengthVariant32")]

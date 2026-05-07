@@ -4,14 +4,14 @@
 namespace Zoo
 {
     /// <summary>
-    /// US Fluid Ounces (fl oz) &lt;https://en.wikipedia.org/wiki/Fluid_ounce&gt;
+    /// Cubic yards (yd³) &lt;https://en.wikipedia.org/wiki/Cubic_yard&gt;
     /// </summary>
     public enum UnitVolumeVariant6
     {
         /// <summary>
         /// 
         /// </summary>
-        Usfloz,
+        Yd3,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Zoo
         {
             return value switch
             {
-                UnitVolumeVariant6.Usfloz => "usfloz",
+                UnitVolumeVariant6.Yd3 => "yd3",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Zoo
         {
             return value switch
             {
-                "usfloz" => UnitVolumeVariant6.Usfloz,
+                "yd3" => UnitVolumeVariant6.Yd3,
                 _ => null,
             };
         }

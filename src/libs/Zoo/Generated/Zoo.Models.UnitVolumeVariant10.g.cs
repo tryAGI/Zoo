@@ -4,40 +4,40 @@
 namespace Zoo
 {
     /// <summary>
-    /// Cubic millimeters (mm³)
+    /// Milliliters (ml) &lt;https://en.wikipedia.org/wiki/Litre&gt;
     /// </summary>
-    public enum UnitVolumeVariant1
+    public enum UnitVolumeVariant10
     {
         /// <summary>
-        /// 
+        /// //en.wikipedia.org/wiki/Litre&gt;
         /// </summary>
-        Mm3,
+        Ml,
     }
 
     /// <summary>
     /// Enum extensions to do fast conversions without the reflection.
     /// </summary>
-    public static class UnitVolumeVariant1Extensions
+    public static class UnitVolumeVariant10Extensions
     {
         /// <summary>
         /// Converts an enum to a string.
         /// </summary>
-        public static string ToValueString(this UnitVolumeVariant1 value)
+        public static string ToValueString(this UnitVolumeVariant10 value)
         {
             return value switch
             {
-                UnitVolumeVariant1.Mm3 => "mm3",
+                UnitVolumeVariant10.Ml => "ml",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
         /// <summary>
         /// Converts an string to a enum.
         /// </summary>
-        public static UnitVolumeVariant1? ToEnum(string value)
+        public static UnitVolumeVariant10? ToEnum(string value)
         {
             return value switch
             {
-                "mm3" => UnitVolumeVariant1.Mm3,
+                "ml" => UnitVolumeVariant10.Ml,
                 _ => null,
             };
         }
