@@ -27,6 +27,19 @@ namespace Zoo
         public bool IsInputFormat3dVariant1 => InputFormat3dVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickInputFormat3dVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.InputFormat3dVariant1? value)
+        {
+            value = InputFormat3dVariant1;
+            return IsInputFormat3dVariant1;
+        }
+
+        /// <summary>
         /// Binary glTF 2.0. We refer to this as glTF since that is how our customers refer to it, but this can also import binary glTF (glb).
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +55,19 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InputFormat3dVariant2))]
 #endif
         public bool IsInputFormat3dVariant2 => InputFormat3dVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickInputFormat3dVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.InputFormat3dVariant2? value)
+        {
+            value = InputFormat3dVariant2;
+            return IsInputFormat3dVariant2;
+        }
 
         /// <summary>
         /// Wavefront OBJ format.
@@ -61,6 +87,19 @@ namespace Zoo
         public bool IsInputFormat3dVariant3 => InputFormat3dVariant3 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickInputFormat3dVariant3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.InputFormat3dVariant3? value)
+        {
+            value = InputFormat3dVariant3;
+            return IsInputFormat3dVariant3;
+        }
+
+        /// <summary>
         /// The PLY Polygon File Format.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -76,6 +115,19 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InputFormat3dVariant4))]
 #endif
         public bool IsInputFormat3dVariant4 => InputFormat3dVariant4 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickInputFormat3dVariant4(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.InputFormat3dVariant4? value)
+        {
+            value = InputFormat3dVariant4;
+            return IsInputFormat3dVariant4;
+        }
 
         /// <summary>
         /// SolidWorks part (SLDPRT) format.
@@ -95,6 +147,19 @@ namespace Zoo
         public bool IsInputFormat3dVariant5 => InputFormat3dVariant5 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickInputFormat3dVariant5(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.InputFormat3dVariant5? value)
+        {
+            value = InputFormat3dVariant5;
+            return IsInputFormat3dVariant5;
+        }
+
+        /// <summary>
         /// ISO 10303-21 (STEP) format.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -112,6 +177,19 @@ namespace Zoo
         public bool IsInputFormat3dVariant6 => InputFormat3dVariant6 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickInputFormat3dVariant6(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.InputFormat3dVariant6? value)
+        {
+            value = InputFormat3dVariant6;
+            return IsInputFormat3dVariant6;
+        }
+
+        /// <summary>
         /// *ST**ereo**L**ithography format.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -127,6 +205,19 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InputFormat3dVariant7))]
 #endif
         public bool IsInputFormat3dVariant7 => InputFormat3dVariant7 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickInputFormat3dVariant7(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.InputFormat3dVariant7? value)
+        {
+            value = InputFormat3dVariant7;
+            return IsInputFormat3dVariant7;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -313,13 +404,13 @@ namespace Zoo
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Zoo.InputFormat3dVariant1?, TResult>? inputFormat3dVariant1 = null,
-            global::System.Func<global::Zoo.InputFormat3dVariant2?, TResult>? inputFormat3dVariant2 = null,
-            global::System.Func<global::Zoo.InputFormat3dVariant3?, TResult>? inputFormat3dVariant3 = null,
-            global::System.Func<global::Zoo.InputFormat3dVariant4?, TResult>? inputFormat3dVariant4 = null,
-            global::System.Func<global::Zoo.InputFormat3dVariant5?, TResult>? inputFormat3dVariant5 = null,
-            global::System.Func<global::Zoo.InputFormat3dVariant6?, TResult>? inputFormat3dVariant6 = null,
-            global::System.Func<global::Zoo.InputFormat3dVariant7?, TResult>? inputFormat3dVariant7 = null,
+            global::System.Func<global::Zoo.InputFormat3dVariant1, TResult>? inputFormat3dVariant1 = null,
+            global::System.Func<global::Zoo.InputFormat3dVariant2, TResult>? inputFormat3dVariant2 = null,
+            global::System.Func<global::Zoo.InputFormat3dVariant3, TResult>? inputFormat3dVariant3 = null,
+            global::System.Func<global::Zoo.InputFormat3dVariant4, TResult>? inputFormat3dVariant4 = null,
+            global::System.Func<global::Zoo.InputFormat3dVariant5, TResult>? inputFormat3dVariant5 = null,
+            global::System.Func<global::Zoo.InputFormat3dVariant6, TResult>? inputFormat3dVariant6 = null,
+            global::System.Func<global::Zoo.InputFormat3dVariant7, TResult>? inputFormat3dVariant7 = null,
             bool validate = true)
         {
             if (validate)
@@ -363,13 +454,67 @@ namespace Zoo
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Zoo.InputFormat3dVariant1?>? inputFormat3dVariant1 = null,
-            global::System.Action<global::Zoo.InputFormat3dVariant2?>? inputFormat3dVariant2 = null,
-            global::System.Action<global::Zoo.InputFormat3dVariant3?>? inputFormat3dVariant3 = null,
-            global::System.Action<global::Zoo.InputFormat3dVariant4?>? inputFormat3dVariant4 = null,
-            global::System.Action<global::Zoo.InputFormat3dVariant5?>? inputFormat3dVariant5 = null,
-            global::System.Action<global::Zoo.InputFormat3dVariant6?>? inputFormat3dVariant6 = null,
-            global::System.Action<global::Zoo.InputFormat3dVariant7?>? inputFormat3dVariant7 = null,
+            global::System.Action<global::Zoo.InputFormat3dVariant1>? inputFormat3dVariant1 = null,
+
+            global::System.Action<global::Zoo.InputFormat3dVariant2>? inputFormat3dVariant2 = null,
+
+            global::System.Action<global::Zoo.InputFormat3dVariant3>? inputFormat3dVariant3 = null,
+
+            global::System.Action<global::Zoo.InputFormat3dVariant4>? inputFormat3dVariant4 = null,
+
+            global::System.Action<global::Zoo.InputFormat3dVariant5>? inputFormat3dVariant5 = null,
+
+            global::System.Action<global::Zoo.InputFormat3dVariant6>? inputFormat3dVariant6 = null,
+
+            global::System.Action<global::Zoo.InputFormat3dVariant7>? inputFormat3dVariant7 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsInputFormat3dVariant1)
+            {
+                inputFormat3dVariant1?.Invoke(InputFormat3dVariant1!);
+            }
+            else if (IsInputFormat3dVariant2)
+            {
+                inputFormat3dVariant2?.Invoke(InputFormat3dVariant2!);
+            }
+            else if (IsInputFormat3dVariant3)
+            {
+                inputFormat3dVariant3?.Invoke(InputFormat3dVariant3!);
+            }
+            else if (IsInputFormat3dVariant4)
+            {
+                inputFormat3dVariant4?.Invoke(InputFormat3dVariant4!);
+            }
+            else if (IsInputFormat3dVariant5)
+            {
+                inputFormat3dVariant5?.Invoke(InputFormat3dVariant5!);
+            }
+            else if (IsInputFormat3dVariant6)
+            {
+                inputFormat3dVariant6?.Invoke(InputFormat3dVariant6!);
+            }
+            else if (IsInputFormat3dVariant7)
+            {
+                inputFormat3dVariant7?.Invoke(InputFormat3dVariant7!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Zoo.InputFormat3dVariant1>? inputFormat3dVariant1 = null,
+            global::System.Action<global::Zoo.InputFormat3dVariant2>? inputFormat3dVariant2 = null,
+            global::System.Action<global::Zoo.InputFormat3dVariant3>? inputFormat3dVariant3 = null,
+            global::System.Action<global::Zoo.InputFormat3dVariant4>? inputFormat3dVariant4 = null,
+            global::System.Action<global::Zoo.InputFormat3dVariant5>? inputFormat3dVariant5 = null,
+            global::System.Action<global::Zoo.InputFormat3dVariant6>? inputFormat3dVariant6 = null,
+            global::System.Action<global::Zoo.InputFormat3dVariant7>? inputFormat3dVariant7 = null,
             bool validate = true)
         {
             if (validate)

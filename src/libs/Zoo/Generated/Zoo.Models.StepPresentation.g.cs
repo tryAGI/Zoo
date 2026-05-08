@@ -27,6 +27,19 @@ namespace Zoo
         public bool IsStepPresentationVariant1 => StepPresentationVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickStepPresentationVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.StepPresentationVariant1? value)
+        {
+            value = StepPresentationVariant1;
+            return IsStepPresentationVariant1;
+        }
+
+        /// <summary>
         /// Add extra spaces to make the text more easily readable.<br/>
         /// This is the default setting.
         /// </summary>
@@ -43,6 +56,19 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StepPresentationVariant2))]
 #endif
         public bool IsStepPresentationVariant2 => StepPresentationVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickStepPresentationVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.StepPresentationVariant2? value)
+        {
+            value = StepPresentationVariant2;
+            return IsStepPresentationVariant2;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -144,6 +170,30 @@ namespace Zoo
         /// 
         /// </summary>
         public void Match(
+            global::System.Action<global::Zoo.StepPresentationVariant1?>? stepPresentationVariant1 = null,
+
+            global::System.Action<global::Zoo.StepPresentationVariant2?>? stepPresentationVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsStepPresentationVariant1)
+            {
+                stepPresentationVariant1?.Invoke(StepPresentationVariant1!);
+            }
+            else if (IsStepPresentationVariant2)
+            {
+                stepPresentationVariant2?.Invoke(StepPresentationVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
             global::System.Action<global::Zoo.StepPresentationVariant1?>? stepPresentationVariant1 = null,
             global::System.Action<global::Zoo.StepPresentationVariant2?>? stepPresentationVariant2 = null,
             bool validate = true)

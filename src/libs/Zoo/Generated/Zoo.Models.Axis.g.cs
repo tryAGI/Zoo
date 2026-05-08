@@ -29,6 +29,19 @@ namespace Zoo
         public bool IsAxisVariant1 => AxisVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAxisVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.AxisVariant1? value)
+        {
+            value = AxisVariant1;
+            return IsAxisVariant1;
+        }
+
+        /// <summary>
         /// 'Z' axis.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -44,6 +57,19 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AxisVariant2))]
 #endif
         public bool IsAxisVariant2 => AxisVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAxisVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.AxisVariant2? value)
+        {
+            value = AxisVariant2;
+            return IsAxisVariant2;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -145,6 +171,30 @@ namespace Zoo
         /// 
         /// </summary>
         public void Match(
+            global::System.Action<global::Zoo.AxisVariant1?>? axisVariant1 = null,
+
+            global::System.Action<global::Zoo.AxisVariant2?>? axisVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsAxisVariant1)
+            {
+                axisVariant1?.Invoke(AxisVariant1!);
+            }
+            else if (IsAxisVariant2)
+            {
+                axisVariant2?.Invoke(AxisVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
             global::System.Action<global::Zoo.AxisVariant1?>? axisVariant1 = null,
             global::System.Action<global::Zoo.AxisVariant2?>? axisVariant2 = null,
             bool validate = true)

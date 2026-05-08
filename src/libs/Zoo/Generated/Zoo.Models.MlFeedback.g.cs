@@ -27,6 +27,19 @@ namespace Zoo
         public bool IsMlFeedbackVariant1 => MlFeedbackVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickMlFeedbackVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.MlFeedbackVariant1? value)
+        {
+            value = MlFeedbackVariant1;
+            return IsMlFeedbackVariant1;
+        }
+
+        /// <summary>
         /// Thumbs down.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +55,19 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(MlFeedbackVariant2))]
 #endif
         public bool IsMlFeedbackVariant2 => MlFeedbackVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickMlFeedbackVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.MlFeedbackVariant2? value)
+        {
+            value = MlFeedbackVariant2;
+            return IsMlFeedbackVariant2;
+        }
 
         /// <summary>
         /// Accepted.
@@ -61,6 +87,19 @@ namespace Zoo
         public bool IsMlFeedbackVariant3 => MlFeedbackVariant3 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickMlFeedbackVariant3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.MlFeedbackVariant3? value)
+        {
+            value = MlFeedbackVariant3;
+            return IsMlFeedbackVariant3;
+        }
+
+        /// <summary>
         /// Rejected.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -76,6 +115,19 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(MlFeedbackVariant4))]
 #endif
         public bool IsMlFeedbackVariant4 => MlFeedbackVariant4 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickMlFeedbackVariant4(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.MlFeedbackVariant4? value)
+        {
+            value = MlFeedbackVariant4;
+            return IsMlFeedbackVariant4;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -231,6 +283,42 @@ namespace Zoo
         /// 
         /// </summary>
         public void Match(
+            global::System.Action<global::Zoo.MlFeedbackVariant1?>? mlFeedbackVariant1 = null,
+
+            global::System.Action<global::Zoo.MlFeedbackVariant2?>? mlFeedbackVariant2 = null,
+
+            global::System.Action<global::Zoo.MlFeedbackVariant3?>? mlFeedbackVariant3 = null,
+
+            global::System.Action<global::Zoo.MlFeedbackVariant4?>? mlFeedbackVariant4 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsMlFeedbackVariant1)
+            {
+                mlFeedbackVariant1?.Invoke(MlFeedbackVariant1!);
+            }
+            else if (IsMlFeedbackVariant2)
+            {
+                mlFeedbackVariant2?.Invoke(MlFeedbackVariant2!);
+            }
+            else if (IsMlFeedbackVariant3)
+            {
+                mlFeedbackVariant3?.Invoke(MlFeedbackVariant3!);
+            }
+            else if (IsMlFeedbackVariant4)
+            {
+                mlFeedbackVariant4?.Invoke(MlFeedbackVariant4!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
             global::System.Action<global::Zoo.MlFeedbackVariant1?>? mlFeedbackVariant1 = null,
             global::System.Action<global::Zoo.MlFeedbackVariant2?>? mlFeedbackVariant2 = null,
             global::System.Action<global::Zoo.MlFeedbackVariant3?>? mlFeedbackVariant3 = null,
