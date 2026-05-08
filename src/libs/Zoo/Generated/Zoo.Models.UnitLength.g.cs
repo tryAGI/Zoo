@@ -27,6 +27,19 @@ namespace Zoo
         public bool IsUnitLengthVariant1 => UnitLengthVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickUnitLengthVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.UnitLengthVariant1? value)
+        {
+            value = UnitLengthVariant1;
+            return IsUnitLengthVariant1;
+        }
+
+        /// <summary>
         /// Feet &lt;https://en.wikipedia.org/wiki/Foot_(unit)&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +55,19 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UnitLengthVariant2))]
 #endif
         public bool IsUnitLengthVariant2 => UnitLengthVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickUnitLengthVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.UnitLengthVariant2? value)
+        {
+            value = UnitLengthVariant2;
+            return IsUnitLengthVariant2;
+        }
 
         /// <summary>
         /// Inches &lt;https://en.wikipedia.org/wiki/Inch&gt;
@@ -61,6 +87,19 @@ namespace Zoo
         public bool IsUnitLengthVariant3 => UnitLengthVariant3 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickUnitLengthVariant3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.UnitLengthVariant3? value)
+        {
+            value = UnitLengthVariant3;
+            return IsUnitLengthVariant3;
+        }
+
+        /// <summary>
         /// Meters &lt;https://en.wikipedia.org/wiki/Meter&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -76,6 +115,19 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UnitLengthVariant4))]
 #endif
         public bool IsUnitLengthVariant4 => UnitLengthVariant4 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickUnitLengthVariant4(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.UnitLengthVariant4? value)
+        {
+            value = UnitLengthVariant4;
+            return IsUnitLengthVariant4;
+        }
 
         /// <summary>
         /// Millimeters &lt;https://en.wikipedia.org/wiki/Millimeter&gt;
@@ -95,6 +147,19 @@ namespace Zoo
         public bool IsUnitLengthVariant5 => UnitLengthVariant5 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickUnitLengthVariant5(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.UnitLengthVariant5? value)
+        {
+            value = UnitLengthVariant5;
+            return IsUnitLengthVariant5;
+        }
+
+        /// <summary>
         /// Yards &lt;https://en.wikipedia.org/wiki/Yard&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -110,6 +175,19 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UnitLengthVariant6))]
 #endif
         public bool IsUnitLengthVariant6 => UnitLengthVariant6 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickUnitLengthVariant6(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.UnitLengthVariant6? value)
+        {
+            value = UnitLengthVariant6;
+            return IsUnitLengthVariant6;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -319,6 +397,54 @@ namespace Zoo
         /// 
         /// </summary>
         public void Match(
+            global::System.Action<global::Zoo.UnitLengthVariant1?>? unitLengthVariant1 = null,
+
+            global::System.Action<global::Zoo.UnitLengthVariant2?>? unitLengthVariant2 = null,
+
+            global::System.Action<global::Zoo.UnitLengthVariant3?>? unitLengthVariant3 = null,
+
+            global::System.Action<global::Zoo.UnitLengthVariant4?>? unitLengthVariant4 = null,
+
+            global::System.Action<global::Zoo.UnitLengthVariant5?>? unitLengthVariant5 = null,
+
+            global::System.Action<global::Zoo.UnitLengthVariant6?>? unitLengthVariant6 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsUnitLengthVariant1)
+            {
+                unitLengthVariant1?.Invoke(UnitLengthVariant1!);
+            }
+            else if (IsUnitLengthVariant2)
+            {
+                unitLengthVariant2?.Invoke(UnitLengthVariant2!);
+            }
+            else if (IsUnitLengthVariant3)
+            {
+                unitLengthVariant3?.Invoke(UnitLengthVariant3!);
+            }
+            else if (IsUnitLengthVariant4)
+            {
+                unitLengthVariant4?.Invoke(UnitLengthVariant4!);
+            }
+            else if (IsUnitLengthVariant5)
+            {
+                unitLengthVariant5?.Invoke(UnitLengthVariant5!);
+            }
+            else if (IsUnitLengthVariant6)
+            {
+                unitLengthVariant6?.Invoke(UnitLengthVariant6!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
             global::System.Action<global::Zoo.UnitLengthVariant1?>? unitLengthVariant1 = null,
             global::System.Action<global::Zoo.UnitLengthVariant2?>? unitLengthVariant2 = null,
             global::System.Action<global::Zoo.UnitLengthVariant3?>? unitLengthVariant3 = null,

@@ -27,6 +27,19 @@ namespace Zoo
         public bool IsTextToCadResponseVariant1 => TextToCadResponseVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTextToCadResponseVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.TextToCadResponseVariant1? value)
+        {
+            value = TextToCadResponseVariant1;
+            return IsTextToCadResponseVariant1;
+        }
+
+        /// <summary>
         /// A response from a text to CAD iteration.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -44,6 +57,19 @@ namespace Zoo
         public bool IsTextToCadResponseVariant2 => TextToCadResponseVariant2 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTextToCadResponseVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.TextToCadResponseVariant2? value)
+        {
+            value = TextToCadResponseVariant2;
+            return IsTextToCadResponseVariant2;
+        }
+
+        /// <summary>
         /// A response from a text to CAD multi-file iteration.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -59,6 +85,19 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TextToCadResponseVariant3))]
 #endif
         public bool IsTextToCadResponseVariant3 => TextToCadResponseVariant3 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTextToCadResponseVariant3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.TextToCadResponseVariant3? value)
+        {
+            value = TextToCadResponseVariant3;
+            return IsTextToCadResponseVariant3;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -157,9 +196,9 @@ namespace Zoo
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Zoo.TextToCadResponseVariant1?, TResult>? textToCadResponseVariant1 = null,
-            global::System.Func<global::Zoo.TextToCadResponseVariant2?, TResult>? textToCadResponseVariant2 = null,
-            global::System.Func<global::Zoo.TextToCadResponseVariant3?, TResult>? textToCadResponseVariant3 = null,
+            global::System.Func<global::Zoo.TextToCadResponseVariant1, TResult>? textToCadResponseVariant1 = null,
+            global::System.Func<global::Zoo.TextToCadResponseVariant2, TResult>? textToCadResponseVariant2 = null,
+            global::System.Func<global::Zoo.TextToCadResponseVariant3, TResult>? textToCadResponseVariant3 = null,
             bool validate = true)
         {
             if (validate)
@@ -187,9 +226,39 @@ namespace Zoo
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Zoo.TextToCadResponseVariant1?>? textToCadResponseVariant1 = null,
-            global::System.Action<global::Zoo.TextToCadResponseVariant2?>? textToCadResponseVariant2 = null,
-            global::System.Action<global::Zoo.TextToCadResponseVariant3?>? textToCadResponseVariant3 = null,
+            global::System.Action<global::Zoo.TextToCadResponseVariant1>? textToCadResponseVariant1 = null,
+
+            global::System.Action<global::Zoo.TextToCadResponseVariant2>? textToCadResponseVariant2 = null,
+
+            global::System.Action<global::Zoo.TextToCadResponseVariant3>? textToCadResponseVariant3 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsTextToCadResponseVariant1)
+            {
+                textToCadResponseVariant1?.Invoke(TextToCadResponseVariant1!);
+            }
+            else if (IsTextToCadResponseVariant2)
+            {
+                textToCadResponseVariant2?.Invoke(TextToCadResponseVariant2!);
+            }
+            else if (IsTextToCadResponseVariant3)
+            {
+                textToCadResponseVariant3?.Invoke(TextToCadResponseVariant3!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Zoo.TextToCadResponseVariant1>? textToCadResponseVariant1 = null,
+            global::System.Action<global::Zoo.TextToCadResponseVariant2>? textToCadResponseVariant2 = null,
+            global::System.Action<global::Zoo.TextToCadResponseVariant3>? textToCadResponseVariant3 = null,
             bool validate = true)
         {
             if (validate)

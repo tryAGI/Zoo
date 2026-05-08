@@ -27,6 +27,19 @@ namespace Zoo
         public bool IsAsyncApiCallOutputVariant1 => AsyncApiCallOutputVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAsyncApiCallOutputVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.AsyncApiCallOutputVariant1? value)
+        {
+            value = AsyncApiCallOutputVariant1;
+            return IsAsyncApiCallOutputVariant1;
+        }
+
+        /// <summary>
         /// File center of mass.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +55,19 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AsyncApiCallOutputVariant2))]
 #endif
         public bool IsAsyncApiCallOutputVariant2 => AsyncApiCallOutputVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAsyncApiCallOutputVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.AsyncApiCallOutputVariant2? value)
+        {
+            value = AsyncApiCallOutputVariant2;
+            return IsAsyncApiCallOutputVariant2;
+        }
 
         /// <summary>
         /// A file mass.
@@ -61,6 +87,19 @@ namespace Zoo
         public bool IsAsyncApiCallOutputVariant3 => AsyncApiCallOutputVariant3 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAsyncApiCallOutputVariant3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.AsyncApiCallOutputVariant3? value)
+        {
+            value = AsyncApiCallOutputVariant3;
+            return IsAsyncApiCallOutputVariant3;
+        }
+
+        /// <summary>
         /// A file volume.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -76,6 +115,19 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AsyncApiCallOutputVariant4))]
 #endif
         public bool IsAsyncApiCallOutputVariant4 => AsyncApiCallOutputVariant4 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAsyncApiCallOutputVariant4(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.AsyncApiCallOutputVariant4? value)
+        {
+            value = AsyncApiCallOutputVariant4;
+            return IsAsyncApiCallOutputVariant4;
+        }
 
         /// <summary>
         /// A file density.
@@ -95,6 +147,19 @@ namespace Zoo
         public bool IsAsyncApiCallOutputVariant5 => AsyncApiCallOutputVariant5 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAsyncApiCallOutputVariant5(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.AsyncApiCallOutputVariant5? value)
+        {
+            value = AsyncApiCallOutputVariant5;
+            return IsAsyncApiCallOutputVariant5;
+        }
+
+        /// <summary>
         /// A file surface area.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -110,6 +175,19 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AsyncApiCallOutputVariant6))]
 #endif
         public bool IsAsyncApiCallOutputVariant6 => AsyncApiCallOutputVariant6 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAsyncApiCallOutputVariant6(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.AsyncApiCallOutputVariant6? value)
+        {
+            value = AsyncApiCallOutputVariant6;
+            return IsAsyncApiCallOutputVariant6;
+        }
 
         /// <summary>
         /// Text to CAD.
@@ -129,6 +207,19 @@ namespace Zoo
         public bool IsAsyncApiCallOutputVariant7 => AsyncApiCallOutputVariant7 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAsyncApiCallOutputVariant7(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.AsyncApiCallOutputVariant7? value)
+        {
+            value = AsyncApiCallOutputVariant7;
+            return IsAsyncApiCallOutputVariant7;
+        }
+
+        /// <summary>
         /// Text to CAD iteration.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -146,6 +237,19 @@ namespace Zoo
         public bool IsAsyncApiCallOutputVariant8 => AsyncApiCallOutputVariant8 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAsyncApiCallOutputVariant8(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.AsyncApiCallOutputVariant8? value)
+        {
+            value = AsyncApiCallOutputVariant8;
+            return IsAsyncApiCallOutputVariant8;
+        }
+
+        /// <summary>
         /// Text to CAD multi-file iteration.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -161,6 +265,19 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AsyncApiCallOutputVariant9))]
 #endif
         public bool IsAsyncApiCallOutputVariant9 => AsyncApiCallOutputVariant9 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAsyncApiCallOutputVariant9(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.AsyncApiCallOutputVariant9? value)
+        {
+            value = AsyncApiCallOutputVariant9;
+            return IsAsyncApiCallOutputVariant9;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -391,15 +508,15 @@ namespace Zoo
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Zoo.AsyncApiCallOutputVariant1?, TResult>? asyncApiCallOutputVariant1 = null,
-            global::System.Func<global::Zoo.AsyncApiCallOutputVariant2?, TResult>? asyncApiCallOutputVariant2 = null,
-            global::System.Func<global::Zoo.AsyncApiCallOutputVariant3?, TResult>? asyncApiCallOutputVariant3 = null,
-            global::System.Func<global::Zoo.AsyncApiCallOutputVariant4?, TResult>? asyncApiCallOutputVariant4 = null,
-            global::System.Func<global::Zoo.AsyncApiCallOutputVariant5?, TResult>? asyncApiCallOutputVariant5 = null,
-            global::System.Func<global::Zoo.AsyncApiCallOutputVariant6?, TResult>? asyncApiCallOutputVariant6 = null,
-            global::System.Func<global::Zoo.AsyncApiCallOutputVariant7?, TResult>? asyncApiCallOutputVariant7 = null,
-            global::System.Func<global::Zoo.AsyncApiCallOutputVariant8?, TResult>? asyncApiCallOutputVariant8 = null,
-            global::System.Func<global::Zoo.AsyncApiCallOutputVariant9?, TResult>? asyncApiCallOutputVariant9 = null,
+            global::System.Func<global::Zoo.AsyncApiCallOutputVariant1, TResult>? asyncApiCallOutputVariant1 = null,
+            global::System.Func<global::Zoo.AsyncApiCallOutputVariant2, TResult>? asyncApiCallOutputVariant2 = null,
+            global::System.Func<global::Zoo.AsyncApiCallOutputVariant3, TResult>? asyncApiCallOutputVariant3 = null,
+            global::System.Func<global::Zoo.AsyncApiCallOutputVariant4, TResult>? asyncApiCallOutputVariant4 = null,
+            global::System.Func<global::Zoo.AsyncApiCallOutputVariant5, TResult>? asyncApiCallOutputVariant5 = null,
+            global::System.Func<global::Zoo.AsyncApiCallOutputVariant6, TResult>? asyncApiCallOutputVariant6 = null,
+            global::System.Func<global::Zoo.AsyncApiCallOutputVariant7, TResult>? asyncApiCallOutputVariant7 = null,
+            global::System.Func<global::Zoo.AsyncApiCallOutputVariant8, TResult>? asyncApiCallOutputVariant8 = null,
+            global::System.Func<global::Zoo.AsyncApiCallOutputVariant9, TResult>? asyncApiCallOutputVariant9 = null,
             bool validate = true)
         {
             if (validate)
@@ -451,15 +568,81 @@ namespace Zoo
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Zoo.AsyncApiCallOutputVariant1?>? asyncApiCallOutputVariant1 = null,
-            global::System.Action<global::Zoo.AsyncApiCallOutputVariant2?>? asyncApiCallOutputVariant2 = null,
-            global::System.Action<global::Zoo.AsyncApiCallOutputVariant3?>? asyncApiCallOutputVariant3 = null,
-            global::System.Action<global::Zoo.AsyncApiCallOutputVariant4?>? asyncApiCallOutputVariant4 = null,
-            global::System.Action<global::Zoo.AsyncApiCallOutputVariant5?>? asyncApiCallOutputVariant5 = null,
-            global::System.Action<global::Zoo.AsyncApiCallOutputVariant6?>? asyncApiCallOutputVariant6 = null,
-            global::System.Action<global::Zoo.AsyncApiCallOutputVariant7?>? asyncApiCallOutputVariant7 = null,
-            global::System.Action<global::Zoo.AsyncApiCallOutputVariant8?>? asyncApiCallOutputVariant8 = null,
-            global::System.Action<global::Zoo.AsyncApiCallOutputVariant9?>? asyncApiCallOutputVariant9 = null,
+            global::System.Action<global::Zoo.AsyncApiCallOutputVariant1>? asyncApiCallOutputVariant1 = null,
+
+            global::System.Action<global::Zoo.AsyncApiCallOutputVariant2>? asyncApiCallOutputVariant2 = null,
+
+            global::System.Action<global::Zoo.AsyncApiCallOutputVariant3>? asyncApiCallOutputVariant3 = null,
+
+            global::System.Action<global::Zoo.AsyncApiCallOutputVariant4>? asyncApiCallOutputVariant4 = null,
+
+            global::System.Action<global::Zoo.AsyncApiCallOutputVariant5>? asyncApiCallOutputVariant5 = null,
+
+            global::System.Action<global::Zoo.AsyncApiCallOutputVariant6>? asyncApiCallOutputVariant6 = null,
+
+            global::System.Action<global::Zoo.AsyncApiCallOutputVariant7>? asyncApiCallOutputVariant7 = null,
+
+            global::System.Action<global::Zoo.AsyncApiCallOutputVariant8>? asyncApiCallOutputVariant8 = null,
+
+            global::System.Action<global::Zoo.AsyncApiCallOutputVariant9>? asyncApiCallOutputVariant9 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsAsyncApiCallOutputVariant1)
+            {
+                asyncApiCallOutputVariant1?.Invoke(AsyncApiCallOutputVariant1!);
+            }
+            else if (IsAsyncApiCallOutputVariant2)
+            {
+                asyncApiCallOutputVariant2?.Invoke(AsyncApiCallOutputVariant2!);
+            }
+            else if (IsAsyncApiCallOutputVariant3)
+            {
+                asyncApiCallOutputVariant3?.Invoke(AsyncApiCallOutputVariant3!);
+            }
+            else if (IsAsyncApiCallOutputVariant4)
+            {
+                asyncApiCallOutputVariant4?.Invoke(AsyncApiCallOutputVariant4!);
+            }
+            else if (IsAsyncApiCallOutputVariant5)
+            {
+                asyncApiCallOutputVariant5?.Invoke(AsyncApiCallOutputVariant5!);
+            }
+            else if (IsAsyncApiCallOutputVariant6)
+            {
+                asyncApiCallOutputVariant6?.Invoke(AsyncApiCallOutputVariant6!);
+            }
+            else if (IsAsyncApiCallOutputVariant7)
+            {
+                asyncApiCallOutputVariant7?.Invoke(AsyncApiCallOutputVariant7!);
+            }
+            else if (IsAsyncApiCallOutputVariant8)
+            {
+                asyncApiCallOutputVariant8?.Invoke(AsyncApiCallOutputVariant8!);
+            }
+            else if (IsAsyncApiCallOutputVariant9)
+            {
+                asyncApiCallOutputVariant9?.Invoke(AsyncApiCallOutputVariant9!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Zoo.AsyncApiCallOutputVariant1>? asyncApiCallOutputVariant1 = null,
+            global::System.Action<global::Zoo.AsyncApiCallOutputVariant2>? asyncApiCallOutputVariant2 = null,
+            global::System.Action<global::Zoo.AsyncApiCallOutputVariant3>? asyncApiCallOutputVariant3 = null,
+            global::System.Action<global::Zoo.AsyncApiCallOutputVariant4>? asyncApiCallOutputVariant4 = null,
+            global::System.Action<global::Zoo.AsyncApiCallOutputVariant5>? asyncApiCallOutputVariant5 = null,
+            global::System.Action<global::Zoo.AsyncApiCallOutputVariant6>? asyncApiCallOutputVariant6 = null,
+            global::System.Action<global::Zoo.AsyncApiCallOutputVariant7>? asyncApiCallOutputVariant7 = null,
+            global::System.Action<global::Zoo.AsyncApiCallOutputVariant8>? asyncApiCallOutputVariant8 = null,
+            global::System.Action<global::Zoo.AsyncApiCallOutputVariant9>? asyncApiCallOutputVariant9 = null,
             bool validate = true)
         {
             if (validate)

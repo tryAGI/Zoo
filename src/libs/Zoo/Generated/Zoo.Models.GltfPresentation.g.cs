@@ -27,6 +27,19 @@ namespace Zoo
         public bool IsGltfPresentationVariant1 => GltfPresentationVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickGltfPresentationVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.GltfPresentationVariant1? value)
+        {
+            value = GltfPresentationVariant1;
+            return IsGltfPresentationVariant1;
+        }
+
+        /// <summary>
         /// Expand the JSON into a more human readable format.<br/>
         /// This is the default setting.
         /// </summary>
@@ -43,6 +56,19 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GltfPresentationVariant2))]
 #endif
         public bool IsGltfPresentationVariant2 => GltfPresentationVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickGltfPresentationVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.GltfPresentationVariant2? value)
+        {
+            value = GltfPresentationVariant2;
+            return IsGltfPresentationVariant2;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -144,6 +170,30 @@ namespace Zoo
         /// 
         /// </summary>
         public void Match(
+            global::System.Action<global::Zoo.GltfPresentationVariant1?>? gltfPresentationVariant1 = null,
+
+            global::System.Action<global::Zoo.GltfPresentationVariant2?>? gltfPresentationVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsGltfPresentationVariant1)
+            {
+                gltfPresentationVariant1?.Invoke(GltfPresentationVariant1!);
+            }
+            else if (IsGltfPresentationVariant2)
+            {
+                gltfPresentationVariant2?.Invoke(GltfPresentationVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
             global::System.Action<global::Zoo.GltfPresentationVariant1?>? gltfPresentationVariant1 = null,
             global::System.Action<global::Zoo.GltfPresentationVariant2?>? gltfPresentationVariant2 = null,
             bool validate = true)

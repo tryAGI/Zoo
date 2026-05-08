@@ -27,6 +27,19 @@ namespace Zoo
         public bool IsUnitDensityVariant1 => UnitDensityVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickUnitDensityVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.UnitDensityVariant1? value)
+        {
+            value = UnitDensityVariant1;
+            return IsUnitDensityVariant1;
+        }
+
+        /// <summary>
         /// Kilograms per cubic meter.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +55,19 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UnitDensityVariant2))]
 #endif
         public bool IsUnitDensityVariant2 => UnitDensityVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickUnitDensityVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.UnitDensityVariant2? value)
+        {
+            value = UnitDensityVariant2;
+            return IsUnitDensityVariant2;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -143,6 +169,30 @@ namespace Zoo
         /// 
         /// </summary>
         public void Match(
+            global::System.Action<global::Zoo.UnitDensityVariant1?>? unitDensityVariant1 = null,
+
+            global::System.Action<global::Zoo.UnitDensityVariant2?>? unitDensityVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsUnitDensityVariant1)
+            {
+                unitDensityVariant1?.Invoke(UnitDensityVariant1!);
+            }
+            else if (IsUnitDensityVariant2)
+            {
+                unitDensityVariant2?.Invoke(UnitDensityVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
             global::System.Action<global::Zoo.UnitDensityVariant1?>? unitDensityVariant1 = null,
             global::System.Action<global::Zoo.UnitDensityVariant2?>? unitDensityVariant2 = null,
             bool validate = true)

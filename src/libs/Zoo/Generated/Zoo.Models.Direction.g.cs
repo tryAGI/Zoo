@@ -27,6 +27,19 @@ namespace Zoo
         public bool IsDirectionVariant1 => DirectionVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickDirectionVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.DirectionVariant1? value)
+        {
+            value = DirectionVariant1;
+            return IsDirectionVariant1;
+        }
+
+        /// <summary>
         /// Decreasing numbers.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +55,19 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(DirectionVariant2))]
 #endif
         public bool IsDirectionVariant2 => DirectionVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickDirectionVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.DirectionVariant2? value)
+        {
+            value = DirectionVariant2;
+            return IsDirectionVariant2;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -143,6 +169,30 @@ namespace Zoo
         /// 
         /// </summary>
         public void Match(
+            global::System.Action<global::Zoo.DirectionVariant1?>? directionVariant1 = null,
+
+            global::System.Action<global::Zoo.DirectionVariant2?>? directionVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsDirectionVariant1)
+            {
+                directionVariant1?.Invoke(DirectionVariant1!);
+            }
+            else if (IsDirectionVariant2)
+            {
+                directionVariant2?.Invoke(DirectionVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
             global::System.Action<global::Zoo.DirectionVariant1?>? directionVariant1 = null,
             global::System.Action<global::Zoo.DirectionVariant2?>? directionVariant2 = null,
             bool validate = true)

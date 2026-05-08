@@ -27,6 +27,19 @@ namespace Zoo
         public bool IsUnitAreaVariant1 => UnitAreaVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickUnitAreaVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.UnitAreaVariant1? value)
+        {
+            value = UnitAreaVariant1;
+            return IsUnitAreaVariant1;
+        }
+
+        /// <summary>
         /// Square decimeters &lt;https://en.wikipedia.org/wiki/Square_decimeter&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +55,19 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UnitAreaVariant2))]
 #endif
         public bool IsUnitAreaVariant2 => UnitAreaVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickUnitAreaVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.UnitAreaVariant2? value)
+        {
+            value = UnitAreaVariant2;
+            return IsUnitAreaVariant2;
+        }
 
         /// <summary>
         /// Square feet &lt;https://en.wikipedia.org/wiki/Square_foot&gt;
@@ -61,6 +87,19 @@ namespace Zoo
         public bool IsUnitAreaVariant3 => UnitAreaVariant3 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickUnitAreaVariant3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.UnitAreaVariant3? value)
+        {
+            value = UnitAreaVariant3;
+            return IsUnitAreaVariant3;
+        }
+
+        /// <summary>
         /// Square inches &lt;https://en.wikipedia.org/wiki/Square_inch&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -76,6 +115,19 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UnitAreaVariant4))]
 #endif
         public bool IsUnitAreaVariant4 => UnitAreaVariant4 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickUnitAreaVariant4(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.UnitAreaVariant4? value)
+        {
+            value = UnitAreaVariant4;
+            return IsUnitAreaVariant4;
+        }
 
         /// <summary>
         /// Square kilometers &lt;https://en.wikipedia.org/wiki/Square_kilometer&gt;
@@ -95,6 +147,19 @@ namespace Zoo
         public bool IsUnitAreaVariant5 => UnitAreaVariant5 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickUnitAreaVariant5(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.UnitAreaVariant5? value)
+        {
+            value = UnitAreaVariant5;
+            return IsUnitAreaVariant5;
+        }
+
+        /// <summary>
         /// Square meters &lt;https://en.wikipedia.org/wiki/Square_meter&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -110,6 +175,19 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UnitAreaVariant6))]
 #endif
         public bool IsUnitAreaVariant6 => UnitAreaVariant6 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickUnitAreaVariant6(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.UnitAreaVariant6? value)
+        {
+            value = UnitAreaVariant6;
+            return IsUnitAreaVariant6;
+        }
 
         /// <summary>
         /// Square millimeters &lt;https://en.wikipedia.org/wiki/Square_millimeter&gt;
@@ -129,6 +207,19 @@ namespace Zoo
         public bool IsUnitAreaVariant7 => UnitAreaVariant7 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickUnitAreaVariant7(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.UnitAreaVariant7? value)
+        {
+            value = UnitAreaVariant7;
+            return IsUnitAreaVariant7;
+        }
+
+        /// <summary>
         /// Square yards &lt;https://en.wikipedia.org/wiki/Square_mile&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -144,6 +235,19 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UnitAreaVariant8))]
 #endif
         public bool IsUnitAreaVariant8 => UnitAreaVariant8 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickUnitAreaVariant8(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.UnitAreaVariant8? value)
+        {
+            value = UnitAreaVariant8;
+            return IsUnitAreaVariant8;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -407,6 +511,66 @@ namespace Zoo
         /// 
         /// </summary>
         public void Match(
+            global::System.Action<global::Zoo.UnitAreaVariant1?>? unitAreaVariant1 = null,
+
+            global::System.Action<global::Zoo.UnitAreaVariant2?>? unitAreaVariant2 = null,
+
+            global::System.Action<global::Zoo.UnitAreaVariant3?>? unitAreaVariant3 = null,
+
+            global::System.Action<global::Zoo.UnitAreaVariant4?>? unitAreaVariant4 = null,
+
+            global::System.Action<global::Zoo.UnitAreaVariant5?>? unitAreaVariant5 = null,
+
+            global::System.Action<global::Zoo.UnitAreaVariant6?>? unitAreaVariant6 = null,
+
+            global::System.Action<global::Zoo.UnitAreaVariant7?>? unitAreaVariant7 = null,
+
+            global::System.Action<global::Zoo.UnitAreaVariant8?>? unitAreaVariant8 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsUnitAreaVariant1)
+            {
+                unitAreaVariant1?.Invoke(UnitAreaVariant1!);
+            }
+            else if (IsUnitAreaVariant2)
+            {
+                unitAreaVariant2?.Invoke(UnitAreaVariant2!);
+            }
+            else if (IsUnitAreaVariant3)
+            {
+                unitAreaVariant3?.Invoke(UnitAreaVariant3!);
+            }
+            else if (IsUnitAreaVariant4)
+            {
+                unitAreaVariant4?.Invoke(UnitAreaVariant4!);
+            }
+            else if (IsUnitAreaVariant5)
+            {
+                unitAreaVariant5?.Invoke(UnitAreaVariant5!);
+            }
+            else if (IsUnitAreaVariant6)
+            {
+                unitAreaVariant6?.Invoke(UnitAreaVariant6!);
+            }
+            else if (IsUnitAreaVariant7)
+            {
+                unitAreaVariant7?.Invoke(UnitAreaVariant7!);
+            }
+            else if (IsUnitAreaVariant8)
+            {
+                unitAreaVariant8?.Invoke(UnitAreaVariant8!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
             global::System.Action<global::Zoo.UnitAreaVariant1?>? unitAreaVariant1 = null,
             global::System.Action<global::Zoo.UnitAreaVariant2?>? unitAreaVariant2 = null,
             global::System.Action<global::Zoo.UnitAreaVariant3?>? unitAreaVariant3 = null,

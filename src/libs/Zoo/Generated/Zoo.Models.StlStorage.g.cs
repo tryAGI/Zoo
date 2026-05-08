@@ -27,6 +27,19 @@ namespace Zoo
         public bool IsStlStorageVariant1 => StlStorageVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickStlStorageVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.StlStorageVariant1? value)
+        {
+            value = StlStorageVariant1;
+            return IsStlStorageVariant1;
+        }
+
+        /// <summary>
         /// Binary STL encoding.<br/>
         /// This is the default setting.
         /// </summary>
@@ -43,6 +56,19 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StlStorageVariant2))]
 #endif
         public bool IsStlStorageVariant2 => StlStorageVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickStlStorageVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.StlStorageVariant2? value)
+        {
+            value = StlStorageVariant2;
+            return IsStlStorageVariant2;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -144,6 +170,30 @@ namespace Zoo
         /// 
         /// </summary>
         public void Match(
+            global::System.Action<global::Zoo.StlStorageVariant1?>? stlStorageVariant1 = null,
+
+            global::System.Action<global::Zoo.StlStorageVariant2?>? stlStorageVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsStlStorageVariant1)
+            {
+                stlStorageVariant1?.Invoke(StlStorageVariant1!);
+            }
+            else if (IsStlStorageVariant2)
+            {
+                stlStorageVariant2?.Invoke(StlStorageVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
             global::System.Action<global::Zoo.StlStorageVariant1?>? stlStorageVariant1 = null,
             global::System.Action<global::Zoo.StlStorageVariant2?>? stlStorageVariant2 = null,
             bool validate = true)

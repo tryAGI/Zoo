@@ -27,6 +27,19 @@ namespace Zoo
         public bool IsTextToCadModelVariant1 => TextToCadModelVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTextToCadModelVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.TextToCadModelVariant1? value)
+        {
+            value = TextToCadModelVariant1;
+            return IsTextToCadModelVariant1;
+        }
+
+        /// <summary>
         /// KCL.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -44,6 +57,19 @@ namespace Zoo
         public bool IsTextToCadModelVariant2 => TextToCadModelVariant2 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTextToCadModelVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.TextToCadModelVariant2? value)
+        {
+            value = TextToCadModelVariant2;
+            return IsTextToCadModelVariant2;
+        }
+
+        /// <summary>
         /// KCL iteration.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -59,6 +85,19 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TextToCadModelVariant3))]
 #endif
         public bool IsTextToCadModelVariant3 => TextToCadModelVariant3 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTextToCadModelVariant3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.TextToCadModelVariant3? value)
+        {
+            value = TextToCadModelVariant3;
+            return IsTextToCadModelVariant3;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -187,6 +226,36 @@ namespace Zoo
         /// 
         /// </summary>
         public void Match(
+            global::System.Action<global::Zoo.TextToCadModelVariant1?>? textToCadModelVariant1 = null,
+
+            global::System.Action<global::Zoo.TextToCadModelVariant2?>? textToCadModelVariant2 = null,
+
+            global::System.Action<global::Zoo.TextToCadModelVariant3?>? textToCadModelVariant3 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsTextToCadModelVariant1)
+            {
+                textToCadModelVariant1?.Invoke(TextToCadModelVariant1!);
+            }
+            else if (IsTextToCadModelVariant2)
+            {
+                textToCadModelVariant2?.Invoke(TextToCadModelVariant2!);
+            }
+            else if (IsTextToCadModelVariant3)
+            {
+                textToCadModelVariant3?.Invoke(TextToCadModelVariant3!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
             global::System.Action<global::Zoo.TextToCadModelVariant1?>? textToCadModelVariant1 = null,
             global::System.Action<global::Zoo.TextToCadModelVariant2?>? textToCadModelVariant2 = null,
             global::System.Action<global::Zoo.TextToCadModelVariant3?>? textToCadModelVariant3 = null,

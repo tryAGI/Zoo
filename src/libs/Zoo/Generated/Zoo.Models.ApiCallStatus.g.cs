@@ -27,6 +27,19 @@ namespace Zoo
         public bool IsApiCallStatusVariant1 => ApiCallStatusVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickApiCallStatusVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.ApiCallStatusVariant1? value)
+        {
+            value = ApiCallStatusVariant1;
+            return IsApiCallStatusVariant1;
+        }
+
+        /// <summary>
         /// The async API call was uploaded to be converted.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +55,19 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ApiCallStatusVariant2))]
 #endif
         public bool IsApiCallStatusVariant2 => ApiCallStatusVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickApiCallStatusVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.ApiCallStatusVariant2? value)
+        {
+            value = ApiCallStatusVariant2;
+            return IsApiCallStatusVariant2;
+        }
 
         /// <summary>
         /// The async API call is in progress.
@@ -61,6 +87,19 @@ namespace Zoo
         public bool IsApiCallStatusVariant3 => ApiCallStatusVariant3 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickApiCallStatusVariant3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.ApiCallStatusVariant3? value)
+        {
+            value = ApiCallStatusVariant3;
+            return IsApiCallStatusVariant3;
+        }
+
+        /// <summary>
         /// The async API call has completed.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -78,6 +117,19 @@ namespace Zoo
         public bool IsApiCallStatusVariant4 => ApiCallStatusVariant4 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickApiCallStatusVariant4(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.ApiCallStatusVariant4? value)
+        {
+            value = ApiCallStatusVariant4;
+            return IsApiCallStatusVariant4;
+        }
+
+        /// <summary>
         /// The async API call has failed.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -93,6 +145,19 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ApiCallStatusVariant5))]
 #endif
         public bool IsApiCallStatusVariant5 => ApiCallStatusVariant5 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickApiCallStatusVariant5(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.ApiCallStatusVariant5? value)
+        {
+            value = ApiCallStatusVariant5;
+            return IsApiCallStatusVariant5;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -275,6 +340,48 @@ namespace Zoo
         /// 
         /// </summary>
         public void Match(
+            global::System.Action<global::Zoo.ApiCallStatusVariant1?>? apiCallStatusVariant1 = null,
+
+            global::System.Action<global::Zoo.ApiCallStatusVariant2?>? apiCallStatusVariant2 = null,
+
+            global::System.Action<global::Zoo.ApiCallStatusVariant3?>? apiCallStatusVariant3 = null,
+
+            global::System.Action<global::Zoo.ApiCallStatusVariant4?>? apiCallStatusVariant4 = null,
+
+            global::System.Action<global::Zoo.ApiCallStatusVariant5?>? apiCallStatusVariant5 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsApiCallStatusVariant1)
+            {
+                apiCallStatusVariant1?.Invoke(ApiCallStatusVariant1!);
+            }
+            else if (IsApiCallStatusVariant2)
+            {
+                apiCallStatusVariant2?.Invoke(ApiCallStatusVariant2!);
+            }
+            else if (IsApiCallStatusVariant3)
+            {
+                apiCallStatusVariant3?.Invoke(ApiCallStatusVariant3!);
+            }
+            else if (IsApiCallStatusVariant4)
+            {
+                apiCallStatusVariant4?.Invoke(ApiCallStatusVariant4!);
+            }
+            else if (IsApiCallStatusVariant5)
+            {
+                apiCallStatusVariant5?.Invoke(ApiCallStatusVariant5!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
             global::System.Action<global::Zoo.ApiCallStatusVariant1?>? apiCallStatusVariant1 = null,
             global::System.Action<global::Zoo.ApiCallStatusVariant2?>? apiCallStatusVariant2 = null,
             global::System.Action<global::Zoo.ApiCallStatusVariant3?>? apiCallStatusVariant3 = null,
