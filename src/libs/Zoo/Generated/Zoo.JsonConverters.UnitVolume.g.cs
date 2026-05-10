@@ -348,7 +348,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (unitVolumeVariant1 == null && unitVolumeVariant2 == null && unitVolumeVariant3 == null && unitVolumeVariant4 == null && unitVolumeVariant5 == null && unitVolumeVariant6 == null && unitVolumeVariant7 == null && unitVolumeVariant8 == null && unitVolumeVariant9 == null && unitVolumeVariant10 == null)
+            {
                 try
                 {
 
@@ -362,7 +365,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (unitVolumeVariant1 == null && unitVolumeVariant2 == null && unitVolumeVariant3 == null && unitVolumeVariant4 == null && unitVolumeVariant5 == null && unitVolumeVariant6 == null && unitVolumeVariant7 == null && unitVolumeVariant8 == null && unitVolumeVariant9 == null && unitVolumeVariant10 == null)
+            {
                 try
                 {
 
@@ -376,7 +382,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (unitVolumeVariant1 == null && unitVolumeVariant2 == null && unitVolumeVariant3 == null && unitVolumeVariant4 == null && unitVolumeVariant5 == null && unitVolumeVariant6 == null && unitVolumeVariant7 == null && unitVolumeVariant8 == null && unitVolumeVariant9 == null && unitVolumeVariant10 == null)
+            {
                 try
                 {
 
@@ -390,7 +399,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (unitVolumeVariant1 == null && unitVolumeVariant2 == null && unitVolumeVariant3 == null && unitVolumeVariant4 == null && unitVolumeVariant5 == null && unitVolumeVariant6 == null && unitVolumeVariant7 == null && unitVolumeVariant8 == null && unitVolumeVariant9 == null && unitVolumeVariant10 == null)
+            {
                 try
                 {
 
@@ -404,7 +416,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (unitVolumeVariant1 == null && unitVolumeVariant2 == null && unitVolumeVariant3 == null && unitVolumeVariant4 == null && unitVolumeVariant5 == null && unitVolumeVariant6 == null && unitVolumeVariant7 == null && unitVolumeVariant8 == null && unitVolumeVariant9 == null && unitVolumeVariant10 == null)
+            {
                 try
                 {
 
@@ -418,7 +433,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (unitVolumeVariant1 == null && unitVolumeVariant2 == null && unitVolumeVariant3 == null && unitVolumeVariant4 == null && unitVolumeVariant5 == null && unitVolumeVariant6 == null && unitVolumeVariant7 == null && unitVolumeVariant8 == null && unitVolumeVariant9 == null && unitVolumeVariant10 == null)
+            {
                 try
                 {
 
@@ -432,7 +450,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (unitVolumeVariant1 == null && unitVolumeVariant2 == null && unitVolumeVariant3 == null && unitVolumeVariant4 == null && unitVolumeVariant5 == null && unitVolumeVariant6 == null && unitVolumeVariant7 == null && unitVolumeVariant8 == null && unitVolumeVariant9 == null && unitVolumeVariant10 == null)
+            {
                 try
                 {
 
@@ -446,7 +467,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (unitVolumeVariant1 == null && unitVolumeVariant2 == null && unitVolumeVariant3 == null && unitVolumeVariant4 == null && unitVolumeVariant5 == null && unitVolumeVariant6 == null && unitVolumeVariant7 == null && unitVolumeVariant8 == null && unitVolumeVariant9 == null && unitVolumeVariant10 == null)
+            {
                 try
                 {
 
@@ -460,7 +484,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (unitVolumeVariant1 == null && unitVolumeVariant2 == null && unitVolumeVariant3 == null && unitVolumeVariant4 == null && unitVolumeVariant5 == null && unitVolumeVariant6 == null && unitVolumeVariant7 == null && unitVolumeVariant8 == null && unitVolumeVariant9 == null && unitVolumeVariant10 == null)
+            {
                 try
                 {
 

@@ -108,7 +108,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (gltfPresentationVariant1 == null && gltfPresentationVariant2 == null)
+            {
                 try
                 {
 

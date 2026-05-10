@@ -258,7 +258,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null)
+            {
                 try
                 {
 
@@ -272,7 +275,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null)
+            {
                 try
                 {
 
@@ -286,7 +292,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null)
+            {
                 try
                 {
 
@@ -300,7 +309,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null)
+            {
                 try
                 {
 
@@ -314,7 +326,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null)
+            {
                 try
                 {
 
@@ -328,7 +343,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null)
+            {
                 try
                 {
 

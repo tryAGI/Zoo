@@ -138,7 +138,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (unitMassVariant1 == null && unitMassVariant2 == null && unitMassVariant3 == null)
+            {
                 try
                 {
 
@@ -152,7 +155,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (unitMassVariant1 == null && unitMassVariant2 == null && unitMassVariant3 == null)
+            {
                 try
                 {
 
