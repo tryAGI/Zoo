@@ -40,6 +40,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.FileExportFormatVariant1 PickFileExportFormatVariant1() => IsFileExportFormatVariant1
+            ? FileExportFormatVariant1!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FileExportFormatVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Binary glTF 2.0.<br/>
         /// This is a single binary with .glb extension.<br/>
         /// This is better if you want a compressed format as opposed to the human readable glTF that lacks compression.
@@ -70,6 +77,13 @@ namespace Zoo
             value = FileExportFormatVariant2;
             return IsFileExportFormatVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.FileExportFormatVariant2 PickFileExportFormatVariant2() => IsFileExportFormatVariant2
+            ? FileExportFormatVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FileExportFormatVariant2' but the value was {ToString()}.");
 
         /// <summary>
         /// glTF 2.0. Embedded glTF 2.0 (pretty printed).<br/>
@@ -105,6 +119,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.FileExportFormatVariant3 PickFileExportFormatVariant3() => IsFileExportFormatVariant3
+            ? FileExportFormatVariant3!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FileExportFormatVariant3' but the value was {ToString()}.");
+
+        /// <summary>
         /// The OBJ file format. &lt;https://en.wikipedia.org/wiki/Wavefront_.obj_file&gt; It may or may not have an an attached material (mtl // mtllib) within the file, but we interact with it as if it does not.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -133,6 +154,13 @@ namespace Zoo
             value = FileExportFormatVariant4;
             return IsFileExportFormatVariant4;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.FileExportFormatVariant4 PickFileExportFormatVariant4() => IsFileExportFormatVariant4
+            ? FileExportFormatVariant4!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FileExportFormatVariant4' but the value was {ToString()}.");
 
         /// <summary>
         /// The PLY file format. &lt;https://en.wikipedia.org/wiki/PLY_(file_format)&gt;
@@ -165,6 +193,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.FileExportFormatVariant5 PickFileExportFormatVariant5() => IsFileExportFormatVariant5
+            ? FileExportFormatVariant5!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FileExportFormatVariant5' but the value was {ToString()}.");
+
+        /// <summary>
         /// The STEP file format. &lt;https://en.wikipedia.org/wiki/ISO_10303-21&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -195,6 +230,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.FileExportFormatVariant6 PickFileExportFormatVariant6() => IsFileExportFormatVariant6
+            ? FileExportFormatVariant6!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FileExportFormatVariant6' but the value was {ToString()}.");
+
+        /// <summary>
         /// The STL file format. &lt;https://en.wikipedia.org/wiki/STL_(file_format)&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -223,6 +265,13 @@ namespace Zoo
             value = FileExportFormatVariant7;
             return IsFileExportFormatVariant7;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.FileExportFormatVariant7 PickFileExportFormatVariant7() => IsFileExportFormatVariant7
+            ? FileExportFormatVariant7!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FileExportFormatVariant7' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -240,6 +289,11 @@ namespace Zoo
         {
             FileExportFormatVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FileExportFormat FromFileExportFormatVariant1(global::Zoo.FileExportFormatVariant1? value) => new FileExportFormat(value);
 
         /// <summary>
         /// 
@@ -262,6 +316,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static FileExportFormat FromFileExportFormatVariant2(global::Zoo.FileExportFormatVariant2? value) => new FileExportFormat(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FileExportFormat(global::Zoo.FileExportFormatVariant3 value) => new FileExportFormat((global::Zoo.FileExportFormatVariant3?)value);
 
         /// <summary>
@@ -276,6 +335,11 @@ namespace Zoo
         {
             FileExportFormatVariant3 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FileExportFormat FromFileExportFormatVariant3(global::Zoo.FileExportFormatVariant3? value) => new FileExportFormat(value);
 
         /// <summary>
         /// 
@@ -298,6 +362,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static FileExportFormat FromFileExportFormatVariant4(global::Zoo.FileExportFormatVariant4? value) => new FileExportFormat(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FileExportFormat(global::Zoo.FileExportFormatVariant5 value) => new FileExportFormat((global::Zoo.FileExportFormatVariant5?)value);
 
         /// <summary>
@@ -312,6 +381,11 @@ namespace Zoo
         {
             FileExportFormatVariant5 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FileExportFormat FromFileExportFormatVariant5(global::Zoo.FileExportFormatVariant5? value) => new FileExportFormat(value);
 
         /// <summary>
         /// 
@@ -334,6 +408,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static FileExportFormat FromFileExportFormatVariant6(global::Zoo.FileExportFormatVariant6? value) => new FileExportFormat(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FileExportFormat(global::Zoo.FileExportFormatVariant7 value) => new FileExportFormat((global::Zoo.FileExportFormatVariant7?)value);
 
         /// <summary>
@@ -348,6 +427,11 @@ namespace Zoo
         {
             FileExportFormatVariant7 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FileExportFormat FromFileExportFormatVariant7(global::Zoo.FileExportFormatVariant7? value) => new FileExportFormat(value);
 
         /// <summary>
         /// 

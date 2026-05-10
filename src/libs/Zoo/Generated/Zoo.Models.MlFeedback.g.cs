@@ -40,6 +40,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.MlFeedbackVariant1 PickMlFeedbackVariant1() => IsMlFeedbackVariant1
+            ? MlFeedbackVariant1!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'MlFeedbackVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Thumbs down.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Zoo
             value = MlFeedbackVariant2;
             return IsMlFeedbackVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.MlFeedbackVariant2 PickMlFeedbackVariant2() => IsMlFeedbackVariant2
+            ? MlFeedbackVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'MlFeedbackVariant2' but the value was {ToString()}.");
 
         /// <summary>
         /// Accepted.
@@ -100,6 +114,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.MlFeedbackVariant3 PickMlFeedbackVariant3() => IsMlFeedbackVariant3
+            ? MlFeedbackVariant3!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'MlFeedbackVariant3' but the value was {ToString()}.");
+
+        /// <summary>
         /// Rejected.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -128,6 +149,13 @@ namespace Zoo
             value = MlFeedbackVariant4;
             return IsMlFeedbackVariant4;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.MlFeedbackVariant4 PickMlFeedbackVariant4() => IsMlFeedbackVariant4
+            ? MlFeedbackVariant4!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'MlFeedbackVariant4' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -145,6 +173,11 @@ namespace Zoo
         {
             MlFeedbackVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static MlFeedback FromMlFeedbackVariant1(global::Zoo.MlFeedbackVariant1? value) => new MlFeedback(value);
 
         /// <summary>
         /// 
@@ -167,6 +200,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static MlFeedback FromMlFeedbackVariant2(global::Zoo.MlFeedbackVariant2? value) => new MlFeedback(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator MlFeedback(global::Zoo.MlFeedbackVariant3 value) => new MlFeedback((global::Zoo.MlFeedbackVariant3?)value);
 
         /// <summary>
@@ -185,6 +223,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static MlFeedback FromMlFeedbackVariant3(global::Zoo.MlFeedbackVariant3? value) => new MlFeedback(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator MlFeedback(global::Zoo.MlFeedbackVariant4 value) => new MlFeedback((global::Zoo.MlFeedbackVariant4?)value);
 
         /// <summary>
@@ -199,6 +242,11 @@ namespace Zoo
         {
             MlFeedbackVariant4 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static MlFeedback FromMlFeedbackVariant4(global::Zoo.MlFeedbackVariant4? value) => new MlFeedback(value);
 
         /// <summary>
         /// 

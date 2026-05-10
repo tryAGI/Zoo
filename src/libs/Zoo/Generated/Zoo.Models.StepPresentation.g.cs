@@ -40,6 +40,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.StepPresentationVariant1 PickStepPresentationVariant1() => IsStepPresentationVariant1
+            ? StepPresentationVariant1!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'StepPresentationVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Add extra spaces to make the text more easily readable.<br/>
         /// This is the default setting.
         /// </summary>
@@ -69,6 +76,13 @@ namespace Zoo
             value = StepPresentationVariant2;
             return IsStepPresentationVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.StepPresentationVariant2 PickStepPresentationVariant2() => IsStepPresentationVariant2
+            ? StepPresentationVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'StepPresentationVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -90,6 +104,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static StepPresentation FromStepPresentationVariant1(global::Zoo.StepPresentationVariant1? value) => new StepPresentation(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator StepPresentation(global::Zoo.StepPresentationVariant2 value) => new StepPresentation((global::Zoo.StepPresentationVariant2?)value);
 
         /// <summary>
@@ -104,6 +123,11 @@ namespace Zoo
         {
             StepPresentationVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static StepPresentation FromStepPresentationVariant2(global::Zoo.StepPresentationVariant2? value) => new StepPresentation(value);
 
         /// <summary>
         /// 

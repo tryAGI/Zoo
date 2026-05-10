@@ -40,6 +40,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.DirectionVariant1 PickDirectionVariant1() => IsDirectionVariant1
+            ? DirectionVariant1!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'DirectionVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Decreasing numbers.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Zoo
             value = DirectionVariant2;
             return IsDirectionVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.DirectionVariant2 PickDirectionVariant2() => IsDirectionVariant2
+            ? DirectionVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'DirectionVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -89,6 +103,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static Direction FromDirectionVariant1(global::Zoo.DirectionVariant1? value) => new Direction(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator Direction(global::Zoo.DirectionVariant2 value) => new Direction((global::Zoo.DirectionVariant2?)value);
 
         /// <summary>
@@ -103,6 +122,11 @@ namespace Zoo
         {
             DirectionVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Direction FromDirectionVariant2(global::Zoo.DirectionVariant2? value) => new Direction(value);
 
         /// <summary>
         /// 

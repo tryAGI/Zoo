@@ -40,6 +40,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.ApiCallStatusVariant1 PickApiCallStatusVariant1() => IsApiCallStatusVariant1
+            ? ApiCallStatusVariant1!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ApiCallStatusVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// The async API call was uploaded to be converted.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Zoo
             value = ApiCallStatusVariant2;
             return IsApiCallStatusVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.ApiCallStatusVariant2 PickApiCallStatusVariant2() => IsApiCallStatusVariant2
+            ? ApiCallStatusVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ApiCallStatusVariant2' but the value was {ToString()}.");
 
         /// <summary>
         /// The async API call is in progress.
@@ -100,6 +114,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.ApiCallStatusVariant3 PickApiCallStatusVariant3() => IsApiCallStatusVariant3
+            ? ApiCallStatusVariant3!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ApiCallStatusVariant3' but the value was {ToString()}.");
+
+        /// <summary>
         /// The async API call has completed.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -130,6 +151,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.ApiCallStatusVariant4 PickApiCallStatusVariant4() => IsApiCallStatusVariant4
+            ? ApiCallStatusVariant4!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ApiCallStatusVariant4' but the value was {ToString()}.");
+
+        /// <summary>
         /// The async API call has failed.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -158,6 +186,13 @@ namespace Zoo
             value = ApiCallStatusVariant5;
             return IsApiCallStatusVariant5;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.ApiCallStatusVariant5 PickApiCallStatusVariant5() => IsApiCallStatusVariant5
+            ? ApiCallStatusVariant5!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ApiCallStatusVariant5' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -175,6 +210,11 @@ namespace Zoo
         {
             ApiCallStatusVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ApiCallStatus FromApiCallStatusVariant1(global::Zoo.ApiCallStatusVariant1? value) => new ApiCallStatus(value);
 
         /// <summary>
         /// 
@@ -197,6 +237,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static ApiCallStatus FromApiCallStatusVariant2(global::Zoo.ApiCallStatusVariant2? value) => new ApiCallStatus(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ApiCallStatus(global::Zoo.ApiCallStatusVariant3 value) => new ApiCallStatus((global::Zoo.ApiCallStatusVariant3?)value);
 
         /// <summary>
@@ -211,6 +256,11 @@ namespace Zoo
         {
             ApiCallStatusVariant3 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ApiCallStatus FromApiCallStatusVariant3(global::Zoo.ApiCallStatusVariant3? value) => new ApiCallStatus(value);
 
         /// <summary>
         /// 
@@ -233,6 +283,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static ApiCallStatus FromApiCallStatusVariant4(global::Zoo.ApiCallStatusVariant4? value) => new ApiCallStatus(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ApiCallStatus(global::Zoo.ApiCallStatusVariant5 value) => new ApiCallStatus((global::Zoo.ApiCallStatusVariant5?)value);
 
         /// <summary>
@@ -247,6 +302,11 @@ namespace Zoo
         {
             ApiCallStatusVariant5 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ApiCallStatus FromApiCallStatusVariant5(global::Zoo.ApiCallStatusVariant5? value) => new ApiCallStatus(value);
 
         /// <summary>
         /// 

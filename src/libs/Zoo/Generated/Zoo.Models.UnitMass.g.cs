@@ -40,6 +40,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitMassVariant1 PickUnitMassVariant1() => IsUnitMassVariant1
+            ? UnitMassVariant1!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitMassVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Kilograms &lt;https://en.wikipedia.org/wiki/Kilogram&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -70,6 +77,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitMassVariant2 PickUnitMassVariant2() => IsUnitMassVariant2
+            ? UnitMassVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitMassVariant2' but the value was {ToString()}.");
+
+        /// <summary>
         /// Pounds &lt;https://en.wikipedia.org/wiki/Pound_(mass)&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -98,6 +112,13 @@ namespace Zoo
             value = UnitMassVariant3;
             return IsUnitMassVariant3;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitMassVariant3 PickUnitMassVariant3() => IsUnitMassVariant3
+            ? UnitMassVariant3!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitMassVariant3' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -115,6 +136,11 @@ namespace Zoo
         {
             UnitMassVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static UnitMass FromUnitMassVariant1(global::Zoo.UnitMassVariant1? value) => new UnitMass(value);
 
         /// <summary>
         /// 
@@ -137,6 +163,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static UnitMass FromUnitMassVariant2(global::Zoo.UnitMassVariant2? value) => new UnitMass(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator UnitMass(global::Zoo.UnitMassVariant3 value) => new UnitMass((global::Zoo.UnitMassVariant3?)value);
 
         /// <summary>
@@ -151,6 +182,11 @@ namespace Zoo
         {
             UnitMassVariant3 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static UnitMass FromUnitMassVariant3(global::Zoo.UnitMassVariant3? value) => new UnitMass(value);
 
         /// <summary>
         /// 

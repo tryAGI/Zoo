@@ -40,6 +40,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.SelectionVariant1 PickSelectionVariant1() => IsSelectionVariant1
+            ? SelectionVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SelectionVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Visit the indexed scene.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Zoo
             value = SelectionVariant2;
             return IsSelectionVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.SelectionVariant2 PickSelectionVariant2() => IsSelectionVariant2
+            ? SelectionVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SelectionVariant2' but the value was {ToString()}.");
 
         /// <summary>
         /// Visit the first scene with the given name.
@@ -100,6 +114,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.SelectionVariant3 PickSelectionVariant3() => IsSelectionVariant3
+            ? SelectionVariant3!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SelectionVariant3' but the value was {ToString()}.");
+
+        /// <summary>
         /// Visit the indexed mesh.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -130,6 +151,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.SelectionVariant4 PickSelectionVariant4() => IsSelectionVariant4
+            ? SelectionVariant4!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SelectionVariant4' but the value was {ToString()}.");
+
+        /// <summary>
         /// Visit the first mesh with the given name.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -158,6 +186,13 @@ namespace Zoo
             value = SelectionVariant5;
             return IsSelectionVariant5;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.SelectionVariant5 PickSelectionVariant5() => IsSelectionVariant5
+            ? SelectionVariant5!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SelectionVariant5' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -175,6 +210,11 @@ namespace Zoo
         {
             SelectionVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Selection FromSelectionVariant1(global::Zoo.SelectionVariant1? value) => new Selection(value);
 
         /// <summary>
         /// 
@@ -197,6 +237,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static Selection FromSelectionVariant2(global::Zoo.SelectionVariant2? value) => new Selection(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator Selection(global::Zoo.SelectionVariant3 value) => new Selection((global::Zoo.SelectionVariant3?)value);
 
         /// <summary>
@@ -211,6 +256,11 @@ namespace Zoo
         {
             SelectionVariant3 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Selection FromSelectionVariant3(global::Zoo.SelectionVariant3? value) => new Selection(value);
 
         /// <summary>
         /// 
@@ -233,6 +283,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static Selection FromSelectionVariant4(global::Zoo.SelectionVariant4? value) => new Selection(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator Selection(global::Zoo.SelectionVariant5 value) => new Selection((global::Zoo.SelectionVariant5?)value);
 
         /// <summary>
@@ -247,6 +302,11 @@ namespace Zoo
         {
             SelectionVariant5 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Selection FromSelectionVariant5(global::Zoo.SelectionVariant5? value) => new Selection(value);
 
         /// <summary>
         /// 

@@ -40,6 +40,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitAreaVariant1 PickUnitAreaVariant1() => IsUnitAreaVariant1
+            ? UnitAreaVariant1!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitAreaVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Square decimeters &lt;https://en.wikipedia.org/wiki/Square_decimeter&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Zoo
             value = UnitAreaVariant2;
             return IsUnitAreaVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitAreaVariant2 PickUnitAreaVariant2() => IsUnitAreaVariant2
+            ? UnitAreaVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitAreaVariant2' but the value was {ToString()}.");
 
         /// <summary>
         /// Square feet &lt;https://en.wikipedia.org/wiki/Square_foot&gt;
@@ -100,6 +114,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitAreaVariant3 PickUnitAreaVariant3() => IsUnitAreaVariant3
+            ? UnitAreaVariant3!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitAreaVariant3' but the value was {ToString()}.");
+
+        /// <summary>
         /// Square inches &lt;https://en.wikipedia.org/wiki/Square_inch&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -128,6 +149,13 @@ namespace Zoo
             value = UnitAreaVariant4;
             return IsUnitAreaVariant4;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitAreaVariant4 PickUnitAreaVariant4() => IsUnitAreaVariant4
+            ? UnitAreaVariant4!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitAreaVariant4' but the value was {ToString()}.");
 
         /// <summary>
         /// Square kilometers &lt;https://en.wikipedia.org/wiki/Square_kilometer&gt;
@@ -160,6 +188,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitAreaVariant5 PickUnitAreaVariant5() => IsUnitAreaVariant5
+            ? UnitAreaVariant5!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitAreaVariant5' but the value was {ToString()}.");
+
+        /// <summary>
         /// Square meters &lt;https://en.wikipedia.org/wiki/Square_meter&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -188,6 +223,13 @@ namespace Zoo
             value = UnitAreaVariant6;
             return IsUnitAreaVariant6;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitAreaVariant6 PickUnitAreaVariant6() => IsUnitAreaVariant6
+            ? UnitAreaVariant6!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitAreaVariant6' but the value was {ToString()}.");
 
         /// <summary>
         /// Square millimeters &lt;https://en.wikipedia.org/wiki/Square_millimeter&gt;
@@ -220,6 +262,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitAreaVariant7 PickUnitAreaVariant7() => IsUnitAreaVariant7
+            ? UnitAreaVariant7!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitAreaVariant7' but the value was {ToString()}.");
+
+        /// <summary>
         /// Square yards &lt;https://en.wikipedia.org/wiki/Square_mile&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -248,6 +297,13 @@ namespace Zoo
             value = UnitAreaVariant8;
             return IsUnitAreaVariant8;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitAreaVariant8 PickUnitAreaVariant8() => IsUnitAreaVariant8
+            ? UnitAreaVariant8!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitAreaVariant8' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -265,6 +321,11 @@ namespace Zoo
         {
             UnitAreaVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static UnitArea FromUnitAreaVariant1(global::Zoo.UnitAreaVariant1? value) => new UnitArea(value);
 
         /// <summary>
         /// 
@@ -287,6 +348,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static UnitArea FromUnitAreaVariant2(global::Zoo.UnitAreaVariant2? value) => new UnitArea(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator UnitArea(global::Zoo.UnitAreaVariant3 value) => new UnitArea((global::Zoo.UnitAreaVariant3?)value);
 
         /// <summary>
@@ -301,6 +367,11 @@ namespace Zoo
         {
             UnitAreaVariant3 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static UnitArea FromUnitAreaVariant3(global::Zoo.UnitAreaVariant3? value) => new UnitArea(value);
 
         /// <summary>
         /// 
@@ -323,6 +394,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static UnitArea FromUnitAreaVariant4(global::Zoo.UnitAreaVariant4? value) => new UnitArea(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator UnitArea(global::Zoo.UnitAreaVariant5 value) => new UnitArea((global::Zoo.UnitAreaVariant5?)value);
 
         /// <summary>
@@ -337,6 +413,11 @@ namespace Zoo
         {
             UnitAreaVariant5 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static UnitArea FromUnitAreaVariant5(global::Zoo.UnitAreaVariant5? value) => new UnitArea(value);
 
         /// <summary>
         /// 
@@ -359,6 +440,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static UnitArea FromUnitAreaVariant6(global::Zoo.UnitAreaVariant6? value) => new UnitArea(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator UnitArea(global::Zoo.UnitAreaVariant7 value) => new UnitArea((global::Zoo.UnitAreaVariant7?)value);
 
         /// <summary>
@@ -377,6 +463,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static UnitArea FromUnitAreaVariant7(global::Zoo.UnitAreaVariant7? value) => new UnitArea(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator UnitArea(global::Zoo.UnitAreaVariant8 value) => new UnitArea((global::Zoo.UnitAreaVariant8?)value);
 
         /// <summary>
@@ -391,6 +482,11 @@ namespace Zoo
         {
             UnitAreaVariant8 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static UnitArea FromUnitAreaVariant8(global::Zoo.UnitAreaVariant8? value) => new UnitArea(value);
 
         /// <summary>
         /// 

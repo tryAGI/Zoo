@@ -40,6 +40,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.TextToCadResponseVariant1 PickTextToCadResponseVariant1() => IsTextToCadResponseVariant1
+            ? TextToCadResponseVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TextToCadResponseVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// A response from a text to CAD iteration.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -70,6 +77,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.TextToCadResponseVariant2 PickTextToCadResponseVariant2() => IsTextToCadResponseVariant2
+            ? TextToCadResponseVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TextToCadResponseVariant2' but the value was {ToString()}.");
+
+        /// <summary>
         /// A response from a text to CAD multi-file iteration.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -98,6 +112,13 @@ namespace Zoo
             value = TextToCadResponseVariant3;
             return IsTextToCadResponseVariant3;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.TextToCadResponseVariant3 PickTextToCadResponseVariant3() => IsTextToCadResponseVariant3
+            ? TextToCadResponseVariant3!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TextToCadResponseVariant3' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -115,6 +136,11 @@ namespace Zoo
         {
             TextToCadResponseVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TextToCadResponse FromTextToCadResponseVariant1(global::Zoo.TextToCadResponseVariant1? value) => new TextToCadResponse(value);
 
         /// <summary>
         /// 
@@ -137,6 +163,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static TextToCadResponse FromTextToCadResponseVariant2(global::Zoo.TextToCadResponseVariant2? value) => new TextToCadResponse(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TextToCadResponse(global::Zoo.TextToCadResponseVariant3 value) => new TextToCadResponse((global::Zoo.TextToCadResponseVariant3?)value);
 
         /// <summary>
@@ -151,6 +182,11 @@ namespace Zoo
         {
             TextToCadResponseVariant3 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TextToCadResponse FromTextToCadResponseVariant3(global::Zoo.TextToCadResponseVariant3? value) => new TextToCadResponse(value);
 
         /// <summary>
         /// 

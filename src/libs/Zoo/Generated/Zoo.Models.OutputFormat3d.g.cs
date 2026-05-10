@@ -40,6 +40,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.OutputFormat3dVariant1 PickOutputFormat3dVariant1() => IsOutputFormat3dVariant1
+            ? OutputFormat3dVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'OutputFormat3dVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// glTF 2.0. We refer to this as glTF since that is how our customers refer to it, although by default it will be in binary format and thus technically (glb). If you prefer ASCII output, you can set that option for the export.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Zoo
             value = OutputFormat3dVariant2;
             return IsOutputFormat3dVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.OutputFormat3dVariant2 PickOutputFormat3dVariant2() => IsOutputFormat3dVariant2
+            ? OutputFormat3dVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'OutputFormat3dVariant2' but the value was {ToString()}.");
 
         /// <summary>
         /// Wavefront OBJ format.
@@ -100,6 +114,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.OutputFormat3dVariant3 PickOutputFormat3dVariant3() => IsOutputFormat3dVariant3
+            ? OutputFormat3dVariant3!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'OutputFormat3dVariant3' but the value was {ToString()}.");
+
+        /// <summary>
         /// The PLY Polygon File Format.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -128,6 +149,13 @@ namespace Zoo
             value = OutputFormat3dVariant4;
             return IsOutputFormat3dVariant4;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.OutputFormat3dVariant4 PickOutputFormat3dVariant4() => IsOutputFormat3dVariant4
+            ? OutputFormat3dVariant4!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'OutputFormat3dVariant4' but the value was {ToString()}.");
 
         /// <summary>
         /// ISO 10303-21 (STEP) format.
@@ -160,6 +188,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.OutputFormat3dVariant5 PickOutputFormat3dVariant5() => IsOutputFormat3dVariant5
+            ? OutputFormat3dVariant5!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'OutputFormat3dVariant5' but the value was {ToString()}.");
+
+        /// <summary>
         /// *ST**ereo**L**ithography format.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -188,6 +223,13 @@ namespace Zoo
             value = OutputFormat3dVariant6;
             return IsOutputFormat3dVariant6;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.OutputFormat3dVariant6 PickOutputFormat3dVariant6() => IsOutputFormat3dVariant6
+            ? OutputFormat3dVariant6!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'OutputFormat3dVariant6' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -205,6 +247,11 @@ namespace Zoo
         {
             OutputFormat3dVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static OutputFormat3d FromOutputFormat3dVariant1(global::Zoo.OutputFormat3dVariant1? value) => new OutputFormat3d(value);
 
         /// <summary>
         /// 
@@ -227,6 +274,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static OutputFormat3d FromOutputFormat3dVariant2(global::Zoo.OutputFormat3dVariant2? value) => new OutputFormat3d(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator OutputFormat3d(global::Zoo.OutputFormat3dVariant3 value) => new OutputFormat3d((global::Zoo.OutputFormat3dVariant3?)value);
 
         /// <summary>
@@ -241,6 +293,11 @@ namespace Zoo
         {
             OutputFormat3dVariant3 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static OutputFormat3d FromOutputFormat3dVariant3(global::Zoo.OutputFormat3dVariant3? value) => new OutputFormat3d(value);
 
         /// <summary>
         /// 
@@ -263,6 +320,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static OutputFormat3d FromOutputFormat3dVariant4(global::Zoo.OutputFormat3dVariant4? value) => new OutputFormat3d(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator OutputFormat3d(global::Zoo.OutputFormat3dVariant5 value) => new OutputFormat3d((global::Zoo.OutputFormat3dVariant5?)value);
 
         /// <summary>
@@ -281,6 +343,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static OutputFormat3d FromOutputFormat3dVariant5(global::Zoo.OutputFormat3dVariant5? value) => new OutputFormat3d(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator OutputFormat3d(global::Zoo.OutputFormat3dVariant6 value) => new OutputFormat3d((global::Zoo.OutputFormat3dVariant6?)value);
 
         /// <summary>
@@ -295,6 +362,11 @@ namespace Zoo
         {
             OutputFormat3dVariant6 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static OutputFormat3d FromOutputFormat3dVariant6(global::Zoo.OutputFormat3dVariant6? value) => new OutputFormat3d(value);
 
         /// <summary>
         /// 
