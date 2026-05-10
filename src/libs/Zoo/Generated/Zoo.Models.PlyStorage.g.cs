@@ -40,6 +40,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.PlyStorageVariant1 PickPlyStorageVariant1() => IsPlyStorageVariant1
+            ? PlyStorageVariant1!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PlyStorageVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Encode payload as binary using little endian.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -70,6 +77,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.PlyStorageVariant2 PickPlyStorageVariant2() => IsPlyStorageVariant2
+            ? PlyStorageVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PlyStorageVariant2' but the value was {ToString()}.");
+
+        /// <summary>
         /// Encode payload as binary using big endian.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -98,6 +112,13 @@ namespace Zoo
             value = PlyStorageVariant3;
             return IsPlyStorageVariant3;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.PlyStorageVariant3 PickPlyStorageVariant3() => IsPlyStorageVariant3
+            ? PlyStorageVariant3!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PlyStorageVariant3' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -115,6 +136,11 @@ namespace Zoo
         {
             PlyStorageVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PlyStorage FromPlyStorageVariant1(global::Zoo.PlyStorageVariant1? value) => new PlyStorage(value);
 
         /// <summary>
         /// 
@@ -137,6 +163,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static PlyStorage FromPlyStorageVariant2(global::Zoo.PlyStorageVariant2? value) => new PlyStorage(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PlyStorage(global::Zoo.PlyStorageVariant3 value) => new PlyStorage((global::Zoo.PlyStorageVariant3?)value);
 
         /// <summary>
@@ -151,6 +182,11 @@ namespace Zoo
         {
             PlyStorageVariant3 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PlyStorage FromPlyStorageVariant3(global::Zoo.PlyStorageVariant3? value) => new PlyStorage(value);
 
         /// <summary>
         /// 

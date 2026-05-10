@@ -40,6 +40,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitDensityVariant1 PickUnitDensityVariant1() => IsUnitDensityVariant1
+            ? UnitDensityVariant1!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitDensityVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Kilograms per cubic meter.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Zoo
             value = UnitDensityVariant2;
             return IsUnitDensityVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitDensityVariant2 PickUnitDensityVariant2() => IsUnitDensityVariant2
+            ? UnitDensityVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitDensityVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -89,6 +103,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static UnitDensity FromUnitDensityVariant1(global::Zoo.UnitDensityVariant1? value) => new UnitDensity(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator UnitDensity(global::Zoo.UnitDensityVariant2 value) => new UnitDensity((global::Zoo.UnitDensityVariant2?)value);
 
         /// <summary>
@@ -103,6 +122,11 @@ namespace Zoo
         {
             UnitDensityVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static UnitDensity FromUnitDensityVariant2(global::Zoo.UnitDensityVariant2? value) => new UnitDensity(value);
 
         /// <summary>
         /// 

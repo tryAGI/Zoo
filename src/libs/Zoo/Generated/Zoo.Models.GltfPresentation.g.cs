@@ -40,6 +40,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.GltfPresentationVariant1 PickGltfPresentationVariant1() => IsGltfPresentationVariant1
+            ? GltfPresentationVariant1!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GltfPresentationVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Expand the JSON into a more human readable format.<br/>
         /// This is the default setting.
         /// </summary>
@@ -69,6 +76,13 @@ namespace Zoo
             value = GltfPresentationVariant2;
             return IsGltfPresentationVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.GltfPresentationVariant2 PickGltfPresentationVariant2() => IsGltfPresentationVariant2
+            ? GltfPresentationVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GltfPresentationVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -90,6 +104,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static GltfPresentation FromGltfPresentationVariant1(global::Zoo.GltfPresentationVariant1? value) => new GltfPresentation(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator GltfPresentation(global::Zoo.GltfPresentationVariant2 value) => new GltfPresentation((global::Zoo.GltfPresentationVariant2?)value);
 
         /// <summary>
@@ -104,6 +123,11 @@ namespace Zoo
         {
             GltfPresentationVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static GltfPresentation FromGltfPresentationVariant2(global::Zoo.GltfPresentationVariant2? value) => new GltfPresentation(value);
 
         /// <summary>
         /// 

@@ -40,6 +40,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.AsyncApiCallOutputVariant1 PickAsyncApiCallOutputVariant1() => IsAsyncApiCallOutputVariant1
+            ? AsyncApiCallOutputVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AsyncApiCallOutputVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// File center of mass.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Zoo
             value = AsyncApiCallOutputVariant2;
             return IsAsyncApiCallOutputVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.AsyncApiCallOutputVariant2 PickAsyncApiCallOutputVariant2() => IsAsyncApiCallOutputVariant2
+            ? AsyncApiCallOutputVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AsyncApiCallOutputVariant2' but the value was {ToString()}.");
 
         /// <summary>
         /// A file mass.
@@ -100,6 +114,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.AsyncApiCallOutputVariant3 PickAsyncApiCallOutputVariant3() => IsAsyncApiCallOutputVariant3
+            ? AsyncApiCallOutputVariant3!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AsyncApiCallOutputVariant3' but the value was {ToString()}.");
+
+        /// <summary>
         /// A file volume.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -128,6 +149,13 @@ namespace Zoo
             value = AsyncApiCallOutputVariant4;
             return IsAsyncApiCallOutputVariant4;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.AsyncApiCallOutputVariant4 PickAsyncApiCallOutputVariant4() => IsAsyncApiCallOutputVariant4
+            ? AsyncApiCallOutputVariant4!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AsyncApiCallOutputVariant4' but the value was {ToString()}.");
 
         /// <summary>
         /// A file density.
@@ -160,6 +188,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.AsyncApiCallOutputVariant5 PickAsyncApiCallOutputVariant5() => IsAsyncApiCallOutputVariant5
+            ? AsyncApiCallOutputVariant5!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AsyncApiCallOutputVariant5' but the value was {ToString()}.");
+
+        /// <summary>
         /// A file surface area.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -188,6 +223,13 @@ namespace Zoo
             value = AsyncApiCallOutputVariant6;
             return IsAsyncApiCallOutputVariant6;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.AsyncApiCallOutputVariant6 PickAsyncApiCallOutputVariant6() => IsAsyncApiCallOutputVariant6
+            ? AsyncApiCallOutputVariant6!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AsyncApiCallOutputVariant6' but the value was {ToString()}.");
 
         /// <summary>
         /// Text to CAD.
@@ -220,6 +262,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.AsyncApiCallOutputVariant7 PickAsyncApiCallOutputVariant7() => IsAsyncApiCallOutputVariant7
+            ? AsyncApiCallOutputVariant7!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AsyncApiCallOutputVariant7' but the value was {ToString()}.");
+
+        /// <summary>
         /// Text to CAD iteration.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -250,6 +299,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.AsyncApiCallOutputVariant8 PickAsyncApiCallOutputVariant8() => IsAsyncApiCallOutputVariant8
+            ? AsyncApiCallOutputVariant8!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AsyncApiCallOutputVariant8' but the value was {ToString()}.");
+
+        /// <summary>
         /// Text to CAD multi-file iteration.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -278,6 +334,13 @@ namespace Zoo
             value = AsyncApiCallOutputVariant9;
             return IsAsyncApiCallOutputVariant9;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.AsyncApiCallOutputVariant9 PickAsyncApiCallOutputVariant9() => IsAsyncApiCallOutputVariant9
+            ? AsyncApiCallOutputVariant9!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AsyncApiCallOutputVariant9' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -295,6 +358,11 @@ namespace Zoo
         {
             AsyncApiCallOutputVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AsyncApiCallOutput FromAsyncApiCallOutputVariant1(global::Zoo.AsyncApiCallOutputVariant1? value) => new AsyncApiCallOutput(value);
 
         /// <summary>
         /// 
@@ -317,6 +385,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static AsyncApiCallOutput FromAsyncApiCallOutputVariant2(global::Zoo.AsyncApiCallOutputVariant2? value) => new AsyncApiCallOutput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AsyncApiCallOutput(global::Zoo.AsyncApiCallOutputVariant3 value) => new AsyncApiCallOutput((global::Zoo.AsyncApiCallOutputVariant3?)value);
 
         /// <summary>
@@ -331,6 +404,11 @@ namespace Zoo
         {
             AsyncApiCallOutputVariant3 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AsyncApiCallOutput FromAsyncApiCallOutputVariant3(global::Zoo.AsyncApiCallOutputVariant3? value) => new AsyncApiCallOutput(value);
 
         /// <summary>
         /// 
@@ -353,6 +431,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static AsyncApiCallOutput FromAsyncApiCallOutputVariant4(global::Zoo.AsyncApiCallOutputVariant4? value) => new AsyncApiCallOutput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AsyncApiCallOutput(global::Zoo.AsyncApiCallOutputVariant5 value) => new AsyncApiCallOutput((global::Zoo.AsyncApiCallOutputVariant5?)value);
 
         /// <summary>
@@ -367,6 +450,11 @@ namespace Zoo
         {
             AsyncApiCallOutputVariant5 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AsyncApiCallOutput FromAsyncApiCallOutputVariant5(global::Zoo.AsyncApiCallOutputVariant5? value) => new AsyncApiCallOutput(value);
 
         /// <summary>
         /// 
@@ -389,6 +477,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static AsyncApiCallOutput FromAsyncApiCallOutputVariant6(global::Zoo.AsyncApiCallOutputVariant6? value) => new AsyncApiCallOutput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AsyncApiCallOutput(global::Zoo.AsyncApiCallOutputVariant7 value) => new AsyncApiCallOutput((global::Zoo.AsyncApiCallOutputVariant7?)value);
 
         /// <summary>
@@ -403,6 +496,11 @@ namespace Zoo
         {
             AsyncApiCallOutputVariant7 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AsyncApiCallOutput FromAsyncApiCallOutputVariant7(global::Zoo.AsyncApiCallOutputVariant7? value) => new AsyncApiCallOutput(value);
 
         /// <summary>
         /// 
@@ -425,6 +523,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static AsyncApiCallOutput FromAsyncApiCallOutputVariant8(global::Zoo.AsyncApiCallOutputVariant8? value) => new AsyncApiCallOutput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator AsyncApiCallOutput(global::Zoo.AsyncApiCallOutputVariant9 value) => new AsyncApiCallOutput((global::Zoo.AsyncApiCallOutputVariant9?)value);
 
         /// <summary>
@@ -439,6 +542,11 @@ namespace Zoo
         {
             AsyncApiCallOutputVariant9 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static AsyncApiCallOutput FromAsyncApiCallOutputVariant9(global::Zoo.AsyncApiCallOutputVariant9? value) => new AsyncApiCallOutput(value);
 
         /// <summary>
         /// 

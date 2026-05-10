@@ -40,6 +40,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.InputFormat3dVariant1 PickInputFormat3dVariant1() => IsInputFormat3dVariant1
+            ? InputFormat3dVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'InputFormat3dVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Binary glTF 2.0. We refer to this as glTF since that is how our customers refer to it, but this can also import binary glTF (glb).
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Zoo
             value = InputFormat3dVariant2;
             return IsInputFormat3dVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.InputFormat3dVariant2 PickInputFormat3dVariant2() => IsInputFormat3dVariant2
+            ? InputFormat3dVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'InputFormat3dVariant2' but the value was {ToString()}.");
 
         /// <summary>
         /// Wavefront OBJ format.
@@ -100,6 +114,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.InputFormat3dVariant3 PickInputFormat3dVariant3() => IsInputFormat3dVariant3
+            ? InputFormat3dVariant3!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'InputFormat3dVariant3' but the value was {ToString()}.");
+
+        /// <summary>
         /// The PLY Polygon File Format.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -128,6 +149,13 @@ namespace Zoo
             value = InputFormat3dVariant4;
             return IsInputFormat3dVariant4;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.InputFormat3dVariant4 PickInputFormat3dVariant4() => IsInputFormat3dVariant4
+            ? InputFormat3dVariant4!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'InputFormat3dVariant4' but the value was {ToString()}.");
 
         /// <summary>
         /// SolidWorks part (SLDPRT) format.
@@ -160,6 +188,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.InputFormat3dVariant5 PickInputFormat3dVariant5() => IsInputFormat3dVariant5
+            ? InputFormat3dVariant5!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'InputFormat3dVariant5' but the value was {ToString()}.");
+
+        /// <summary>
         /// ISO 10303-21 (STEP) format.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -190,6 +225,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.InputFormat3dVariant6 PickInputFormat3dVariant6() => IsInputFormat3dVariant6
+            ? InputFormat3dVariant6!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'InputFormat3dVariant6' but the value was {ToString()}.");
+
+        /// <summary>
         /// *ST**ereo**L**ithography format.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -218,6 +260,13 @@ namespace Zoo
             value = InputFormat3dVariant7;
             return IsInputFormat3dVariant7;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.InputFormat3dVariant7 PickInputFormat3dVariant7() => IsInputFormat3dVariant7
+            ? InputFormat3dVariant7!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'InputFormat3dVariant7' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -235,6 +284,11 @@ namespace Zoo
         {
             InputFormat3dVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static InputFormat3d FromInputFormat3dVariant1(global::Zoo.InputFormat3dVariant1? value) => new InputFormat3d(value);
 
         /// <summary>
         /// 
@@ -257,6 +311,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static InputFormat3d FromInputFormat3dVariant2(global::Zoo.InputFormat3dVariant2? value) => new InputFormat3d(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator InputFormat3d(global::Zoo.InputFormat3dVariant3 value) => new InputFormat3d((global::Zoo.InputFormat3dVariant3?)value);
 
         /// <summary>
@@ -271,6 +330,11 @@ namespace Zoo
         {
             InputFormat3dVariant3 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static InputFormat3d FromInputFormat3dVariant3(global::Zoo.InputFormat3dVariant3? value) => new InputFormat3d(value);
 
         /// <summary>
         /// 
@@ -293,6 +357,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static InputFormat3d FromInputFormat3dVariant4(global::Zoo.InputFormat3dVariant4? value) => new InputFormat3d(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator InputFormat3d(global::Zoo.InputFormat3dVariant5 value) => new InputFormat3d((global::Zoo.InputFormat3dVariant5?)value);
 
         /// <summary>
@@ -307,6 +376,11 @@ namespace Zoo
         {
             InputFormat3dVariant5 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static InputFormat3d FromInputFormat3dVariant5(global::Zoo.InputFormat3dVariant5? value) => new InputFormat3d(value);
 
         /// <summary>
         /// 
@@ -329,6 +403,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static InputFormat3d FromInputFormat3dVariant6(global::Zoo.InputFormat3dVariant6? value) => new InputFormat3d(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator InputFormat3d(global::Zoo.InputFormat3dVariant7 value) => new InputFormat3d((global::Zoo.InputFormat3dVariant7?)value);
 
         /// <summary>
@@ -343,6 +422,11 @@ namespace Zoo
         {
             InputFormat3dVariant7 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static InputFormat3d FromInputFormat3dVariant7(global::Zoo.InputFormat3dVariant7? value) => new InputFormat3d(value);
 
         /// <summary>
         /// 

@@ -40,6 +40,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitLengthVariant1 PickUnitLengthVariant1() => IsUnitLengthVariant1
+            ? UnitLengthVariant1!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitLengthVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Feet &lt;https://en.wikipedia.org/wiki/Foot_(unit)&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Zoo
             value = UnitLengthVariant2;
             return IsUnitLengthVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitLengthVariant2 PickUnitLengthVariant2() => IsUnitLengthVariant2
+            ? UnitLengthVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitLengthVariant2' but the value was {ToString()}.");
 
         /// <summary>
         /// Inches &lt;https://en.wikipedia.org/wiki/Inch&gt;
@@ -100,6 +114,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitLengthVariant3 PickUnitLengthVariant3() => IsUnitLengthVariant3
+            ? UnitLengthVariant3!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitLengthVariant3' but the value was {ToString()}.");
+
+        /// <summary>
         /// Meters &lt;https://en.wikipedia.org/wiki/Meter&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -128,6 +149,13 @@ namespace Zoo
             value = UnitLengthVariant4;
             return IsUnitLengthVariant4;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitLengthVariant4 PickUnitLengthVariant4() => IsUnitLengthVariant4
+            ? UnitLengthVariant4!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitLengthVariant4' but the value was {ToString()}.");
 
         /// <summary>
         /// Millimeters &lt;https://en.wikipedia.org/wiki/Millimeter&gt;
@@ -160,6 +188,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitLengthVariant5 PickUnitLengthVariant5() => IsUnitLengthVariant5
+            ? UnitLengthVariant5!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitLengthVariant5' but the value was {ToString()}.");
+
+        /// <summary>
         /// Yards &lt;https://en.wikipedia.org/wiki/Yard&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -188,6 +223,13 @@ namespace Zoo
             value = UnitLengthVariant6;
             return IsUnitLengthVariant6;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitLengthVariant6 PickUnitLengthVariant6() => IsUnitLengthVariant6
+            ? UnitLengthVariant6!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitLengthVariant6' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -205,6 +247,11 @@ namespace Zoo
         {
             UnitLengthVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static UnitLength FromUnitLengthVariant1(global::Zoo.UnitLengthVariant1? value) => new UnitLength(value);
 
         /// <summary>
         /// 
@@ -227,6 +274,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static UnitLength FromUnitLengthVariant2(global::Zoo.UnitLengthVariant2? value) => new UnitLength(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator UnitLength(global::Zoo.UnitLengthVariant3 value) => new UnitLength((global::Zoo.UnitLengthVariant3?)value);
 
         /// <summary>
@@ -241,6 +293,11 @@ namespace Zoo
         {
             UnitLengthVariant3 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static UnitLength FromUnitLengthVariant3(global::Zoo.UnitLengthVariant3? value) => new UnitLength(value);
 
         /// <summary>
         /// 
@@ -263,6 +320,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static UnitLength FromUnitLengthVariant4(global::Zoo.UnitLengthVariant4? value) => new UnitLength(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator UnitLength(global::Zoo.UnitLengthVariant5 value) => new UnitLength((global::Zoo.UnitLengthVariant5?)value);
 
         /// <summary>
@@ -281,6 +343,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static UnitLength FromUnitLengthVariant5(global::Zoo.UnitLengthVariant5? value) => new UnitLength(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator UnitLength(global::Zoo.UnitLengthVariant6 value) => new UnitLength((global::Zoo.UnitLengthVariant6?)value);
 
         /// <summary>
@@ -295,6 +362,11 @@ namespace Zoo
         {
             UnitLengthVariant6 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static UnitLength FromUnitLengthVariant6(global::Zoo.UnitLengthVariant6? value) => new UnitLength(value);
 
         /// <summary>
         /// 

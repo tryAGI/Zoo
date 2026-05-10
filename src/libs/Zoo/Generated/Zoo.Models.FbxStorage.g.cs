@@ -40,6 +40,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.FbxStorageVariant1 PickFbxStorageVariant1() => IsFbxStorageVariant1
+            ? FbxStorageVariant1!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FbxStorageVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Binary FBX encoding.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Zoo
             value = FbxStorageVariant2;
             return IsFbxStorageVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.FbxStorageVariant2 PickFbxStorageVariant2() => IsFbxStorageVariant2
+            ? FbxStorageVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FbxStorageVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -89,6 +103,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static FbxStorage FromFbxStorageVariant1(global::Zoo.FbxStorageVariant1? value) => new FbxStorage(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FbxStorage(global::Zoo.FbxStorageVariant2 value) => new FbxStorage((global::Zoo.FbxStorageVariant2?)value);
 
         /// <summary>
@@ -103,6 +122,11 @@ namespace Zoo
         {
             FbxStorageVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FbxStorage FromFbxStorageVariant2(global::Zoo.FbxStorageVariant2? value) => new FbxStorage(value);
 
         /// <summary>
         /// 

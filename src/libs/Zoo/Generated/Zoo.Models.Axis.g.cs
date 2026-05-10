@@ -42,6 +42,13 @@ namespace Zoo
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.AxisVariant1 PickAxisVariant1() => IsAxisVariant1
+            ? AxisVariant1!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AxisVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// 'Z' axis.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -70,6 +77,13 @@ namespace Zoo
             value = AxisVariant2;
             return IsAxisVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.AxisVariant2 PickAxisVariant2() => IsAxisVariant2
+            ? AxisVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AxisVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -91,6 +105,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static Axis FromAxisVariant1(global::Zoo.AxisVariant1? value) => new Axis(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator Axis(global::Zoo.AxisVariant2 value) => new Axis((global::Zoo.AxisVariant2?)value);
 
         /// <summary>
@@ -105,6 +124,11 @@ namespace Zoo
         {
             AxisVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Axis FromAxisVariant2(global::Zoo.AxisVariant2? value) => new Axis(value);
 
         /// <summary>
         /// 
