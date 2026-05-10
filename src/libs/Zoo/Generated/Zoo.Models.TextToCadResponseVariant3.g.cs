@@ -241,5 +241,6 @@ namespace Zoo
         public TextToCadResponseVariant3()
         {
         }
+
     }
 }

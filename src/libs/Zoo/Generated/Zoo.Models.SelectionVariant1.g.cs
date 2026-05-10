@@ -40,5 +40,6 @@ namespace Zoo
         public SelectionVariant1()
         {
         }
+
     }
 }

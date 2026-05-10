@@ -197,5 +197,6 @@ namespace Zoo
         public AsyncApiCallOutputVariant1()
         {
         }
+
     }
 }
