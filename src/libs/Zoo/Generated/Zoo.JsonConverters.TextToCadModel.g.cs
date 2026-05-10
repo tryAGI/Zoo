@@ -138,7 +138,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (textToCadModelVariant1 == null && textToCadModelVariant2 == null && textToCadModelVariant3 == null)
+            {
                 try
                 {
 
@@ -152,7 +155,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (textToCadModelVariant1 == null && textToCadModelVariant2 == null && textToCadModelVariant3 == null)
+            {
                 try
                 {
 

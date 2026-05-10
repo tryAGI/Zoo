@@ -108,7 +108,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (fbxStorageVariant1 == null && fbxStorageVariant2 == null)
+            {
                 try
                 {
 

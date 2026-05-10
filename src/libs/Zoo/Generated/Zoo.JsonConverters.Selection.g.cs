@@ -137,6 +137,7 @@ namespace Zoo.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.SelectionVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.SelectionVariant1> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.SelectionVariant1).Name}");
                     selectionVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -147,9 +148,13 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (selectionVariant1 == null && selectionVariant2 == null && selectionVariant3 == null && selectionVariant4 == null && selectionVariant5 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.SelectionVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.SelectionVariant2> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.SelectionVariant2).Name}");
                     selectionVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -160,9 +165,13 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (selectionVariant1 == null && selectionVariant2 == null && selectionVariant3 == null && selectionVariant4 == null && selectionVariant5 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.SelectionVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.SelectionVariant3> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.SelectionVariant3).Name}");
                     selectionVariant3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -173,9 +182,13 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (selectionVariant1 == null && selectionVariant2 == null && selectionVariant3 == null && selectionVariant4 == null && selectionVariant5 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.SelectionVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.SelectionVariant4> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.SelectionVariant4).Name}");
                     selectionVariant4 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -186,9 +199,13 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (selectionVariant1 == null && selectionVariant2 == null && selectionVariant3 == null && selectionVariant4 == null && selectionVariant5 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.SelectionVariant5), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.SelectionVariant5> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.SelectionVariant5).Name}");
                     selectionVariant5 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

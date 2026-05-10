@@ -138,7 +138,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (gltfStorageVariant1 == null && gltfStorageVariant2 == null && gltfStorageVariant3 == null)
+            {
                 try
                 {
 
@@ -152,7 +155,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (gltfStorageVariant1 == null && gltfStorageVariant2 == null && gltfStorageVariant3 == null)
+            {
                 try
                 {
 
