@@ -60,5 +60,6 @@ namespace Zoo
         public Point3d()
         {
         }
+
     }
 }
