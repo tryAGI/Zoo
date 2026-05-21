@@ -27,6 +27,26 @@ namespace Zoo
         public bool IsFileExportFormatVariant1 => FileExportFormatVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickFileExportFormatVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.FileExportFormatVariant1? value)
+        {
+            value = FileExportFormatVariant1;
+            return IsFileExportFormatVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.FileExportFormatVariant1 PickFileExportFormatVariant1() => IsFileExportFormatVariant1
+            ? FileExportFormatVariant1!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FileExportFormatVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Binary glTF 2.0.<br/>
         /// This is a single binary with .glb extension.<br/>
         /// This is better if you want a compressed format as opposed to the human readable glTF that lacks compression.
@@ -44,6 +64,26 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FileExportFormatVariant2))]
 #endif
         public bool IsFileExportFormatVariant2 => FileExportFormatVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickFileExportFormatVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.FileExportFormatVariant2? value)
+        {
+            value = FileExportFormatVariant2;
+            return IsFileExportFormatVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.FileExportFormatVariant2 PickFileExportFormatVariant2() => IsFileExportFormatVariant2
+            ? FileExportFormatVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FileExportFormatVariant2' but the value was {ToString()}.");
 
         /// <summary>
         /// glTF 2.0. Embedded glTF 2.0 (pretty printed).<br/>
@@ -66,6 +106,26 @@ namespace Zoo
         public bool IsFileExportFormatVariant3 => FileExportFormatVariant3 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickFileExportFormatVariant3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.FileExportFormatVariant3? value)
+        {
+            value = FileExportFormatVariant3;
+            return IsFileExportFormatVariant3;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.FileExportFormatVariant3 PickFileExportFormatVariant3() => IsFileExportFormatVariant3
+            ? FileExportFormatVariant3!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FileExportFormatVariant3' but the value was {ToString()}.");
+
+        /// <summary>
         /// The OBJ file format. &lt;https://en.wikipedia.org/wiki/Wavefront_.obj_file&gt; It may or may not have an an attached material (mtl // mtllib) within the file, but we interact with it as if it does not.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -81,6 +141,26 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FileExportFormatVariant4))]
 #endif
         public bool IsFileExportFormatVariant4 => FileExportFormatVariant4 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickFileExportFormatVariant4(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.FileExportFormatVariant4? value)
+        {
+            value = FileExportFormatVariant4;
+            return IsFileExportFormatVariant4;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.FileExportFormatVariant4 PickFileExportFormatVariant4() => IsFileExportFormatVariant4
+            ? FileExportFormatVariant4!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FileExportFormatVariant4' but the value was {ToString()}.");
 
         /// <summary>
         /// The PLY file format. &lt;https://en.wikipedia.org/wiki/PLY_(file_format)&gt;
@@ -100,6 +180,26 @@ namespace Zoo
         public bool IsFileExportFormatVariant5 => FileExportFormatVariant5 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickFileExportFormatVariant5(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.FileExportFormatVariant5? value)
+        {
+            value = FileExportFormatVariant5;
+            return IsFileExportFormatVariant5;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.FileExportFormatVariant5 PickFileExportFormatVariant5() => IsFileExportFormatVariant5
+            ? FileExportFormatVariant5!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FileExportFormatVariant5' but the value was {ToString()}.");
+
+        /// <summary>
         /// The STEP file format. &lt;https://en.wikipedia.org/wiki/ISO_10303-21&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -117,6 +217,26 @@ namespace Zoo
         public bool IsFileExportFormatVariant6 => FileExportFormatVariant6 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickFileExportFormatVariant6(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.FileExportFormatVariant6? value)
+        {
+            value = FileExportFormatVariant6;
+            return IsFileExportFormatVariant6;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.FileExportFormatVariant6 PickFileExportFormatVariant6() => IsFileExportFormatVariant6
+            ? FileExportFormatVariant6!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FileExportFormatVariant6' but the value was {ToString()}.");
+
+        /// <summary>
         /// The STL file format. &lt;https://en.wikipedia.org/wiki/STL_(file_format)&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -132,6 +252,26 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FileExportFormatVariant7))]
 #endif
         public bool IsFileExportFormatVariant7 => FileExportFormatVariant7 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickFileExportFormatVariant7(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.FileExportFormatVariant7? value)
+        {
+            value = FileExportFormatVariant7;
+            return IsFileExportFormatVariant7;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.FileExportFormatVariant7 PickFileExportFormatVariant7() => IsFileExportFormatVariant7
+            ? FileExportFormatVariant7!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FileExportFormatVariant7' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -149,6 +289,11 @@ namespace Zoo
         {
             FileExportFormatVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FileExportFormat FromFileExportFormatVariant1(global::Zoo.FileExportFormatVariant1? value) => new FileExportFormat(value);
 
         /// <summary>
         /// 
@@ -171,6 +316,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static FileExportFormat FromFileExportFormatVariant2(global::Zoo.FileExportFormatVariant2? value) => new FileExportFormat(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FileExportFormat(global::Zoo.FileExportFormatVariant3 value) => new FileExportFormat((global::Zoo.FileExportFormatVariant3?)value);
 
         /// <summary>
@@ -185,6 +335,11 @@ namespace Zoo
         {
             FileExportFormatVariant3 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FileExportFormat FromFileExportFormatVariant3(global::Zoo.FileExportFormatVariant3? value) => new FileExportFormat(value);
 
         /// <summary>
         /// 
@@ -207,6 +362,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static FileExportFormat FromFileExportFormatVariant4(global::Zoo.FileExportFormatVariant4? value) => new FileExportFormat(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FileExportFormat(global::Zoo.FileExportFormatVariant5 value) => new FileExportFormat((global::Zoo.FileExportFormatVariant5?)value);
 
         /// <summary>
@@ -221,6 +381,11 @@ namespace Zoo
         {
             FileExportFormatVariant5 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FileExportFormat FromFileExportFormatVariant5(global::Zoo.FileExportFormatVariant5? value) => new FileExportFormat(value);
 
         /// <summary>
         /// 
@@ -243,6 +408,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static FileExportFormat FromFileExportFormatVariant6(global::Zoo.FileExportFormatVariant6? value) => new FileExportFormat(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FileExportFormat(global::Zoo.FileExportFormatVariant7 value) => new FileExportFormat((global::Zoo.FileExportFormatVariant7?)value);
 
         /// <summary>
@@ -257,6 +427,11 @@ namespace Zoo
         {
             FileExportFormatVariant7 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FileExportFormat FromFileExportFormatVariant7(global::Zoo.FileExportFormatVariant7? value) => new FileExportFormat(value);
 
         /// <summary>
         /// 
@@ -368,6 +543,60 @@ namespace Zoo
         /// 
         /// </summary>
         public void Match(
+            global::System.Action<global::Zoo.FileExportFormatVariant1?>? fileExportFormatVariant1 = null,
+
+            global::System.Action<global::Zoo.FileExportFormatVariant2?>? fileExportFormatVariant2 = null,
+
+            global::System.Action<global::Zoo.FileExportFormatVariant3?>? fileExportFormatVariant3 = null,
+
+            global::System.Action<global::Zoo.FileExportFormatVariant4?>? fileExportFormatVariant4 = null,
+
+            global::System.Action<global::Zoo.FileExportFormatVariant5?>? fileExportFormatVariant5 = null,
+
+            global::System.Action<global::Zoo.FileExportFormatVariant6?>? fileExportFormatVariant6 = null,
+
+            global::System.Action<global::Zoo.FileExportFormatVariant7?>? fileExportFormatVariant7 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsFileExportFormatVariant1)
+            {
+                fileExportFormatVariant1?.Invoke(FileExportFormatVariant1!);
+            }
+            else if (IsFileExportFormatVariant2)
+            {
+                fileExportFormatVariant2?.Invoke(FileExportFormatVariant2!);
+            }
+            else if (IsFileExportFormatVariant3)
+            {
+                fileExportFormatVariant3?.Invoke(FileExportFormatVariant3!);
+            }
+            else if (IsFileExportFormatVariant4)
+            {
+                fileExportFormatVariant4?.Invoke(FileExportFormatVariant4!);
+            }
+            else if (IsFileExportFormatVariant5)
+            {
+                fileExportFormatVariant5?.Invoke(FileExportFormatVariant5!);
+            }
+            else if (IsFileExportFormatVariant6)
+            {
+                fileExportFormatVariant6?.Invoke(FileExportFormatVariant6!);
+            }
+            else if (IsFileExportFormatVariant7)
+            {
+                fileExportFormatVariant7?.Invoke(FileExportFormatVariant7!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
             global::System.Action<global::Zoo.FileExportFormatVariant1?>? fileExportFormatVariant1 = null,
             global::System.Action<global::Zoo.FileExportFormatVariant2?>? fileExportFormatVariant2 = null,
             global::System.Action<global::Zoo.FileExportFormatVariant3?>? fileExportFormatVariant3 = null,

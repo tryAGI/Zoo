@@ -28,6 +28,26 @@ namespace Zoo
         public bool IsCreatedAtSortModeVariant1 => CreatedAtSortModeVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickCreatedAtSortModeVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.CreatedAtSortModeVariant1? value)
+        {
+            value = CreatedAtSortModeVariant1;
+            return IsCreatedAtSortModeVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.CreatedAtSortModeVariant1 PickCreatedAtSortModeVariant1() => IsCreatedAtSortModeVariant1
+            ? CreatedAtSortModeVariant1!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CreatedAtSortModeVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Sort in decreasing order of "created_at".
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -43,6 +63,26 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CreatedAtSortModeVariant2))]
 #endif
         public bool IsCreatedAtSortModeVariant2 => CreatedAtSortModeVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickCreatedAtSortModeVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.CreatedAtSortModeVariant2? value)
+        {
+            value = CreatedAtSortModeVariant2;
+            return IsCreatedAtSortModeVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.CreatedAtSortModeVariant2 PickCreatedAtSortModeVariant2() => IsCreatedAtSortModeVariant2
+            ? CreatedAtSortModeVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CreatedAtSortModeVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -64,6 +104,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static CreatedAtSortMode FromCreatedAtSortModeVariant1(global::Zoo.CreatedAtSortModeVariant1? value) => new CreatedAtSortMode(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator CreatedAtSortMode(global::Zoo.CreatedAtSortModeVariant2 value) => new CreatedAtSortMode((global::Zoo.CreatedAtSortModeVariant2?)value);
 
         /// <summary>
@@ -78,6 +123,11 @@ namespace Zoo
         {
             CreatedAtSortModeVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static CreatedAtSortMode FromCreatedAtSortModeVariant2(global::Zoo.CreatedAtSortModeVariant2? value) => new CreatedAtSortMode(value);
 
         /// <summary>
         /// 
@@ -144,6 +194,30 @@ namespace Zoo
         /// 
         /// </summary>
         public void Match(
+            global::System.Action<global::Zoo.CreatedAtSortModeVariant1?>? createdAtSortModeVariant1 = null,
+
+            global::System.Action<global::Zoo.CreatedAtSortModeVariant2?>? createdAtSortModeVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsCreatedAtSortModeVariant1)
+            {
+                createdAtSortModeVariant1?.Invoke(CreatedAtSortModeVariant1!);
+            }
+            else if (IsCreatedAtSortModeVariant2)
+            {
+                createdAtSortModeVariant2?.Invoke(CreatedAtSortModeVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
             global::System.Action<global::Zoo.CreatedAtSortModeVariant1?>? createdAtSortModeVariant1 = null,
             global::System.Action<global::Zoo.CreatedAtSortModeVariant2?>? createdAtSortModeVariant2 = null,
             bool validate = true)

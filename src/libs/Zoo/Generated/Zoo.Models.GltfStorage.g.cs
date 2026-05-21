@@ -28,6 +28,26 @@ namespace Zoo
         public bool IsGltfStorageVariant1 => GltfStorageVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickGltfStorageVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.GltfStorageVariant1? value)
+        {
+            value = GltfStorageVariant1;
+            return IsGltfStorageVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.GltfStorageVariant1 PickGltfStorageVariant1() => IsGltfStorageVariant1
+            ? GltfStorageVariant1!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GltfStorageVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Standard glTF 2.0.<br/>
         /// This is a JSON file with .gltf extension paired with a separate binary blob file with .bin extension.
         /// </summary>
@@ -44,6 +64,26 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GltfStorageVariant2))]
 #endif
         public bool IsGltfStorageVariant2 => GltfStorageVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickGltfStorageVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.GltfStorageVariant2? value)
+        {
+            value = GltfStorageVariant2;
+            return IsGltfStorageVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.GltfStorageVariant2 PickGltfStorageVariant2() => IsGltfStorageVariant2
+            ? GltfStorageVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GltfStorageVariant2' but the value was {ToString()}.");
 
         /// <summary>
         /// Embedded glTF 2.0.<br/>
@@ -63,6 +103,26 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GltfStorageVariant3))]
 #endif
         public bool IsGltfStorageVariant3 => GltfStorageVariant3 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickGltfStorageVariant3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.GltfStorageVariant3? value)
+        {
+            value = GltfStorageVariant3;
+            return IsGltfStorageVariant3;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.GltfStorageVariant3 PickGltfStorageVariant3() => IsGltfStorageVariant3
+            ? GltfStorageVariant3!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GltfStorageVariant3' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -80,6 +140,11 @@ namespace Zoo
         {
             GltfStorageVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static GltfStorage FromGltfStorageVariant1(global::Zoo.GltfStorageVariant1? value) => new GltfStorage(value);
 
         /// <summary>
         /// 
@@ -102,6 +167,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static GltfStorage FromGltfStorageVariant2(global::Zoo.GltfStorageVariant2? value) => new GltfStorage(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator GltfStorage(global::Zoo.GltfStorageVariant3 value) => new GltfStorage((global::Zoo.GltfStorageVariant3?)value);
 
         /// <summary>
@@ -116,6 +186,11 @@ namespace Zoo
         {
             GltfStorageVariant3 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static GltfStorage FromGltfStorageVariant3(global::Zoo.GltfStorageVariant3? value) => new GltfStorage(value);
 
         /// <summary>
         /// 
@@ -191,6 +266,36 @@ namespace Zoo
         /// 
         /// </summary>
         public void Match(
+            global::System.Action<global::Zoo.GltfStorageVariant1?>? gltfStorageVariant1 = null,
+
+            global::System.Action<global::Zoo.GltfStorageVariant2?>? gltfStorageVariant2 = null,
+
+            global::System.Action<global::Zoo.GltfStorageVariant3?>? gltfStorageVariant3 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsGltfStorageVariant1)
+            {
+                gltfStorageVariant1?.Invoke(GltfStorageVariant1!);
+            }
+            else if (IsGltfStorageVariant2)
+            {
+                gltfStorageVariant2?.Invoke(GltfStorageVariant2!);
+            }
+            else if (IsGltfStorageVariant3)
+            {
+                gltfStorageVariant3?.Invoke(GltfStorageVariant3!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
             global::System.Action<global::Zoo.GltfStorageVariant1?>? gltfStorageVariant1 = null,
             global::System.Action<global::Zoo.GltfStorageVariant2?>? gltfStorageVariant2 = null,
             global::System.Action<global::Zoo.GltfStorageVariant3?>? gltfStorageVariant3 = null,

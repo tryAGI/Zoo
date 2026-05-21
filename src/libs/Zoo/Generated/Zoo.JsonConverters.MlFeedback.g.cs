@@ -168,7 +168,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (mlFeedbackVariant1 == null && mlFeedbackVariant2 == null && mlFeedbackVariant3 == null && mlFeedbackVariant4 == null)
+            {
                 try
                 {
 
@@ -182,7 +185,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (mlFeedbackVariant1 == null && mlFeedbackVariant2 == null && mlFeedbackVariant3 == null && mlFeedbackVariant4 == null)
+            {
                 try
                 {
 
@@ -196,7 +202,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (mlFeedbackVariant1 == null && mlFeedbackVariant2 == null && mlFeedbackVariant3 == null && mlFeedbackVariant4 == null)
+            {
                 try
                 {
 

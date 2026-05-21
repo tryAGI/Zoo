@@ -138,7 +138,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (plyStorageVariant1 == null && plyStorageVariant2 == null && plyStorageVariant3 == null)
+            {
                 try
                 {
 
@@ -152,7 +155,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (plyStorageVariant1 == null && plyStorageVariant2 == null && plyStorageVariant3 == null)
+            {
                 try
                 {
 

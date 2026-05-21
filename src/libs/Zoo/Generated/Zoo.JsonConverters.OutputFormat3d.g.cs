@@ -170,6 +170,7 @@ namespace Zoo.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.OutputFormat3dVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.OutputFormat3dVariant1> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.OutputFormat3dVariant1).Name}");
                     outputFormat3dVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -180,9 +181,13 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (outputFormat3dVariant1 == null && outputFormat3dVariant2 == null && outputFormat3dVariant3 == null && outputFormat3dVariant4 == null && outputFormat3dVariant5 == null && outputFormat3dVariant6 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.OutputFormat3dVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.OutputFormat3dVariant2> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.OutputFormat3dVariant2).Name}");
                     outputFormat3dVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -193,9 +198,13 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (outputFormat3dVariant1 == null && outputFormat3dVariant2 == null && outputFormat3dVariant3 == null && outputFormat3dVariant4 == null && outputFormat3dVariant5 == null && outputFormat3dVariant6 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.OutputFormat3dVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.OutputFormat3dVariant3> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.OutputFormat3dVariant3).Name}");
                     outputFormat3dVariant3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -206,9 +215,13 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (outputFormat3dVariant1 == null && outputFormat3dVariant2 == null && outputFormat3dVariant3 == null && outputFormat3dVariant4 == null && outputFormat3dVariant5 == null && outputFormat3dVariant6 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.OutputFormat3dVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.OutputFormat3dVariant4> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.OutputFormat3dVariant4).Name}");
                     outputFormat3dVariant4 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -219,9 +232,13 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (outputFormat3dVariant1 == null && outputFormat3dVariant2 == null && outputFormat3dVariant3 == null && outputFormat3dVariant4 == null && outputFormat3dVariant5 == null && outputFormat3dVariant6 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.OutputFormat3dVariant5), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.OutputFormat3dVariant5> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.OutputFormat3dVariant5).Name}");
                     outputFormat3dVariant5 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -232,9 +249,13 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (outputFormat3dVariant1 == null && outputFormat3dVariant2 == null && outputFormat3dVariant3 == null && outputFormat3dVariant4 == null && outputFormat3dVariant5 == null && outputFormat3dVariant6 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.OutputFormat3dVariant6), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.OutputFormat3dVariant6> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.OutputFormat3dVariant6).Name}");
                     outputFormat3dVariant6 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

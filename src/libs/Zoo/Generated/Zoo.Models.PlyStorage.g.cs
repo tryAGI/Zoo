@@ -27,6 +27,26 @@ namespace Zoo
         public bool IsPlyStorageVariant1 => PlyStorageVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickPlyStorageVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.PlyStorageVariant1? value)
+        {
+            value = PlyStorageVariant1;
+            return IsPlyStorageVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.PlyStorageVariant1 PickPlyStorageVariant1() => IsPlyStorageVariant1
+            ? PlyStorageVariant1!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PlyStorageVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Encode payload as binary using little endian.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -44,6 +64,26 @@ namespace Zoo
         public bool IsPlyStorageVariant2 => PlyStorageVariant2 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickPlyStorageVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.PlyStorageVariant2? value)
+        {
+            value = PlyStorageVariant2;
+            return IsPlyStorageVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.PlyStorageVariant2 PickPlyStorageVariant2() => IsPlyStorageVariant2
+            ? PlyStorageVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PlyStorageVariant2' but the value was {ToString()}.");
+
+        /// <summary>
         /// Encode payload as binary using big endian.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -59,6 +99,26 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PlyStorageVariant3))]
 #endif
         public bool IsPlyStorageVariant3 => PlyStorageVariant3 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickPlyStorageVariant3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.PlyStorageVariant3? value)
+        {
+            value = PlyStorageVariant3;
+            return IsPlyStorageVariant3;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.PlyStorageVariant3 PickPlyStorageVariant3() => IsPlyStorageVariant3
+            ? PlyStorageVariant3!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PlyStorageVariant3' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -76,6 +136,11 @@ namespace Zoo
         {
             PlyStorageVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PlyStorage FromPlyStorageVariant1(global::Zoo.PlyStorageVariant1? value) => new PlyStorage(value);
 
         /// <summary>
         /// 
@@ -98,6 +163,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static PlyStorage FromPlyStorageVariant2(global::Zoo.PlyStorageVariant2? value) => new PlyStorage(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PlyStorage(global::Zoo.PlyStorageVariant3 value) => new PlyStorage((global::Zoo.PlyStorageVariant3?)value);
 
         /// <summary>
@@ -112,6 +182,11 @@ namespace Zoo
         {
             PlyStorageVariant3 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PlyStorage FromPlyStorageVariant3(global::Zoo.PlyStorageVariant3? value) => new PlyStorage(value);
 
         /// <summary>
         /// 
@@ -187,6 +262,36 @@ namespace Zoo
         /// 
         /// </summary>
         public void Match(
+            global::System.Action<global::Zoo.PlyStorageVariant1?>? plyStorageVariant1 = null,
+
+            global::System.Action<global::Zoo.PlyStorageVariant2?>? plyStorageVariant2 = null,
+
+            global::System.Action<global::Zoo.PlyStorageVariant3?>? plyStorageVariant3 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsPlyStorageVariant1)
+            {
+                plyStorageVariant1?.Invoke(PlyStorageVariant1!);
+            }
+            else if (IsPlyStorageVariant2)
+            {
+                plyStorageVariant2?.Invoke(PlyStorageVariant2!);
+            }
+            else if (IsPlyStorageVariant3)
+            {
+                plyStorageVariant3?.Invoke(PlyStorageVariant3!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
             global::System.Action<global::Zoo.PlyStorageVariant1?>? plyStorageVariant1 = null,
             global::System.Action<global::Zoo.PlyStorageVariant2?>? plyStorageVariant2 = null,
             global::System.Action<global::Zoo.PlyStorageVariant3?>? plyStorageVariant3 = null,

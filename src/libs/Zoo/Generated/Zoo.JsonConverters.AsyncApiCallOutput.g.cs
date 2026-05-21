@@ -331,6 +331,7 @@ namespace Zoo.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.AsyncApiCallOutputVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.AsyncApiCallOutputVariant1> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.AsyncApiCallOutputVariant1).Name}");
                     asyncApiCallOutputVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -341,9 +342,13 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (asyncApiCallOutputVariant1 == null && asyncApiCallOutputVariant2 == null && asyncApiCallOutputVariant3 == null && asyncApiCallOutputVariant4 == null && asyncApiCallOutputVariant5 == null && asyncApiCallOutputVariant6 == null && asyncApiCallOutputVariant7 == null && asyncApiCallOutputVariant8 == null && asyncApiCallOutputVariant9 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.AsyncApiCallOutputVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.AsyncApiCallOutputVariant2> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.AsyncApiCallOutputVariant2).Name}");
                     asyncApiCallOutputVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -354,9 +359,13 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (asyncApiCallOutputVariant1 == null && asyncApiCallOutputVariant2 == null && asyncApiCallOutputVariant3 == null && asyncApiCallOutputVariant4 == null && asyncApiCallOutputVariant5 == null && asyncApiCallOutputVariant6 == null && asyncApiCallOutputVariant7 == null && asyncApiCallOutputVariant8 == null && asyncApiCallOutputVariant9 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.AsyncApiCallOutputVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.AsyncApiCallOutputVariant3> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.AsyncApiCallOutputVariant3).Name}");
                     asyncApiCallOutputVariant3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -367,9 +376,13 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (asyncApiCallOutputVariant1 == null && asyncApiCallOutputVariant2 == null && asyncApiCallOutputVariant3 == null && asyncApiCallOutputVariant4 == null && asyncApiCallOutputVariant5 == null && asyncApiCallOutputVariant6 == null && asyncApiCallOutputVariant7 == null && asyncApiCallOutputVariant8 == null && asyncApiCallOutputVariant9 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.AsyncApiCallOutputVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.AsyncApiCallOutputVariant4> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.AsyncApiCallOutputVariant4).Name}");
                     asyncApiCallOutputVariant4 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -380,9 +393,13 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (asyncApiCallOutputVariant1 == null && asyncApiCallOutputVariant2 == null && asyncApiCallOutputVariant3 == null && asyncApiCallOutputVariant4 == null && asyncApiCallOutputVariant5 == null && asyncApiCallOutputVariant6 == null && asyncApiCallOutputVariant7 == null && asyncApiCallOutputVariant8 == null && asyncApiCallOutputVariant9 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.AsyncApiCallOutputVariant5), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.AsyncApiCallOutputVariant5> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.AsyncApiCallOutputVariant5).Name}");
                     asyncApiCallOutputVariant5 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -393,9 +410,13 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (asyncApiCallOutputVariant1 == null && asyncApiCallOutputVariant2 == null && asyncApiCallOutputVariant3 == null && asyncApiCallOutputVariant4 == null && asyncApiCallOutputVariant5 == null && asyncApiCallOutputVariant6 == null && asyncApiCallOutputVariant7 == null && asyncApiCallOutputVariant8 == null && asyncApiCallOutputVariant9 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.AsyncApiCallOutputVariant6), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.AsyncApiCallOutputVariant6> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.AsyncApiCallOutputVariant6).Name}");
                     asyncApiCallOutputVariant6 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -406,9 +427,13 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (asyncApiCallOutputVariant1 == null && asyncApiCallOutputVariant2 == null && asyncApiCallOutputVariant3 == null && asyncApiCallOutputVariant4 == null && asyncApiCallOutputVariant5 == null && asyncApiCallOutputVariant6 == null && asyncApiCallOutputVariant7 == null && asyncApiCallOutputVariant8 == null && asyncApiCallOutputVariant9 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.AsyncApiCallOutputVariant7), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.AsyncApiCallOutputVariant7> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.AsyncApiCallOutputVariant7).Name}");
                     asyncApiCallOutputVariant7 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -419,9 +444,13 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (asyncApiCallOutputVariant1 == null && asyncApiCallOutputVariant2 == null && asyncApiCallOutputVariant3 == null && asyncApiCallOutputVariant4 == null && asyncApiCallOutputVariant5 == null && asyncApiCallOutputVariant6 == null && asyncApiCallOutputVariant7 == null && asyncApiCallOutputVariant8 == null && asyncApiCallOutputVariant9 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.AsyncApiCallOutputVariant8), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.AsyncApiCallOutputVariant8> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.AsyncApiCallOutputVariant8).Name}");
                     asyncApiCallOutputVariant8 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -432,9 +461,13 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (asyncApiCallOutputVariant1 == null && asyncApiCallOutputVariant2 == null && asyncApiCallOutputVariant3 == null && asyncApiCallOutputVariant4 == null && asyncApiCallOutputVariant5 == null && asyncApiCallOutputVariant6 == null && asyncApiCallOutputVariant7 == null && asyncApiCallOutputVariant8 == null && asyncApiCallOutputVariant9 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.AsyncApiCallOutputVariant9), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.AsyncApiCallOutputVariant9> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.AsyncApiCallOutputVariant9).Name}");
                     asyncApiCallOutputVariant9 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

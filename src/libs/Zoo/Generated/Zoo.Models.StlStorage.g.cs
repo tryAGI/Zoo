@@ -27,6 +27,26 @@ namespace Zoo
         public bool IsStlStorageVariant1 => StlStorageVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickStlStorageVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.StlStorageVariant1? value)
+        {
+            value = StlStorageVariant1;
+            return IsStlStorageVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.StlStorageVariant1 PickStlStorageVariant1() => IsStlStorageVariant1
+            ? StlStorageVariant1!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'StlStorageVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Binary STL encoding.<br/>
         /// This is the default setting.
         /// </summary>
@@ -43,6 +63,26 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StlStorageVariant2))]
 #endif
         public bool IsStlStorageVariant2 => StlStorageVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickStlStorageVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.StlStorageVariant2? value)
+        {
+            value = StlStorageVariant2;
+            return IsStlStorageVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.StlStorageVariant2 PickStlStorageVariant2() => IsStlStorageVariant2
+            ? StlStorageVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'StlStorageVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -64,6 +104,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static StlStorage FromStlStorageVariant1(global::Zoo.StlStorageVariant1? value) => new StlStorage(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator StlStorage(global::Zoo.StlStorageVariant2 value) => new StlStorage((global::Zoo.StlStorageVariant2?)value);
 
         /// <summary>
@@ -78,6 +123,11 @@ namespace Zoo
         {
             StlStorageVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static StlStorage FromStlStorageVariant2(global::Zoo.StlStorageVariant2? value) => new StlStorage(value);
 
         /// <summary>
         /// 
@@ -144,6 +194,30 @@ namespace Zoo
         /// 
         /// </summary>
         public void Match(
+            global::System.Action<global::Zoo.StlStorageVariant1?>? stlStorageVariant1 = null,
+
+            global::System.Action<global::Zoo.StlStorageVariant2?>? stlStorageVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsStlStorageVariant1)
+            {
+                stlStorageVariant1?.Invoke(StlStorageVariant1!);
+            }
+            else if (IsStlStorageVariant2)
+            {
+                stlStorageVariant2?.Invoke(StlStorageVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
             global::System.Action<global::Zoo.StlStorageVariant1?>? stlStorageVariant1 = null,
             global::System.Action<global::Zoo.StlStorageVariant2?>? stlStorageVariant2 = null,
             bool validate = true)

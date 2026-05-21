@@ -132,11 +132,12 @@ namespace Zoo
 
             global::System.Net.Http.HttpRequestMessage __CreateHttpRequest()
             {
+
                             var __pathBuilder = new global::Zoo.PathBuilder(
                                 path: $"/ai/text-to-cad/{outputFormat}",
-                                baseUri: HttpClient.BaseAddress); 
+                                baseUri: HttpClient.BaseAddress);
                             __pathBuilder
-                                .AddOptionalParameter("kcl", kcl?.ToString().ToLowerInvariant()) 
+                                .AddOptionalParameter("kcl", kcl?.ToString().ToLowerInvariant())
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Zoo.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -216,6 +217,8 @@ namespace Zoo
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                     try
                     {
@@ -226,6 +229,11 @@ namespace Zoo
                     }
                     catch (global::System.Net.Http.HttpRequestException __exception)
                     {
+                        var __retryDelay = global::Zoo.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: null,
+                            attempt: __attempt);
                         var __willRetry = __attempt < __maxAttempts && !__effectiveCancellationToken.IsCancellationRequested;
                         await global::Zoo.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
@@ -243,6 +251,8 @@ namespace Zoo
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: __willRetry,
+                                retryDelay: __willRetry ? __retryDelay : (global::System.TimeSpan?)null,
+                                retryReason: "exception",
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         if (!__willRetry)
                         {
@@ -252,8 +262,7 @@ namespace Zoo
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::Zoo.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -262,6 +271,11 @@ namespace Zoo
                         __attempt < __maxAttempts &&
                         global::Zoo.AutoSDKRequestOptionsSupport.ShouldRetryStatusCode(__response.StatusCode))
                     {
+                        var __retryDelay = global::Zoo.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: __response,
+                            attempt: __attempt);
                         await global::Zoo.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Zoo.AutoSDKRequestOptionsSupport.CreateHookContext(
@@ -278,14 +292,15 @@ namespace Zoo
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: true,
+                                retryDelay: __retryDelay,
+                                retryReason: "status:" + ((int)__response.StatusCode).ToString(global::System.Globalization.CultureInfo.InvariantCulture),
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         __response.Dispose();
                         __response = null;
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::Zoo.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -325,6 +340,8 @@ namespace Zoo
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                 else
@@ -345,6 +362,8 @@ namespace Zoo
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                             // Error
@@ -450,6 +469,7 @@ namespace Zoo
                                     return new global::Zoo.AutoSDKHttpResponse<global::Zoo.TextToCad>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Zoo.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
                                         body: __value);
                                 }
                                 catch (global::System.Exception __ex)
@@ -483,6 +503,7 @@ namespace Zoo
                                     return new global::Zoo.AutoSDKHttpResponse<global::Zoo.TextToCad>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Zoo.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
                                         body: __value);
                                 }
                                 catch (global::System.Exception __ex)

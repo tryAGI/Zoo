@@ -27,6 +27,26 @@ namespace Zoo
         public bool IsSelectionVariant1 => SelectionVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickSelectionVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.SelectionVariant1? value)
+        {
+            value = SelectionVariant1;
+            return IsSelectionVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.SelectionVariant1 PickSelectionVariant1() => IsSelectionVariant1
+            ? SelectionVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SelectionVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Visit the indexed scene.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +62,26 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SelectionVariant2))]
 #endif
         public bool IsSelectionVariant2 => SelectionVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickSelectionVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.SelectionVariant2? value)
+        {
+            value = SelectionVariant2;
+            return IsSelectionVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.SelectionVariant2 PickSelectionVariant2() => IsSelectionVariant2
+            ? SelectionVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SelectionVariant2' but the value was {ToString()}.");
 
         /// <summary>
         /// Visit the first scene with the given name.
@@ -61,6 +101,26 @@ namespace Zoo
         public bool IsSelectionVariant3 => SelectionVariant3 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickSelectionVariant3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.SelectionVariant3? value)
+        {
+            value = SelectionVariant3;
+            return IsSelectionVariant3;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.SelectionVariant3 PickSelectionVariant3() => IsSelectionVariant3
+            ? SelectionVariant3!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SelectionVariant3' but the value was {ToString()}.");
+
+        /// <summary>
         /// Visit the indexed mesh.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -78,6 +138,26 @@ namespace Zoo
         public bool IsSelectionVariant4 => SelectionVariant4 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickSelectionVariant4(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.SelectionVariant4? value)
+        {
+            value = SelectionVariant4;
+            return IsSelectionVariant4;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.SelectionVariant4 PickSelectionVariant4() => IsSelectionVariant4
+            ? SelectionVariant4!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SelectionVariant4' but the value was {ToString()}.");
+
+        /// <summary>
         /// Visit the first mesh with the given name.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -93,6 +173,26 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SelectionVariant5))]
 #endif
         public bool IsSelectionVariant5 => SelectionVariant5 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickSelectionVariant5(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.SelectionVariant5? value)
+        {
+            value = SelectionVariant5;
+            return IsSelectionVariant5;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.SelectionVariant5 PickSelectionVariant5() => IsSelectionVariant5
+            ? SelectionVariant5!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SelectionVariant5' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -110,6 +210,11 @@ namespace Zoo
         {
             SelectionVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Selection FromSelectionVariant1(global::Zoo.SelectionVariant1? value) => new Selection(value);
 
         /// <summary>
         /// 
@@ -132,6 +237,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static Selection FromSelectionVariant2(global::Zoo.SelectionVariant2? value) => new Selection(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator Selection(global::Zoo.SelectionVariant3 value) => new Selection((global::Zoo.SelectionVariant3?)value);
 
         /// <summary>
@@ -146,6 +256,11 @@ namespace Zoo
         {
             SelectionVariant3 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Selection FromSelectionVariant3(global::Zoo.SelectionVariant3? value) => new Selection(value);
 
         /// <summary>
         /// 
@@ -168,6 +283,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static Selection FromSelectionVariant4(global::Zoo.SelectionVariant4? value) => new Selection(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator Selection(global::Zoo.SelectionVariant5 value) => new Selection((global::Zoo.SelectionVariant5?)value);
 
         /// <summary>
@@ -182,6 +302,11 @@ namespace Zoo
         {
             SelectionVariant5 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Selection FromSelectionVariant5(global::Zoo.SelectionVariant5? value) => new Selection(value);
 
         /// <summary>
         /// 
@@ -235,11 +360,11 @@ namespace Zoo
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Zoo.SelectionVariant1?, TResult>? selectionVariant1 = null,
-            global::System.Func<global::Zoo.SelectionVariant2?, TResult>? selectionVariant2 = null,
-            global::System.Func<global::Zoo.SelectionVariant3?, TResult>? selectionVariant3 = null,
-            global::System.Func<global::Zoo.SelectionVariant4?, TResult>? selectionVariant4 = null,
-            global::System.Func<global::Zoo.SelectionVariant5?, TResult>? selectionVariant5 = null,
+            global::System.Func<global::Zoo.SelectionVariant1, TResult>? selectionVariant1 = null,
+            global::System.Func<global::Zoo.SelectionVariant2, TResult>? selectionVariant2 = null,
+            global::System.Func<global::Zoo.SelectionVariant3, TResult>? selectionVariant3 = null,
+            global::System.Func<global::Zoo.SelectionVariant4, TResult>? selectionVariant4 = null,
+            global::System.Func<global::Zoo.SelectionVariant5, TResult>? selectionVariant5 = null,
             bool validate = true)
         {
             if (validate)
@@ -275,11 +400,53 @@ namespace Zoo
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Zoo.SelectionVariant1?>? selectionVariant1 = null,
-            global::System.Action<global::Zoo.SelectionVariant2?>? selectionVariant2 = null,
-            global::System.Action<global::Zoo.SelectionVariant3?>? selectionVariant3 = null,
-            global::System.Action<global::Zoo.SelectionVariant4?>? selectionVariant4 = null,
-            global::System.Action<global::Zoo.SelectionVariant5?>? selectionVariant5 = null,
+            global::System.Action<global::Zoo.SelectionVariant1>? selectionVariant1 = null,
+
+            global::System.Action<global::Zoo.SelectionVariant2>? selectionVariant2 = null,
+
+            global::System.Action<global::Zoo.SelectionVariant3>? selectionVariant3 = null,
+
+            global::System.Action<global::Zoo.SelectionVariant4>? selectionVariant4 = null,
+
+            global::System.Action<global::Zoo.SelectionVariant5>? selectionVariant5 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsSelectionVariant1)
+            {
+                selectionVariant1?.Invoke(SelectionVariant1!);
+            }
+            else if (IsSelectionVariant2)
+            {
+                selectionVariant2?.Invoke(SelectionVariant2!);
+            }
+            else if (IsSelectionVariant3)
+            {
+                selectionVariant3?.Invoke(SelectionVariant3!);
+            }
+            else if (IsSelectionVariant4)
+            {
+                selectionVariant4?.Invoke(SelectionVariant4!);
+            }
+            else if (IsSelectionVariant5)
+            {
+                selectionVariant5?.Invoke(SelectionVariant5!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Zoo.SelectionVariant1>? selectionVariant1 = null,
+            global::System.Action<global::Zoo.SelectionVariant2>? selectionVariant2 = null,
+            global::System.Action<global::Zoo.SelectionVariant3>? selectionVariant3 = null,
+            global::System.Action<global::Zoo.SelectionVariant4>? selectionVariant4 = null,
+            global::System.Action<global::Zoo.SelectionVariant5>? selectionVariant5 = null,
             bool validate = true)
         {
             if (validate)

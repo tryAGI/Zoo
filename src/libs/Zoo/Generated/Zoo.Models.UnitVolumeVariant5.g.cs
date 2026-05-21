@@ -4,14 +4,14 @@
 namespace Zoo
 {
     /// <summary>
-    /// Cubic yards (yd³) &lt;https://en.wikipedia.org/wiki/Cubic_yard&gt;
+    /// Cubic meters (m³) &lt;https://en.wikipedia.org/wiki/Cubic_meter&gt;
     /// </summary>
     public enum UnitVolumeVariant5
     {
         /// <summary>
         /// 
         /// </summary>
-        Yd3,
+        M3,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Zoo
         {
             return value switch
             {
-                UnitVolumeVariant5.Yd3 => "yd3",
+                UnitVolumeVariant5.M3 => "m3",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Zoo
         {
             return value switch
             {
-                "yd3" => UnitVolumeVariant5.Yd3,
+                "m3" => UnitVolumeVariant5.M3,
                 _ => null,
             };
         }

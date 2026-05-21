@@ -73,5 +73,6 @@ namespace Zoo
         public InputFormat3dVariant3()
         {
         }
+
     }
 }

@@ -27,6 +27,26 @@ namespace Zoo
         public bool IsOutputFormat3dVariant1 => OutputFormat3dVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickOutputFormat3dVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.OutputFormat3dVariant1? value)
+        {
+            value = OutputFormat3dVariant1;
+            return IsOutputFormat3dVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.OutputFormat3dVariant1 PickOutputFormat3dVariant1() => IsOutputFormat3dVariant1
+            ? OutputFormat3dVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'OutputFormat3dVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// glTF 2.0. We refer to this as glTF since that is how our customers refer to it, although by default it will be in binary format and thus technically (glb). If you prefer ASCII output, you can set that option for the export.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +62,26 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(OutputFormat3dVariant2))]
 #endif
         public bool IsOutputFormat3dVariant2 => OutputFormat3dVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickOutputFormat3dVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.OutputFormat3dVariant2? value)
+        {
+            value = OutputFormat3dVariant2;
+            return IsOutputFormat3dVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.OutputFormat3dVariant2 PickOutputFormat3dVariant2() => IsOutputFormat3dVariant2
+            ? OutputFormat3dVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'OutputFormat3dVariant2' but the value was {ToString()}.");
 
         /// <summary>
         /// Wavefront OBJ format.
@@ -61,6 +101,26 @@ namespace Zoo
         public bool IsOutputFormat3dVariant3 => OutputFormat3dVariant3 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickOutputFormat3dVariant3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.OutputFormat3dVariant3? value)
+        {
+            value = OutputFormat3dVariant3;
+            return IsOutputFormat3dVariant3;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.OutputFormat3dVariant3 PickOutputFormat3dVariant3() => IsOutputFormat3dVariant3
+            ? OutputFormat3dVariant3!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'OutputFormat3dVariant3' but the value was {ToString()}.");
+
+        /// <summary>
         /// The PLY Polygon File Format.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -76,6 +136,26 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(OutputFormat3dVariant4))]
 #endif
         public bool IsOutputFormat3dVariant4 => OutputFormat3dVariant4 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickOutputFormat3dVariant4(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.OutputFormat3dVariant4? value)
+        {
+            value = OutputFormat3dVariant4;
+            return IsOutputFormat3dVariant4;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.OutputFormat3dVariant4 PickOutputFormat3dVariant4() => IsOutputFormat3dVariant4
+            ? OutputFormat3dVariant4!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'OutputFormat3dVariant4' but the value was {ToString()}.");
 
         /// <summary>
         /// ISO 10303-21 (STEP) format.
@@ -95,6 +175,26 @@ namespace Zoo
         public bool IsOutputFormat3dVariant5 => OutputFormat3dVariant5 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickOutputFormat3dVariant5(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.OutputFormat3dVariant5? value)
+        {
+            value = OutputFormat3dVariant5;
+            return IsOutputFormat3dVariant5;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.OutputFormat3dVariant5 PickOutputFormat3dVariant5() => IsOutputFormat3dVariant5
+            ? OutputFormat3dVariant5!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'OutputFormat3dVariant5' but the value was {ToString()}.");
+
+        /// <summary>
         /// *ST**ereo**L**ithography format.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -110,6 +210,26 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(OutputFormat3dVariant6))]
 #endif
         public bool IsOutputFormat3dVariant6 => OutputFormat3dVariant6 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickOutputFormat3dVariant6(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.OutputFormat3dVariant6? value)
+        {
+            value = OutputFormat3dVariant6;
+            return IsOutputFormat3dVariant6;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.OutputFormat3dVariant6 PickOutputFormat3dVariant6() => IsOutputFormat3dVariant6
+            ? OutputFormat3dVariant6!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'OutputFormat3dVariant6' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -127,6 +247,11 @@ namespace Zoo
         {
             OutputFormat3dVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static OutputFormat3d FromOutputFormat3dVariant1(global::Zoo.OutputFormat3dVariant1? value) => new OutputFormat3d(value);
 
         /// <summary>
         /// 
@@ -149,6 +274,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static OutputFormat3d FromOutputFormat3dVariant2(global::Zoo.OutputFormat3dVariant2? value) => new OutputFormat3d(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator OutputFormat3d(global::Zoo.OutputFormat3dVariant3 value) => new OutputFormat3d((global::Zoo.OutputFormat3dVariant3?)value);
 
         /// <summary>
@@ -163,6 +293,11 @@ namespace Zoo
         {
             OutputFormat3dVariant3 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static OutputFormat3d FromOutputFormat3dVariant3(global::Zoo.OutputFormat3dVariant3? value) => new OutputFormat3d(value);
 
         /// <summary>
         /// 
@@ -185,6 +320,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static OutputFormat3d FromOutputFormat3dVariant4(global::Zoo.OutputFormat3dVariant4? value) => new OutputFormat3d(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator OutputFormat3d(global::Zoo.OutputFormat3dVariant5 value) => new OutputFormat3d((global::Zoo.OutputFormat3dVariant5?)value);
 
         /// <summary>
@@ -203,6 +343,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static OutputFormat3d FromOutputFormat3dVariant5(global::Zoo.OutputFormat3dVariant5? value) => new OutputFormat3d(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator OutputFormat3d(global::Zoo.OutputFormat3dVariant6 value) => new OutputFormat3d((global::Zoo.OutputFormat3dVariant6?)value);
 
         /// <summary>
@@ -217,6 +362,11 @@ namespace Zoo
         {
             OutputFormat3dVariant6 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static OutputFormat3d FromOutputFormat3dVariant6(global::Zoo.OutputFormat3dVariant6? value) => new OutputFormat3d(value);
 
         /// <summary>
         /// 
@@ -274,12 +424,12 @@ namespace Zoo
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Zoo.OutputFormat3dVariant1?, TResult>? outputFormat3dVariant1 = null,
-            global::System.Func<global::Zoo.OutputFormat3dVariant2?, TResult>? outputFormat3dVariant2 = null,
-            global::System.Func<global::Zoo.OutputFormat3dVariant3?, TResult>? outputFormat3dVariant3 = null,
-            global::System.Func<global::Zoo.OutputFormat3dVariant4?, TResult>? outputFormat3dVariant4 = null,
-            global::System.Func<global::Zoo.OutputFormat3dVariant5?, TResult>? outputFormat3dVariant5 = null,
-            global::System.Func<global::Zoo.OutputFormat3dVariant6?, TResult>? outputFormat3dVariant6 = null,
+            global::System.Func<global::Zoo.OutputFormat3dVariant1, TResult>? outputFormat3dVariant1 = null,
+            global::System.Func<global::Zoo.OutputFormat3dVariant2, TResult>? outputFormat3dVariant2 = null,
+            global::System.Func<global::Zoo.OutputFormat3dVariant3, TResult>? outputFormat3dVariant3 = null,
+            global::System.Func<global::Zoo.OutputFormat3dVariant4, TResult>? outputFormat3dVariant4 = null,
+            global::System.Func<global::Zoo.OutputFormat3dVariant5, TResult>? outputFormat3dVariant5 = null,
+            global::System.Func<global::Zoo.OutputFormat3dVariant6, TResult>? outputFormat3dVariant6 = null,
             bool validate = true)
         {
             if (validate)
@@ -319,12 +469,60 @@ namespace Zoo
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Zoo.OutputFormat3dVariant1?>? outputFormat3dVariant1 = null,
-            global::System.Action<global::Zoo.OutputFormat3dVariant2?>? outputFormat3dVariant2 = null,
-            global::System.Action<global::Zoo.OutputFormat3dVariant3?>? outputFormat3dVariant3 = null,
-            global::System.Action<global::Zoo.OutputFormat3dVariant4?>? outputFormat3dVariant4 = null,
-            global::System.Action<global::Zoo.OutputFormat3dVariant5?>? outputFormat3dVariant5 = null,
-            global::System.Action<global::Zoo.OutputFormat3dVariant6?>? outputFormat3dVariant6 = null,
+            global::System.Action<global::Zoo.OutputFormat3dVariant1>? outputFormat3dVariant1 = null,
+
+            global::System.Action<global::Zoo.OutputFormat3dVariant2>? outputFormat3dVariant2 = null,
+
+            global::System.Action<global::Zoo.OutputFormat3dVariant3>? outputFormat3dVariant3 = null,
+
+            global::System.Action<global::Zoo.OutputFormat3dVariant4>? outputFormat3dVariant4 = null,
+
+            global::System.Action<global::Zoo.OutputFormat3dVariant5>? outputFormat3dVariant5 = null,
+
+            global::System.Action<global::Zoo.OutputFormat3dVariant6>? outputFormat3dVariant6 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsOutputFormat3dVariant1)
+            {
+                outputFormat3dVariant1?.Invoke(OutputFormat3dVariant1!);
+            }
+            else if (IsOutputFormat3dVariant2)
+            {
+                outputFormat3dVariant2?.Invoke(OutputFormat3dVariant2!);
+            }
+            else if (IsOutputFormat3dVariant3)
+            {
+                outputFormat3dVariant3?.Invoke(OutputFormat3dVariant3!);
+            }
+            else if (IsOutputFormat3dVariant4)
+            {
+                outputFormat3dVariant4?.Invoke(OutputFormat3dVariant4!);
+            }
+            else if (IsOutputFormat3dVariant5)
+            {
+                outputFormat3dVariant5?.Invoke(OutputFormat3dVariant5!);
+            }
+            else if (IsOutputFormat3dVariant6)
+            {
+                outputFormat3dVariant6?.Invoke(OutputFormat3dVariant6!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Zoo.OutputFormat3dVariant1>? outputFormat3dVariant1 = null,
+            global::System.Action<global::Zoo.OutputFormat3dVariant2>? outputFormat3dVariant2 = null,
+            global::System.Action<global::Zoo.OutputFormat3dVariant3>? outputFormat3dVariant3 = null,
+            global::System.Action<global::Zoo.OutputFormat3dVariant4>? outputFormat3dVariant4 = null,
+            global::System.Action<global::Zoo.OutputFormat3dVariant5>? outputFormat3dVariant5 = null,
+            global::System.Action<global::Zoo.OutputFormat3dVariant6>? outputFormat3dVariant6 = null,
             bool validate = true)
         {
             if (validate)

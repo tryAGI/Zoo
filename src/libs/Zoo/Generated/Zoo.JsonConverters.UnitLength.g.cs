@@ -228,7 +228,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (unitLengthVariant1 == null && unitLengthVariant2 == null && unitLengthVariant3 == null && unitLengthVariant4 == null && unitLengthVariant5 == null && unitLengthVariant6 == null)
+            {
                 try
                 {
 
@@ -242,7 +245,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (unitLengthVariant1 == null && unitLengthVariant2 == null && unitLengthVariant3 == null && unitLengthVariant4 == null && unitLengthVariant5 == null && unitLengthVariant6 == null)
+            {
                 try
                 {
 
@@ -256,7 +262,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (unitLengthVariant1 == null && unitLengthVariant2 == null && unitLengthVariant3 == null && unitLengthVariant4 == null && unitLengthVariant5 == null && unitLengthVariant6 == null)
+            {
                 try
                 {
 
@@ -270,7 +279,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (unitLengthVariant1 == null && unitLengthVariant2 == null && unitLengthVariant3 == null && unitLengthVariant4 == null && unitLengthVariant5 == null && unitLengthVariant6 == null)
+            {
                 try
                 {
 
@@ -284,7 +296,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (unitLengthVariant1 == null && unitLengthVariant2 == null && unitLengthVariant3 == null && unitLengthVariant4 == null && unitLengthVariant5 == null && unitLengthVariant6 == null)
+            {
                 try
                 {
 

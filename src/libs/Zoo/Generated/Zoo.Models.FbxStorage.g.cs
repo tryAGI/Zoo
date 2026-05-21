@@ -27,6 +27,26 @@ namespace Zoo
         public bool IsFbxStorageVariant1 => FbxStorageVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickFbxStorageVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.FbxStorageVariant1? value)
+        {
+            value = FbxStorageVariant1;
+            return IsFbxStorageVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.FbxStorageVariant1 PickFbxStorageVariant1() => IsFbxStorageVariant1
+            ? FbxStorageVariant1!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FbxStorageVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Binary FBX encoding.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +62,26 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FbxStorageVariant2))]
 #endif
         public bool IsFbxStorageVariant2 => FbxStorageVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickFbxStorageVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.FbxStorageVariant2? value)
+        {
+            value = FbxStorageVariant2;
+            return IsFbxStorageVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.FbxStorageVariant2 PickFbxStorageVariant2() => IsFbxStorageVariant2
+            ? FbxStorageVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FbxStorageVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -63,6 +103,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static FbxStorage FromFbxStorageVariant1(global::Zoo.FbxStorageVariant1? value) => new FbxStorage(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FbxStorage(global::Zoo.FbxStorageVariant2 value) => new FbxStorage((global::Zoo.FbxStorageVariant2?)value);
 
         /// <summary>
@@ -77,6 +122,11 @@ namespace Zoo
         {
             FbxStorageVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FbxStorage FromFbxStorageVariant2(global::Zoo.FbxStorageVariant2? value) => new FbxStorage(value);
 
         /// <summary>
         /// 
@@ -143,6 +193,30 @@ namespace Zoo
         /// 
         /// </summary>
         public void Match(
+            global::System.Action<global::Zoo.FbxStorageVariant1?>? fbxStorageVariant1 = null,
+
+            global::System.Action<global::Zoo.FbxStorageVariant2?>? fbxStorageVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsFbxStorageVariant1)
+            {
+                fbxStorageVariant1?.Invoke(FbxStorageVariant1!);
+            }
+            else if (IsFbxStorageVariant2)
+            {
+                fbxStorageVariant2?.Invoke(FbxStorageVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
             global::System.Action<global::Zoo.FbxStorageVariant1?>? fbxStorageVariant1 = null,
             global::System.Action<global::Zoo.FbxStorageVariant2?>? fbxStorageVariant2 = null,
             bool validate = true)

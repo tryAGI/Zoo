@@ -10,7 +10,7 @@ namespace Zoo
     public readonly partial struct UnitVolume : global::System.IEquatable<UnitVolume>
     {
         /// <summary>
-        /// Cubic centimeters (cc or cm³) &lt;https://en.wikipedia.org/wiki/Cubic_centimeter&gt;
+        /// Cubic millimeters (mm³)
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Zoo.UnitVolumeVariant1? UnitVolumeVariant1 { get; init; }
@@ -27,7 +27,27 @@ namespace Zoo
         public bool IsUnitVolumeVariant1 => UnitVolumeVariant1 != null;
 
         /// <summary>
-        /// Cubic feet (ft³) &lt;https://en.wikipedia.org/wiki/Cubic_foot&gt;
+        /// 
+        /// </summary>
+        public bool TryPickUnitVolumeVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.UnitVolumeVariant1? value)
+        {
+            value = UnitVolumeVariant1;
+            return IsUnitVolumeVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitVolumeVariant1 PickUnitVolumeVariant1() => IsUnitVolumeVariant1
+            ? UnitVolumeVariant1!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitVolumeVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// Cubic centimeters (cc or cm³) &lt;https://en.wikipedia.org/wiki/Cubic_centimeter&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Zoo.UnitVolumeVariant2? UnitVolumeVariant2 { get; init; }
@@ -44,7 +64,27 @@ namespace Zoo
         public bool IsUnitVolumeVariant2 => UnitVolumeVariant2 != null;
 
         /// <summary>
-        /// Cubic inches (cu in or in³) &lt;https://en.wikipedia.org/wiki/Cubic_inch&gt;
+        /// 
+        /// </summary>
+        public bool TryPickUnitVolumeVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.UnitVolumeVariant2? value)
+        {
+            value = UnitVolumeVariant2;
+            return IsUnitVolumeVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitVolumeVariant2 PickUnitVolumeVariant2() => IsUnitVolumeVariant2
+            ? UnitVolumeVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitVolumeVariant2' but the value was {ToString()}.");
+
+        /// <summary>
+        /// Cubic feet (ft³) &lt;https://en.wikipedia.org/wiki/Cubic_foot&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Zoo.UnitVolumeVariant3? UnitVolumeVariant3 { get; init; }
@@ -61,7 +101,27 @@ namespace Zoo
         public bool IsUnitVolumeVariant3 => UnitVolumeVariant3 != null;
 
         /// <summary>
-        /// Cubic meters (m³) &lt;https://en.wikipedia.org/wiki/Cubic_meter&gt;
+        /// 
+        /// </summary>
+        public bool TryPickUnitVolumeVariant3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.UnitVolumeVariant3? value)
+        {
+            value = UnitVolumeVariant3;
+            return IsUnitVolumeVariant3;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitVolumeVariant3 PickUnitVolumeVariant3() => IsUnitVolumeVariant3
+            ? UnitVolumeVariant3!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitVolumeVariant3' but the value was {ToString()}.");
+
+        /// <summary>
+        /// Cubic inches (cu in or in³) &lt;https://en.wikipedia.org/wiki/Cubic_inch&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Zoo.UnitVolumeVariant4? UnitVolumeVariant4 { get; init; }
@@ -78,7 +138,27 @@ namespace Zoo
         public bool IsUnitVolumeVariant4 => UnitVolumeVariant4 != null;
 
         /// <summary>
-        /// Cubic yards (yd³) &lt;https://en.wikipedia.org/wiki/Cubic_yard&gt;
+        /// 
+        /// </summary>
+        public bool TryPickUnitVolumeVariant4(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.UnitVolumeVariant4? value)
+        {
+            value = UnitVolumeVariant4;
+            return IsUnitVolumeVariant4;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitVolumeVariant4 PickUnitVolumeVariant4() => IsUnitVolumeVariant4
+            ? UnitVolumeVariant4!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitVolumeVariant4' but the value was {ToString()}.");
+
+        /// <summary>
+        /// Cubic meters (m³) &lt;https://en.wikipedia.org/wiki/Cubic_meter&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Zoo.UnitVolumeVariant5? UnitVolumeVariant5 { get; init; }
@@ -95,7 +175,27 @@ namespace Zoo
         public bool IsUnitVolumeVariant5 => UnitVolumeVariant5 != null;
 
         /// <summary>
-        /// US Fluid Ounces (fl oz) &lt;https://en.wikipedia.org/wiki/Fluid_ounce&gt;
+        /// 
+        /// </summary>
+        public bool TryPickUnitVolumeVariant5(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.UnitVolumeVariant5? value)
+        {
+            value = UnitVolumeVariant5;
+            return IsUnitVolumeVariant5;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitVolumeVariant5 PickUnitVolumeVariant5() => IsUnitVolumeVariant5
+            ? UnitVolumeVariant5!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitVolumeVariant5' but the value was {ToString()}.");
+
+        /// <summary>
+        /// Cubic yards (yd³) &lt;https://en.wikipedia.org/wiki/Cubic_yard&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Zoo.UnitVolumeVariant6? UnitVolumeVariant6 { get; init; }
@@ -112,7 +212,27 @@ namespace Zoo
         public bool IsUnitVolumeVariant6 => UnitVolumeVariant6 != null;
 
         /// <summary>
-        /// US Gallons (gal US) &lt;https://en.wikipedia.org/wiki/Gallon&gt;
+        /// 
+        /// </summary>
+        public bool TryPickUnitVolumeVariant6(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.UnitVolumeVariant6? value)
+        {
+            value = UnitVolumeVariant6;
+            return IsUnitVolumeVariant6;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitVolumeVariant6 PickUnitVolumeVariant6() => IsUnitVolumeVariant6
+            ? UnitVolumeVariant6!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitVolumeVariant6' but the value was {ToString()}.");
+
+        /// <summary>
+        /// US Fluid Ounces (fl oz) &lt;https://en.wikipedia.org/wiki/Fluid_ounce&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Zoo.UnitVolumeVariant7? UnitVolumeVariant7 { get; init; }
@@ -129,7 +249,27 @@ namespace Zoo
         public bool IsUnitVolumeVariant7 => UnitVolumeVariant7 != null;
 
         /// <summary>
-        /// Liters (l) &lt;https://en.wikipedia.org/wiki/Litre&gt;
+        /// 
+        /// </summary>
+        public bool TryPickUnitVolumeVariant7(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.UnitVolumeVariant7? value)
+        {
+            value = UnitVolumeVariant7;
+            return IsUnitVolumeVariant7;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitVolumeVariant7 PickUnitVolumeVariant7() => IsUnitVolumeVariant7
+            ? UnitVolumeVariant7!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitVolumeVariant7' but the value was {ToString()}.");
+
+        /// <summary>
+        /// US Gallons (gal US) &lt;https://en.wikipedia.org/wiki/Gallon&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Zoo.UnitVolumeVariant8? UnitVolumeVariant8 { get; init; }
@@ -146,7 +286,27 @@ namespace Zoo
         public bool IsUnitVolumeVariant8 => UnitVolumeVariant8 != null;
 
         /// <summary>
-        /// Milliliters (ml) &lt;https://en.wikipedia.org/wiki/Litre&gt;
+        /// 
+        /// </summary>
+        public bool TryPickUnitVolumeVariant8(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.UnitVolumeVariant8? value)
+        {
+            value = UnitVolumeVariant8;
+            return IsUnitVolumeVariant8;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitVolumeVariant8 PickUnitVolumeVariant8() => IsUnitVolumeVariant8
+            ? UnitVolumeVariant8!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitVolumeVariant8' but the value was {ToString()}.");
+
+        /// <summary>
+        /// Liters (l) &lt;https://en.wikipedia.org/wiki/Litre&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Zoo.UnitVolumeVariant9? UnitVolumeVariant9 { get; init; }
@@ -161,6 +321,63 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UnitVolumeVariant9))]
 #endif
         public bool IsUnitVolumeVariant9 => UnitVolumeVariant9 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickUnitVolumeVariant9(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.UnitVolumeVariant9? value)
+        {
+            value = UnitVolumeVariant9;
+            return IsUnitVolumeVariant9;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitVolumeVariant9 PickUnitVolumeVariant9() => IsUnitVolumeVariant9
+            ? UnitVolumeVariant9!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitVolumeVariant9' but the value was {ToString()}.");
+
+        /// <summary>
+        /// Milliliters (ml) &lt;https://en.wikipedia.org/wiki/Litre&gt;
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Zoo.UnitVolumeVariant10? UnitVolumeVariant10 { get; init; }
+#else
+        public global::Zoo.UnitVolumeVariant10? UnitVolumeVariant10 { get; }
+#endif
+
+        /// <summary>
+        /// 
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UnitVolumeVariant10))]
+#endif
+        public bool IsUnitVolumeVariant10 => UnitVolumeVariant10 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickUnitVolumeVariant10(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.UnitVolumeVariant10? value)
+        {
+            value = UnitVolumeVariant10;
+            return IsUnitVolumeVariant10;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitVolumeVariant10 PickUnitVolumeVariant10() => IsUnitVolumeVariant10
+            ? UnitVolumeVariant10!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitVolumeVariant10' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -178,6 +395,11 @@ namespace Zoo
         {
             UnitVolumeVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static UnitVolume FromUnitVolumeVariant1(global::Zoo.UnitVolumeVariant1? value) => new UnitVolume(value);
 
         /// <summary>
         /// 
@@ -200,6 +422,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static UnitVolume FromUnitVolumeVariant2(global::Zoo.UnitVolumeVariant2? value) => new UnitVolume(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator UnitVolume(global::Zoo.UnitVolumeVariant3 value) => new UnitVolume((global::Zoo.UnitVolumeVariant3?)value);
 
         /// <summary>
@@ -214,6 +441,11 @@ namespace Zoo
         {
             UnitVolumeVariant3 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static UnitVolume FromUnitVolumeVariant3(global::Zoo.UnitVolumeVariant3? value) => new UnitVolume(value);
 
         /// <summary>
         /// 
@@ -236,6 +468,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static UnitVolume FromUnitVolumeVariant4(global::Zoo.UnitVolumeVariant4? value) => new UnitVolume(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator UnitVolume(global::Zoo.UnitVolumeVariant5 value) => new UnitVolume((global::Zoo.UnitVolumeVariant5?)value);
 
         /// <summary>
@@ -250,6 +487,11 @@ namespace Zoo
         {
             UnitVolumeVariant5 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static UnitVolume FromUnitVolumeVariant5(global::Zoo.UnitVolumeVariant5? value) => new UnitVolume(value);
 
         /// <summary>
         /// 
@@ -272,6 +514,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static UnitVolume FromUnitVolumeVariant6(global::Zoo.UnitVolumeVariant6? value) => new UnitVolume(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator UnitVolume(global::Zoo.UnitVolumeVariant7 value) => new UnitVolume((global::Zoo.UnitVolumeVariant7?)value);
 
         /// <summary>
@@ -286,6 +533,11 @@ namespace Zoo
         {
             UnitVolumeVariant7 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static UnitVolume FromUnitVolumeVariant7(global::Zoo.UnitVolumeVariant7? value) => new UnitVolume(value);
 
         /// <summary>
         /// 
@@ -308,6 +560,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static UnitVolume FromUnitVolumeVariant8(global::Zoo.UnitVolumeVariant8? value) => new UnitVolume(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator UnitVolume(global::Zoo.UnitVolumeVariant9 value) => new UnitVolume((global::Zoo.UnitVolumeVariant9?)value);
 
         /// <summary>
@@ -326,6 +583,34 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static UnitVolume FromUnitVolumeVariant9(global::Zoo.UnitVolumeVariant9? value) => new UnitVolume(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator UnitVolume(global::Zoo.UnitVolumeVariant10 value) => new UnitVolume((global::Zoo.UnitVolumeVariant10?)value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator global::Zoo.UnitVolumeVariant10?(UnitVolume @this) => @this.UnitVolumeVariant10;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public UnitVolume(global::Zoo.UnitVolumeVariant10? value)
+        {
+            UnitVolumeVariant10 = value;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static UnitVolume FromUnitVolumeVariant10(global::Zoo.UnitVolumeVariant10? value) => new UnitVolume(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public UnitVolume(
             global::Zoo.UnitVolumeVariant1? unitVolumeVariant1,
             global::Zoo.UnitVolumeVariant2? unitVolumeVariant2,
@@ -335,7 +620,8 @@ namespace Zoo
             global::Zoo.UnitVolumeVariant6? unitVolumeVariant6,
             global::Zoo.UnitVolumeVariant7? unitVolumeVariant7,
             global::Zoo.UnitVolumeVariant8? unitVolumeVariant8,
-            global::Zoo.UnitVolumeVariant9? unitVolumeVariant9
+            global::Zoo.UnitVolumeVariant9? unitVolumeVariant9,
+            global::Zoo.UnitVolumeVariant10? unitVolumeVariant10
             )
         {
             UnitVolumeVariant1 = unitVolumeVariant1;
@@ -347,12 +633,14 @@ namespace Zoo
             UnitVolumeVariant7 = unitVolumeVariant7;
             UnitVolumeVariant8 = unitVolumeVariant8;
             UnitVolumeVariant9 = unitVolumeVariant9;
+            UnitVolumeVariant10 = unitVolumeVariant10;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
+            UnitVolumeVariant10 as object ??
             UnitVolumeVariant9 as object ??
             UnitVolumeVariant8 as object ??
             UnitVolumeVariant7 as object ??
@@ -376,7 +664,8 @@ namespace Zoo
             UnitVolumeVariant6?.ToValueString() ??
             UnitVolumeVariant7?.ToValueString() ??
             UnitVolumeVariant8?.ToValueString() ??
-            UnitVolumeVariant9?.ToValueString() 
+            UnitVolumeVariant9?.ToValueString() ??
+            UnitVolumeVariant10?.ToValueString() 
             ;
 
         /// <summary>
@@ -384,7 +673,7 @@ namespace Zoo
         /// </summary>
         public bool Validate()
         {
-            return IsUnitVolumeVariant1 && !IsUnitVolumeVariant2 && !IsUnitVolumeVariant3 && !IsUnitVolumeVariant4 && !IsUnitVolumeVariant5 && !IsUnitVolumeVariant6 && !IsUnitVolumeVariant7 && !IsUnitVolumeVariant8 && !IsUnitVolumeVariant9 || !IsUnitVolumeVariant1 && IsUnitVolumeVariant2 && !IsUnitVolumeVariant3 && !IsUnitVolumeVariant4 && !IsUnitVolumeVariant5 && !IsUnitVolumeVariant6 && !IsUnitVolumeVariant7 && !IsUnitVolumeVariant8 && !IsUnitVolumeVariant9 || !IsUnitVolumeVariant1 && !IsUnitVolumeVariant2 && IsUnitVolumeVariant3 && !IsUnitVolumeVariant4 && !IsUnitVolumeVariant5 && !IsUnitVolumeVariant6 && !IsUnitVolumeVariant7 && !IsUnitVolumeVariant8 && !IsUnitVolumeVariant9 || !IsUnitVolumeVariant1 && !IsUnitVolumeVariant2 && !IsUnitVolumeVariant3 && IsUnitVolumeVariant4 && !IsUnitVolumeVariant5 && !IsUnitVolumeVariant6 && !IsUnitVolumeVariant7 && !IsUnitVolumeVariant8 && !IsUnitVolumeVariant9 || !IsUnitVolumeVariant1 && !IsUnitVolumeVariant2 && !IsUnitVolumeVariant3 && !IsUnitVolumeVariant4 && IsUnitVolumeVariant5 && !IsUnitVolumeVariant6 && !IsUnitVolumeVariant7 && !IsUnitVolumeVariant8 && !IsUnitVolumeVariant9 || !IsUnitVolumeVariant1 && !IsUnitVolumeVariant2 && !IsUnitVolumeVariant3 && !IsUnitVolumeVariant4 && !IsUnitVolumeVariant5 && IsUnitVolumeVariant6 && !IsUnitVolumeVariant7 && !IsUnitVolumeVariant8 && !IsUnitVolumeVariant9 || !IsUnitVolumeVariant1 && !IsUnitVolumeVariant2 && !IsUnitVolumeVariant3 && !IsUnitVolumeVariant4 && !IsUnitVolumeVariant5 && !IsUnitVolumeVariant6 && IsUnitVolumeVariant7 && !IsUnitVolumeVariant8 && !IsUnitVolumeVariant9 || !IsUnitVolumeVariant1 && !IsUnitVolumeVariant2 && !IsUnitVolumeVariant3 && !IsUnitVolumeVariant4 && !IsUnitVolumeVariant5 && !IsUnitVolumeVariant6 && !IsUnitVolumeVariant7 && IsUnitVolumeVariant8 && !IsUnitVolumeVariant9 || !IsUnitVolumeVariant1 && !IsUnitVolumeVariant2 && !IsUnitVolumeVariant3 && !IsUnitVolumeVariant4 && !IsUnitVolumeVariant5 && !IsUnitVolumeVariant6 && !IsUnitVolumeVariant7 && !IsUnitVolumeVariant8 && IsUnitVolumeVariant9;
+            return IsUnitVolumeVariant1 && !IsUnitVolumeVariant2 && !IsUnitVolumeVariant3 && !IsUnitVolumeVariant4 && !IsUnitVolumeVariant5 && !IsUnitVolumeVariant6 && !IsUnitVolumeVariant7 && !IsUnitVolumeVariant8 && !IsUnitVolumeVariant9 && !IsUnitVolumeVariant10 || !IsUnitVolumeVariant1 && IsUnitVolumeVariant2 && !IsUnitVolumeVariant3 && !IsUnitVolumeVariant4 && !IsUnitVolumeVariant5 && !IsUnitVolumeVariant6 && !IsUnitVolumeVariant7 && !IsUnitVolumeVariant8 && !IsUnitVolumeVariant9 && !IsUnitVolumeVariant10 || !IsUnitVolumeVariant1 && !IsUnitVolumeVariant2 && IsUnitVolumeVariant3 && !IsUnitVolumeVariant4 && !IsUnitVolumeVariant5 && !IsUnitVolumeVariant6 && !IsUnitVolumeVariant7 && !IsUnitVolumeVariant8 && !IsUnitVolumeVariant9 && !IsUnitVolumeVariant10 || !IsUnitVolumeVariant1 && !IsUnitVolumeVariant2 && !IsUnitVolumeVariant3 && IsUnitVolumeVariant4 && !IsUnitVolumeVariant5 && !IsUnitVolumeVariant6 && !IsUnitVolumeVariant7 && !IsUnitVolumeVariant8 && !IsUnitVolumeVariant9 && !IsUnitVolumeVariant10 || !IsUnitVolumeVariant1 && !IsUnitVolumeVariant2 && !IsUnitVolumeVariant3 && !IsUnitVolumeVariant4 && IsUnitVolumeVariant5 && !IsUnitVolumeVariant6 && !IsUnitVolumeVariant7 && !IsUnitVolumeVariant8 && !IsUnitVolumeVariant9 && !IsUnitVolumeVariant10 || !IsUnitVolumeVariant1 && !IsUnitVolumeVariant2 && !IsUnitVolumeVariant3 && !IsUnitVolumeVariant4 && !IsUnitVolumeVariant5 && IsUnitVolumeVariant6 && !IsUnitVolumeVariant7 && !IsUnitVolumeVariant8 && !IsUnitVolumeVariant9 && !IsUnitVolumeVariant10 || !IsUnitVolumeVariant1 && !IsUnitVolumeVariant2 && !IsUnitVolumeVariant3 && !IsUnitVolumeVariant4 && !IsUnitVolumeVariant5 && !IsUnitVolumeVariant6 && IsUnitVolumeVariant7 && !IsUnitVolumeVariant8 && !IsUnitVolumeVariant9 && !IsUnitVolumeVariant10 || !IsUnitVolumeVariant1 && !IsUnitVolumeVariant2 && !IsUnitVolumeVariant3 && !IsUnitVolumeVariant4 && !IsUnitVolumeVariant5 && !IsUnitVolumeVariant6 && !IsUnitVolumeVariant7 && IsUnitVolumeVariant8 && !IsUnitVolumeVariant9 && !IsUnitVolumeVariant10 || !IsUnitVolumeVariant1 && !IsUnitVolumeVariant2 && !IsUnitVolumeVariant3 && !IsUnitVolumeVariant4 && !IsUnitVolumeVariant5 && !IsUnitVolumeVariant6 && !IsUnitVolumeVariant7 && !IsUnitVolumeVariant8 && IsUnitVolumeVariant9 && !IsUnitVolumeVariant10 || !IsUnitVolumeVariant1 && !IsUnitVolumeVariant2 && !IsUnitVolumeVariant3 && !IsUnitVolumeVariant4 && !IsUnitVolumeVariant5 && !IsUnitVolumeVariant6 && !IsUnitVolumeVariant7 && !IsUnitVolumeVariant8 && !IsUnitVolumeVariant9 && IsUnitVolumeVariant10;
         }
 
         /// <summary>
@@ -400,6 +689,7 @@ namespace Zoo
             global::System.Func<global::Zoo.UnitVolumeVariant7?, TResult>? unitVolumeVariant7 = null,
             global::System.Func<global::Zoo.UnitVolumeVariant8?, TResult>? unitVolumeVariant8 = null,
             global::System.Func<global::Zoo.UnitVolumeVariant9?, TResult>? unitVolumeVariant9 = null,
+            global::System.Func<global::Zoo.UnitVolumeVariant10?, TResult>? unitVolumeVariant10 = null,
             bool validate = true)
         {
             if (validate)
@@ -443,6 +733,10 @@ namespace Zoo
             {
                 return unitVolumeVariant9(UnitVolumeVariant9!);
             }
+            else if (IsUnitVolumeVariant10 && unitVolumeVariant10 != null)
+            {
+                return unitVolumeVariant10(UnitVolumeVariant10!);
+            }
 
             return default(TResult);
         }
@@ -452,14 +746,24 @@ namespace Zoo
         /// </summary>
         public void Match(
             global::System.Action<global::Zoo.UnitVolumeVariant1?>? unitVolumeVariant1 = null,
+
             global::System.Action<global::Zoo.UnitVolumeVariant2?>? unitVolumeVariant2 = null,
+
             global::System.Action<global::Zoo.UnitVolumeVariant3?>? unitVolumeVariant3 = null,
+
             global::System.Action<global::Zoo.UnitVolumeVariant4?>? unitVolumeVariant4 = null,
+
             global::System.Action<global::Zoo.UnitVolumeVariant5?>? unitVolumeVariant5 = null,
+
             global::System.Action<global::Zoo.UnitVolumeVariant6?>? unitVolumeVariant6 = null,
+
             global::System.Action<global::Zoo.UnitVolumeVariant7?>? unitVolumeVariant7 = null,
+
             global::System.Action<global::Zoo.UnitVolumeVariant8?>? unitVolumeVariant8 = null,
+
             global::System.Action<global::Zoo.UnitVolumeVariant9?>? unitVolumeVariant9 = null,
+
+            global::System.Action<global::Zoo.UnitVolumeVariant10?>? unitVolumeVariant10 = null,
             bool validate = true)
         {
             if (validate)
@@ -503,6 +807,73 @@ namespace Zoo
             {
                 unitVolumeVariant9?.Invoke(UnitVolumeVariant9!);
             }
+            else if (IsUnitVolumeVariant10)
+            {
+                unitVolumeVariant10?.Invoke(UnitVolumeVariant10!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Zoo.UnitVolumeVariant1?>? unitVolumeVariant1 = null,
+            global::System.Action<global::Zoo.UnitVolumeVariant2?>? unitVolumeVariant2 = null,
+            global::System.Action<global::Zoo.UnitVolumeVariant3?>? unitVolumeVariant3 = null,
+            global::System.Action<global::Zoo.UnitVolumeVariant4?>? unitVolumeVariant4 = null,
+            global::System.Action<global::Zoo.UnitVolumeVariant5?>? unitVolumeVariant5 = null,
+            global::System.Action<global::Zoo.UnitVolumeVariant6?>? unitVolumeVariant6 = null,
+            global::System.Action<global::Zoo.UnitVolumeVariant7?>? unitVolumeVariant7 = null,
+            global::System.Action<global::Zoo.UnitVolumeVariant8?>? unitVolumeVariant8 = null,
+            global::System.Action<global::Zoo.UnitVolumeVariant9?>? unitVolumeVariant9 = null,
+            global::System.Action<global::Zoo.UnitVolumeVariant10?>? unitVolumeVariant10 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsUnitVolumeVariant1)
+            {
+                unitVolumeVariant1?.Invoke(UnitVolumeVariant1!);
+            }
+            else if (IsUnitVolumeVariant2)
+            {
+                unitVolumeVariant2?.Invoke(UnitVolumeVariant2!);
+            }
+            else if (IsUnitVolumeVariant3)
+            {
+                unitVolumeVariant3?.Invoke(UnitVolumeVariant3!);
+            }
+            else if (IsUnitVolumeVariant4)
+            {
+                unitVolumeVariant4?.Invoke(UnitVolumeVariant4!);
+            }
+            else if (IsUnitVolumeVariant5)
+            {
+                unitVolumeVariant5?.Invoke(UnitVolumeVariant5!);
+            }
+            else if (IsUnitVolumeVariant6)
+            {
+                unitVolumeVariant6?.Invoke(UnitVolumeVariant6!);
+            }
+            else if (IsUnitVolumeVariant7)
+            {
+                unitVolumeVariant7?.Invoke(UnitVolumeVariant7!);
+            }
+            else if (IsUnitVolumeVariant8)
+            {
+                unitVolumeVariant8?.Invoke(UnitVolumeVariant8!);
+            }
+            else if (IsUnitVolumeVariant9)
+            {
+                unitVolumeVariant9?.Invoke(UnitVolumeVariant9!);
+            }
+            else if (IsUnitVolumeVariant10)
+            {
+                unitVolumeVariant10?.Invoke(UnitVolumeVariant10!);
+            }
         }
 
         /// <summary>
@@ -530,6 +901,8 @@ namespace Zoo
                 typeof(global::Zoo.UnitVolumeVariant8),
                 UnitVolumeVariant9,
                 typeof(global::Zoo.UnitVolumeVariant9),
+                UnitVolumeVariant10,
+                typeof(global::Zoo.UnitVolumeVariant10),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -554,7 +927,8 @@ namespace Zoo
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.UnitVolumeVariant6?>.Default.Equals(UnitVolumeVariant6, other.UnitVolumeVariant6) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.UnitVolumeVariant7?>.Default.Equals(UnitVolumeVariant7, other.UnitVolumeVariant7) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.UnitVolumeVariant8?>.Default.Equals(UnitVolumeVariant8, other.UnitVolumeVariant8) &&
-                global::System.Collections.Generic.EqualityComparer<global::Zoo.UnitVolumeVariant9?>.Default.Equals(UnitVolumeVariant9, other.UnitVolumeVariant9) 
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.UnitVolumeVariant9?>.Default.Equals(UnitVolumeVariant9, other.UnitVolumeVariant9) &&
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.UnitVolumeVariant10?>.Default.Equals(UnitVolumeVariant10, other.UnitVolumeVariant10) 
                 ;
         }
 

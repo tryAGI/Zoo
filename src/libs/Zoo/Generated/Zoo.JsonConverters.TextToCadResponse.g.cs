@@ -145,6 +145,7 @@ namespace Zoo.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.TextToCadResponseVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.TextToCadResponseVariant1> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.TextToCadResponseVariant1).Name}");
                     textToCadResponseVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -155,9 +156,13 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (textToCadResponseVariant1 == null && textToCadResponseVariant2 == null && textToCadResponseVariant3 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.TextToCadResponseVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.TextToCadResponseVariant2> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.TextToCadResponseVariant2).Name}");
                     textToCadResponseVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -168,9 +173,13 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (textToCadResponseVariant1 == null && textToCadResponseVariant2 == null && textToCadResponseVariant3 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.TextToCadResponseVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.TextToCadResponseVariant3> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.TextToCadResponseVariant3).Name}");
                     textToCadResponseVariant3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

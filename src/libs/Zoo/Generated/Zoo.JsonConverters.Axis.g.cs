@@ -108,7 +108,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (axisVariant1 == null && axisVariant2 == null)
+            {
                 try
                 {
 

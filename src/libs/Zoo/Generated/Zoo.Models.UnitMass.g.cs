@@ -27,6 +27,26 @@ namespace Zoo
         public bool IsUnitMassVariant1 => UnitMassVariant1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickUnitMassVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.UnitMassVariant1? value)
+        {
+            value = UnitMassVariant1;
+            return IsUnitMassVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitMassVariant1 PickUnitMassVariant1() => IsUnitMassVariant1
+            ? UnitMassVariant1!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitMassVariant1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Kilograms &lt;https://en.wikipedia.org/wiki/Kilogram&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -44,6 +64,26 @@ namespace Zoo
         public bool IsUnitMassVariant2 => UnitMassVariant2 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickUnitMassVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.UnitMassVariant2? value)
+        {
+            value = UnitMassVariant2;
+            return IsUnitMassVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitMassVariant2 PickUnitMassVariant2() => IsUnitMassVariant2
+            ? UnitMassVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitMassVariant2' but the value was {ToString()}.");
+
+        /// <summary>
         /// Pounds &lt;https://en.wikipedia.org/wiki/Pound_(mass)&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -59,6 +99,26 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UnitMassVariant3))]
 #endif
         public bool IsUnitMassVariant3 => UnitMassVariant3 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickUnitMassVariant3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.UnitMassVariant3? value)
+        {
+            value = UnitMassVariant3;
+            return IsUnitMassVariant3;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.UnitMassVariant3 PickUnitMassVariant3() => IsUnitMassVariant3
+            ? UnitMassVariant3!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UnitMassVariant3' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -76,6 +136,11 @@ namespace Zoo
         {
             UnitMassVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static UnitMass FromUnitMassVariant1(global::Zoo.UnitMassVariant1? value) => new UnitMass(value);
 
         /// <summary>
         /// 
@@ -98,6 +163,11 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static UnitMass FromUnitMassVariant2(global::Zoo.UnitMassVariant2? value) => new UnitMass(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator UnitMass(global::Zoo.UnitMassVariant3 value) => new UnitMass((global::Zoo.UnitMassVariant3?)value);
 
         /// <summary>
@@ -112,6 +182,11 @@ namespace Zoo
         {
             UnitMassVariant3 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static UnitMass FromUnitMassVariant3(global::Zoo.UnitMassVariant3? value) => new UnitMass(value);
 
         /// <summary>
         /// 
@@ -187,6 +262,36 @@ namespace Zoo
         /// 
         /// </summary>
         public void Match(
+            global::System.Action<global::Zoo.UnitMassVariant1?>? unitMassVariant1 = null,
+
+            global::System.Action<global::Zoo.UnitMassVariant2?>? unitMassVariant2 = null,
+
+            global::System.Action<global::Zoo.UnitMassVariant3?>? unitMassVariant3 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsUnitMassVariant1)
+            {
+                unitMassVariant1?.Invoke(UnitMassVariant1!);
+            }
+            else if (IsUnitMassVariant2)
+            {
+                unitMassVariant2?.Invoke(UnitMassVariant2!);
+            }
+            else if (IsUnitMassVariant3)
+            {
+                unitMassVariant3?.Invoke(UnitMassVariant3!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
             global::System.Action<global::Zoo.UnitMassVariant1?>? unitMassVariant1 = null,
             global::System.Action<global::Zoo.UnitMassVariant2?>? unitMassVariant2 = null,
             global::System.Action<global::Zoo.UnitMassVariant3?>? unitMassVariant3 = null,

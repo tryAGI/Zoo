@@ -232,5 +232,6 @@ namespace Zoo
         public AsyncApiCallOutputVariant8()
         {
         }
+
     }
 }
