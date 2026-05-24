@@ -418,18 +418,17 @@ namespace Zoo
                                     __exception_4XX = __ex;
                                 }
 
-                                throw new global::Zoo.ApiException<global::Zoo.Error>(
+
+                                throw global::Zoo.ApiException<global::Zoo.Error>.Create(
+                                    statusCode: __response.StatusCode,
                                     message: __content_4XX ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_4XX,
-                                    statusCode: __response.StatusCode)
-                                {
-                                    ResponseBody = __content_4XX,
-                                    ResponseObject = __value_4XX,
-                                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                    responseBody: __content_4XX,
+                                    responseObject: __value_4XX,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
-                                        h => h.Value),
-                                };
+                                        h => h.Value));
                             }
                             // Error
                             if ((int)__response.StatusCode >= 500 && (int)__response.StatusCode <= 599)
@@ -456,18 +455,17 @@ namespace Zoo
                                     __exception_5XX = __ex;
                                 }
 
-                                throw new global::Zoo.ApiException<global::Zoo.Error>(
+
+                                throw global::Zoo.ApiException<global::Zoo.Error>.Create(
+                                    statusCode: __response.StatusCode,
                                     message: __content_5XX ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_5XX,
-                                    statusCode: __response.StatusCode)
-                                {
-                                    ResponseBody = __content_5XX,
-                                    ResponseObject = __value_5XX,
-                                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                    responseBody: __content_5XX,
+                                    responseObject: __value_5XX,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
-                                        h => h.Value),
-                                };
+                                        h => h.Value));
                             }
 
                             if (__effectiveReadResponseAsString)
@@ -501,17 +499,15 @@ namespace Zoo
                                 }
                                 catch (global::System.Exception __ex)
                                 {
-                                    throw new global::Zoo.ApiException(
+                                    throw global::Zoo.ApiException.Create(
+                                        statusCode: __response.StatusCode,
                                         message: __content ?? __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
-                                        statusCode: __response.StatusCode)
-                                    {
-                                        ResponseBody = __content,
-                                        ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                        responseBody: __content,
+                                        responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                             __response.Headers,
                                             h => h.Key,
-                                            h => h.Value),
-                                    };
+                                            h => h.Value));
                                 }
                             }
                             else
@@ -548,17 +544,15 @@ namespace Zoo
                                     {
                                     }
 
-                                    throw new global::Zoo.ApiException(
+                                    throw global::Zoo.ApiException.Create(
+                                        statusCode: __response.StatusCode,
                                         message: __content ?? __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
-                                        statusCode: __response.StatusCode)
-                                    {
-                                        ResponseBody = __content,
-                                        ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                        responseBody: __content,
+                                        responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                             __response.Headers,
                                             h => h.Key,
-                                            h => h.Value),
-                                    };
+                                            h => h.Value));
                                 }
                             }
 
