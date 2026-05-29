@@ -4,14 +4,14 @@
 namespace Zoo
 {
     /// <summary>
-    /// The STEP file format. &lt;https://en.wikipedia.org/wiki/ISO_10303-21&gt;
+    /// Autodesk Inventor part format.
     /// </summary>
     public enum FileImportFormatVariant6
     {
         /// <summary>
         /// 
         /// </summary>
-        Step,
+        Inventor,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Zoo
         {
             return value switch
             {
-                FileImportFormatVariant6.Step => "step",
+                FileImportFormatVariant6.Inventor => "inventor",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Zoo
         {
             return value switch
             {
-                "step" => FileImportFormatVariant6.Step,
+                "inventor" => FileImportFormatVariant6.Inventor,
                 _ => null,
             };
         }

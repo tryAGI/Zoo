@@ -173,6 +173,30 @@ namespace Zoo
 
             typeof(global::Zoo.JsonConverters.FileImportFormatVariant7NullableJsonConverter),
 
+            typeof(global::Zoo.JsonConverters.FileImportFormatVariant8JsonConverter),
+
+            typeof(global::Zoo.JsonConverters.FileImportFormatVariant8NullableJsonConverter),
+
+            typeof(global::Zoo.JsonConverters.FileImportFormatVariant9JsonConverter),
+
+            typeof(global::Zoo.JsonConverters.FileImportFormatVariant9NullableJsonConverter),
+
+            typeof(global::Zoo.JsonConverters.FileImportFormatVariant10JsonConverter),
+
+            typeof(global::Zoo.JsonConverters.FileImportFormatVariant10NullableJsonConverter),
+
+            typeof(global::Zoo.JsonConverters.FileImportFormatVariant11JsonConverter),
+
+            typeof(global::Zoo.JsonConverters.FileImportFormatVariant11NullableJsonConverter),
+
+            typeof(global::Zoo.JsonConverters.FileImportFormatVariant12JsonConverter),
+
+            typeof(global::Zoo.JsonConverters.FileImportFormatVariant12NullableJsonConverter),
+
+            typeof(global::Zoo.JsonConverters.FileImportFormatVariant13JsonConverter),
+
+            typeof(global::Zoo.JsonConverters.FileImportFormatVariant13NullableJsonConverter),
+
             typeof(global::Zoo.JsonConverters.UnitAreaVariant1JsonConverter),
 
             typeof(global::Zoo.JsonConverters.UnitAreaVariant1NullableJsonConverter),
@@ -316,6 +340,30 @@ namespace Zoo
             typeof(global::Zoo.JsonConverters.InputFormat3dVariant7TypeJsonConverter),
 
             typeof(global::Zoo.JsonConverters.InputFormat3dVariant7TypeNullableJsonConverter),
+
+            typeof(global::Zoo.JsonConverters.InputFormat3dVariant8TypeJsonConverter),
+
+            typeof(global::Zoo.JsonConverters.InputFormat3dVariant8TypeNullableJsonConverter),
+
+            typeof(global::Zoo.JsonConverters.InputFormat3dVariant9TypeJsonConverter),
+
+            typeof(global::Zoo.JsonConverters.InputFormat3dVariant9TypeNullableJsonConverter),
+
+            typeof(global::Zoo.JsonConverters.InputFormat3dVariant10TypeJsonConverter),
+
+            typeof(global::Zoo.JsonConverters.InputFormat3dVariant10TypeNullableJsonConverter),
+
+            typeof(global::Zoo.JsonConverters.InputFormat3dVariant11TypeJsonConverter),
+
+            typeof(global::Zoo.JsonConverters.InputFormat3dVariant11TypeNullableJsonConverter),
+
+            typeof(global::Zoo.JsonConverters.InputFormat3dVariant12TypeJsonConverter),
+
+            typeof(global::Zoo.JsonConverters.InputFormat3dVariant12TypeNullableJsonConverter),
+
+            typeof(global::Zoo.JsonConverters.InputFormat3dVariant13TypeJsonConverter),
+
+            typeof(global::Zoo.JsonConverters.InputFormat3dVariant13TypeNullableJsonConverter),
 
             typeof(global::Zoo.JsonConverters.DirectionVariant1JsonConverter),
 
@@ -560,13 +608,19 @@ namespace Zoo
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.AsyncApiCallOutputVariant8Type), TypeInfoPropertyName = "AsyncApiCallOutputVariant8Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.AsyncApiCallOutputVariant9))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.AsyncApiCallOutputVariant9Type), TypeInfoPropertyName = "AsyncApiCallOutputVariant9Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.FileImportFormatVariant1), TypeInfoPropertyName = "FileImportFormatVariant12")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.FileImportFormatVariant1), TypeInfoPropertyName = "FileImportFormatVariant12_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.FileImportFormatVariant2), TypeInfoPropertyName = "FileImportFormatVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.FileImportFormatVariant3), TypeInfoPropertyName = "FileImportFormatVariant32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.FileImportFormatVariant4), TypeInfoPropertyName = "FileImportFormatVariant42")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.FileImportFormatVariant5), TypeInfoPropertyName = "FileImportFormatVariant52")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.FileImportFormatVariant6), TypeInfoPropertyName = "FileImportFormatVariant62")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.FileImportFormatVariant7), TypeInfoPropertyName = "FileImportFormatVariant72")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.FileImportFormatVariant8), TypeInfoPropertyName = "FileImportFormatVariant82")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.FileImportFormatVariant9), TypeInfoPropertyName = "FileImportFormatVariant92")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.FileImportFormatVariant10), TypeInfoPropertyName = "FileImportFormatVariant102")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.FileImportFormatVariant11), TypeInfoPropertyName = "FileImportFormatVariant112")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.FileImportFormatVariant12), TypeInfoPropertyName = "FileImportFormatVariant122")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.FileImportFormatVariant13), TypeInfoPropertyName = "FileImportFormatVariant132")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.UnitAreaVariant1), TypeInfoPropertyName = "UnitAreaVariant12")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.UnitAreaVariant2), TypeInfoPropertyName = "UnitAreaVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.UnitAreaVariant3), TypeInfoPropertyName = "UnitAreaVariant32")]
@@ -598,21 +652,33 @@ namespace Zoo
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.UnitLengthVariant6), TypeInfoPropertyName = "UnitLengthVariant62")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(float))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.InputFormat3dVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.CoordinateSystem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.InputFormat3dVariant1Type), TypeInfoPropertyName = "InputFormat3dVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.InputFormat3dVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.InputFormat3dVariant2Type), TypeInfoPropertyName = "InputFormat3dVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.InputFormat3dVariant3))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.CoordinateSystem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.InputFormat3dVariant3Type), TypeInfoPropertyName = "InputFormat3dVariant3Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.InputFormat3dVariant4))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.InputFormat3dVariant4Type), TypeInfoPropertyName = "InputFormat3dVariant4Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.InputFormat3dVariant5))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.InputFormat3dVariant5Type), TypeInfoPropertyName = "InputFormat3dVariant5Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.InputFormat3dVariant6))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.InputFormat3dVariant6Type), TypeInfoPropertyName = "InputFormat3dVariant6Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.InputFormat3dVariant7))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.InputFormat3dVariant7Type), TypeInfoPropertyName = "InputFormat3dVariant7Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.InputFormat3dVariant8))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.InputFormat3dVariant8Type), TypeInfoPropertyName = "InputFormat3dVariant8Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.InputFormat3dVariant9))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.InputFormat3dVariant9Type), TypeInfoPropertyName = "InputFormat3dVariant9Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.InputFormat3dVariant10))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.InputFormat3dVariant10Type), TypeInfoPropertyName = "InputFormat3dVariant10Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.InputFormat3dVariant11))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.InputFormat3dVariant11Type), TypeInfoPropertyName = "InputFormat3dVariant11Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.InputFormat3dVariant12))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.InputFormat3dVariant12Type), TypeInfoPropertyName = "InputFormat3dVariant12Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.InputFormat3dVariant13))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.InputFormat3dVariant13Type), TypeInfoPropertyName = "InputFormat3dVariant13Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.AxisDirectionPair))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.Axis), TypeInfoPropertyName = "Axis2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.Direction), TypeInfoPropertyName = "Direction2")]

@@ -4,14 +4,14 @@
 namespace Zoo
 {
     /// <summary>
-    /// Autodesk Filmbox (FBX) format. &lt;https://en.wikipedia.org/wiki/FBX&gt;
+    /// ACIS part format.
     /// </summary>
     public enum FileImportFormatVariant1
     {
         /// <summary>
         /// 
         /// </summary>
-        Fbx,
+        Acis,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Zoo
         {
             return value switch
             {
-                FileImportFormatVariant1.Fbx => "fbx",
+                FileImportFormatVariant1.Acis => "acis",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Zoo
         {
             return value switch
             {
-                "fbx" => FileImportFormatVariant1.Fbx,
+                "acis" => FileImportFormatVariant1.Acis,
                 _ => null,
             };
         }

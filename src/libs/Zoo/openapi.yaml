@@ -2484,6 +2484,27 @@
         "description": "The valid types of source file formats.",
         "oneOf": [
           {
+            "description": "ACIS part format.",
+            "enum": [
+              "acis"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "CATIA part format.",
+            "enum": [
+              "catia"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "PTC Creo part format.",
+            "enum": [
+              "creo"
+            ],
+            "type": "string"
+          },
+          {
             "description": "Autodesk Filmbox (FBX) format. <https://en.wikipedia.org/wiki/FBX>",
             "enum": [
               "fbx"
@@ -2498,9 +2519,30 @@
             "type": "string"
           },
           {
+            "description": "Autodesk Inventor part format.",
+            "enum": [
+              "inventor"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Siemens NX part format.",
+            "enum": [
+              "nx"
+            ],
+            "type": "string"
+          },
+          {
             "description": "The OBJ file format. <https://en.wikipedia.org/wiki/Wavefront_.obj_file> It may or may not have an an attached material (mtl // mtllib) within the file, but we interact with it as if it does not.",
             "enum": [
               "obj"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Parasolid part format.",
+            "enum": [
+              "parasolid"
             ],
             "type": "string"
           },
@@ -2789,6 +2831,120 @@
         "description": "Input format specifier.",
         "oneOf": [
           {
+            "description": "ACIS part format.",
+            "properties": {
+              "coords": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/CoordinateSystem"
+                  }
+                ],
+                "default": {
+                  "forward": {
+                    "axis": "y",
+                    "direction": "negative"
+                  },
+                  "up": {
+                    "axis": "z",
+                    "direction": "positive"
+                  }
+                },
+                "description": "Co-ordinate system of input data."
+              },
+              "split_closed_faces": {
+                "default": false,
+                "description": "Splits all closed faces into two open faces.\n\nDefaults to `false` but is implicitly `true` when importing into the engine.",
+                "type": "boolean"
+              },
+              "type": {
+                "enum": [
+                  "acis"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "type"
+            ],
+            "type": "object"
+          },
+          {
+            "description": "CATIA part format.",
+            "properties": {
+              "coords": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/CoordinateSystem"
+                  }
+                ],
+                "default": {
+                  "forward": {
+                    "axis": "y",
+                    "direction": "negative"
+                  },
+                  "up": {
+                    "axis": "z",
+                    "direction": "positive"
+                  }
+                },
+                "description": "Co-ordinate system of input data."
+              },
+              "split_closed_faces": {
+                "default": false,
+                "description": "Splits all closed faces into two open faces.\n\nDefaults to `false` but is implicitly `true` when importing into the engine.",
+                "type": "boolean"
+              },
+              "type": {
+                "enum": [
+                  "catia"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "type"
+            ],
+            "type": "object"
+          },
+          {
+            "description": "PTC Creo part format.",
+            "properties": {
+              "coords": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/CoordinateSystem"
+                  }
+                ],
+                "default": {
+                  "forward": {
+                    "axis": "z",
+                    "direction": "positive"
+                  },
+                  "up": {
+                    "axis": "y",
+                    "direction": "positive"
+                  }
+                },
+                "description": "Co-ordinate system of input data."
+              },
+              "split_closed_faces": {
+                "default": false,
+                "description": "Splits all closed faces into two open faces.\n\nDefaults to `false` but is implicitly `true` when importing into the engine.",
+                "type": "boolean"
+              },
+              "type": {
+                "enum": [
+                  "creo"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "type"
+            ],
+            "type": "object"
+          },
+          {
             "description": "Autodesk Filmbox (FBX) format.",
             "properties": {
               "type": {
@@ -2809,6 +2965,82 @@
               "type": {
                 "enum": [
                   "gltf"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "type"
+            ],
+            "type": "object"
+          },
+          {
+            "description": "Autodesk Inventor part format.",
+            "properties": {
+              "coords": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/CoordinateSystem"
+                  }
+                ],
+                "default": {
+                  "forward": {
+                    "axis": "y",
+                    "direction": "negative"
+                  },
+                  "up": {
+                    "axis": "z",
+                    "direction": "positive"
+                  }
+                },
+                "description": "Co-ordinate system of input data."
+              },
+              "split_closed_faces": {
+                "default": false,
+                "description": "Splits all closed faces into two open faces.\n\nDefaults to `false` but is implicitly `true` when importing into the engine.",
+                "type": "boolean"
+              },
+              "type": {
+                "enum": [
+                  "inventor"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "type"
+            ],
+            "type": "object"
+          },
+          {
+            "description": "Siemens NX part format.",
+            "properties": {
+              "coords": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/CoordinateSystem"
+                  }
+                ],
+                "default": {
+                  "forward": {
+                    "axis": "y",
+                    "direction": "negative"
+                  },
+                  "up": {
+                    "axis": "z",
+                    "direction": "positive"
+                  }
+                },
+                "description": "Co-ordinate system of input data."
+              },
+              "split_closed_faces": {
+                "default": false,
+                "description": "Splits all closed faces into two open faces.\n\nDefaults to `false` but is implicitly `true` when importing into the engine.",
+                "type": "boolean"
+              },
+              "type": {
+                "enum": [
+                  "nx"
                 ],
                 "type": "string"
               }
@@ -2852,6 +3084,44 @@
             "type": "object"
           },
           {
+            "description": "Parasolid part format.",
+            "properties": {
+              "coords": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/CoordinateSystem"
+                  }
+                ],
+                "default": {
+                  "forward": {
+                    "axis": "y",
+                    "direction": "negative"
+                  },
+                  "up": {
+                    "axis": "z",
+                    "direction": "positive"
+                  }
+                },
+                "description": "Co-ordinate system of input data."
+              },
+              "split_closed_faces": {
+                "default": false,
+                "description": "Splits all closed faces into two open faces.\n\nDefaults to `false` but is implicitly `true` when importing into the engine.",
+                "type": "boolean"
+              },
+              "type": {
+                "enum": [
+                  "parasolid"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "type"
+            ],
+            "type": "object"
+          },
+          {
             "description": "The PLY Polygon File Format.",
             "properties": {
               "coords": {
@@ -2887,6 +3157,24 @@
           {
             "description": "SolidWorks part (SLDPRT) format.",
             "properties": {
+              "coords": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/CoordinateSystem"
+                  }
+                ],
+                "default": {
+                  "forward": {
+                    "axis": "z",
+                    "direction": "positive"
+                  },
+                  "up": {
+                    "axis": "y",
+                    "direction": "positive"
+                  }
+                },
+                "description": "Co-ordinate system of input data."
+              },
               "split_closed_faces": {
                 "default": false,
                 "description": "Splits all closed faces into two open faces.\n\nDefaults to `false` but is implicitly `true` when importing into the engine.",

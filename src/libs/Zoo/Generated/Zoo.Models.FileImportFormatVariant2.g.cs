@@ -4,14 +4,14 @@
 namespace Zoo
 {
     /// <summary>
-    /// glTF 2.0.
+    /// CATIA part format.
     /// </summary>
     public enum FileImportFormatVariant2
     {
         /// <summary>
         /// 
         /// </summary>
-        Gltf,
+        Catia,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Zoo
         {
             return value switch
             {
-                FileImportFormatVariant2.Gltf => "gltf",
+                FileImportFormatVariant2.Catia => "catia",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Zoo
         {
             return value switch
             {
-                "gltf" => FileImportFormatVariant2.Gltf,
+                "catia" => FileImportFormatVariant2.Catia,
                 _ => null,
             };
         }
