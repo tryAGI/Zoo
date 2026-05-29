@@ -11,7 +11,7 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
-        Gltf,
+        Catia,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Zoo
         {
             return value switch
             {
-                InputFormat3dVariant2Type.Gltf => "gltf",
+                InputFormat3dVariant2Type.Catia => "catia",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Zoo
         {
             return value switch
             {
-                "gltf" => InputFormat3dVariant2Type.Gltf,
+                "catia" => InputFormat3dVariant2Type.Catia,
                 _ => null,
             };
         }

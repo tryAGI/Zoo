@@ -4,14 +4,14 @@
 namespace Zoo
 {
     /// <summary>
-    /// SolidWorks part (SLDPRT) format.
+    /// glTF 2.0.
     /// </summary>
     public enum FileImportFormatVariant5
     {
         /// <summary>
         /// 
         /// </summary>
-        Sldprt,
+        Gltf,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Zoo
         {
             return value switch
             {
-                FileImportFormatVariant5.Sldprt => "sldprt",
+                FileImportFormatVariant5.Gltf => "gltf",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Zoo
         {
             return value switch
             {
-                "sldprt" => FileImportFormatVariant5.Sldprt,
+                "gltf" => FileImportFormatVariant5.Gltf,
                 _ => null,
             };
         }

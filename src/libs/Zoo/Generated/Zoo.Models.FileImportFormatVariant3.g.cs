@@ -4,14 +4,14 @@
 namespace Zoo
 {
     /// <summary>
-    /// The OBJ file format. &lt;https://en.wikipedia.org/wiki/Wavefront_.obj_file&gt; It may or may not have an an attached material (mtl // mtllib) within the file, but we interact with it as if it does not.
+    /// PTC Creo part format.
     /// </summary>
     public enum FileImportFormatVariant3
     {
         /// <summary>
-        /// //en.wikipedia.org/wiki/Wavefront_.obj_file&gt; It may or may not have an an attached material (mtl // mtllib) within the file, but we interact with it as if it does not.
+        /// 
         /// </summary>
-        Obj,
+        Creo,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Zoo
         {
             return value switch
             {
-                FileImportFormatVariant3.Obj => "obj",
+                FileImportFormatVariant3.Creo => "creo",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Zoo
         {
             return value switch
             {
-                "obj" => FileImportFormatVariant3.Obj,
+                "creo" => FileImportFormatVariant3.Creo,
                 _ => null,
             };
         }
