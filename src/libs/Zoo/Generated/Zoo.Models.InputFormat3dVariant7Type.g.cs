@@ -11,7 +11,7 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
-        Stl,
+        Nx,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Zoo
         {
             return value switch
             {
-                InputFormat3dVariant7Type.Stl => "stl",
+                InputFormat3dVariant7Type.Nx => "nx",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Zoo
         {
             return value switch
             {
-                "stl" => InputFormat3dVariant7Type.Stl,
+                "nx" => InputFormat3dVariant7Type.Nx,
                 _ => null,
             };
         }

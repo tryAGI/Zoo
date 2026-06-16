@@ -4,10 +4,25 @@
 namespace Zoo
 {
     /// <summary>
-    /// Binary glTF 2.0. We refer to this as glTF since that is how our customers refer to it, but this can also import binary glTF (glb).
+    /// CATIA part format.
     /// </summary>
     public sealed partial class InputFormat3dVariant2
     {
+        /// <summary>
+        /// Co-ordinate system of input data.<br/>
+        /// Default Value: {"forward":{"axis":"y","direction":"negative"},"up":{"axis":"z","direction":"positive"}}
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("coords")]
+        public global::Zoo.CoordinateSystem? Coords { get; set; }
+
+        /// <summary>
+        /// Splits all closed faces into two open faces.<br/>
+        /// Defaults to `false` but is implicitly `true` when importing into the engine.<br/>
+        /// Default Value: false
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("split_closed_faces")]
+        public bool? SplitClosedFaces { get; set; }
+
         /// <summary>
         /// 
         /// </summary>
@@ -24,13 +39,26 @@ namespace Zoo
         /// <summary>
         /// Initializes a new instance of the <see cref="InputFormat3dVariant2" /> class.
         /// </summary>
+        /// <param name="coords">
+        /// Co-ordinate system of input data.<br/>
+        /// Default Value: {"forward":{"axis":"y","direction":"negative"},"up":{"axis":"z","direction":"positive"}}
+        /// </param>
+        /// <param name="splitClosedFaces">
+        /// Splits all closed faces into two open faces.<br/>
+        /// Defaults to `false` but is implicitly `true` when importing into the engine.<br/>
+        /// Default Value: false
+        /// </param>
         /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public InputFormat3dVariant2(
+            global::Zoo.CoordinateSystem? coords,
+            bool? splitClosedFaces,
             global::Zoo.InputFormat3dVariant2Type type)
         {
+            this.Coords = coords;
+            this.SplitClosedFaces = splitClosedFaces;
             this.Type = type;
         }
 

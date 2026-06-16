@@ -11,7 +11,7 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
-        Obj,
+        Creo,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Zoo
         {
             return value switch
             {
-                InputFormat3dVariant3Type.Obj => "obj",
+                InputFormat3dVariant3Type.Creo => "creo",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Zoo
         {
             return value switch
             {
-                "obj" => InputFormat3dVariant3Type.Obj,
+                "creo" => InputFormat3dVariant3Type.Creo,
                 _ => null,
             };
         }

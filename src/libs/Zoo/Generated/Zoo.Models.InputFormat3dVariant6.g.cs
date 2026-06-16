@@ -4,14 +4,12 @@
 namespace Zoo
 {
     /// <summary>
-    /// ISO 10303-21 (STEP) format.
+    /// Autodesk Inventor part format.
     /// </summary>
     public sealed partial class InputFormat3dVariant6
     {
         /// <summary>
         /// Co-ordinate system of input data.<br/>
-        /// Defaults to the [KittyCAD co-ordinate system].<br/>
-        /// [KittyCAD co-ordinate system]: ../coord/constant.KITTYCAD.html<br/>
         /// Default Value: {"forward":{"axis":"y","direction":"negative"},"up":{"axis":"z","direction":"positive"}}
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("coords")]
@@ -43,8 +41,6 @@ namespace Zoo
         /// </summary>
         /// <param name="coords">
         /// Co-ordinate system of input data.<br/>
-        /// Defaults to the [KittyCAD co-ordinate system].<br/>
-        /// [KittyCAD co-ordinate system]: ../coord/constant.KITTYCAD.html<br/>
         /// Default Value: {"forward":{"axis":"y","direction":"negative"},"up":{"axis":"z","direction":"positive"}}
         /// </param>
         /// <param name="splitClosedFaces">

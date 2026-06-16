@@ -11,7 +11,7 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
-        Step,
+        Inventor,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Zoo
         {
             return value switch
             {
-                InputFormat3dVariant6Type.Step => "step",
+                InputFormat3dVariant6Type.Inventor => "inventor",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Zoo
         {
             return value switch
             {
-                "step" => InputFormat3dVariant6Type.Step,
+                "inventor" => InputFormat3dVariant6Type.Inventor,
                 _ => null,
             };
         }

@@ -11,7 +11,7 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
-        Ply,
+        Fbx,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Zoo
         {
             return value switch
             {
-                InputFormat3dVariant4Type.Ply => "ply",
+                InputFormat3dVariant4Type.Fbx => "fbx",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Zoo
         {
             return value switch
             {
-                "ply" => InputFormat3dVariant4Type.Ply,
+                "fbx" => InputFormat3dVariant4Type.Fbx,
                 _ => null,
             };
         }

@@ -4,14 +4,14 @@
 namespace Zoo
 {
     /// <summary>
-    /// The PLY file format. &lt;https://en.wikipedia.org/wiki/PLY_(file_format)&gt;
+    /// Autodesk Filmbox (FBX) format. &lt;https://en.wikipedia.org/wiki/FBX&gt;
     /// </summary>
     public enum FileImportFormatVariant4
     {
         /// <summary>
         /// 
         /// </summary>
-        Ply,
+        Fbx,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Zoo
         {
             return value switch
             {
-                FileImportFormatVariant4.Ply => "ply",
+                FileImportFormatVariant4.Fbx => "fbx",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Zoo
         {
             return value switch
             {
-                "ply" => FileImportFormatVariant4.Ply,
+                "fbx" => FileImportFormatVariant4.Fbx,
                 _ => null,
             };
         }

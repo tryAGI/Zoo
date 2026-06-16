@@ -4,14 +4,14 @@
 namespace Zoo
 {
     /// <summary>
-    /// The STL file format. &lt;https://en.wikipedia.org/wiki/STL_(file_format)&gt;
+    /// Siemens NX part format.
     /// </summary>
     public enum FileImportFormatVariant7
     {
         /// <summary>
         /// 
         /// </summary>
-        Stl,
+        Nx,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Zoo
         {
             return value switch
             {
-                FileImportFormatVariant7.Stl => "stl",
+                FileImportFormatVariant7.Nx => "nx",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Zoo
         {
             return value switch
             {
-                "stl" => FileImportFormatVariant7.Stl,
+                "nx" => FileImportFormatVariant7.Nx,
                 _ => null,
             };
         }

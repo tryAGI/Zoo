@@ -10,7 +10,7 @@ namespace Zoo
     public readonly partial struct FileImportFormat : global::System.IEquatable<FileImportFormat>
     {
         /// <summary>
-        /// Autodesk Filmbox (FBX) format. &lt;https://en.wikipedia.org/wiki/FBX&gt;
+        /// ACIS part format.
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Zoo.FileImportFormatVariant1? FileImportFormatVariant1 { get; init; }
@@ -47,7 +47,7 @@ namespace Zoo
             : throw new global::System.InvalidOperationException($"Expected union variant 'FileImportFormatVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// glTF 2.0.
+        /// CATIA part format.
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Zoo.FileImportFormatVariant2? FileImportFormatVariant2 { get; init; }
@@ -84,7 +84,7 @@ namespace Zoo
             : throw new global::System.InvalidOperationException($"Expected union variant 'FileImportFormatVariant2' but the value was {ToString()}.");
 
         /// <summary>
-        /// The OBJ file format. &lt;https://en.wikipedia.org/wiki/Wavefront_.obj_file&gt; It may or may not have an an attached material (mtl // mtllib) within the file, but we interact with it as if it does not.
+        /// PTC Creo part format.
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Zoo.FileImportFormatVariant3? FileImportFormatVariant3 { get; init; }
@@ -121,7 +121,7 @@ namespace Zoo
             : throw new global::System.InvalidOperationException($"Expected union variant 'FileImportFormatVariant3' but the value was {ToString()}.");
 
         /// <summary>
-        /// The PLY file format. &lt;https://en.wikipedia.org/wiki/PLY_(file_format)&gt;
+        /// Autodesk Filmbox (FBX) format. &lt;https://en.wikipedia.org/wiki/FBX&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Zoo.FileImportFormatVariant4? FileImportFormatVariant4 { get; init; }
@@ -158,7 +158,7 @@ namespace Zoo
             : throw new global::System.InvalidOperationException($"Expected union variant 'FileImportFormatVariant4' but the value was {ToString()}.");
 
         /// <summary>
-        /// SolidWorks part (SLDPRT) format.
+        /// glTF 2.0.
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Zoo.FileImportFormatVariant5? FileImportFormatVariant5 { get; init; }
@@ -195,7 +195,7 @@ namespace Zoo
             : throw new global::System.InvalidOperationException($"Expected union variant 'FileImportFormatVariant5' but the value was {ToString()}.");
 
         /// <summary>
-        /// The STEP file format. &lt;https://en.wikipedia.org/wiki/ISO_10303-21&gt;
+        /// Autodesk Inventor part format.
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Zoo.FileImportFormatVariant6? FileImportFormatVariant6 { get; init; }
@@ -232,7 +232,7 @@ namespace Zoo
             : throw new global::System.InvalidOperationException($"Expected union variant 'FileImportFormatVariant6' but the value was {ToString()}.");
 
         /// <summary>
-        /// The STL file format. &lt;https://en.wikipedia.org/wiki/STL_(file_format)&gt;
+        /// Siemens NX part format.
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Zoo.FileImportFormatVariant7? FileImportFormatVariant7 { get; init; }
@@ -267,6 +267,228 @@ namespace Zoo
         public global::Zoo.FileImportFormatVariant7 PickFileImportFormatVariant7() => IsFileImportFormatVariant7
             ? FileImportFormatVariant7!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FileImportFormatVariant7' but the value was {ToString()}.");
+
+        /// <summary>
+        /// The OBJ file format. &lt;https://en.wikipedia.org/wiki/Wavefront_.obj_file&gt; It may or may not have an an attached material (mtl // mtllib) within the file, but we interact with it as if it does not.
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Zoo.FileImportFormatVariant8? FileImportFormatVariant8 { get; init; }
+#else
+        public global::Zoo.FileImportFormatVariant8? FileImportFormatVariant8 { get; }
+#endif
+
+        /// <summary>
+        /// 
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FileImportFormatVariant8))]
+#endif
+        public bool IsFileImportFormatVariant8 => FileImportFormatVariant8 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickFileImportFormatVariant8(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.FileImportFormatVariant8? value)
+        {
+            value = FileImportFormatVariant8;
+            return IsFileImportFormatVariant8;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.FileImportFormatVariant8 PickFileImportFormatVariant8() => IsFileImportFormatVariant8
+            ? FileImportFormatVariant8!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FileImportFormatVariant8' but the value was {ToString()}.");
+
+        /// <summary>
+        /// Parasolid part format.
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Zoo.FileImportFormatVariant9? FileImportFormatVariant9 { get; init; }
+#else
+        public global::Zoo.FileImportFormatVariant9? FileImportFormatVariant9 { get; }
+#endif
+
+        /// <summary>
+        /// 
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FileImportFormatVariant9))]
+#endif
+        public bool IsFileImportFormatVariant9 => FileImportFormatVariant9 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickFileImportFormatVariant9(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.FileImportFormatVariant9? value)
+        {
+            value = FileImportFormatVariant9;
+            return IsFileImportFormatVariant9;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.FileImportFormatVariant9 PickFileImportFormatVariant9() => IsFileImportFormatVariant9
+            ? FileImportFormatVariant9!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FileImportFormatVariant9' but the value was {ToString()}.");
+
+        /// <summary>
+        /// The PLY file format. &lt;https://en.wikipedia.org/wiki/PLY_(file_format)&gt;
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Zoo.FileImportFormatVariant10? FileImportFormatVariant10 { get; init; }
+#else
+        public global::Zoo.FileImportFormatVariant10? FileImportFormatVariant10 { get; }
+#endif
+
+        /// <summary>
+        /// 
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FileImportFormatVariant10))]
+#endif
+        public bool IsFileImportFormatVariant10 => FileImportFormatVariant10 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickFileImportFormatVariant10(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.FileImportFormatVariant10? value)
+        {
+            value = FileImportFormatVariant10;
+            return IsFileImportFormatVariant10;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.FileImportFormatVariant10 PickFileImportFormatVariant10() => IsFileImportFormatVariant10
+            ? FileImportFormatVariant10!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FileImportFormatVariant10' but the value was {ToString()}.");
+
+        /// <summary>
+        /// SolidWorks part (SLDPRT) format.
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Zoo.FileImportFormatVariant11? FileImportFormatVariant11 { get; init; }
+#else
+        public global::Zoo.FileImportFormatVariant11? FileImportFormatVariant11 { get; }
+#endif
+
+        /// <summary>
+        /// 
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FileImportFormatVariant11))]
+#endif
+        public bool IsFileImportFormatVariant11 => FileImportFormatVariant11 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickFileImportFormatVariant11(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.FileImportFormatVariant11? value)
+        {
+            value = FileImportFormatVariant11;
+            return IsFileImportFormatVariant11;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.FileImportFormatVariant11 PickFileImportFormatVariant11() => IsFileImportFormatVariant11
+            ? FileImportFormatVariant11!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FileImportFormatVariant11' but the value was {ToString()}.");
+
+        /// <summary>
+        /// The STEP file format. &lt;https://en.wikipedia.org/wiki/ISO_10303-21&gt;
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Zoo.FileImportFormatVariant12? FileImportFormatVariant12 { get; init; }
+#else
+        public global::Zoo.FileImportFormatVariant12? FileImportFormatVariant12 { get; }
+#endif
+
+        /// <summary>
+        /// 
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FileImportFormatVariant12))]
+#endif
+        public bool IsFileImportFormatVariant12 => FileImportFormatVariant12 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickFileImportFormatVariant12(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.FileImportFormatVariant12? value)
+        {
+            value = FileImportFormatVariant12;
+            return IsFileImportFormatVariant12;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.FileImportFormatVariant12 PickFileImportFormatVariant12() => IsFileImportFormatVariant12
+            ? FileImportFormatVariant12!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FileImportFormatVariant12' but the value was {ToString()}.");
+
+        /// <summary>
+        /// The STL file format. &lt;https://en.wikipedia.org/wiki/STL_(file_format)&gt;
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Zoo.FileImportFormatVariant13? FileImportFormatVariant13 { get; init; }
+#else
+        public global::Zoo.FileImportFormatVariant13? FileImportFormatVariant13 { get; }
+#endif
+
+        /// <summary>
+        /// 
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FileImportFormatVariant13))]
+#endif
+        public bool IsFileImportFormatVariant13 => FileImportFormatVariant13 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickFileImportFormatVariant13(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.FileImportFormatVariant13? value)
+        {
+            value = FileImportFormatVariant13;
+            return IsFileImportFormatVariant13;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.FileImportFormatVariant13 PickFileImportFormatVariant13() => IsFileImportFormatVariant13
+            ? FileImportFormatVariant13!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FileImportFormatVariant13' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -431,6 +653,144 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
+        public static implicit operator FileImportFormat(global::Zoo.FileImportFormatVariant8 value) => new FileImportFormat((global::Zoo.FileImportFormatVariant8?)value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator global::Zoo.FileImportFormatVariant8?(FileImportFormat @this) => @this.FileImportFormatVariant8;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public FileImportFormat(global::Zoo.FileImportFormatVariant8? value)
+        {
+            FileImportFormatVariant8 = value;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FileImportFormat FromFileImportFormatVariant8(global::Zoo.FileImportFormatVariant8? value) => new FileImportFormat(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator FileImportFormat(global::Zoo.FileImportFormatVariant9 value) => new FileImportFormat((global::Zoo.FileImportFormatVariant9?)value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator global::Zoo.FileImportFormatVariant9?(FileImportFormat @this) => @this.FileImportFormatVariant9;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public FileImportFormat(global::Zoo.FileImportFormatVariant9? value)
+        {
+            FileImportFormatVariant9 = value;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FileImportFormat FromFileImportFormatVariant9(global::Zoo.FileImportFormatVariant9? value) => new FileImportFormat(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator FileImportFormat(global::Zoo.FileImportFormatVariant10 value) => new FileImportFormat((global::Zoo.FileImportFormatVariant10?)value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator global::Zoo.FileImportFormatVariant10?(FileImportFormat @this) => @this.FileImportFormatVariant10;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public FileImportFormat(global::Zoo.FileImportFormatVariant10? value)
+        {
+            FileImportFormatVariant10 = value;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FileImportFormat FromFileImportFormatVariant10(global::Zoo.FileImportFormatVariant10? value) => new FileImportFormat(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator FileImportFormat(global::Zoo.FileImportFormatVariant11 value) => new FileImportFormat((global::Zoo.FileImportFormatVariant11?)value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator global::Zoo.FileImportFormatVariant11?(FileImportFormat @this) => @this.FileImportFormatVariant11;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public FileImportFormat(global::Zoo.FileImportFormatVariant11? value)
+        {
+            FileImportFormatVariant11 = value;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FileImportFormat FromFileImportFormatVariant11(global::Zoo.FileImportFormatVariant11? value) => new FileImportFormat(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator FileImportFormat(global::Zoo.FileImportFormatVariant12 value) => new FileImportFormat((global::Zoo.FileImportFormatVariant12?)value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator global::Zoo.FileImportFormatVariant12?(FileImportFormat @this) => @this.FileImportFormatVariant12;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public FileImportFormat(global::Zoo.FileImportFormatVariant12? value)
+        {
+            FileImportFormatVariant12 = value;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FileImportFormat FromFileImportFormatVariant12(global::Zoo.FileImportFormatVariant12? value) => new FileImportFormat(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator FileImportFormat(global::Zoo.FileImportFormatVariant13 value) => new FileImportFormat((global::Zoo.FileImportFormatVariant13?)value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator global::Zoo.FileImportFormatVariant13?(FileImportFormat @this) => @this.FileImportFormatVariant13;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public FileImportFormat(global::Zoo.FileImportFormatVariant13? value)
+        {
+            FileImportFormatVariant13 = value;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FileImportFormat FromFileImportFormatVariant13(global::Zoo.FileImportFormatVariant13? value) => new FileImportFormat(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public FileImportFormat(
             global::Zoo.FileImportFormatVariant1? fileImportFormatVariant1,
             global::Zoo.FileImportFormatVariant2? fileImportFormatVariant2,
@@ -438,7 +798,13 @@ namespace Zoo
             global::Zoo.FileImportFormatVariant4? fileImportFormatVariant4,
             global::Zoo.FileImportFormatVariant5? fileImportFormatVariant5,
             global::Zoo.FileImportFormatVariant6? fileImportFormatVariant6,
-            global::Zoo.FileImportFormatVariant7? fileImportFormatVariant7
+            global::Zoo.FileImportFormatVariant7? fileImportFormatVariant7,
+            global::Zoo.FileImportFormatVariant8? fileImportFormatVariant8,
+            global::Zoo.FileImportFormatVariant9? fileImportFormatVariant9,
+            global::Zoo.FileImportFormatVariant10? fileImportFormatVariant10,
+            global::Zoo.FileImportFormatVariant11? fileImportFormatVariant11,
+            global::Zoo.FileImportFormatVariant12? fileImportFormatVariant12,
+            global::Zoo.FileImportFormatVariant13? fileImportFormatVariant13
             )
         {
             FileImportFormatVariant1 = fileImportFormatVariant1;
@@ -448,12 +814,24 @@ namespace Zoo
             FileImportFormatVariant5 = fileImportFormatVariant5;
             FileImportFormatVariant6 = fileImportFormatVariant6;
             FileImportFormatVariant7 = fileImportFormatVariant7;
+            FileImportFormatVariant8 = fileImportFormatVariant8;
+            FileImportFormatVariant9 = fileImportFormatVariant9;
+            FileImportFormatVariant10 = fileImportFormatVariant10;
+            FileImportFormatVariant11 = fileImportFormatVariant11;
+            FileImportFormatVariant12 = fileImportFormatVariant12;
+            FileImportFormatVariant13 = fileImportFormatVariant13;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
+            FileImportFormatVariant13 as object ??
+            FileImportFormatVariant12 as object ??
+            FileImportFormatVariant11 as object ??
+            FileImportFormatVariant10 as object ??
+            FileImportFormatVariant9 as object ??
+            FileImportFormatVariant8 as object ??
             FileImportFormatVariant7 as object ??
             FileImportFormatVariant6 as object ??
             FileImportFormatVariant5 as object ??
@@ -473,7 +851,13 @@ namespace Zoo
             FileImportFormatVariant4?.ToValueString() ??
             FileImportFormatVariant5?.ToValueString() ??
             FileImportFormatVariant6?.ToValueString() ??
-            FileImportFormatVariant7?.ToValueString() 
+            FileImportFormatVariant7?.ToValueString() ??
+            FileImportFormatVariant8?.ToValueString() ??
+            FileImportFormatVariant9?.ToValueString() ??
+            FileImportFormatVariant10?.ToValueString() ??
+            FileImportFormatVariant11?.ToValueString() ??
+            FileImportFormatVariant12?.ToValueString() ??
+            FileImportFormatVariant13?.ToValueString() 
             ;
 
         /// <summary>
@@ -481,7 +865,7 @@ namespace Zoo
         /// </summary>
         public bool Validate()
         {
-            return IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 || !IsFileImportFormatVariant1 && IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && IsFileImportFormatVariant7;
+            return IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 || !IsFileImportFormatVariant1 && IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && IsFileImportFormatVariant13;
         }
 
         /// <summary>
@@ -495,6 +879,12 @@ namespace Zoo
             global::System.Func<global::Zoo.FileImportFormatVariant5?, TResult>? fileImportFormatVariant5 = null,
             global::System.Func<global::Zoo.FileImportFormatVariant6?, TResult>? fileImportFormatVariant6 = null,
             global::System.Func<global::Zoo.FileImportFormatVariant7?, TResult>? fileImportFormatVariant7 = null,
+            global::System.Func<global::Zoo.FileImportFormatVariant8?, TResult>? fileImportFormatVariant8 = null,
+            global::System.Func<global::Zoo.FileImportFormatVariant9?, TResult>? fileImportFormatVariant9 = null,
+            global::System.Func<global::Zoo.FileImportFormatVariant10?, TResult>? fileImportFormatVariant10 = null,
+            global::System.Func<global::Zoo.FileImportFormatVariant11?, TResult>? fileImportFormatVariant11 = null,
+            global::System.Func<global::Zoo.FileImportFormatVariant12?, TResult>? fileImportFormatVariant12 = null,
+            global::System.Func<global::Zoo.FileImportFormatVariant13?, TResult>? fileImportFormatVariant13 = null,
             bool validate = true)
         {
             if (validate)
@@ -530,6 +920,30 @@ namespace Zoo
             {
                 return fileImportFormatVariant7(FileImportFormatVariant7!);
             }
+            else if (IsFileImportFormatVariant8 && fileImportFormatVariant8 != null)
+            {
+                return fileImportFormatVariant8(FileImportFormatVariant8!);
+            }
+            else if (IsFileImportFormatVariant9 && fileImportFormatVariant9 != null)
+            {
+                return fileImportFormatVariant9(FileImportFormatVariant9!);
+            }
+            else if (IsFileImportFormatVariant10 && fileImportFormatVariant10 != null)
+            {
+                return fileImportFormatVariant10(FileImportFormatVariant10!);
+            }
+            else if (IsFileImportFormatVariant11 && fileImportFormatVariant11 != null)
+            {
+                return fileImportFormatVariant11(FileImportFormatVariant11!);
+            }
+            else if (IsFileImportFormatVariant12 && fileImportFormatVariant12 != null)
+            {
+                return fileImportFormatVariant12(FileImportFormatVariant12!);
+            }
+            else if (IsFileImportFormatVariant13 && fileImportFormatVariant13 != null)
+            {
+                return fileImportFormatVariant13(FileImportFormatVariant13!);
+            }
 
             return default(TResult);
         }
@@ -551,6 +965,18 @@ namespace Zoo
             global::System.Action<global::Zoo.FileImportFormatVariant6?>? fileImportFormatVariant6 = null,
 
             global::System.Action<global::Zoo.FileImportFormatVariant7?>? fileImportFormatVariant7 = null,
+
+            global::System.Action<global::Zoo.FileImportFormatVariant8?>? fileImportFormatVariant8 = null,
+
+            global::System.Action<global::Zoo.FileImportFormatVariant9?>? fileImportFormatVariant9 = null,
+
+            global::System.Action<global::Zoo.FileImportFormatVariant10?>? fileImportFormatVariant10 = null,
+
+            global::System.Action<global::Zoo.FileImportFormatVariant11?>? fileImportFormatVariant11 = null,
+
+            global::System.Action<global::Zoo.FileImportFormatVariant12?>? fileImportFormatVariant12 = null,
+
+            global::System.Action<global::Zoo.FileImportFormatVariant13?>? fileImportFormatVariant13 = null,
             bool validate = true)
         {
             if (validate)
@@ -585,6 +1011,30 @@ namespace Zoo
             else if (IsFileImportFormatVariant7)
             {
                 fileImportFormatVariant7?.Invoke(FileImportFormatVariant7!);
+            }
+            else if (IsFileImportFormatVariant8)
+            {
+                fileImportFormatVariant8?.Invoke(FileImportFormatVariant8!);
+            }
+            else if (IsFileImportFormatVariant9)
+            {
+                fileImportFormatVariant9?.Invoke(FileImportFormatVariant9!);
+            }
+            else if (IsFileImportFormatVariant10)
+            {
+                fileImportFormatVariant10?.Invoke(FileImportFormatVariant10!);
+            }
+            else if (IsFileImportFormatVariant11)
+            {
+                fileImportFormatVariant11?.Invoke(FileImportFormatVariant11!);
+            }
+            else if (IsFileImportFormatVariant12)
+            {
+                fileImportFormatVariant12?.Invoke(FileImportFormatVariant12!);
+            }
+            else if (IsFileImportFormatVariant13)
+            {
+                fileImportFormatVariant13?.Invoke(FileImportFormatVariant13!);
             }
         }
 
@@ -599,6 +1049,12 @@ namespace Zoo
             global::System.Action<global::Zoo.FileImportFormatVariant5?>? fileImportFormatVariant5 = null,
             global::System.Action<global::Zoo.FileImportFormatVariant6?>? fileImportFormatVariant6 = null,
             global::System.Action<global::Zoo.FileImportFormatVariant7?>? fileImportFormatVariant7 = null,
+            global::System.Action<global::Zoo.FileImportFormatVariant8?>? fileImportFormatVariant8 = null,
+            global::System.Action<global::Zoo.FileImportFormatVariant9?>? fileImportFormatVariant9 = null,
+            global::System.Action<global::Zoo.FileImportFormatVariant10?>? fileImportFormatVariant10 = null,
+            global::System.Action<global::Zoo.FileImportFormatVariant11?>? fileImportFormatVariant11 = null,
+            global::System.Action<global::Zoo.FileImportFormatVariant12?>? fileImportFormatVariant12 = null,
+            global::System.Action<global::Zoo.FileImportFormatVariant13?>? fileImportFormatVariant13 = null,
             bool validate = true)
         {
             if (validate)
@@ -633,6 +1089,30 @@ namespace Zoo
             else if (IsFileImportFormatVariant7)
             {
                 fileImportFormatVariant7?.Invoke(FileImportFormatVariant7!);
+            }
+            else if (IsFileImportFormatVariant8)
+            {
+                fileImportFormatVariant8?.Invoke(FileImportFormatVariant8!);
+            }
+            else if (IsFileImportFormatVariant9)
+            {
+                fileImportFormatVariant9?.Invoke(FileImportFormatVariant9!);
+            }
+            else if (IsFileImportFormatVariant10)
+            {
+                fileImportFormatVariant10?.Invoke(FileImportFormatVariant10!);
+            }
+            else if (IsFileImportFormatVariant11)
+            {
+                fileImportFormatVariant11?.Invoke(FileImportFormatVariant11!);
+            }
+            else if (IsFileImportFormatVariant12)
+            {
+                fileImportFormatVariant12?.Invoke(FileImportFormatVariant12!);
+            }
+            else if (IsFileImportFormatVariant13)
+            {
+                fileImportFormatVariant13?.Invoke(FileImportFormatVariant13!);
             }
         }
 
@@ -657,6 +1137,18 @@ namespace Zoo
                 typeof(global::Zoo.FileImportFormatVariant6),
                 FileImportFormatVariant7,
                 typeof(global::Zoo.FileImportFormatVariant7),
+                FileImportFormatVariant8,
+                typeof(global::Zoo.FileImportFormatVariant8),
+                FileImportFormatVariant9,
+                typeof(global::Zoo.FileImportFormatVariant9),
+                FileImportFormatVariant10,
+                typeof(global::Zoo.FileImportFormatVariant10),
+                FileImportFormatVariant11,
+                typeof(global::Zoo.FileImportFormatVariant11),
+                FileImportFormatVariant12,
+                typeof(global::Zoo.FileImportFormatVariant12),
+                FileImportFormatVariant13,
+                typeof(global::Zoo.FileImportFormatVariant13),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -679,7 +1171,13 @@ namespace Zoo
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.FileImportFormatVariant4?>.Default.Equals(FileImportFormatVariant4, other.FileImportFormatVariant4) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.FileImportFormatVariant5?>.Default.Equals(FileImportFormatVariant5, other.FileImportFormatVariant5) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.FileImportFormatVariant6?>.Default.Equals(FileImportFormatVariant6, other.FileImportFormatVariant6) &&
-                global::System.Collections.Generic.EqualityComparer<global::Zoo.FileImportFormatVariant7?>.Default.Equals(FileImportFormatVariant7, other.FileImportFormatVariant7) 
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.FileImportFormatVariant7?>.Default.Equals(FileImportFormatVariant7, other.FileImportFormatVariant7) &&
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.FileImportFormatVariant8?>.Default.Equals(FileImportFormatVariant8, other.FileImportFormatVariant8) &&
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.FileImportFormatVariant9?>.Default.Equals(FileImportFormatVariant9, other.FileImportFormatVariant9) &&
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.FileImportFormatVariant10?>.Default.Equals(FileImportFormatVariant10, other.FileImportFormatVariant10) &&
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.FileImportFormatVariant11?>.Default.Equals(FileImportFormatVariant11, other.FileImportFormatVariant11) &&
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.FileImportFormatVariant12?>.Default.Equals(FileImportFormatVariant12, other.FileImportFormatVariant12) &&
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.FileImportFormatVariant13?>.Default.Equals(FileImportFormatVariant13, other.FileImportFormatVariant13) 
                 ;
         }
 

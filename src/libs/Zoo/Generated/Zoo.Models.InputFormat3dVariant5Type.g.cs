@@ -11,7 +11,7 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
-        Sldprt,
+        Gltf,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Zoo
         {
             return value switch
             {
-                InputFormat3dVariant5Type.Sldprt => "sldprt",
+                InputFormat3dVariant5Type.Gltf => "gltf",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Zoo
         {
             return value switch
             {
-                "sldprt" => InputFormat3dVariant5Type.Sldprt,
+                "gltf" => InputFormat3dVariant5Type.Gltf,
                 _ => null,
             };
         }
