@@ -17,6 +17,14 @@ namespace Zoo
         }
 
         /// <summary>
+        /// Serializes the current instance to a JSON string using the generated default JsonSerializerContext.
+        /// </summary>
+        public string ToJson()
+        {
+            return ToJson(global::Zoo.SourceGenerationContext.Default);
+        }
+
+        /// <summary>
         /// Serializes the current instance to a JSON string using the provided JsonSerializerOptions.
         /// </summary>
 #if NET8_0_OR_GREATER
@@ -26,6 +34,11 @@ namespace Zoo
         public string ToJson(
             global::System.Text.Json.JsonSerializerOptions? jsonSerializerOptions = null)
         {
+            if (jsonSerializerOptions is null)
+            {
+                return ToJson(global::Zoo.SourceGenerationContext.Default);
+            }
+
             return global::System.Text.Json.JsonSerializer.Serialize(
                 this,
                 jsonSerializerOptions);
@@ -45,6 +58,17 @@ namespace Zoo
         }
 
         /// <summary>
+        /// Deserializes a JSON string using the generated default JsonSerializerContext.
+        /// </summary>
+        public static global::Zoo.GltfPresentation? FromJson(
+            string json)
+        {
+            return FromJson(
+                json,
+                global::Zoo.SourceGenerationContext.Default);
+        }
+
+        /// <summary>
         /// Deserializes a JSON string using the provided JsonSerializerOptions.
         /// </summary>
 #if NET8_0_OR_GREATER
@@ -55,6 +79,13 @@ namespace Zoo
             string json,
             global::System.Text.Json.JsonSerializerOptions? jsonSerializerOptions = null)
         {
+            if (jsonSerializerOptions is null)
+            {
+                return FromJson(
+                    json,
+                    global::Zoo.SourceGenerationContext.Default);
+            }
+
             return global::System.Text.Json.JsonSerializer.Deserialize<global::Zoo.GltfPresentation>(
                 json,
                 jsonSerializerOptions);
@@ -74,6 +105,17 @@ namespace Zoo
         }
 
         /// <summary>
+        /// Deserializes a JSON stream using the generated default JsonSerializerContext.
+        /// </summary>
+        public static global::System.Threading.Tasks.ValueTask<global::Zoo.GltfPresentation?> FromJsonStreamAsync(
+            global::System.IO.Stream jsonStream)
+        {
+            return FromJsonStreamAsync(
+                jsonStream,
+                global::Zoo.SourceGenerationContext.Default);
+        }
+
+        /// <summary>
         /// Deserializes a JSON stream using the provided JsonSerializerOptions.
         /// </summary>
 #if NET8_0_OR_GREATER
@@ -84,6 +126,13 @@ namespace Zoo
             global::System.IO.Stream jsonStream,
             global::System.Text.Json.JsonSerializerOptions? jsonSerializerOptions = null)
         {
+            if (jsonSerializerOptions is null)
+            {
+                return FromJsonStreamAsync(
+                    jsonStream,
+                    global::Zoo.SourceGenerationContext.Default);
+            }
+
             return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::Zoo.GltfPresentation?>(
                 jsonStream,
                 jsonSerializerOptions);
