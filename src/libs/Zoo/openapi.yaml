@@ -136,8 +136,7 @@
         },
         "summary": "Generate a CAD model from text.",
         "tags": [
-          "ml",
-          "hidden"
+          "ml"
         ]
       }
     },
@@ -242,8 +241,7 @@
         },
         "summary": "Iterate on a CAD model with a prompt.",
         "tags": [
-          "ml",
-          "hidden"
+          "ml"
         ]
       }
     },
@@ -349,8 +347,7 @@
         },
         "summary": "Iterate on a multi-file CAD model with a prompt.",
         "tags": [
-          "ml",
-          "hidden"
+          "ml"
         ]
       }
     },
