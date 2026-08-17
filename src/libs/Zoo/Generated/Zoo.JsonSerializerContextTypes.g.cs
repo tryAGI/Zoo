@@ -604,235 +604,247 @@ namespace Zoo
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.InputFormat3dVariant12Type? Type144 { get; set; }
+        public global::Zoo.StepImportTargetRepresentation? Type144 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.InputFormat3dVariant13? Type145 { get; set; }
+        public global::Zoo.InputFormat3dVariant12Type? Type145 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.InputFormat3dVariant13Type? Type146 { get; set; }
+        public global::Zoo.InputFormat3dVariant13? Type146 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.AxisDirectionPair? Type147 { get; set; }
+        public global::Zoo.InputFormat3dVariant13Type? Type147 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.Axis? Type148 { get; set; }
+        public global::Zoo.AxisDirectionPair? Type148 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.Direction? Type149 { get; set; }
+        public global::Zoo.Axis? Type149 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.DirectionVariant1? Type150 { get; set; }
+        public global::Zoo.Direction? Type150 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.DirectionVariant2? Type151 { get; set; }
+        public global::Zoo.DirectionVariant1? Type151 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.AxisVariant1? Type152 { get; set; }
+        public global::Zoo.DirectionVariant2? Type152 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.AxisVariant2? Type153 { get; set; }
+        public global::Zoo.AxisVariant1? Type153 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.OutputFormat3dVariant1? Type154 { get; set; }
+        public global::Zoo.AxisVariant2? Type154 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.FbxStorage? Type155 { get; set; }
+        public global::Zoo.StepImportTargetRepresentationVariant1? Type155 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.OutputFormat3dVariant1Type? Type156 { get; set; }
+        public global::Zoo.StepImportTargetRepresentationVariant2? Type156 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.OutputFormat3dVariant2? Type157 { get; set; }
+        public global::Zoo.OutputFormat3dVariant1? Type157 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.GltfPresentation? Type158 { get; set; }
+        public global::Zoo.FbxStorage? Type158 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.GltfStorage? Type159 { get; set; }
+        public global::Zoo.OutputFormat3dVariant1Type? Type159 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.OutputFormat3dVariant2Type? Type160 { get; set; }
+        public global::Zoo.OutputFormat3dVariant2? Type160 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.OutputFormat3dVariant3? Type161 { get; set; }
+        public global::Zoo.GltfPresentation? Type161 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.OutputFormat3dVariant3Type? Type162 { get; set; }
+        public global::Zoo.GltfStorage? Type162 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.OutputFormat3dVariant4? Type163 { get; set; }
+        public global::Zoo.OutputFormat3dVariant2Type? Type163 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.Selection? Type164 { get; set; }
+        public global::Zoo.OutputFormat3dVariant3? Type164 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.PlyStorage? Type165 { get; set; }
+        public global::Zoo.OutputFormat3dVariant3Type? Type165 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.OutputFormat3dVariant4Type? Type166 { get; set; }
+        public global::Zoo.OutputFormat3dVariant4? Type166 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.OutputFormat3dVariant5? Type167 { get; set; }
+        public global::Zoo.Selection? Type167 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.StepPresentation? Type168 { get; set; }
+        public global::Zoo.PlyStorage? Type168 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.OutputFormat3dVariant5Type? Type169 { get; set; }
+        public global::Zoo.OutputFormat3dVariant4Type? Type169 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.OutputFormat3dVariant6? Type170 { get; set; }
+        public global::Zoo.OutputFormat3dVariant5? Type170 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.StlStorage? Type171 { get; set; }
+        public global::Zoo.StepPresentation? Type171 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.OutputFormat3dVariant6Type? Type172 { get; set; }
+        public global::Zoo.OutputFormat3dVariant5Type? Type172 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.StlStorageVariant1? Type173 { get; set; }
+        public global::Zoo.OutputFormat3dVariant6? Type173 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.StlStorageVariant2? Type174 { get; set; }
+        public global::Zoo.StlStorage? Type174 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.SelectionVariant1? Type175 { get; set; }
+        public global::Zoo.OutputFormat3dVariant6Type? Type175 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.SelectionVariant1Type? Type176 { get; set; }
+        public global::Zoo.StlStorageVariant1? Type176 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.SelectionVariant2? Type177 { get; set; }
+        public global::Zoo.StlStorageVariant2? Type177 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.SelectionVariant2Type? Type178 { get; set; }
+        public global::Zoo.SelectionVariant1? Type178 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.SelectionVariant3? Type179 { get; set; }
+        public global::Zoo.SelectionVariant1Type? Type179 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.SelectionVariant3Type? Type180 { get; set; }
+        public global::Zoo.SelectionVariant2? Type180 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.SelectionVariant4? Type181 { get; set; }
+        public global::Zoo.SelectionVariant2Type? Type181 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.SelectionVariant4Type? Type182 { get; set; }
+        public global::Zoo.SelectionVariant3? Type182 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.SelectionVariant5? Type183 { get; set; }
+        public global::Zoo.SelectionVariant3Type? Type183 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.SelectionVariant5Type? Type184 { get; set; }
+        public global::Zoo.SelectionVariant4? Type184 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.StepPresentationVariant1? Type185 { get; set; }
+        public global::Zoo.SelectionVariant4Type? Type185 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.StepPresentationVariant2? Type186 { get; set; }
+        public global::Zoo.SelectionVariant5? Type186 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.PlyStorageVariant1? Type187 { get; set; }
+        public global::Zoo.SelectionVariant5Type? Type187 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.PlyStorageVariant2? Type188 { get; set; }
+        public global::Zoo.StepPresentationVariant1? Type188 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.PlyStorageVariant3? Type189 { get; set; }
+        public global::Zoo.StepPresentationVariant2? Type189 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.GltfStorageVariant1? Type190 { get; set; }
+        public global::Zoo.PlyStorageVariant1? Type190 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.GltfStorageVariant2? Type191 { get; set; }
+        public global::Zoo.PlyStorageVariant2? Type191 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.GltfStorageVariant3? Type192 { get; set; }
+        public global::Zoo.PlyStorageVariant3? Type192 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.GltfPresentationVariant1? Type193 { get; set; }
+        public global::Zoo.GltfStorageVariant1? Type193 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.GltfPresentationVariant2? Type194 { get; set; }
+        public global::Zoo.GltfStorageVariant2? Type194 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.FbxStorageVariant1? Type195 { get; set; }
+        public global::Zoo.GltfStorageVariant3? Type195 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.FbxStorageVariant2? Type196 { get; set; }
+        public global::Zoo.GltfPresentationVariant1? Type196 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.TextToCadMultiFileIteration? Type197 { get; set; }
+        public global::Zoo.GltfPresentationVariant2? Type197 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.TextToCadIteration? Type198 { get; set; }
+        public global::Zoo.FbxStorageVariant1? Type198 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.TextToCadIterationBody? Type199 { get; set; }
+        public global::Zoo.FbxStorageVariant2? Type199 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.TextToCad? Type200 { get; set; }
+        public global::Zoo.TextToCadMultiFileIteration? Type200 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Zoo.TextToCadCreateBody? Type201 { get; set; }
+        public global::Zoo.TextToCadIteration? Type201 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.TextToCadIterationBody? Type202 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.TextToCad? Type203 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Zoo.TextToCadCreateBody? Type204 { get; set; }
 
         /// <summary>
         /// 

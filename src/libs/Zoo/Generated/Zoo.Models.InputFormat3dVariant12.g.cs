@@ -26,6 +26,14 @@ namespace Zoo
         public bool? SplitClosedFaces { get; set; }
 
         /// <summary>
+        /// What representation should be used for this file after it's imported?<br/>
+        /// Default Value: brep
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("target_representation")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Zoo.JsonConverters.StepImportTargetRepresentationJsonConverter))]
+        public global::Zoo.StepImportTargetRepresentation? TargetRepresentation { get; set; }
+
+        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
@@ -52,6 +60,10 @@ namespace Zoo
         /// Defaults to `false` but is implicitly `true` when importing into the engine.<br/>
         /// Default Value: false
         /// </param>
+        /// <param name="targetRepresentation">
+        /// What representation should be used for this file after it's imported?<br/>
+        /// Default Value: brep
+        /// </param>
         /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -59,10 +71,12 @@ namespace Zoo
         public InputFormat3dVariant12(
             global::Zoo.CoordinateSystem? coords,
             bool? splitClosedFaces,
+            global::Zoo.StepImportTargetRepresentation? targetRepresentation,
             global::Zoo.InputFormat3dVariant12Type type)
         {
             this.Coords = coords;
             this.SplitClosedFaces = splitClosedFaces;
+            this.TargetRepresentation = targetRepresentation;
             this.Type = type;
         }
 

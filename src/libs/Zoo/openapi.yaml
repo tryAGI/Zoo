@@ -3223,6 +3223,15 @@
                 "description": "Splits all closed faces into two open faces.\n\nDefaults to `false` but is implicitly `true` when importing into the engine.",
                 "type": "boolean"
               },
+              "target_representation": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/StepImportTargetRepresentation"
+                  }
+                ],
+                "default": "brep",
+                "description": "What representation should be used for this file after it's imported?"
+              },
               "type": {
                 "enum": [
                   "step"
@@ -3355,6 +3364,25 @@
             "description": "'Z' axis.",
             "enum": [
               "z"
+            ],
+            "type": "string"
+          }
+        ]
+      },
+      "StepImportTargetRepresentation": {
+        "description": "After importing, how should this model's data be represented?",
+        "oneOf": [
+          {
+            "description": "Mesh of 2D geometry",
+            "enum": [
+              "mesh"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Boundary representation",
+            "enum": [
+              "brep"
             ],
             "type": "string"
           }

@@ -70,6 +70,7 @@ namespace Zoo.JsonConverters
             var __score11 = 0;
             if (__jsonProps.Contains("coords")) __score11++;
             if (__jsonProps.Contains("split_closed_faces")) __score11++;
+            if (__jsonProps.Contains("target_representation")) __score11++;
             if (__jsonProps.Contains("type")) __score11++;
             var __score12 = 0;
             if (__jsonProps.Contains("coords")) __score12++;
