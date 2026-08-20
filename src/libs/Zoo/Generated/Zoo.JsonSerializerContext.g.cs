@@ -742,11 +742,6 @@ namespace Zoo
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.GltfPresentationVariant2), TypeInfoPropertyName = "GltfPresentationVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.FbxStorageVariant1), TypeInfoPropertyName = "FbxStorageVariant12")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.FbxStorageVariant2), TypeInfoPropertyName = "FbxStorageVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.TextToCadMultiFileIteration))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.TextToCadIteration))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.TextToCadIterationBody))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.TextToCad))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.TextToCadCreateBody))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Zoo.SourceRangePrompt>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Zoo.TextToCadResponse>))]
     public sealed partial class SourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext

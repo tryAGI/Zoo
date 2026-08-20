@@ -64,7 +64,9 @@ reduced = {
 }
 
 for path_name, methods in selected_operations.items():
-    source_path = data["paths"][path_name]
+    source_path = data.get("paths", {}).get(path_name)
+    if source_path is None:
+        continue
     reduced["paths"][path_name] = {
         method: source_path[method]
         for method in methods

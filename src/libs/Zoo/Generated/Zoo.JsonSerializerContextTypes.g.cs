@@ -825,26 +825,6 @@ namespace Zoo
         /// 
         /// </summary>
         public global::Zoo.FbxStorageVariant2? Type199 { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
-        public global::Zoo.TextToCadMultiFileIteration? Type200 { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
-        public global::Zoo.TextToCadIteration? Type201 { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
-        public global::Zoo.TextToCadIterationBody? Type202 { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
-        public global::Zoo.TextToCad? Type203 { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
-        public global::Zoo.TextToCadCreateBody? Type204 { get; set; }
 
         /// <summary>
         /// 
