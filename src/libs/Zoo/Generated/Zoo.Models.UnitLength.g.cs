@@ -19,7 +19,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UnitLengthVariant1))]
@@ -27,7 +27,7 @@ namespace Zoo
         public bool IsUnitLengthVariant1 => UnitLengthVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUnitLengthVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.UnitLengthVariant1 PickUnitLengthVariant1() => IsUnitLengthVariant1
             ? UnitLengthVariant1!.Value
@@ -56,7 +56,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UnitLengthVariant2))]
@@ -64,7 +64,7 @@ namespace Zoo
         public bool IsUnitLengthVariant2 => UnitLengthVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUnitLengthVariant2(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.UnitLengthVariant2 PickUnitLengthVariant2() => IsUnitLengthVariant2
             ? UnitLengthVariant2!.Value
@@ -93,7 +93,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UnitLengthVariant3))]
@@ -101,7 +101,7 @@ namespace Zoo
         public bool IsUnitLengthVariant3 => UnitLengthVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUnitLengthVariant3(
 #if NET6_0_OR_GREATER
@@ -114,7 +114,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.UnitLengthVariant3 PickUnitLengthVariant3() => IsUnitLengthVariant3
             ? UnitLengthVariant3!.Value
@@ -130,7 +130,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UnitLengthVariant4))]
@@ -138,7 +138,7 @@ namespace Zoo
         public bool IsUnitLengthVariant4 => UnitLengthVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUnitLengthVariant4(
 #if NET6_0_OR_GREATER
@@ -151,7 +151,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.UnitLengthVariant4 PickUnitLengthVariant4() => IsUnitLengthVariant4
             ? UnitLengthVariant4!.Value
@@ -167,7 +167,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UnitLengthVariant5))]
@@ -175,7 +175,7 @@ namespace Zoo
         public bool IsUnitLengthVariant5 => UnitLengthVariant5 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUnitLengthVariant5(
 #if NET6_0_OR_GREATER
@@ -188,7 +188,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.UnitLengthVariant5 PickUnitLengthVariant5() => IsUnitLengthVariant5
             ? UnitLengthVariant5!.Value
@@ -204,7 +204,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UnitLengthVariant6))]
@@ -212,7 +212,7 @@ namespace Zoo
         public bool IsUnitLengthVariant6 => UnitLengthVariant6 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUnitLengthVariant6(
 #if NET6_0_OR_GREATER
@@ -225,23 +225,23 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.UnitLengthVariant6 PickUnitLengthVariant6() => IsUnitLengthVariant6
             ? UnitLengthVariant6!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UnitLengthVariant6' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator UnitLength(global::Zoo.UnitLengthVariant1 value) => new UnitLength((global::Zoo.UnitLengthVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.UnitLengthVariant1?(UnitLength @this) => @this.UnitLengthVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UnitLength(global::Zoo.UnitLengthVariant1? value)
         {
@@ -249,22 +249,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static UnitLength FromUnitLengthVariant1(global::Zoo.UnitLengthVariant1? value) => new UnitLength(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator UnitLength(global::Zoo.UnitLengthVariant2 value) => new UnitLength((global::Zoo.UnitLengthVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.UnitLengthVariant2?(UnitLength @this) => @this.UnitLengthVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UnitLength(global::Zoo.UnitLengthVariant2? value)
         {
@@ -272,22 +272,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static UnitLength FromUnitLengthVariant2(global::Zoo.UnitLengthVariant2? value) => new UnitLength(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator UnitLength(global::Zoo.UnitLengthVariant3 value) => new UnitLength((global::Zoo.UnitLengthVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.UnitLengthVariant3?(UnitLength @this) => @this.UnitLengthVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UnitLength(global::Zoo.UnitLengthVariant3? value)
         {
@@ -295,22 +295,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static UnitLength FromUnitLengthVariant3(global::Zoo.UnitLengthVariant3? value) => new UnitLength(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator UnitLength(global::Zoo.UnitLengthVariant4 value) => new UnitLength((global::Zoo.UnitLengthVariant4?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.UnitLengthVariant4?(UnitLength @this) => @this.UnitLengthVariant4;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UnitLength(global::Zoo.UnitLengthVariant4? value)
         {
@@ -318,22 +318,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static UnitLength FromUnitLengthVariant4(global::Zoo.UnitLengthVariant4? value) => new UnitLength(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator UnitLength(global::Zoo.UnitLengthVariant5 value) => new UnitLength((global::Zoo.UnitLengthVariant5?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.UnitLengthVariant5?(UnitLength @this) => @this.UnitLengthVariant5;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UnitLength(global::Zoo.UnitLengthVariant5? value)
         {
@@ -341,22 +341,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static UnitLength FromUnitLengthVariant5(global::Zoo.UnitLengthVariant5? value) => new UnitLength(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator UnitLength(global::Zoo.UnitLengthVariant6 value) => new UnitLength((global::Zoo.UnitLengthVariant6?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.UnitLengthVariant6?(UnitLength @this) => @this.UnitLengthVariant6;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UnitLength(global::Zoo.UnitLengthVariant6? value)
         {
@@ -364,12 +364,12 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static UnitLength FromUnitLengthVariant6(global::Zoo.UnitLengthVariant6? value) => new UnitLength(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UnitLength(
             global::Zoo.UnitLengthVariant1? unitLengthVariant1,
@@ -389,7 +389,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             UnitLengthVariant6 as object ??
@@ -397,11 +397,11 @@ namespace Zoo
             UnitLengthVariant4 as object ??
             UnitLengthVariant3 as object ??
             UnitLengthVariant2 as object ??
-            UnitLengthVariant1 as object 
+            UnitLengthVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             UnitLengthVariant1?.ToValueString() ??
@@ -409,11 +409,11 @@ namespace Zoo
             UnitLengthVariant3?.ToValueString() ??
             UnitLengthVariant4?.ToValueString() ??
             UnitLengthVariant5?.ToValueString() ??
-            UnitLengthVariant6?.ToValueString() 
+            UnitLengthVariant6?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -421,7 +421,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Zoo.UnitLengthVariant1?, TResult>? unitLengthVariant1 = null,
@@ -466,7 +466,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Zoo.UnitLengthVariant1?>? unitLengthVariant1 = null,
@@ -514,7 +514,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Zoo.UnitLengthVariant1?>? unitLengthVariant1 = null,
@@ -557,7 +557,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -586,7 +586,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(UnitLength other)
         {
@@ -596,12 +596,12 @@ namespace Zoo
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.UnitLengthVariant3?>.Default.Equals(UnitLengthVariant3, other.UnitLengthVariant3) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.UnitLengthVariant4?>.Default.Equals(UnitLengthVariant4, other.UnitLengthVariant4) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.UnitLengthVariant5?>.Default.Equals(UnitLengthVariant5, other.UnitLengthVariant5) &&
-                global::System.Collections.Generic.EqualityComparer<global::Zoo.UnitLengthVariant6?>.Default.Equals(UnitLengthVariant6, other.UnitLengthVariant6) 
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.UnitLengthVariant6?>.Default.Equals(UnitLengthVariant6, other.UnitLengthVariant6)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(UnitLength obj1, UnitLength obj2)
         {
@@ -609,7 +609,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(UnitLength obj1, UnitLength obj2)
         {
@@ -617,7 +617,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

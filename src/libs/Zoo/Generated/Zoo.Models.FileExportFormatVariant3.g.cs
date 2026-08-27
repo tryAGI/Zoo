@@ -12,7 +12,7 @@ namespace Zoo
     public enum FileExportFormatVariant3
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gltf,
     }

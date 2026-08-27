@@ -19,7 +19,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PlyStorageVariant1))]
@@ -27,7 +27,7 @@ namespace Zoo
         public bool IsPlyStorageVariant1 => PlyStorageVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPlyStorageVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.PlyStorageVariant1 PickPlyStorageVariant1() => IsPlyStorageVariant1
             ? PlyStorageVariant1!.Value
@@ -56,7 +56,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PlyStorageVariant2))]
@@ -64,7 +64,7 @@ namespace Zoo
         public bool IsPlyStorageVariant2 => PlyStorageVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPlyStorageVariant2(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.PlyStorageVariant2 PickPlyStorageVariant2() => IsPlyStorageVariant2
             ? PlyStorageVariant2!.Value
@@ -93,7 +93,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PlyStorageVariant3))]
@@ -101,7 +101,7 @@ namespace Zoo
         public bool IsPlyStorageVariant3 => PlyStorageVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPlyStorageVariant3(
 #if NET6_0_OR_GREATER
@@ -114,23 +114,23 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.PlyStorageVariant3 PickPlyStorageVariant3() => IsPlyStorageVariant3
             ? PlyStorageVariant3!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PlyStorageVariant3' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator PlyStorage(global::Zoo.PlyStorageVariant1 value) => new PlyStorage((global::Zoo.PlyStorageVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.PlyStorageVariant1?(PlyStorage @this) => @this.PlyStorageVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PlyStorage(global::Zoo.PlyStorageVariant1? value)
         {
@@ -138,22 +138,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static PlyStorage FromPlyStorageVariant1(global::Zoo.PlyStorageVariant1? value) => new PlyStorage(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator PlyStorage(global::Zoo.PlyStorageVariant2 value) => new PlyStorage((global::Zoo.PlyStorageVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.PlyStorageVariant2?(PlyStorage @this) => @this.PlyStorageVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PlyStorage(global::Zoo.PlyStorageVariant2? value)
         {
@@ -161,22 +161,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static PlyStorage FromPlyStorageVariant2(global::Zoo.PlyStorageVariant2? value) => new PlyStorage(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator PlyStorage(global::Zoo.PlyStorageVariant3 value) => new PlyStorage((global::Zoo.PlyStorageVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.PlyStorageVariant3?(PlyStorage @this) => @this.PlyStorageVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PlyStorage(global::Zoo.PlyStorageVariant3? value)
         {
@@ -184,12 +184,12 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static PlyStorage FromPlyStorageVariant3(global::Zoo.PlyStorageVariant3? value) => new PlyStorage(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PlyStorage(
             global::Zoo.PlyStorageVariant1? plyStorageVariant1,
@@ -203,25 +203,25 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             PlyStorageVariant3 as object ??
             PlyStorageVariant2 as object ??
-            PlyStorageVariant1 as object 
+            PlyStorageVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             PlyStorageVariant1?.ToValueString() ??
             PlyStorageVariant2?.ToValueString() ??
-            PlyStorageVariant3?.ToValueString() 
+            PlyStorageVariant3?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -229,7 +229,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Zoo.PlyStorageVariant1?, TResult>? plyStorageVariant1 = null,
@@ -259,7 +259,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Zoo.PlyStorageVariant1?>? plyStorageVariant1 = null,
@@ -289,7 +289,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Zoo.PlyStorageVariant1?>? plyStorageVariant1 = null,
@@ -317,7 +317,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -340,19 +340,19 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(PlyStorage other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.PlyStorageVariant1?>.Default.Equals(PlyStorageVariant1, other.PlyStorageVariant1) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.PlyStorageVariant2?>.Default.Equals(PlyStorageVariant2, other.PlyStorageVariant2) &&
-                global::System.Collections.Generic.EqualityComparer<global::Zoo.PlyStorageVariant3?>.Default.Equals(PlyStorageVariant3, other.PlyStorageVariant3) 
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.PlyStorageVariant3?>.Default.Equals(PlyStorageVariant3, other.PlyStorageVariant3)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(PlyStorage obj1, PlyStorage obj2)
         {
@@ -360,7 +360,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(PlyStorage obj1, PlyStorage obj2)
         {
@@ -368,7 +368,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

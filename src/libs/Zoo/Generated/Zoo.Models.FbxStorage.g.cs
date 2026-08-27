@@ -19,7 +19,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FbxStorageVariant1))]
@@ -27,7 +27,7 @@ namespace Zoo
         public bool IsFbxStorageVariant1 => FbxStorageVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFbxStorageVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.FbxStorageVariant1 PickFbxStorageVariant1() => IsFbxStorageVariant1
             ? FbxStorageVariant1!.Value
@@ -56,7 +56,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FbxStorageVariant2))]
@@ -64,7 +64,7 @@ namespace Zoo
         public bool IsFbxStorageVariant2 => FbxStorageVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFbxStorageVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.FbxStorageVariant2 PickFbxStorageVariant2() => IsFbxStorageVariant2
             ? FbxStorageVariant2!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FbxStorageVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FbxStorage(global::Zoo.FbxStorageVariant1 value) => new FbxStorage((global::Zoo.FbxStorageVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.FbxStorageVariant1?(FbxStorage @this) => @this.FbxStorageVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FbxStorage(global::Zoo.FbxStorageVariant1? value)
         {
@@ -101,22 +101,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FbxStorage FromFbxStorageVariant1(global::Zoo.FbxStorageVariant1? value) => new FbxStorage(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FbxStorage(global::Zoo.FbxStorageVariant2 value) => new FbxStorage((global::Zoo.FbxStorageVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.FbxStorageVariant2?(FbxStorage @this) => @this.FbxStorageVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FbxStorage(global::Zoo.FbxStorageVariant2? value)
         {
@@ -124,12 +124,12 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FbxStorage FromFbxStorageVariant2(global::Zoo.FbxStorageVariant2? value) => new FbxStorage(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FbxStorage(
             global::Zoo.FbxStorageVariant1? fbxStorageVariant1,
@@ -141,23 +141,23 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             FbxStorageVariant2 as object ??
-            FbxStorageVariant1 as object 
+            FbxStorageVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             FbxStorageVariant1?.ToValueString() ??
-            FbxStorageVariant2?.ToValueString() 
+            FbxStorageVariant2?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Zoo.FbxStorageVariant1?, TResult>? fbxStorageVariant1 = null,
@@ -190,7 +190,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Zoo.FbxStorageVariant1?>? fbxStorageVariant1 = null,
@@ -214,7 +214,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Zoo.FbxStorageVariant1?>? fbxStorageVariant1 = null,
@@ -237,7 +237,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(FbxStorage other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.FbxStorageVariant1?>.Default.Equals(FbxStorageVariant1, other.FbxStorageVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::Zoo.FbxStorageVariant2?>.Default.Equals(FbxStorageVariant2, other.FbxStorageVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.FbxStorageVariant2?>.Default.Equals(FbxStorageVariant2, other.FbxStorageVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(FbxStorage obj1, FbxStorage obj2)
         {
@@ -277,7 +277,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(FbxStorage obj1, FbxStorage obj2)
         {
@@ -285,7 +285,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

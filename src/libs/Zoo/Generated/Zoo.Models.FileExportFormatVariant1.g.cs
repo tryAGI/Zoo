@@ -9,7 +9,7 @@ namespace Zoo
     public enum FileExportFormatVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fbx,
     }

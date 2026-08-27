@@ -20,7 +20,7 @@ namespace Zoo.JsonConverters
                     {
                         return global::Zoo.UnitVolumeVariant6Extensions.ToEnum(stringValue) ?? default;
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

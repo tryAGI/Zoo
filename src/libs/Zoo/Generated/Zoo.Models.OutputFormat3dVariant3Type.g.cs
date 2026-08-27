@@ -4,12 +4,12 @@
 namespace Zoo
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum OutputFormat3dVariant3Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Obj,
     }

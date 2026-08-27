@@ -9,7 +9,7 @@ namespace Zoo
     public enum StepImportTargetRepresentationVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mesh,
     }

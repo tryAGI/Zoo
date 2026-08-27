@@ -19,7 +19,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TextToCadResponseVariant1))]
@@ -27,7 +27,7 @@ namespace Zoo
         public bool IsTextToCadResponseVariant1 => TextToCadResponseVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTextToCadResponseVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.TextToCadResponseVariant1 PickTextToCadResponseVariant1() => IsTextToCadResponseVariant1
             ? TextToCadResponseVariant1!
@@ -56,7 +56,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TextToCadResponseVariant2))]
@@ -64,7 +64,7 @@ namespace Zoo
         public bool IsTextToCadResponseVariant2 => TextToCadResponseVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTextToCadResponseVariant2(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.TextToCadResponseVariant2 PickTextToCadResponseVariant2() => IsTextToCadResponseVariant2
             ? TextToCadResponseVariant2!
@@ -93,7 +93,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TextToCadResponseVariant3))]
@@ -101,7 +101,7 @@ namespace Zoo
         public bool IsTextToCadResponseVariant3 => TextToCadResponseVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTextToCadResponseVariant3(
 #if NET6_0_OR_GREATER
@@ -114,23 +114,23 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.TextToCadResponseVariant3 PickTextToCadResponseVariant3() => IsTextToCadResponseVariant3
             ? TextToCadResponseVariant3!
             : throw new global::System.InvalidOperationException($"Expected union variant 'TextToCadResponseVariant3' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator TextToCadResponse(global::Zoo.TextToCadResponseVariant1 value) => new TextToCadResponse((global::Zoo.TextToCadResponseVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.TextToCadResponseVariant1?(TextToCadResponse @this) => @this.TextToCadResponseVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TextToCadResponse(global::Zoo.TextToCadResponseVariant1? value)
         {
@@ -138,22 +138,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static TextToCadResponse FromTextToCadResponseVariant1(global::Zoo.TextToCadResponseVariant1? value) => new TextToCadResponse(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator TextToCadResponse(global::Zoo.TextToCadResponseVariant2 value) => new TextToCadResponse((global::Zoo.TextToCadResponseVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.TextToCadResponseVariant2?(TextToCadResponse @this) => @this.TextToCadResponseVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TextToCadResponse(global::Zoo.TextToCadResponseVariant2? value)
         {
@@ -161,22 +161,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static TextToCadResponse FromTextToCadResponseVariant2(global::Zoo.TextToCadResponseVariant2? value) => new TextToCadResponse(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator TextToCadResponse(global::Zoo.TextToCadResponseVariant3 value) => new TextToCadResponse((global::Zoo.TextToCadResponseVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.TextToCadResponseVariant3?(TextToCadResponse @this) => @this.TextToCadResponseVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TextToCadResponse(global::Zoo.TextToCadResponseVariant3? value)
         {
@@ -184,12 +184,12 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static TextToCadResponse FromTextToCadResponseVariant3(global::Zoo.TextToCadResponseVariant3? value) => new TextToCadResponse(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TextToCadResponse(
             global::Zoo.TextToCadResponseVariant1? textToCadResponseVariant1,
@@ -203,25 +203,25 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             TextToCadResponseVariant3 as object ??
             TextToCadResponseVariant2 as object ??
-            TextToCadResponseVariant1 as object 
+            TextToCadResponseVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             TextToCadResponseVariant1?.ToString() ??
             TextToCadResponseVariant2?.ToString() ??
-            TextToCadResponseVariant3?.ToString() 
+            TextToCadResponseVariant3?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -229,7 +229,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Zoo.TextToCadResponseVariant1, TResult>? textToCadResponseVariant1 = null,
@@ -259,7 +259,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Zoo.TextToCadResponseVariant1>? textToCadResponseVariant1 = null,
@@ -289,7 +289,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Zoo.TextToCadResponseVariant1>? textToCadResponseVariant1 = null,
@@ -317,7 +317,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -340,19 +340,19 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(TextToCadResponse other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.TextToCadResponseVariant1?>.Default.Equals(TextToCadResponseVariant1, other.TextToCadResponseVariant1) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.TextToCadResponseVariant2?>.Default.Equals(TextToCadResponseVariant2, other.TextToCadResponseVariant2) &&
-                global::System.Collections.Generic.EqualityComparer<global::Zoo.TextToCadResponseVariant3?>.Default.Equals(TextToCadResponseVariant3, other.TextToCadResponseVariant3) 
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.TextToCadResponseVariant3?>.Default.Equals(TextToCadResponseVariant3, other.TextToCadResponseVariant3)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(TextToCadResponse obj1, TextToCadResponse obj2)
         {
@@ -360,7 +360,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(TextToCadResponse obj1, TextToCadResponse obj2)
         {
@@ -368,7 +368,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

@@ -19,7 +19,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TextToCadModelVariant1))]
@@ -27,7 +27,7 @@ namespace Zoo
         public bool IsTextToCadModelVariant1 => TextToCadModelVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTextToCadModelVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.TextToCadModelVariant1 PickTextToCadModelVariant1() => IsTextToCadModelVariant1
             ? TextToCadModelVariant1!.Value
@@ -56,7 +56,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TextToCadModelVariant2))]
@@ -64,7 +64,7 @@ namespace Zoo
         public bool IsTextToCadModelVariant2 => TextToCadModelVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTextToCadModelVariant2(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.TextToCadModelVariant2 PickTextToCadModelVariant2() => IsTextToCadModelVariant2
             ? TextToCadModelVariant2!.Value
@@ -93,7 +93,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TextToCadModelVariant3))]
@@ -101,7 +101,7 @@ namespace Zoo
         public bool IsTextToCadModelVariant3 => TextToCadModelVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTextToCadModelVariant3(
 #if NET6_0_OR_GREATER
@@ -114,23 +114,23 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.TextToCadModelVariant3 PickTextToCadModelVariant3() => IsTextToCadModelVariant3
             ? TextToCadModelVariant3!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TextToCadModelVariant3' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator TextToCadModel(global::Zoo.TextToCadModelVariant1 value) => new TextToCadModel((global::Zoo.TextToCadModelVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.TextToCadModelVariant1?(TextToCadModel @this) => @this.TextToCadModelVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TextToCadModel(global::Zoo.TextToCadModelVariant1? value)
         {
@@ -138,22 +138,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static TextToCadModel FromTextToCadModelVariant1(global::Zoo.TextToCadModelVariant1? value) => new TextToCadModel(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator TextToCadModel(global::Zoo.TextToCadModelVariant2 value) => new TextToCadModel((global::Zoo.TextToCadModelVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.TextToCadModelVariant2?(TextToCadModel @this) => @this.TextToCadModelVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TextToCadModel(global::Zoo.TextToCadModelVariant2? value)
         {
@@ -161,22 +161,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static TextToCadModel FromTextToCadModelVariant2(global::Zoo.TextToCadModelVariant2? value) => new TextToCadModel(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator TextToCadModel(global::Zoo.TextToCadModelVariant3 value) => new TextToCadModel((global::Zoo.TextToCadModelVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.TextToCadModelVariant3?(TextToCadModel @this) => @this.TextToCadModelVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TextToCadModel(global::Zoo.TextToCadModelVariant3? value)
         {
@@ -184,12 +184,12 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static TextToCadModel FromTextToCadModelVariant3(global::Zoo.TextToCadModelVariant3? value) => new TextToCadModel(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TextToCadModel(
             global::Zoo.TextToCadModelVariant1? textToCadModelVariant1,
@@ -203,25 +203,25 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             TextToCadModelVariant3 as object ??
             TextToCadModelVariant2 as object ??
-            TextToCadModelVariant1 as object 
+            TextToCadModelVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             TextToCadModelVariant1?.ToValueString() ??
             TextToCadModelVariant2?.ToValueString() ??
-            TextToCadModelVariant3?.ToValueString() 
+            TextToCadModelVariant3?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -229,7 +229,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Zoo.TextToCadModelVariant1?, TResult>? textToCadModelVariant1 = null,
@@ -259,7 +259,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Zoo.TextToCadModelVariant1?>? textToCadModelVariant1 = null,
@@ -289,7 +289,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Zoo.TextToCadModelVariant1?>? textToCadModelVariant1 = null,
@@ -317,7 +317,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -340,19 +340,19 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(TextToCadModel other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.TextToCadModelVariant1?>.Default.Equals(TextToCadModelVariant1, other.TextToCadModelVariant1) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.TextToCadModelVariant2?>.Default.Equals(TextToCadModelVariant2, other.TextToCadModelVariant2) &&
-                global::System.Collections.Generic.EqualityComparer<global::Zoo.TextToCadModelVariant3?>.Default.Equals(TextToCadModelVariant3, other.TextToCadModelVariant3) 
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.TextToCadModelVariant3?>.Default.Equals(TextToCadModelVariant3, other.TextToCadModelVariant3)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(TextToCadModel obj1, TextToCadModel obj2)
         {
@@ -360,7 +360,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(TextToCadModel obj1, TextToCadModel obj2)
         {
@@ -368,7 +368,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

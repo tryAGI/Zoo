@@ -9,7 +9,7 @@ namespace Zoo
     public enum FileImportFormatVariant7
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nx,
     }

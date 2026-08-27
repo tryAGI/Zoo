@@ -19,7 +19,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StlStorageVariant1))]
@@ -27,7 +27,7 @@ namespace Zoo
         public bool IsStlStorageVariant1 => StlStorageVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStlStorageVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.StlStorageVariant1 PickStlStorageVariant1() => IsStlStorageVariant1
             ? StlStorageVariant1!.Value
@@ -57,7 +57,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StlStorageVariant2))]
@@ -65,7 +65,7 @@ namespace Zoo
         public bool IsStlStorageVariant2 => StlStorageVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStlStorageVariant2(
 #if NET6_0_OR_GREATER
@@ -78,23 +78,23 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.StlStorageVariant2 PickStlStorageVariant2() => IsStlStorageVariant2
             ? StlStorageVariant2!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StlStorageVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StlStorage(global::Zoo.StlStorageVariant1 value) => new StlStorage((global::Zoo.StlStorageVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.StlStorageVariant1?(StlStorage @this) => @this.StlStorageVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StlStorage(global::Zoo.StlStorageVariant1? value)
         {
@@ -102,22 +102,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StlStorage FromStlStorageVariant1(global::Zoo.StlStorageVariant1? value) => new StlStorage(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StlStorage(global::Zoo.StlStorageVariant2 value) => new StlStorage((global::Zoo.StlStorageVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.StlStorageVariant2?(StlStorage @this) => @this.StlStorageVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StlStorage(global::Zoo.StlStorageVariant2? value)
         {
@@ -125,12 +125,12 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StlStorage FromStlStorageVariant2(global::Zoo.StlStorageVariant2? value) => new StlStorage(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StlStorage(
             global::Zoo.StlStorageVariant1? stlStorageVariant1,
@@ -142,23 +142,23 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             StlStorageVariant2 as object ??
-            StlStorageVariant1 as object 
+            StlStorageVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             StlStorageVariant1?.ToValueString() ??
-            StlStorageVariant2?.ToValueString() 
+            StlStorageVariant2?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -166,7 +166,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Zoo.StlStorageVariant1?, TResult>? stlStorageVariant1 = null,
@@ -191,7 +191,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Zoo.StlStorageVariant1?>? stlStorageVariant1 = null,
@@ -215,7 +215,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Zoo.StlStorageVariant1?>? stlStorageVariant1 = null,
@@ -238,7 +238,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -259,18 +259,18 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(StlStorage other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.StlStorageVariant1?>.Default.Equals(StlStorageVariant1, other.StlStorageVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::Zoo.StlStorageVariant2?>.Default.Equals(StlStorageVariant2, other.StlStorageVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.StlStorageVariant2?>.Default.Equals(StlStorageVariant2, other.StlStorageVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(StlStorage obj1, StlStorage obj2)
         {
@@ -278,7 +278,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(StlStorage obj1, StlStorage obj2)
         {
@@ -286,7 +286,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

@@ -34,7 +34,7 @@ namespace Zoo
         public required global::Zoo.PlyStorage Storage { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Zoo.JsonConverters.OutputFormat3dVariant4TypeJsonConverter))]

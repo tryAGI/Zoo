@@ -4,12 +4,12 @@
 namespace Zoo
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum TextToCadResponseVariant3Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TextToCadMultiFileIteration,
     }

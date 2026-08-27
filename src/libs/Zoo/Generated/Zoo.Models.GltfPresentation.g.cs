@@ -19,7 +19,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GltfPresentationVariant1))]
@@ -27,7 +27,7 @@ namespace Zoo
         public bool IsGltfPresentationVariant1 => GltfPresentationVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGltfPresentationVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.GltfPresentationVariant1 PickGltfPresentationVariant1() => IsGltfPresentationVariant1
             ? GltfPresentationVariant1!.Value
@@ -57,7 +57,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GltfPresentationVariant2))]
@@ -65,7 +65,7 @@ namespace Zoo
         public bool IsGltfPresentationVariant2 => GltfPresentationVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGltfPresentationVariant2(
 #if NET6_0_OR_GREATER
@@ -78,23 +78,23 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.GltfPresentationVariant2 PickGltfPresentationVariant2() => IsGltfPresentationVariant2
             ? GltfPresentationVariant2!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GltfPresentationVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator GltfPresentation(global::Zoo.GltfPresentationVariant1 value) => new GltfPresentation((global::Zoo.GltfPresentationVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.GltfPresentationVariant1?(GltfPresentation @this) => @this.GltfPresentationVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public GltfPresentation(global::Zoo.GltfPresentationVariant1? value)
         {
@@ -102,22 +102,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static GltfPresentation FromGltfPresentationVariant1(global::Zoo.GltfPresentationVariant1? value) => new GltfPresentation(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator GltfPresentation(global::Zoo.GltfPresentationVariant2 value) => new GltfPresentation((global::Zoo.GltfPresentationVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.GltfPresentationVariant2?(GltfPresentation @this) => @this.GltfPresentationVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public GltfPresentation(global::Zoo.GltfPresentationVariant2? value)
         {
@@ -125,12 +125,12 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static GltfPresentation FromGltfPresentationVariant2(global::Zoo.GltfPresentationVariant2? value) => new GltfPresentation(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public GltfPresentation(
             global::Zoo.GltfPresentationVariant1? gltfPresentationVariant1,
@@ -142,23 +142,23 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             GltfPresentationVariant2 as object ??
-            GltfPresentationVariant1 as object 
+            GltfPresentationVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             GltfPresentationVariant1?.ToValueString() ??
-            GltfPresentationVariant2?.ToValueString() 
+            GltfPresentationVariant2?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -166,7 +166,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Zoo.GltfPresentationVariant1?, TResult>? gltfPresentationVariant1 = null,
@@ -191,7 +191,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Zoo.GltfPresentationVariant1?>? gltfPresentationVariant1 = null,
@@ -215,7 +215,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Zoo.GltfPresentationVariant1?>? gltfPresentationVariant1 = null,
@@ -238,7 +238,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -259,18 +259,18 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(GltfPresentation other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.GltfPresentationVariant1?>.Default.Equals(GltfPresentationVariant1, other.GltfPresentationVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::Zoo.GltfPresentationVariant2?>.Default.Equals(GltfPresentationVariant2, other.GltfPresentationVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.GltfPresentationVariant2?>.Default.Equals(GltfPresentationVariant2, other.GltfPresentationVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(GltfPresentation obj1, GltfPresentation obj2)
         {
@@ -278,7 +278,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(GltfPresentation obj1, GltfPresentation obj2)
         {
@@ -286,7 +286,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

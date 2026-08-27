@@ -19,7 +19,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InputFormat3dVariant1))]
@@ -27,7 +27,7 @@ namespace Zoo
         public bool IsInputFormat3dVariant1 => InputFormat3dVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInputFormat3dVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.InputFormat3dVariant1 PickInputFormat3dVariant1() => IsInputFormat3dVariant1
             ? InputFormat3dVariant1!
@@ -56,7 +56,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InputFormat3dVariant2))]
@@ -64,7 +64,7 @@ namespace Zoo
         public bool IsInputFormat3dVariant2 => InputFormat3dVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInputFormat3dVariant2(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.InputFormat3dVariant2 PickInputFormat3dVariant2() => IsInputFormat3dVariant2
             ? InputFormat3dVariant2!
@@ -93,7 +93,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InputFormat3dVariant3))]
@@ -101,7 +101,7 @@ namespace Zoo
         public bool IsInputFormat3dVariant3 => InputFormat3dVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInputFormat3dVariant3(
 #if NET6_0_OR_GREATER
@@ -114,7 +114,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.InputFormat3dVariant3 PickInputFormat3dVariant3() => IsInputFormat3dVariant3
             ? InputFormat3dVariant3!
@@ -130,7 +130,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InputFormat3dVariant4))]
@@ -138,7 +138,7 @@ namespace Zoo
         public bool IsInputFormat3dVariant4 => InputFormat3dVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInputFormat3dVariant4(
 #if NET6_0_OR_GREATER
@@ -151,7 +151,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.InputFormat3dVariant4 PickInputFormat3dVariant4() => IsInputFormat3dVariant4
             ? InputFormat3dVariant4!
@@ -167,7 +167,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InputFormat3dVariant5))]
@@ -175,7 +175,7 @@ namespace Zoo
         public bool IsInputFormat3dVariant5 => InputFormat3dVariant5 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInputFormat3dVariant5(
 #if NET6_0_OR_GREATER
@@ -188,7 +188,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.InputFormat3dVariant5 PickInputFormat3dVariant5() => IsInputFormat3dVariant5
             ? InputFormat3dVariant5!
@@ -204,7 +204,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InputFormat3dVariant6))]
@@ -212,7 +212,7 @@ namespace Zoo
         public bool IsInputFormat3dVariant6 => InputFormat3dVariant6 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInputFormat3dVariant6(
 #if NET6_0_OR_GREATER
@@ -225,7 +225,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.InputFormat3dVariant6 PickInputFormat3dVariant6() => IsInputFormat3dVariant6
             ? InputFormat3dVariant6!
@@ -241,7 +241,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InputFormat3dVariant7))]
@@ -249,7 +249,7 @@ namespace Zoo
         public bool IsInputFormat3dVariant7 => InputFormat3dVariant7 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInputFormat3dVariant7(
 #if NET6_0_OR_GREATER
@@ -262,7 +262,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.InputFormat3dVariant7 PickInputFormat3dVariant7() => IsInputFormat3dVariant7
             ? InputFormat3dVariant7!
@@ -278,7 +278,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InputFormat3dVariant8))]
@@ -286,7 +286,7 @@ namespace Zoo
         public bool IsInputFormat3dVariant8 => InputFormat3dVariant8 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInputFormat3dVariant8(
 #if NET6_0_OR_GREATER
@@ -299,7 +299,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.InputFormat3dVariant8 PickInputFormat3dVariant8() => IsInputFormat3dVariant8
             ? InputFormat3dVariant8!
@@ -315,7 +315,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InputFormat3dVariant9))]
@@ -323,7 +323,7 @@ namespace Zoo
         public bool IsInputFormat3dVariant9 => InputFormat3dVariant9 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInputFormat3dVariant9(
 #if NET6_0_OR_GREATER
@@ -336,7 +336,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.InputFormat3dVariant9 PickInputFormat3dVariant9() => IsInputFormat3dVariant9
             ? InputFormat3dVariant9!
@@ -352,7 +352,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InputFormat3dVariant10))]
@@ -360,7 +360,7 @@ namespace Zoo
         public bool IsInputFormat3dVariant10 => InputFormat3dVariant10 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInputFormat3dVariant10(
 #if NET6_0_OR_GREATER
@@ -373,7 +373,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.InputFormat3dVariant10 PickInputFormat3dVariant10() => IsInputFormat3dVariant10
             ? InputFormat3dVariant10!
@@ -389,7 +389,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InputFormat3dVariant11))]
@@ -397,7 +397,7 @@ namespace Zoo
         public bool IsInputFormat3dVariant11 => InputFormat3dVariant11 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInputFormat3dVariant11(
 #if NET6_0_OR_GREATER
@@ -410,7 +410,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.InputFormat3dVariant11 PickInputFormat3dVariant11() => IsInputFormat3dVariant11
             ? InputFormat3dVariant11!
@@ -426,7 +426,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InputFormat3dVariant12))]
@@ -434,7 +434,7 @@ namespace Zoo
         public bool IsInputFormat3dVariant12 => InputFormat3dVariant12 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInputFormat3dVariant12(
 #if NET6_0_OR_GREATER
@@ -447,7 +447,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.InputFormat3dVariant12 PickInputFormat3dVariant12() => IsInputFormat3dVariant12
             ? InputFormat3dVariant12!
@@ -463,7 +463,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InputFormat3dVariant13))]
@@ -471,7 +471,7 @@ namespace Zoo
         public bool IsInputFormat3dVariant13 => InputFormat3dVariant13 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInputFormat3dVariant13(
 #if NET6_0_OR_GREATER
@@ -484,23 +484,23 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.InputFormat3dVariant13 PickInputFormat3dVariant13() => IsInputFormat3dVariant13
             ? InputFormat3dVariant13!
             : throw new global::System.InvalidOperationException($"Expected union variant 'InputFormat3dVariant13' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator InputFormat3d(global::Zoo.InputFormat3dVariant1 value) => new InputFormat3d((global::Zoo.InputFormat3dVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.InputFormat3dVariant1?(InputFormat3d @this) => @this.InputFormat3dVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InputFormat3d(global::Zoo.InputFormat3dVariant1? value)
         {
@@ -508,22 +508,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static InputFormat3d FromInputFormat3dVariant1(global::Zoo.InputFormat3dVariant1? value) => new InputFormat3d(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator InputFormat3d(global::Zoo.InputFormat3dVariant2 value) => new InputFormat3d((global::Zoo.InputFormat3dVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.InputFormat3dVariant2?(InputFormat3d @this) => @this.InputFormat3dVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InputFormat3d(global::Zoo.InputFormat3dVariant2? value)
         {
@@ -531,22 +531,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static InputFormat3d FromInputFormat3dVariant2(global::Zoo.InputFormat3dVariant2? value) => new InputFormat3d(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator InputFormat3d(global::Zoo.InputFormat3dVariant3 value) => new InputFormat3d((global::Zoo.InputFormat3dVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.InputFormat3dVariant3?(InputFormat3d @this) => @this.InputFormat3dVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InputFormat3d(global::Zoo.InputFormat3dVariant3? value)
         {
@@ -554,22 +554,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static InputFormat3d FromInputFormat3dVariant3(global::Zoo.InputFormat3dVariant3? value) => new InputFormat3d(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator InputFormat3d(global::Zoo.InputFormat3dVariant4 value) => new InputFormat3d((global::Zoo.InputFormat3dVariant4?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.InputFormat3dVariant4?(InputFormat3d @this) => @this.InputFormat3dVariant4;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InputFormat3d(global::Zoo.InputFormat3dVariant4? value)
         {
@@ -577,22 +577,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static InputFormat3d FromInputFormat3dVariant4(global::Zoo.InputFormat3dVariant4? value) => new InputFormat3d(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator InputFormat3d(global::Zoo.InputFormat3dVariant5 value) => new InputFormat3d((global::Zoo.InputFormat3dVariant5?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.InputFormat3dVariant5?(InputFormat3d @this) => @this.InputFormat3dVariant5;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InputFormat3d(global::Zoo.InputFormat3dVariant5? value)
         {
@@ -600,22 +600,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static InputFormat3d FromInputFormat3dVariant5(global::Zoo.InputFormat3dVariant5? value) => new InputFormat3d(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator InputFormat3d(global::Zoo.InputFormat3dVariant6 value) => new InputFormat3d((global::Zoo.InputFormat3dVariant6?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.InputFormat3dVariant6?(InputFormat3d @this) => @this.InputFormat3dVariant6;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InputFormat3d(global::Zoo.InputFormat3dVariant6? value)
         {
@@ -623,22 +623,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static InputFormat3d FromInputFormat3dVariant6(global::Zoo.InputFormat3dVariant6? value) => new InputFormat3d(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator InputFormat3d(global::Zoo.InputFormat3dVariant7 value) => new InputFormat3d((global::Zoo.InputFormat3dVariant7?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.InputFormat3dVariant7?(InputFormat3d @this) => @this.InputFormat3dVariant7;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InputFormat3d(global::Zoo.InputFormat3dVariant7? value)
         {
@@ -646,22 +646,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static InputFormat3d FromInputFormat3dVariant7(global::Zoo.InputFormat3dVariant7? value) => new InputFormat3d(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator InputFormat3d(global::Zoo.InputFormat3dVariant8 value) => new InputFormat3d((global::Zoo.InputFormat3dVariant8?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.InputFormat3dVariant8?(InputFormat3d @this) => @this.InputFormat3dVariant8;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InputFormat3d(global::Zoo.InputFormat3dVariant8? value)
         {
@@ -669,22 +669,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static InputFormat3d FromInputFormat3dVariant8(global::Zoo.InputFormat3dVariant8? value) => new InputFormat3d(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator InputFormat3d(global::Zoo.InputFormat3dVariant9 value) => new InputFormat3d((global::Zoo.InputFormat3dVariant9?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.InputFormat3dVariant9?(InputFormat3d @this) => @this.InputFormat3dVariant9;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InputFormat3d(global::Zoo.InputFormat3dVariant9? value)
         {
@@ -692,22 +692,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static InputFormat3d FromInputFormat3dVariant9(global::Zoo.InputFormat3dVariant9? value) => new InputFormat3d(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator InputFormat3d(global::Zoo.InputFormat3dVariant10 value) => new InputFormat3d((global::Zoo.InputFormat3dVariant10?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.InputFormat3dVariant10?(InputFormat3d @this) => @this.InputFormat3dVariant10;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InputFormat3d(global::Zoo.InputFormat3dVariant10? value)
         {
@@ -715,22 +715,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static InputFormat3d FromInputFormat3dVariant10(global::Zoo.InputFormat3dVariant10? value) => new InputFormat3d(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator InputFormat3d(global::Zoo.InputFormat3dVariant11 value) => new InputFormat3d((global::Zoo.InputFormat3dVariant11?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.InputFormat3dVariant11?(InputFormat3d @this) => @this.InputFormat3dVariant11;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InputFormat3d(global::Zoo.InputFormat3dVariant11? value)
         {
@@ -738,22 +738,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static InputFormat3d FromInputFormat3dVariant11(global::Zoo.InputFormat3dVariant11? value) => new InputFormat3d(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator InputFormat3d(global::Zoo.InputFormat3dVariant12 value) => new InputFormat3d((global::Zoo.InputFormat3dVariant12?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.InputFormat3dVariant12?(InputFormat3d @this) => @this.InputFormat3dVariant12;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InputFormat3d(global::Zoo.InputFormat3dVariant12? value)
         {
@@ -761,22 +761,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static InputFormat3d FromInputFormat3dVariant12(global::Zoo.InputFormat3dVariant12? value) => new InputFormat3d(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator InputFormat3d(global::Zoo.InputFormat3dVariant13 value) => new InputFormat3d((global::Zoo.InputFormat3dVariant13?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.InputFormat3dVariant13?(InputFormat3d @this) => @this.InputFormat3dVariant13;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InputFormat3d(global::Zoo.InputFormat3dVariant13? value)
         {
@@ -784,12 +784,12 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static InputFormat3d FromInputFormat3dVariant13(global::Zoo.InputFormat3dVariant13? value) => new InputFormat3d(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InputFormat3d(
             global::Zoo.InputFormat3dVariant1? inputFormat3dVariant1,
@@ -823,7 +823,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             InputFormat3dVariant13 as object ??
@@ -838,11 +838,11 @@ namespace Zoo
             InputFormat3dVariant4 as object ??
             InputFormat3dVariant3 as object ??
             InputFormat3dVariant2 as object ??
-            InputFormat3dVariant1 as object 
+            InputFormat3dVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             InputFormat3dVariant1?.ToString() ??
@@ -857,11 +857,11 @@ namespace Zoo
             InputFormat3dVariant10?.ToString() ??
             InputFormat3dVariant11?.ToString() ??
             InputFormat3dVariant12?.ToString() ??
-            InputFormat3dVariant13?.ToString() 
+            InputFormat3dVariant13?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -869,7 +869,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Zoo.InputFormat3dVariant1, TResult>? inputFormat3dVariant1 = null,
@@ -949,7 +949,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Zoo.InputFormat3dVariant1>? inputFormat3dVariant1 = null,
@@ -1039,7 +1039,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Zoo.InputFormat3dVariant1>? inputFormat3dVariant1 = null,
@@ -1117,7 +1117,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -1160,7 +1160,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(InputFormat3d other)
         {
@@ -1177,12 +1177,12 @@ namespace Zoo
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.InputFormat3dVariant10?>.Default.Equals(InputFormat3dVariant10, other.InputFormat3dVariant10) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.InputFormat3dVariant11?>.Default.Equals(InputFormat3dVariant11, other.InputFormat3dVariant11) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.InputFormat3dVariant12?>.Default.Equals(InputFormat3dVariant12, other.InputFormat3dVariant12) &&
-                global::System.Collections.Generic.EqualityComparer<global::Zoo.InputFormat3dVariant13?>.Default.Equals(InputFormat3dVariant13, other.InputFormat3dVariant13) 
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.InputFormat3dVariant13?>.Default.Equals(InputFormat3dVariant13, other.InputFormat3dVariant13)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(InputFormat3d obj1, InputFormat3d obj2)
         {
@@ -1190,7 +1190,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(InputFormat3d obj1, InputFormat3d obj2)
         {
@@ -1198,7 +1198,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

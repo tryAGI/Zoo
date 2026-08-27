@@ -9,7 +9,7 @@ namespace Zoo
     public sealed partial class InputFormat3dVariant5
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Zoo.JsonConverters.InputFormat3dVariant5TypeJsonConverter))]

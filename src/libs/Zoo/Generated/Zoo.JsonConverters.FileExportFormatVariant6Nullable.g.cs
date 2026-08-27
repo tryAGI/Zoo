@@ -20,7 +20,7 @@ namespace Zoo.JsonConverters
                     {
                         return global::Zoo.FileExportFormatVariant6Extensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

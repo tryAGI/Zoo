@@ -10,7 +10,7 @@ namespace Zoo
     public enum StepPresentationVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pretty,
     }

@@ -9,7 +9,7 @@ namespace Zoo
     public enum AxisVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Y,
     }

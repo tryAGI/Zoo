@@ -19,7 +19,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UnitAreaVariant1))]
@@ -27,7 +27,7 @@ namespace Zoo
         public bool IsUnitAreaVariant1 => UnitAreaVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUnitAreaVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.UnitAreaVariant1 PickUnitAreaVariant1() => IsUnitAreaVariant1
             ? UnitAreaVariant1!.Value
@@ -56,7 +56,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UnitAreaVariant2))]
@@ -64,7 +64,7 @@ namespace Zoo
         public bool IsUnitAreaVariant2 => UnitAreaVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUnitAreaVariant2(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.UnitAreaVariant2 PickUnitAreaVariant2() => IsUnitAreaVariant2
             ? UnitAreaVariant2!.Value
@@ -93,7 +93,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UnitAreaVariant3))]
@@ -101,7 +101,7 @@ namespace Zoo
         public bool IsUnitAreaVariant3 => UnitAreaVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUnitAreaVariant3(
 #if NET6_0_OR_GREATER
@@ -114,7 +114,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.UnitAreaVariant3 PickUnitAreaVariant3() => IsUnitAreaVariant3
             ? UnitAreaVariant3!.Value
@@ -130,7 +130,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UnitAreaVariant4))]
@@ -138,7 +138,7 @@ namespace Zoo
         public bool IsUnitAreaVariant4 => UnitAreaVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUnitAreaVariant4(
 #if NET6_0_OR_GREATER
@@ -151,7 +151,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.UnitAreaVariant4 PickUnitAreaVariant4() => IsUnitAreaVariant4
             ? UnitAreaVariant4!.Value
@@ -167,7 +167,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UnitAreaVariant5))]
@@ -175,7 +175,7 @@ namespace Zoo
         public bool IsUnitAreaVariant5 => UnitAreaVariant5 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUnitAreaVariant5(
 #if NET6_0_OR_GREATER
@@ -188,7 +188,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.UnitAreaVariant5 PickUnitAreaVariant5() => IsUnitAreaVariant5
             ? UnitAreaVariant5!.Value
@@ -204,7 +204,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UnitAreaVariant6))]
@@ -212,7 +212,7 @@ namespace Zoo
         public bool IsUnitAreaVariant6 => UnitAreaVariant6 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUnitAreaVariant6(
 #if NET6_0_OR_GREATER
@@ -225,7 +225,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.UnitAreaVariant6 PickUnitAreaVariant6() => IsUnitAreaVariant6
             ? UnitAreaVariant6!.Value
@@ -241,7 +241,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UnitAreaVariant7))]
@@ -249,7 +249,7 @@ namespace Zoo
         public bool IsUnitAreaVariant7 => UnitAreaVariant7 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUnitAreaVariant7(
 #if NET6_0_OR_GREATER
@@ -262,7 +262,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.UnitAreaVariant7 PickUnitAreaVariant7() => IsUnitAreaVariant7
             ? UnitAreaVariant7!.Value
@@ -278,7 +278,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UnitAreaVariant8))]
@@ -286,7 +286,7 @@ namespace Zoo
         public bool IsUnitAreaVariant8 => UnitAreaVariant8 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUnitAreaVariant8(
 #if NET6_0_OR_GREATER
@@ -299,23 +299,23 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.UnitAreaVariant8 PickUnitAreaVariant8() => IsUnitAreaVariant8
             ? UnitAreaVariant8!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UnitAreaVariant8' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator UnitArea(global::Zoo.UnitAreaVariant1 value) => new UnitArea((global::Zoo.UnitAreaVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.UnitAreaVariant1?(UnitArea @this) => @this.UnitAreaVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UnitArea(global::Zoo.UnitAreaVariant1? value)
         {
@@ -323,22 +323,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static UnitArea FromUnitAreaVariant1(global::Zoo.UnitAreaVariant1? value) => new UnitArea(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator UnitArea(global::Zoo.UnitAreaVariant2 value) => new UnitArea((global::Zoo.UnitAreaVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.UnitAreaVariant2?(UnitArea @this) => @this.UnitAreaVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UnitArea(global::Zoo.UnitAreaVariant2? value)
         {
@@ -346,22 +346,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static UnitArea FromUnitAreaVariant2(global::Zoo.UnitAreaVariant2? value) => new UnitArea(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator UnitArea(global::Zoo.UnitAreaVariant3 value) => new UnitArea((global::Zoo.UnitAreaVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.UnitAreaVariant3?(UnitArea @this) => @this.UnitAreaVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UnitArea(global::Zoo.UnitAreaVariant3? value)
         {
@@ -369,22 +369,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static UnitArea FromUnitAreaVariant3(global::Zoo.UnitAreaVariant3? value) => new UnitArea(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator UnitArea(global::Zoo.UnitAreaVariant4 value) => new UnitArea((global::Zoo.UnitAreaVariant4?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.UnitAreaVariant4?(UnitArea @this) => @this.UnitAreaVariant4;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UnitArea(global::Zoo.UnitAreaVariant4? value)
         {
@@ -392,22 +392,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static UnitArea FromUnitAreaVariant4(global::Zoo.UnitAreaVariant4? value) => new UnitArea(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator UnitArea(global::Zoo.UnitAreaVariant5 value) => new UnitArea((global::Zoo.UnitAreaVariant5?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.UnitAreaVariant5?(UnitArea @this) => @this.UnitAreaVariant5;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UnitArea(global::Zoo.UnitAreaVariant5? value)
         {
@@ -415,22 +415,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static UnitArea FromUnitAreaVariant5(global::Zoo.UnitAreaVariant5? value) => new UnitArea(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator UnitArea(global::Zoo.UnitAreaVariant6 value) => new UnitArea((global::Zoo.UnitAreaVariant6?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.UnitAreaVariant6?(UnitArea @this) => @this.UnitAreaVariant6;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UnitArea(global::Zoo.UnitAreaVariant6? value)
         {
@@ -438,22 +438,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static UnitArea FromUnitAreaVariant6(global::Zoo.UnitAreaVariant6? value) => new UnitArea(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator UnitArea(global::Zoo.UnitAreaVariant7 value) => new UnitArea((global::Zoo.UnitAreaVariant7?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.UnitAreaVariant7?(UnitArea @this) => @this.UnitAreaVariant7;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UnitArea(global::Zoo.UnitAreaVariant7? value)
         {
@@ -461,22 +461,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static UnitArea FromUnitAreaVariant7(global::Zoo.UnitAreaVariant7? value) => new UnitArea(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator UnitArea(global::Zoo.UnitAreaVariant8 value) => new UnitArea((global::Zoo.UnitAreaVariant8?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.UnitAreaVariant8?(UnitArea @this) => @this.UnitAreaVariant8;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UnitArea(global::Zoo.UnitAreaVariant8? value)
         {
@@ -484,12 +484,12 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static UnitArea FromUnitAreaVariant8(global::Zoo.UnitAreaVariant8? value) => new UnitArea(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UnitArea(
             global::Zoo.UnitAreaVariant1? unitAreaVariant1,
@@ -513,7 +513,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             UnitAreaVariant8 as object ??
@@ -523,11 +523,11 @@ namespace Zoo
             UnitAreaVariant4 as object ??
             UnitAreaVariant3 as object ??
             UnitAreaVariant2 as object ??
-            UnitAreaVariant1 as object 
+            UnitAreaVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             UnitAreaVariant1?.ToValueString() ??
@@ -537,11 +537,11 @@ namespace Zoo
             UnitAreaVariant5?.ToValueString() ??
             UnitAreaVariant6?.ToValueString() ??
             UnitAreaVariant7?.ToValueString() ??
-            UnitAreaVariant8?.ToValueString() 
+            UnitAreaVariant8?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -549,7 +549,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Zoo.UnitAreaVariant1?, TResult>? unitAreaVariant1 = null,
@@ -604,7 +604,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Zoo.UnitAreaVariant1?>? unitAreaVariant1 = null,
@@ -664,7 +664,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Zoo.UnitAreaVariant1?>? unitAreaVariant1 = null,
@@ -717,7 +717,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -750,7 +750,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(UnitArea other)
         {
@@ -762,12 +762,12 @@ namespace Zoo
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.UnitAreaVariant5?>.Default.Equals(UnitAreaVariant5, other.UnitAreaVariant5) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.UnitAreaVariant6?>.Default.Equals(UnitAreaVariant6, other.UnitAreaVariant6) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.UnitAreaVariant7?>.Default.Equals(UnitAreaVariant7, other.UnitAreaVariant7) &&
-                global::System.Collections.Generic.EqualityComparer<global::Zoo.UnitAreaVariant8?>.Default.Equals(UnitAreaVariant8, other.UnitAreaVariant8) 
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.UnitAreaVariant8?>.Default.Equals(UnitAreaVariant8, other.UnitAreaVariant8)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(UnitArea obj1, UnitArea obj2)
         {
@@ -775,7 +775,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(UnitArea obj1, UnitArea obj2)
         {
@@ -783,7 +783,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

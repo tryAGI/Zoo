@@ -19,7 +19,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StepPresentationVariant1))]
@@ -27,7 +27,7 @@ namespace Zoo
         public bool IsStepPresentationVariant1 => StepPresentationVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStepPresentationVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.StepPresentationVariant1 PickStepPresentationVariant1() => IsStepPresentationVariant1
             ? StepPresentationVariant1!.Value
@@ -57,7 +57,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StepPresentationVariant2))]
@@ -65,7 +65,7 @@ namespace Zoo
         public bool IsStepPresentationVariant2 => StepPresentationVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStepPresentationVariant2(
 #if NET6_0_OR_GREATER
@@ -78,23 +78,23 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.StepPresentationVariant2 PickStepPresentationVariant2() => IsStepPresentationVariant2
             ? StepPresentationVariant2!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StepPresentationVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StepPresentation(global::Zoo.StepPresentationVariant1 value) => new StepPresentation((global::Zoo.StepPresentationVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.StepPresentationVariant1?(StepPresentation @this) => @this.StepPresentationVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StepPresentation(global::Zoo.StepPresentationVariant1? value)
         {
@@ -102,22 +102,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StepPresentation FromStepPresentationVariant1(global::Zoo.StepPresentationVariant1? value) => new StepPresentation(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StepPresentation(global::Zoo.StepPresentationVariant2 value) => new StepPresentation((global::Zoo.StepPresentationVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.StepPresentationVariant2?(StepPresentation @this) => @this.StepPresentationVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StepPresentation(global::Zoo.StepPresentationVariant2? value)
         {
@@ -125,12 +125,12 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StepPresentation FromStepPresentationVariant2(global::Zoo.StepPresentationVariant2? value) => new StepPresentation(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StepPresentation(
             global::Zoo.StepPresentationVariant1? stepPresentationVariant1,
@@ -142,23 +142,23 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             StepPresentationVariant2 as object ??
-            StepPresentationVariant1 as object 
+            StepPresentationVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             StepPresentationVariant1?.ToValueString() ??
-            StepPresentationVariant2?.ToValueString() 
+            StepPresentationVariant2?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -166,7 +166,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Zoo.StepPresentationVariant1?, TResult>? stepPresentationVariant1 = null,
@@ -191,7 +191,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Zoo.StepPresentationVariant1?>? stepPresentationVariant1 = null,
@@ -215,7 +215,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Zoo.StepPresentationVariant1?>? stepPresentationVariant1 = null,
@@ -238,7 +238,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -259,18 +259,18 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(StepPresentation other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.StepPresentationVariant1?>.Default.Equals(StepPresentationVariant1, other.StepPresentationVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::Zoo.StepPresentationVariant2?>.Default.Equals(StepPresentationVariant2, other.StepPresentationVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.StepPresentationVariant2?>.Default.Equals(StepPresentationVariant2, other.StepPresentationVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(StepPresentation obj1, StepPresentation obj2)
         {
@@ -278,7 +278,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(StepPresentation obj1, StepPresentation obj2)
         {
@@ -286,7 +286,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

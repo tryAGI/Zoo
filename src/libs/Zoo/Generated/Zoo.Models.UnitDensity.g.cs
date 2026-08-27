@@ -19,7 +19,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UnitDensityVariant1))]
@@ -27,7 +27,7 @@ namespace Zoo
         public bool IsUnitDensityVariant1 => UnitDensityVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUnitDensityVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.UnitDensityVariant1 PickUnitDensityVariant1() => IsUnitDensityVariant1
             ? UnitDensityVariant1!.Value
@@ -56,7 +56,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UnitDensityVariant2))]
@@ -64,7 +64,7 @@ namespace Zoo
         public bool IsUnitDensityVariant2 => UnitDensityVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUnitDensityVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.UnitDensityVariant2 PickUnitDensityVariant2() => IsUnitDensityVariant2
             ? UnitDensityVariant2!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UnitDensityVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator UnitDensity(global::Zoo.UnitDensityVariant1 value) => new UnitDensity((global::Zoo.UnitDensityVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.UnitDensityVariant1?(UnitDensity @this) => @this.UnitDensityVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UnitDensity(global::Zoo.UnitDensityVariant1? value)
         {
@@ -101,22 +101,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static UnitDensity FromUnitDensityVariant1(global::Zoo.UnitDensityVariant1? value) => new UnitDensity(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator UnitDensity(global::Zoo.UnitDensityVariant2 value) => new UnitDensity((global::Zoo.UnitDensityVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.UnitDensityVariant2?(UnitDensity @this) => @this.UnitDensityVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UnitDensity(global::Zoo.UnitDensityVariant2? value)
         {
@@ -124,12 +124,12 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static UnitDensity FromUnitDensityVariant2(global::Zoo.UnitDensityVariant2? value) => new UnitDensity(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UnitDensity(
             global::Zoo.UnitDensityVariant1? unitDensityVariant1,
@@ -141,23 +141,23 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             UnitDensityVariant2 as object ??
-            UnitDensityVariant1 as object 
+            UnitDensityVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             UnitDensityVariant1?.ToValueString() ??
-            UnitDensityVariant2?.ToValueString() 
+            UnitDensityVariant2?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Zoo.UnitDensityVariant1?, TResult>? unitDensityVariant1 = null,
@@ -190,7 +190,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Zoo.UnitDensityVariant1?>? unitDensityVariant1 = null,
@@ -214,7 +214,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Zoo.UnitDensityVariant1?>? unitDensityVariant1 = null,
@@ -237,7 +237,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(UnitDensity other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.UnitDensityVariant1?>.Default.Equals(UnitDensityVariant1, other.UnitDensityVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::Zoo.UnitDensityVariant2?>.Default.Equals(UnitDensityVariant2, other.UnitDensityVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.UnitDensityVariant2?>.Default.Equals(UnitDensityVariant2, other.UnitDensityVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(UnitDensity obj1, UnitDensity obj2)
         {
@@ -277,7 +277,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(UnitDensity obj1, UnitDensity obj2)
         {
@@ -285,7 +285,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

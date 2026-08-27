@@ -25,7 +25,7 @@ namespace Zoo
         public required global::Zoo.GltfStorage Storage { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Zoo.JsonConverters.OutputFormat3dVariant2TypeJsonConverter))]

@@ -4,12 +4,12 @@
 namespace Zoo
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SelectionVariant5Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MeshByName,
     }

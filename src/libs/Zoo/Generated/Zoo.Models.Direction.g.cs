@@ -19,7 +19,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(DirectionVariant1))]
@@ -27,7 +27,7 @@ namespace Zoo
         public bool IsDirectionVariant1 => DirectionVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickDirectionVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.DirectionVariant1 PickDirectionVariant1() => IsDirectionVariant1
             ? DirectionVariant1!.Value
@@ -56,7 +56,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(DirectionVariant2))]
@@ -64,7 +64,7 @@ namespace Zoo
         public bool IsDirectionVariant2 => DirectionVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickDirectionVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.DirectionVariant2 PickDirectionVariant2() => IsDirectionVariant2
             ? DirectionVariant2!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'DirectionVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Direction(global::Zoo.DirectionVariant1 value) => new Direction((global::Zoo.DirectionVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.DirectionVariant1?(Direction @this) => @this.DirectionVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Direction(global::Zoo.DirectionVariant1? value)
         {
@@ -101,22 +101,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Direction FromDirectionVariant1(global::Zoo.DirectionVariant1? value) => new Direction(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Direction(global::Zoo.DirectionVariant2 value) => new Direction((global::Zoo.DirectionVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.DirectionVariant2?(Direction @this) => @this.DirectionVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Direction(global::Zoo.DirectionVariant2? value)
         {
@@ -124,12 +124,12 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Direction FromDirectionVariant2(global::Zoo.DirectionVariant2? value) => new Direction(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Direction(
             global::Zoo.DirectionVariant1? directionVariant1,
@@ -141,23 +141,23 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             DirectionVariant2 as object ??
-            DirectionVariant1 as object 
+            DirectionVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             DirectionVariant1?.ToValueString() ??
-            DirectionVariant2?.ToValueString() 
+            DirectionVariant2?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Zoo.DirectionVariant1?, TResult>? directionVariant1 = null,
@@ -190,7 +190,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Zoo.DirectionVariant1?>? directionVariant1 = null,
@@ -214,7 +214,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Zoo.DirectionVariant1?>? directionVariant1 = null,
@@ -237,7 +237,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(Direction other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.DirectionVariant1?>.Default.Equals(DirectionVariant1, other.DirectionVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::Zoo.DirectionVariant2?>.Default.Equals(DirectionVariant2, other.DirectionVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.DirectionVariant2?>.Default.Equals(DirectionVariant2, other.DirectionVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(Direction obj1, Direction obj2)
         {
@@ -277,7 +277,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(Direction obj1, Direction obj2)
         {
@@ -285,7 +285,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

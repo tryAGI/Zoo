@@ -9,7 +9,7 @@ namespace Zoo
     public enum ApiCallStatusVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Uploaded,
     }

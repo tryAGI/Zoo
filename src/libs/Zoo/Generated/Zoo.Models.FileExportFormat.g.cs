@@ -19,7 +19,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FileExportFormatVariant1))]
@@ -27,7 +27,7 @@ namespace Zoo
         public bool IsFileExportFormatVariant1 => FileExportFormatVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFileExportFormatVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.FileExportFormatVariant1 PickFileExportFormatVariant1() => IsFileExportFormatVariant1
             ? FileExportFormatVariant1!.Value
@@ -58,7 +58,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FileExportFormatVariant2))]
@@ -66,7 +66,7 @@ namespace Zoo
         public bool IsFileExportFormatVariant2 => FileExportFormatVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFileExportFormatVariant2(
 #if NET6_0_OR_GREATER
@@ -79,7 +79,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.FileExportFormatVariant2 PickFileExportFormatVariant2() => IsFileExportFormatVariant2
             ? FileExportFormatVariant2!.Value
@@ -98,7 +98,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FileExportFormatVariant3))]
@@ -106,7 +106,7 @@ namespace Zoo
         public bool IsFileExportFormatVariant3 => FileExportFormatVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFileExportFormatVariant3(
 #if NET6_0_OR_GREATER
@@ -119,7 +119,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.FileExportFormatVariant3 PickFileExportFormatVariant3() => IsFileExportFormatVariant3
             ? FileExportFormatVariant3!.Value
@@ -135,7 +135,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FileExportFormatVariant4))]
@@ -143,7 +143,7 @@ namespace Zoo
         public bool IsFileExportFormatVariant4 => FileExportFormatVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFileExportFormatVariant4(
 #if NET6_0_OR_GREATER
@@ -156,7 +156,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.FileExportFormatVariant4 PickFileExportFormatVariant4() => IsFileExportFormatVariant4
             ? FileExportFormatVariant4!.Value
@@ -172,7 +172,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FileExportFormatVariant5))]
@@ -180,7 +180,7 @@ namespace Zoo
         public bool IsFileExportFormatVariant5 => FileExportFormatVariant5 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFileExportFormatVariant5(
 #if NET6_0_OR_GREATER
@@ -193,7 +193,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.FileExportFormatVariant5 PickFileExportFormatVariant5() => IsFileExportFormatVariant5
             ? FileExportFormatVariant5!.Value
@@ -209,7 +209,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FileExportFormatVariant6))]
@@ -217,7 +217,7 @@ namespace Zoo
         public bool IsFileExportFormatVariant6 => FileExportFormatVariant6 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFileExportFormatVariant6(
 #if NET6_0_OR_GREATER
@@ -230,7 +230,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.FileExportFormatVariant6 PickFileExportFormatVariant6() => IsFileExportFormatVariant6
             ? FileExportFormatVariant6!.Value
@@ -246,7 +246,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FileExportFormatVariant7))]
@@ -254,7 +254,7 @@ namespace Zoo
         public bool IsFileExportFormatVariant7 => FileExportFormatVariant7 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFileExportFormatVariant7(
 #if NET6_0_OR_GREATER
@@ -267,23 +267,23 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.FileExportFormatVariant7 PickFileExportFormatVariant7() => IsFileExportFormatVariant7
             ? FileExportFormatVariant7!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FileExportFormatVariant7' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FileExportFormat(global::Zoo.FileExportFormatVariant1 value) => new FileExportFormat((global::Zoo.FileExportFormatVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.FileExportFormatVariant1?(FileExportFormat @this) => @this.FileExportFormatVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FileExportFormat(global::Zoo.FileExportFormatVariant1? value)
         {
@@ -291,22 +291,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FileExportFormat FromFileExportFormatVariant1(global::Zoo.FileExportFormatVariant1? value) => new FileExportFormat(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FileExportFormat(global::Zoo.FileExportFormatVariant2 value) => new FileExportFormat((global::Zoo.FileExportFormatVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.FileExportFormatVariant2?(FileExportFormat @this) => @this.FileExportFormatVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FileExportFormat(global::Zoo.FileExportFormatVariant2? value)
         {
@@ -314,22 +314,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FileExportFormat FromFileExportFormatVariant2(global::Zoo.FileExportFormatVariant2? value) => new FileExportFormat(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FileExportFormat(global::Zoo.FileExportFormatVariant3 value) => new FileExportFormat((global::Zoo.FileExportFormatVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.FileExportFormatVariant3?(FileExportFormat @this) => @this.FileExportFormatVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FileExportFormat(global::Zoo.FileExportFormatVariant3? value)
         {
@@ -337,22 +337,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FileExportFormat FromFileExportFormatVariant3(global::Zoo.FileExportFormatVariant3? value) => new FileExportFormat(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FileExportFormat(global::Zoo.FileExportFormatVariant4 value) => new FileExportFormat((global::Zoo.FileExportFormatVariant4?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.FileExportFormatVariant4?(FileExportFormat @this) => @this.FileExportFormatVariant4;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FileExportFormat(global::Zoo.FileExportFormatVariant4? value)
         {
@@ -360,22 +360,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FileExportFormat FromFileExportFormatVariant4(global::Zoo.FileExportFormatVariant4? value) => new FileExportFormat(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FileExportFormat(global::Zoo.FileExportFormatVariant5 value) => new FileExportFormat((global::Zoo.FileExportFormatVariant5?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.FileExportFormatVariant5?(FileExportFormat @this) => @this.FileExportFormatVariant5;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FileExportFormat(global::Zoo.FileExportFormatVariant5? value)
         {
@@ -383,22 +383,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FileExportFormat FromFileExportFormatVariant5(global::Zoo.FileExportFormatVariant5? value) => new FileExportFormat(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FileExportFormat(global::Zoo.FileExportFormatVariant6 value) => new FileExportFormat((global::Zoo.FileExportFormatVariant6?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.FileExportFormatVariant6?(FileExportFormat @this) => @this.FileExportFormatVariant6;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FileExportFormat(global::Zoo.FileExportFormatVariant6? value)
         {
@@ -406,22 +406,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FileExportFormat FromFileExportFormatVariant6(global::Zoo.FileExportFormatVariant6? value) => new FileExportFormat(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FileExportFormat(global::Zoo.FileExportFormatVariant7 value) => new FileExportFormat((global::Zoo.FileExportFormatVariant7?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.FileExportFormatVariant7?(FileExportFormat @this) => @this.FileExportFormatVariant7;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FileExportFormat(global::Zoo.FileExportFormatVariant7? value)
         {
@@ -429,12 +429,12 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FileExportFormat FromFileExportFormatVariant7(global::Zoo.FileExportFormatVariant7? value) => new FileExportFormat(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FileExportFormat(
             global::Zoo.FileExportFormatVariant1? fileExportFormatVariant1,
@@ -456,7 +456,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             FileExportFormatVariant7 as object ??
@@ -465,11 +465,11 @@ namespace Zoo
             FileExportFormatVariant4 as object ??
             FileExportFormatVariant3 as object ??
             FileExportFormatVariant2 as object ??
-            FileExportFormatVariant1 as object 
+            FileExportFormatVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             FileExportFormatVariant1?.ToValueString() ??
@@ -478,11 +478,11 @@ namespace Zoo
             FileExportFormatVariant4?.ToValueString() ??
             FileExportFormatVariant5?.ToValueString() ??
             FileExportFormatVariant6?.ToValueString() ??
-            FileExportFormatVariant7?.ToValueString() 
+            FileExportFormatVariant7?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -490,7 +490,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Zoo.FileExportFormatVariant1?, TResult>? fileExportFormatVariant1 = null,
@@ -540,7 +540,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Zoo.FileExportFormatVariant1?>? fileExportFormatVariant1 = null,
@@ -594,7 +594,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Zoo.FileExportFormatVariant1?>? fileExportFormatVariant1 = null,
@@ -642,7 +642,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -673,7 +673,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(FileExportFormat other)
         {
@@ -684,12 +684,12 @@ namespace Zoo
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.FileExportFormatVariant4?>.Default.Equals(FileExportFormatVariant4, other.FileExportFormatVariant4) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.FileExportFormatVariant5?>.Default.Equals(FileExportFormatVariant5, other.FileExportFormatVariant5) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.FileExportFormatVariant6?>.Default.Equals(FileExportFormatVariant6, other.FileExportFormatVariant6) &&
-                global::System.Collections.Generic.EqualityComparer<global::Zoo.FileExportFormatVariant7?>.Default.Equals(FileExportFormatVariant7, other.FileExportFormatVariant7) 
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.FileExportFormatVariant7?>.Default.Equals(FileExportFormatVariant7, other.FileExportFormatVariant7)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(FileExportFormat obj1, FileExportFormat obj2)
         {
@@ -697,7 +697,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(FileExportFormat obj1, FileExportFormat obj2)
         {
@@ -705,7 +705,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

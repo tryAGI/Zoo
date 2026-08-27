@@ -9,7 +9,7 @@ namespace Zoo
     public enum PlyStorageVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ascii,
     }

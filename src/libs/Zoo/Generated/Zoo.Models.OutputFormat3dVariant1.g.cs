@@ -23,7 +23,7 @@ namespace Zoo
         public required global::Zoo.FbxStorage Storage { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Zoo.JsonConverters.OutputFormat3dVariant1TypeJsonConverter))]

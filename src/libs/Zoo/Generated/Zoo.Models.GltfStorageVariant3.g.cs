@@ -11,7 +11,7 @@ namespace Zoo
     public enum GltfStorageVariant3
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Embedded,
     }

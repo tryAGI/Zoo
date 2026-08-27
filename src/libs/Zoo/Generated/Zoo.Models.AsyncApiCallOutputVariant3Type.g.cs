@@ -4,12 +4,12 @@
 namespace Zoo
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AsyncApiCallOutputVariant3Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FileMass,
     }

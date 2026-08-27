@@ -4,12 +4,12 @@
 namespace Zoo
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InputFormat3dVariant9Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Parasolid,
     }

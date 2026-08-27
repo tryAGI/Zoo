@@ -9,7 +9,7 @@ namespace Zoo
     public enum UnitDensityVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Kg_m3,
     }

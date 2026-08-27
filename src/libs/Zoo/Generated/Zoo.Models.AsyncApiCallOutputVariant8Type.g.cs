@@ -4,12 +4,12 @@
 namespace Zoo
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AsyncApiCallOutputVariant8Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TextToCadIteration,
     }

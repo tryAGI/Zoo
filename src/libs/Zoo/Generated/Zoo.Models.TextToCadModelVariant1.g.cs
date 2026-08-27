@@ -9,7 +9,7 @@ namespace Zoo
     public enum TextToCadModelVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cad,
     }
