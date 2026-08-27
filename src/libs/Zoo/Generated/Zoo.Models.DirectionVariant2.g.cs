@@ -9,7 +9,7 @@ namespace Zoo
     public enum DirectionVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Negative,
     }

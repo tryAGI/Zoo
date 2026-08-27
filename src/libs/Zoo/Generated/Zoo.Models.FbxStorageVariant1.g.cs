@@ -9,7 +9,7 @@ namespace Zoo
     public enum FbxStorageVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ascii,
     }

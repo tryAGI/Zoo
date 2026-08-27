@@ -19,7 +19,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StepImportTargetRepresentationVariant1))]
@@ -27,7 +27,7 @@ namespace Zoo
         public bool IsStepImportTargetRepresentationVariant1 => StepImportTargetRepresentationVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStepImportTargetRepresentationVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.StepImportTargetRepresentationVariant1 PickStepImportTargetRepresentationVariant1() => IsStepImportTargetRepresentationVariant1
             ? StepImportTargetRepresentationVariant1!.Value
@@ -56,7 +56,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StepImportTargetRepresentationVariant2))]
@@ -64,7 +64,7 @@ namespace Zoo
         public bool IsStepImportTargetRepresentationVariant2 => StepImportTargetRepresentationVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStepImportTargetRepresentationVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.StepImportTargetRepresentationVariant2 PickStepImportTargetRepresentationVariant2() => IsStepImportTargetRepresentationVariant2
             ? StepImportTargetRepresentationVariant2!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StepImportTargetRepresentationVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StepImportTargetRepresentation(global::Zoo.StepImportTargetRepresentationVariant1 value) => new StepImportTargetRepresentation((global::Zoo.StepImportTargetRepresentationVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.StepImportTargetRepresentationVariant1?(StepImportTargetRepresentation @this) => @this.StepImportTargetRepresentationVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StepImportTargetRepresentation(global::Zoo.StepImportTargetRepresentationVariant1? value)
         {
@@ -101,22 +101,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StepImportTargetRepresentation FromStepImportTargetRepresentationVariant1(global::Zoo.StepImportTargetRepresentationVariant1? value) => new StepImportTargetRepresentation(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator StepImportTargetRepresentation(global::Zoo.StepImportTargetRepresentationVariant2 value) => new StepImportTargetRepresentation((global::Zoo.StepImportTargetRepresentationVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.StepImportTargetRepresentationVariant2?(StepImportTargetRepresentation @this) => @this.StepImportTargetRepresentationVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StepImportTargetRepresentation(global::Zoo.StepImportTargetRepresentationVariant2? value)
         {
@@ -124,12 +124,12 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static StepImportTargetRepresentation FromStepImportTargetRepresentationVariant2(global::Zoo.StepImportTargetRepresentationVariant2? value) => new StepImportTargetRepresentation(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StepImportTargetRepresentation(
             global::Zoo.StepImportTargetRepresentationVariant1? stepImportTargetRepresentationVariant1,
@@ -141,23 +141,23 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             StepImportTargetRepresentationVariant2 as object ??
-            StepImportTargetRepresentationVariant1 as object 
+            StepImportTargetRepresentationVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             StepImportTargetRepresentationVariant1?.ToValueString() ??
-            StepImportTargetRepresentationVariant2?.ToValueString() 
+            StepImportTargetRepresentationVariant2?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Zoo.StepImportTargetRepresentationVariant1?, TResult>? stepImportTargetRepresentationVariant1 = null,
@@ -190,7 +190,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Zoo.StepImportTargetRepresentationVariant1?>? stepImportTargetRepresentationVariant1 = null,
@@ -214,7 +214,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Zoo.StepImportTargetRepresentationVariant1?>? stepImportTargetRepresentationVariant1 = null,
@@ -237,7 +237,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(StepImportTargetRepresentation other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.StepImportTargetRepresentationVariant1?>.Default.Equals(StepImportTargetRepresentationVariant1, other.StepImportTargetRepresentationVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::Zoo.StepImportTargetRepresentationVariant2?>.Default.Equals(StepImportTargetRepresentationVariant2, other.StepImportTargetRepresentationVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.StepImportTargetRepresentationVariant2?>.Default.Equals(StepImportTargetRepresentationVariant2, other.StepImportTargetRepresentationVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(StepImportTargetRepresentation obj1, StepImportTargetRepresentation obj2)
         {
@@ -277,7 +277,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(StepImportTargetRepresentation obj1, StepImportTargetRepresentation obj2)
         {
@@ -285,7 +285,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

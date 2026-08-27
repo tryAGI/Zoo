@@ -9,7 +9,7 @@ namespace Zoo
     public enum FileImportFormatVariant3
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Creo,
     }

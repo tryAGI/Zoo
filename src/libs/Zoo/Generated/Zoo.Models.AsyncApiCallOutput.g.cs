@@ -19,7 +19,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AsyncApiCallOutputVariant1))]
@@ -27,7 +27,7 @@ namespace Zoo
         public bool IsAsyncApiCallOutputVariant1 => AsyncApiCallOutputVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAsyncApiCallOutputVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.AsyncApiCallOutputVariant1 PickAsyncApiCallOutputVariant1() => IsAsyncApiCallOutputVariant1
             ? AsyncApiCallOutputVariant1!
@@ -56,7 +56,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AsyncApiCallOutputVariant2))]
@@ -64,7 +64,7 @@ namespace Zoo
         public bool IsAsyncApiCallOutputVariant2 => AsyncApiCallOutputVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAsyncApiCallOutputVariant2(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.AsyncApiCallOutputVariant2 PickAsyncApiCallOutputVariant2() => IsAsyncApiCallOutputVariant2
             ? AsyncApiCallOutputVariant2!
@@ -93,7 +93,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AsyncApiCallOutputVariant3))]
@@ -101,7 +101,7 @@ namespace Zoo
         public bool IsAsyncApiCallOutputVariant3 => AsyncApiCallOutputVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAsyncApiCallOutputVariant3(
 #if NET6_0_OR_GREATER
@@ -114,7 +114,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.AsyncApiCallOutputVariant3 PickAsyncApiCallOutputVariant3() => IsAsyncApiCallOutputVariant3
             ? AsyncApiCallOutputVariant3!
@@ -130,7 +130,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AsyncApiCallOutputVariant4))]
@@ -138,7 +138,7 @@ namespace Zoo
         public bool IsAsyncApiCallOutputVariant4 => AsyncApiCallOutputVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAsyncApiCallOutputVariant4(
 #if NET6_0_OR_GREATER
@@ -151,7 +151,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.AsyncApiCallOutputVariant4 PickAsyncApiCallOutputVariant4() => IsAsyncApiCallOutputVariant4
             ? AsyncApiCallOutputVariant4!
@@ -167,7 +167,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AsyncApiCallOutputVariant5))]
@@ -175,7 +175,7 @@ namespace Zoo
         public bool IsAsyncApiCallOutputVariant5 => AsyncApiCallOutputVariant5 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAsyncApiCallOutputVariant5(
 #if NET6_0_OR_GREATER
@@ -188,7 +188,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.AsyncApiCallOutputVariant5 PickAsyncApiCallOutputVariant5() => IsAsyncApiCallOutputVariant5
             ? AsyncApiCallOutputVariant5!
@@ -204,7 +204,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AsyncApiCallOutputVariant6))]
@@ -212,7 +212,7 @@ namespace Zoo
         public bool IsAsyncApiCallOutputVariant6 => AsyncApiCallOutputVariant6 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAsyncApiCallOutputVariant6(
 #if NET6_0_OR_GREATER
@@ -225,7 +225,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.AsyncApiCallOutputVariant6 PickAsyncApiCallOutputVariant6() => IsAsyncApiCallOutputVariant6
             ? AsyncApiCallOutputVariant6!
@@ -241,7 +241,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AsyncApiCallOutputVariant7))]
@@ -249,7 +249,7 @@ namespace Zoo
         public bool IsAsyncApiCallOutputVariant7 => AsyncApiCallOutputVariant7 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAsyncApiCallOutputVariant7(
 #if NET6_0_OR_GREATER
@@ -262,7 +262,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.AsyncApiCallOutputVariant7 PickAsyncApiCallOutputVariant7() => IsAsyncApiCallOutputVariant7
             ? AsyncApiCallOutputVariant7!
@@ -278,7 +278,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AsyncApiCallOutputVariant8))]
@@ -286,7 +286,7 @@ namespace Zoo
         public bool IsAsyncApiCallOutputVariant8 => AsyncApiCallOutputVariant8 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAsyncApiCallOutputVariant8(
 #if NET6_0_OR_GREATER
@@ -299,7 +299,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.AsyncApiCallOutputVariant8 PickAsyncApiCallOutputVariant8() => IsAsyncApiCallOutputVariant8
             ? AsyncApiCallOutputVariant8!
@@ -315,7 +315,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AsyncApiCallOutputVariant9))]
@@ -323,7 +323,7 @@ namespace Zoo
         public bool IsAsyncApiCallOutputVariant9 => AsyncApiCallOutputVariant9 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAsyncApiCallOutputVariant9(
 #if NET6_0_OR_GREATER
@@ -336,23 +336,23 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.AsyncApiCallOutputVariant9 PickAsyncApiCallOutputVariant9() => IsAsyncApiCallOutputVariant9
             ? AsyncApiCallOutputVariant9!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AsyncApiCallOutputVariant9' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator AsyncApiCallOutput(global::Zoo.AsyncApiCallOutputVariant1 value) => new AsyncApiCallOutput((global::Zoo.AsyncApiCallOutputVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.AsyncApiCallOutputVariant1?(AsyncApiCallOutput @this) => @this.AsyncApiCallOutputVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AsyncApiCallOutput(global::Zoo.AsyncApiCallOutputVariant1? value)
         {
@@ -360,22 +360,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static AsyncApiCallOutput FromAsyncApiCallOutputVariant1(global::Zoo.AsyncApiCallOutputVariant1? value) => new AsyncApiCallOutput(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator AsyncApiCallOutput(global::Zoo.AsyncApiCallOutputVariant2 value) => new AsyncApiCallOutput((global::Zoo.AsyncApiCallOutputVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.AsyncApiCallOutputVariant2?(AsyncApiCallOutput @this) => @this.AsyncApiCallOutputVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AsyncApiCallOutput(global::Zoo.AsyncApiCallOutputVariant2? value)
         {
@@ -383,22 +383,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static AsyncApiCallOutput FromAsyncApiCallOutputVariant2(global::Zoo.AsyncApiCallOutputVariant2? value) => new AsyncApiCallOutput(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator AsyncApiCallOutput(global::Zoo.AsyncApiCallOutputVariant3 value) => new AsyncApiCallOutput((global::Zoo.AsyncApiCallOutputVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.AsyncApiCallOutputVariant3?(AsyncApiCallOutput @this) => @this.AsyncApiCallOutputVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AsyncApiCallOutput(global::Zoo.AsyncApiCallOutputVariant3? value)
         {
@@ -406,22 +406,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static AsyncApiCallOutput FromAsyncApiCallOutputVariant3(global::Zoo.AsyncApiCallOutputVariant3? value) => new AsyncApiCallOutput(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator AsyncApiCallOutput(global::Zoo.AsyncApiCallOutputVariant4 value) => new AsyncApiCallOutput((global::Zoo.AsyncApiCallOutputVariant4?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.AsyncApiCallOutputVariant4?(AsyncApiCallOutput @this) => @this.AsyncApiCallOutputVariant4;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AsyncApiCallOutput(global::Zoo.AsyncApiCallOutputVariant4? value)
         {
@@ -429,22 +429,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static AsyncApiCallOutput FromAsyncApiCallOutputVariant4(global::Zoo.AsyncApiCallOutputVariant4? value) => new AsyncApiCallOutput(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator AsyncApiCallOutput(global::Zoo.AsyncApiCallOutputVariant5 value) => new AsyncApiCallOutput((global::Zoo.AsyncApiCallOutputVariant5?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.AsyncApiCallOutputVariant5?(AsyncApiCallOutput @this) => @this.AsyncApiCallOutputVariant5;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AsyncApiCallOutput(global::Zoo.AsyncApiCallOutputVariant5? value)
         {
@@ -452,22 +452,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static AsyncApiCallOutput FromAsyncApiCallOutputVariant5(global::Zoo.AsyncApiCallOutputVariant5? value) => new AsyncApiCallOutput(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator AsyncApiCallOutput(global::Zoo.AsyncApiCallOutputVariant6 value) => new AsyncApiCallOutput((global::Zoo.AsyncApiCallOutputVariant6?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.AsyncApiCallOutputVariant6?(AsyncApiCallOutput @this) => @this.AsyncApiCallOutputVariant6;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AsyncApiCallOutput(global::Zoo.AsyncApiCallOutputVariant6? value)
         {
@@ -475,22 +475,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static AsyncApiCallOutput FromAsyncApiCallOutputVariant6(global::Zoo.AsyncApiCallOutputVariant6? value) => new AsyncApiCallOutput(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator AsyncApiCallOutput(global::Zoo.AsyncApiCallOutputVariant7 value) => new AsyncApiCallOutput((global::Zoo.AsyncApiCallOutputVariant7?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.AsyncApiCallOutputVariant7?(AsyncApiCallOutput @this) => @this.AsyncApiCallOutputVariant7;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AsyncApiCallOutput(global::Zoo.AsyncApiCallOutputVariant7? value)
         {
@@ -498,22 +498,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static AsyncApiCallOutput FromAsyncApiCallOutputVariant7(global::Zoo.AsyncApiCallOutputVariant7? value) => new AsyncApiCallOutput(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator AsyncApiCallOutput(global::Zoo.AsyncApiCallOutputVariant8 value) => new AsyncApiCallOutput((global::Zoo.AsyncApiCallOutputVariant8?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.AsyncApiCallOutputVariant8?(AsyncApiCallOutput @this) => @this.AsyncApiCallOutputVariant8;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AsyncApiCallOutput(global::Zoo.AsyncApiCallOutputVariant8? value)
         {
@@ -521,22 +521,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static AsyncApiCallOutput FromAsyncApiCallOutputVariant8(global::Zoo.AsyncApiCallOutputVariant8? value) => new AsyncApiCallOutput(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator AsyncApiCallOutput(global::Zoo.AsyncApiCallOutputVariant9 value) => new AsyncApiCallOutput((global::Zoo.AsyncApiCallOutputVariant9?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.AsyncApiCallOutputVariant9?(AsyncApiCallOutput @this) => @this.AsyncApiCallOutputVariant9;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AsyncApiCallOutput(global::Zoo.AsyncApiCallOutputVariant9? value)
         {
@@ -544,12 +544,12 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static AsyncApiCallOutput FromAsyncApiCallOutputVariant9(global::Zoo.AsyncApiCallOutputVariant9? value) => new AsyncApiCallOutput(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AsyncApiCallOutput(
             global::Zoo.AsyncApiCallOutputVariant1? asyncApiCallOutputVariant1,
@@ -575,7 +575,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             AsyncApiCallOutputVariant9 as object ??
@@ -586,11 +586,11 @@ namespace Zoo
             AsyncApiCallOutputVariant4 as object ??
             AsyncApiCallOutputVariant3 as object ??
             AsyncApiCallOutputVariant2 as object ??
-            AsyncApiCallOutputVariant1 as object 
+            AsyncApiCallOutputVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             AsyncApiCallOutputVariant1?.ToString() ??
@@ -601,11 +601,11 @@ namespace Zoo
             AsyncApiCallOutputVariant6?.ToString() ??
             AsyncApiCallOutputVariant7?.ToString() ??
             AsyncApiCallOutputVariant8?.ToString() ??
-            AsyncApiCallOutputVariant9?.ToString() 
+            AsyncApiCallOutputVariant9?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -613,7 +613,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Zoo.AsyncApiCallOutputVariant1, TResult>? asyncApiCallOutputVariant1 = null,
@@ -673,7 +673,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Zoo.AsyncApiCallOutputVariant1>? asyncApiCallOutputVariant1 = null,
@@ -739,7 +739,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Zoo.AsyncApiCallOutputVariant1>? asyncApiCallOutputVariant1 = null,
@@ -797,7 +797,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -832,7 +832,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(AsyncApiCallOutput other)
         {
@@ -845,12 +845,12 @@ namespace Zoo
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.AsyncApiCallOutputVariant6?>.Default.Equals(AsyncApiCallOutputVariant6, other.AsyncApiCallOutputVariant6) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.AsyncApiCallOutputVariant7?>.Default.Equals(AsyncApiCallOutputVariant7, other.AsyncApiCallOutputVariant7) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.AsyncApiCallOutputVariant8?>.Default.Equals(AsyncApiCallOutputVariant8, other.AsyncApiCallOutputVariant8) &&
-                global::System.Collections.Generic.EqualityComparer<global::Zoo.AsyncApiCallOutputVariant9?>.Default.Equals(AsyncApiCallOutputVariant9, other.AsyncApiCallOutputVariant9) 
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.AsyncApiCallOutputVariant9?>.Default.Equals(AsyncApiCallOutputVariant9, other.AsyncApiCallOutputVariant9)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(AsyncApiCallOutput obj1, AsyncApiCallOutput obj2)
         {
@@ -858,7 +858,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(AsyncApiCallOutput obj1, AsyncApiCallOutput obj2)
         {
@@ -866,7 +866,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

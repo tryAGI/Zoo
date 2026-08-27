@@ -4,12 +4,12 @@
 namespace Zoo
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InputFormat3dVariant10Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ply,
     }

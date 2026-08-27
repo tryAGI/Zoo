@@ -9,7 +9,7 @@ namespace Zoo
     public enum StepImportTargetRepresentationVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Brep,
     }

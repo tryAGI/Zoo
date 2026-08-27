@@ -10,7 +10,7 @@ namespace Zoo
     public enum GltfStorageVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Binary,
     }

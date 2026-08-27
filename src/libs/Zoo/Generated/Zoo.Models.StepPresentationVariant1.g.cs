@@ -9,7 +9,7 @@ namespace Zoo
     public enum StepPresentationVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Compact,
     }

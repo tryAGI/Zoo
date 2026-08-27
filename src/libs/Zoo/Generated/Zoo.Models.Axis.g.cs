@@ -21,7 +21,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AxisVariant1))]
@@ -29,7 +29,7 @@ namespace Zoo
         public bool IsAxisVariant1 => AxisVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAxisVariant1(
 #if NET6_0_OR_GREATER
@@ -42,7 +42,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.AxisVariant1 PickAxisVariant1() => IsAxisVariant1
             ? AxisVariant1!.Value
@@ -58,7 +58,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AxisVariant2))]
@@ -66,7 +66,7 @@ namespace Zoo
         public bool IsAxisVariant2 => AxisVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAxisVariant2(
 #if NET6_0_OR_GREATER
@@ -79,23 +79,23 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.AxisVariant2 PickAxisVariant2() => IsAxisVariant2
             ? AxisVariant2!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AxisVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Axis(global::Zoo.AxisVariant1 value) => new Axis((global::Zoo.AxisVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.AxisVariant1?(Axis @this) => @this.AxisVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Axis(global::Zoo.AxisVariant1? value)
         {
@@ -103,22 +103,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Axis FromAxisVariant1(global::Zoo.AxisVariant1? value) => new Axis(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Axis(global::Zoo.AxisVariant2 value) => new Axis((global::Zoo.AxisVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.AxisVariant2?(Axis @this) => @this.AxisVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Axis(global::Zoo.AxisVariant2? value)
         {
@@ -126,12 +126,12 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Axis FromAxisVariant2(global::Zoo.AxisVariant2? value) => new Axis(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Axis(
             global::Zoo.AxisVariant1? axisVariant1,
@@ -143,23 +143,23 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             AxisVariant2 as object ??
-            AxisVariant1 as object 
+            AxisVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             AxisVariant1?.ToValueString() ??
-            AxisVariant2?.ToValueString() 
+            AxisVariant2?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -167,7 +167,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Zoo.AxisVariant1?, TResult>? axisVariant1 = null,
@@ -192,7 +192,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Zoo.AxisVariant1?>? axisVariant1 = null,
@@ -216,7 +216,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Zoo.AxisVariant1?>? axisVariant1 = null,
@@ -239,7 +239,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -260,18 +260,18 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(Axis other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.AxisVariant1?>.Default.Equals(AxisVariant1, other.AxisVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::Zoo.AxisVariant2?>.Default.Equals(AxisVariant2, other.AxisVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.AxisVariant2?>.Default.Equals(AxisVariant2, other.AxisVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(Axis obj1, Axis obj2)
         {
@@ -279,7 +279,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(Axis obj1, Axis obj2)
         {
@@ -287,7 +287,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

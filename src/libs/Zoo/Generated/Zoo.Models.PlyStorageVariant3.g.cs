@@ -9,7 +9,7 @@ namespace Zoo
     public enum PlyStorageVariant3
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BinaryBigEndian,
     }

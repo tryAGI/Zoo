@@ -9,7 +9,7 @@ namespace Zoo
     public enum UnitAreaVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cm2,
     }

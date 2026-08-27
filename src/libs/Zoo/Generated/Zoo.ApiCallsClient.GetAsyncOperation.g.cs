@@ -140,7 +140,7 @@ namespace Zoo
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
                 global::Zoo.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,

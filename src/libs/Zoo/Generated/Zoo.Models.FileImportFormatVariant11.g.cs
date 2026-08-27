@@ -9,7 +9,7 @@ namespace Zoo
     public enum FileImportFormatVariant11
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sldprt,
     }

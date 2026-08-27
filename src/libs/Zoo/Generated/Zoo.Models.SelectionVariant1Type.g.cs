@@ -4,12 +4,12 @@
 namespace Zoo
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SelectionVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DefaultScene,
     }

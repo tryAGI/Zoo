@@ -10,7 +10,7 @@ namespace Zoo
     public enum GltfPresentationVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pretty,
     }

@@ -19,7 +19,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UnitMassVariant1))]
@@ -27,7 +27,7 @@ namespace Zoo
         public bool IsUnitMassVariant1 => UnitMassVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUnitMassVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.UnitMassVariant1 PickUnitMassVariant1() => IsUnitMassVariant1
             ? UnitMassVariant1!.Value
@@ -56,7 +56,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UnitMassVariant2))]
@@ -64,7 +64,7 @@ namespace Zoo
         public bool IsUnitMassVariant2 => UnitMassVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUnitMassVariant2(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.UnitMassVariant2 PickUnitMassVariant2() => IsUnitMassVariant2
             ? UnitMassVariant2!.Value
@@ -93,7 +93,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UnitMassVariant3))]
@@ -101,7 +101,7 @@ namespace Zoo
         public bool IsUnitMassVariant3 => UnitMassVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUnitMassVariant3(
 #if NET6_0_OR_GREATER
@@ -114,23 +114,23 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.UnitMassVariant3 PickUnitMassVariant3() => IsUnitMassVariant3
             ? UnitMassVariant3!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UnitMassVariant3' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator UnitMass(global::Zoo.UnitMassVariant1 value) => new UnitMass((global::Zoo.UnitMassVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.UnitMassVariant1?(UnitMass @this) => @this.UnitMassVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UnitMass(global::Zoo.UnitMassVariant1? value)
         {
@@ -138,22 +138,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static UnitMass FromUnitMassVariant1(global::Zoo.UnitMassVariant1? value) => new UnitMass(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator UnitMass(global::Zoo.UnitMassVariant2 value) => new UnitMass((global::Zoo.UnitMassVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.UnitMassVariant2?(UnitMass @this) => @this.UnitMassVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UnitMass(global::Zoo.UnitMassVariant2? value)
         {
@@ -161,22 +161,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static UnitMass FromUnitMassVariant2(global::Zoo.UnitMassVariant2? value) => new UnitMass(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator UnitMass(global::Zoo.UnitMassVariant3 value) => new UnitMass((global::Zoo.UnitMassVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.UnitMassVariant3?(UnitMass @this) => @this.UnitMassVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UnitMass(global::Zoo.UnitMassVariant3? value)
         {
@@ -184,12 +184,12 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static UnitMass FromUnitMassVariant3(global::Zoo.UnitMassVariant3? value) => new UnitMass(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UnitMass(
             global::Zoo.UnitMassVariant1? unitMassVariant1,
@@ -203,25 +203,25 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             UnitMassVariant3 as object ??
             UnitMassVariant2 as object ??
-            UnitMassVariant1 as object 
+            UnitMassVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             UnitMassVariant1?.ToValueString() ??
             UnitMassVariant2?.ToValueString() ??
-            UnitMassVariant3?.ToValueString() 
+            UnitMassVariant3?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -229,7 +229,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Zoo.UnitMassVariant1?, TResult>? unitMassVariant1 = null,
@@ -259,7 +259,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Zoo.UnitMassVariant1?>? unitMassVariant1 = null,
@@ -289,7 +289,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Zoo.UnitMassVariant1?>? unitMassVariant1 = null,
@@ -317,7 +317,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -340,19 +340,19 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(UnitMass other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.UnitMassVariant1?>.Default.Equals(UnitMassVariant1, other.UnitMassVariant1) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.UnitMassVariant2?>.Default.Equals(UnitMassVariant2, other.UnitMassVariant2) &&
-                global::System.Collections.Generic.EqualityComparer<global::Zoo.UnitMassVariant3?>.Default.Equals(UnitMassVariant3, other.UnitMassVariant3) 
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.UnitMassVariant3?>.Default.Equals(UnitMassVariant3, other.UnitMassVariant3)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(UnitMass obj1, UnitMass obj2)
         {
@@ -360,7 +360,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(UnitMass obj1, UnitMass obj2)
         {
@@ -368,7 +368,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

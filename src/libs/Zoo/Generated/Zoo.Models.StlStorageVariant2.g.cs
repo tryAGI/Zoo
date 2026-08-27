@@ -10,7 +10,7 @@ namespace Zoo
     public enum StlStorageVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Binary,
     }

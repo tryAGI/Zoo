@@ -20,7 +20,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CreatedAtSortModeVariant1))]
@@ -28,7 +28,7 @@ namespace Zoo
         public bool IsCreatedAtSortModeVariant1 => CreatedAtSortModeVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCreatedAtSortModeVariant1(
 #if NET6_0_OR_GREATER
@@ -41,7 +41,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.CreatedAtSortModeVariant1 PickCreatedAtSortModeVariant1() => IsCreatedAtSortModeVariant1
             ? CreatedAtSortModeVariant1!.Value
@@ -57,7 +57,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CreatedAtSortModeVariant2))]
@@ -65,7 +65,7 @@ namespace Zoo
         public bool IsCreatedAtSortModeVariant2 => CreatedAtSortModeVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCreatedAtSortModeVariant2(
 #if NET6_0_OR_GREATER
@@ -78,23 +78,23 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.CreatedAtSortModeVariant2 PickCreatedAtSortModeVariant2() => IsCreatedAtSortModeVariant2
             ? CreatedAtSortModeVariant2!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CreatedAtSortModeVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator CreatedAtSortMode(global::Zoo.CreatedAtSortModeVariant1 value) => new CreatedAtSortMode((global::Zoo.CreatedAtSortModeVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.CreatedAtSortModeVariant1?(CreatedAtSortMode @this) => @this.CreatedAtSortModeVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CreatedAtSortMode(global::Zoo.CreatedAtSortModeVariant1? value)
         {
@@ -102,22 +102,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static CreatedAtSortMode FromCreatedAtSortModeVariant1(global::Zoo.CreatedAtSortModeVariant1? value) => new CreatedAtSortMode(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator CreatedAtSortMode(global::Zoo.CreatedAtSortModeVariant2 value) => new CreatedAtSortMode((global::Zoo.CreatedAtSortModeVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.CreatedAtSortModeVariant2?(CreatedAtSortMode @this) => @this.CreatedAtSortModeVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CreatedAtSortMode(global::Zoo.CreatedAtSortModeVariant2? value)
         {
@@ -125,12 +125,12 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static CreatedAtSortMode FromCreatedAtSortModeVariant2(global::Zoo.CreatedAtSortModeVariant2? value) => new CreatedAtSortMode(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CreatedAtSortMode(
             global::Zoo.CreatedAtSortModeVariant1? createdAtSortModeVariant1,
@@ -142,23 +142,23 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             CreatedAtSortModeVariant2 as object ??
-            CreatedAtSortModeVariant1 as object 
+            CreatedAtSortModeVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             CreatedAtSortModeVariant1?.ToValueString() ??
-            CreatedAtSortModeVariant2?.ToValueString() 
+            CreatedAtSortModeVariant2?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -166,7 +166,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Zoo.CreatedAtSortModeVariant1?, TResult>? createdAtSortModeVariant1 = null,
@@ -191,7 +191,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Zoo.CreatedAtSortModeVariant1?>? createdAtSortModeVariant1 = null,
@@ -215,7 +215,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Zoo.CreatedAtSortModeVariant1?>? createdAtSortModeVariant1 = null,
@@ -238,7 +238,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -259,18 +259,18 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(CreatedAtSortMode other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.CreatedAtSortModeVariant1?>.Default.Equals(CreatedAtSortModeVariant1, other.CreatedAtSortModeVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::Zoo.CreatedAtSortModeVariant2?>.Default.Equals(CreatedAtSortModeVariant2, other.CreatedAtSortModeVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.CreatedAtSortModeVariant2?>.Default.Equals(CreatedAtSortModeVariant2, other.CreatedAtSortModeVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(CreatedAtSortMode obj1, CreatedAtSortMode obj2)
         {
@@ -278,7 +278,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(CreatedAtSortMode obj1, CreatedAtSortMode obj2)
         {
@@ -286,7 +286,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

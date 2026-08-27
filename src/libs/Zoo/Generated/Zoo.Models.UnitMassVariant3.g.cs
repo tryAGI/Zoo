@@ -9,7 +9,7 @@ namespace Zoo
     public enum UnitMassVariant3
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lb,
     }

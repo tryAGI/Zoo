@@ -11,7 +11,7 @@ namespace Zoo
     public enum FileExportFormatVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Glb,
     }

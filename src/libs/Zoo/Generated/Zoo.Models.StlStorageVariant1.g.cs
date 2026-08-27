@@ -9,7 +9,7 @@ namespace Zoo
     public enum StlStorageVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ascii,
     }

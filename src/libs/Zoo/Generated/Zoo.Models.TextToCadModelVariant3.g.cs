@@ -9,7 +9,7 @@ namespace Zoo
     public enum TextToCadModelVariant3
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         KclIteration,
     }

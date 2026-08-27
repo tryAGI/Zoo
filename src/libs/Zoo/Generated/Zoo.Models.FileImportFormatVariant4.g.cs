@@ -9,7 +9,7 @@ namespace Zoo
     public enum FileImportFormatVariant4
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fbx,
     }

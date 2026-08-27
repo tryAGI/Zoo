@@ -19,7 +19,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ApiCallStatusVariant1))]
@@ -27,7 +27,7 @@ namespace Zoo
         public bool IsApiCallStatusVariant1 => ApiCallStatusVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickApiCallStatusVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.ApiCallStatusVariant1 PickApiCallStatusVariant1() => IsApiCallStatusVariant1
             ? ApiCallStatusVariant1!.Value
@@ -56,7 +56,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ApiCallStatusVariant2))]
@@ -64,7 +64,7 @@ namespace Zoo
         public bool IsApiCallStatusVariant2 => ApiCallStatusVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickApiCallStatusVariant2(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.ApiCallStatusVariant2 PickApiCallStatusVariant2() => IsApiCallStatusVariant2
             ? ApiCallStatusVariant2!.Value
@@ -93,7 +93,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ApiCallStatusVariant3))]
@@ -101,7 +101,7 @@ namespace Zoo
         public bool IsApiCallStatusVariant3 => ApiCallStatusVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickApiCallStatusVariant3(
 #if NET6_0_OR_GREATER
@@ -114,7 +114,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.ApiCallStatusVariant3 PickApiCallStatusVariant3() => IsApiCallStatusVariant3
             ? ApiCallStatusVariant3!.Value
@@ -130,7 +130,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ApiCallStatusVariant4))]
@@ -138,7 +138,7 @@ namespace Zoo
         public bool IsApiCallStatusVariant4 => ApiCallStatusVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickApiCallStatusVariant4(
 #if NET6_0_OR_GREATER
@@ -151,7 +151,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.ApiCallStatusVariant4 PickApiCallStatusVariant4() => IsApiCallStatusVariant4
             ? ApiCallStatusVariant4!.Value
@@ -167,7 +167,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ApiCallStatusVariant5))]
@@ -175,7 +175,7 @@ namespace Zoo
         public bool IsApiCallStatusVariant5 => ApiCallStatusVariant5 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickApiCallStatusVariant5(
 #if NET6_0_OR_GREATER
@@ -188,23 +188,23 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.ApiCallStatusVariant5 PickApiCallStatusVariant5() => IsApiCallStatusVariant5
             ? ApiCallStatusVariant5!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ApiCallStatusVariant5' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ApiCallStatus(global::Zoo.ApiCallStatusVariant1 value) => new ApiCallStatus((global::Zoo.ApiCallStatusVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.ApiCallStatusVariant1?(ApiCallStatus @this) => @this.ApiCallStatusVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ApiCallStatus(global::Zoo.ApiCallStatusVariant1? value)
         {
@@ -212,22 +212,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ApiCallStatus FromApiCallStatusVariant1(global::Zoo.ApiCallStatusVariant1? value) => new ApiCallStatus(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ApiCallStatus(global::Zoo.ApiCallStatusVariant2 value) => new ApiCallStatus((global::Zoo.ApiCallStatusVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.ApiCallStatusVariant2?(ApiCallStatus @this) => @this.ApiCallStatusVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ApiCallStatus(global::Zoo.ApiCallStatusVariant2? value)
         {
@@ -235,22 +235,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ApiCallStatus FromApiCallStatusVariant2(global::Zoo.ApiCallStatusVariant2? value) => new ApiCallStatus(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ApiCallStatus(global::Zoo.ApiCallStatusVariant3 value) => new ApiCallStatus((global::Zoo.ApiCallStatusVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.ApiCallStatusVariant3?(ApiCallStatus @this) => @this.ApiCallStatusVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ApiCallStatus(global::Zoo.ApiCallStatusVariant3? value)
         {
@@ -258,22 +258,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ApiCallStatus FromApiCallStatusVariant3(global::Zoo.ApiCallStatusVariant3? value) => new ApiCallStatus(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ApiCallStatus(global::Zoo.ApiCallStatusVariant4 value) => new ApiCallStatus((global::Zoo.ApiCallStatusVariant4?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.ApiCallStatusVariant4?(ApiCallStatus @this) => @this.ApiCallStatusVariant4;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ApiCallStatus(global::Zoo.ApiCallStatusVariant4? value)
         {
@@ -281,22 +281,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ApiCallStatus FromApiCallStatusVariant4(global::Zoo.ApiCallStatusVariant4? value) => new ApiCallStatus(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ApiCallStatus(global::Zoo.ApiCallStatusVariant5 value) => new ApiCallStatus((global::Zoo.ApiCallStatusVariant5?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.ApiCallStatusVariant5?(ApiCallStatus @this) => @this.ApiCallStatusVariant5;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ApiCallStatus(global::Zoo.ApiCallStatusVariant5? value)
         {
@@ -304,12 +304,12 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ApiCallStatus FromApiCallStatusVariant5(global::Zoo.ApiCallStatusVariant5? value) => new ApiCallStatus(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ApiCallStatus(
             global::Zoo.ApiCallStatusVariant1? apiCallStatusVariant1,
@@ -327,29 +327,29 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             ApiCallStatusVariant5 as object ??
             ApiCallStatusVariant4 as object ??
             ApiCallStatusVariant3 as object ??
             ApiCallStatusVariant2 as object ??
-            ApiCallStatusVariant1 as object 
+            ApiCallStatusVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             ApiCallStatusVariant1?.ToValueString() ??
             ApiCallStatusVariant2?.ToValueString() ??
             ApiCallStatusVariant3?.ToValueString() ??
             ApiCallStatusVariant4?.ToValueString() ??
-            ApiCallStatusVariant5?.ToValueString() 
+            ApiCallStatusVariant5?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -357,7 +357,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Zoo.ApiCallStatusVariant1?, TResult>? apiCallStatusVariant1 = null,
@@ -397,7 +397,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Zoo.ApiCallStatusVariant1?>? apiCallStatusVariant1 = null,
@@ -439,7 +439,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Zoo.ApiCallStatusVariant1?>? apiCallStatusVariant1 = null,
@@ -477,7 +477,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -504,7 +504,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ApiCallStatus other)
         {
@@ -513,12 +513,12 @@ namespace Zoo
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.ApiCallStatusVariant2?>.Default.Equals(ApiCallStatusVariant2, other.ApiCallStatusVariant2) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.ApiCallStatusVariant3?>.Default.Equals(ApiCallStatusVariant3, other.ApiCallStatusVariant3) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.ApiCallStatusVariant4?>.Default.Equals(ApiCallStatusVariant4, other.ApiCallStatusVariant4) &&
-                global::System.Collections.Generic.EqualityComparer<global::Zoo.ApiCallStatusVariant5?>.Default.Equals(ApiCallStatusVariant5, other.ApiCallStatusVariant5) 
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.ApiCallStatusVariant5?>.Default.Equals(ApiCallStatusVariant5, other.ApiCallStatusVariant5)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ApiCallStatus obj1, ApiCallStatus obj2)
         {
@@ -526,7 +526,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ApiCallStatus obj1, ApiCallStatus obj2)
         {
@@ -534,7 +534,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

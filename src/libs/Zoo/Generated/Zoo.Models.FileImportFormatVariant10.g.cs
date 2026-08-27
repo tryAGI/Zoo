@@ -9,7 +9,7 @@ namespace Zoo
     public enum FileImportFormatVariant10
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ply,
     }

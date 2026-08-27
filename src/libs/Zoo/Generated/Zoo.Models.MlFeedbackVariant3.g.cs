@@ -9,7 +9,7 @@ namespace Zoo
     public enum MlFeedbackVariant3
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Accepted,
     }

@@ -9,7 +9,7 @@ namespace Zoo
     public enum UnitVolumeVariant7
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Usfloz,
     }

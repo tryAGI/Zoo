@@ -9,7 +9,7 @@ namespace Zoo
     public enum FileImportFormatVariant9
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Parasolid,
     }

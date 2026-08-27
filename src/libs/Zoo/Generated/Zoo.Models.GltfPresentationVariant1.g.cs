@@ -9,7 +9,7 @@ namespace Zoo
     public enum GltfPresentationVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Compact,
     }

@@ -9,7 +9,7 @@ namespace Zoo
     public enum FileImportFormatVariant5
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gltf,
     }

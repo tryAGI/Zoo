@@ -9,7 +9,7 @@ namespace Zoo
     public enum FileImportFormatVariant13
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Stl,
     }

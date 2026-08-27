@@ -9,7 +9,7 @@ namespace Zoo
     public enum CreatedAtSortModeVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedAtDescending,
     }

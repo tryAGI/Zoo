@@ -9,7 +9,7 @@ namespace Zoo
     public enum FileImportFormatVariant6
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Inventor,
     }

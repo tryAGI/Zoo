@@ -9,7 +9,7 @@ namespace Zoo
     public enum UnitLengthVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ft,
     }

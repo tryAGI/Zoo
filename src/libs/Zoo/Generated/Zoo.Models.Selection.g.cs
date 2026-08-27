@@ -19,7 +19,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SelectionVariant1))]
@@ -27,7 +27,7 @@ namespace Zoo
         public bool IsSelectionVariant1 => SelectionVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSelectionVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.SelectionVariant1 PickSelectionVariant1() => IsSelectionVariant1
             ? SelectionVariant1!
@@ -56,7 +56,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SelectionVariant2))]
@@ -64,7 +64,7 @@ namespace Zoo
         public bool IsSelectionVariant2 => SelectionVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSelectionVariant2(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.SelectionVariant2 PickSelectionVariant2() => IsSelectionVariant2
             ? SelectionVariant2!
@@ -93,7 +93,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SelectionVariant3))]
@@ -101,7 +101,7 @@ namespace Zoo
         public bool IsSelectionVariant3 => SelectionVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSelectionVariant3(
 #if NET6_0_OR_GREATER
@@ -114,7 +114,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.SelectionVariant3 PickSelectionVariant3() => IsSelectionVariant3
             ? SelectionVariant3!
@@ -130,7 +130,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SelectionVariant4))]
@@ -138,7 +138,7 @@ namespace Zoo
         public bool IsSelectionVariant4 => SelectionVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSelectionVariant4(
 #if NET6_0_OR_GREATER
@@ -151,7 +151,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.SelectionVariant4 PickSelectionVariant4() => IsSelectionVariant4
             ? SelectionVariant4!
@@ -167,7 +167,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SelectionVariant5))]
@@ -175,7 +175,7 @@ namespace Zoo
         public bool IsSelectionVariant5 => SelectionVariant5 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSelectionVariant5(
 #if NET6_0_OR_GREATER
@@ -188,23 +188,23 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.SelectionVariant5 PickSelectionVariant5() => IsSelectionVariant5
             ? SelectionVariant5!
             : throw new global::System.InvalidOperationException($"Expected union variant 'SelectionVariant5' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Selection(global::Zoo.SelectionVariant1 value) => new Selection((global::Zoo.SelectionVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.SelectionVariant1?(Selection @this) => @this.SelectionVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Selection(global::Zoo.SelectionVariant1? value)
         {
@@ -212,22 +212,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Selection FromSelectionVariant1(global::Zoo.SelectionVariant1? value) => new Selection(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Selection(global::Zoo.SelectionVariant2 value) => new Selection((global::Zoo.SelectionVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.SelectionVariant2?(Selection @this) => @this.SelectionVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Selection(global::Zoo.SelectionVariant2? value)
         {
@@ -235,22 +235,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Selection FromSelectionVariant2(global::Zoo.SelectionVariant2? value) => new Selection(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Selection(global::Zoo.SelectionVariant3 value) => new Selection((global::Zoo.SelectionVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.SelectionVariant3?(Selection @this) => @this.SelectionVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Selection(global::Zoo.SelectionVariant3? value)
         {
@@ -258,22 +258,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Selection FromSelectionVariant3(global::Zoo.SelectionVariant3? value) => new Selection(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Selection(global::Zoo.SelectionVariant4 value) => new Selection((global::Zoo.SelectionVariant4?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.SelectionVariant4?(Selection @this) => @this.SelectionVariant4;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Selection(global::Zoo.SelectionVariant4? value)
         {
@@ -281,22 +281,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Selection FromSelectionVariant4(global::Zoo.SelectionVariant4? value) => new Selection(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Selection(global::Zoo.SelectionVariant5 value) => new Selection((global::Zoo.SelectionVariant5?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.SelectionVariant5?(Selection @this) => @this.SelectionVariant5;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Selection(global::Zoo.SelectionVariant5? value)
         {
@@ -304,12 +304,12 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Selection FromSelectionVariant5(global::Zoo.SelectionVariant5? value) => new Selection(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Selection(
             global::Zoo.SelectionVariant1? selectionVariant1,
@@ -327,29 +327,29 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             SelectionVariant5 as object ??
             SelectionVariant4 as object ??
             SelectionVariant3 as object ??
             SelectionVariant2 as object ??
-            SelectionVariant1 as object 
+            SelectionVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             SelectionVariant1?.ToString() ??
             SelectionVariant2?.ToString() ??
             SelectionVariant3?.ToString() ??
             SelectionVariant4?.ToString() ??
-            SelectionVariant5?.ToString() 
+            SelectionVariant5?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -357,7 +357,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Zoo.SelectionVariant1, TResult>? selectionVariant1 = null,
@@ -397,7 +397,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Zoo.SelectionVariant1>? selectionVariant1 = null,
@@ -439,7 +439,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Zoo.SelectionVariant1>? selectionVariant1 = null,
@@ -477,7 +477,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -504,7 +504,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(Selection other)
         {
@@ -513,12 +513,12 @@ namespace Zoo
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.SelectionVariant2?>.Default.Equals(SelectionVariant2, other.SelectionVariant2) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.SelectionVariant3?>.Default.Equals(SelectionVariant3, other.SelectionVariant3) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.SelectionVariant4?>.Default.Equals(SelectionVariant4, other.SelectionVariant4) &&
-                global::System.Collections.Generic.EqualityComparer<global::Zoo.SelectionVariant5?>.Default.Equals(SelectionVariant5, other.SelectionVariant5) 
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.SelectionVariant5?>.Default.Equals(SelectionVariant5, other.SelectionVariant5)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(Selection obj1, Selection obj2)
         {
@@ -526,7 +526,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(Selection obj1, Selection obj2)
         {
@@ -534,7 +534,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

@@ -9,7 +9,7 @@ namespace Zoo
     public enum FileExportFormatVariant5
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ply,
     }

@@ -19,7 +19,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(MlFeedbackVariant1))]
@@ -27,7 +27,7 @@ namespace Zoo
         public bool IsMlFeedbackVariant1 => MlFeedbackVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickMlFeedbackVariant1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.MlFeedbackVariant1 PickMlFeedbackVariant1() => IsMlFeedbackVariant1
             ? MlFeedbackVariant1!.Value
@@ -56,7 +56,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(MlFeedbackVariant2))]
@@ -64,7 +64,7 @@ namespace Zoo
         public bool IsMlFeedbackVariant2 => MlFeedbackVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickMlFeedbackVariant2(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.MlFeedbackVariant2 PickMlFeedbackVariant2() => IsMlFeedbackVariant2
             ? MlFeedbackVariant2!.Value
@@ -93,7 +93,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(MlFeedbackVariant3))]
@@ -101,7 +101,7 @@ namespace Zoo
         public bool IsMlFeedbackVariant3 => MlFeedbackVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickMlFeedbackVariant3(
 #if NET6_0_OR_GREATER
@@ -114,7 +114,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.MlFeedbackVariant3 PickMlFeedbackVariant3() => IsMlFeedbackVariant3
             ? MlFeedbackVariant3!.Value
@@ -130,7 +130,7 @@ namespace Zoo
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(MlFeedbackVariant4))]
@@ -138,7 +138,7 @@ namespace Zoo
         public bool IsMlFeedbackVariant4 => MlFeedbackVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickMlFeedbackVariant4(
 #if NET6_0_OR_GREATER
@@ -151,23 +151,23 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Zoo.MlFeedbackVariant4 PickMlFeedbackVariant4() => IsMlFeedbackVariant4
             ? MlFeedbackVariant4!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'MlFeedbackVariant4' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator MlFeedback(global::Zoo.MlFeedbackVariant1 value) => new MlFeedback((global::Zoo.MlFeedbackVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.MlFeedbackVariant1?(MlFeedback @this) => @this.MlFeedbackVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MlFeedback(global::Zoo.MlFeedbackVariant1? value)
         {
@@ -175,22 +175,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static MlFeedback FromMlFeedbackVariant1(global::Zoo.MlFeedbackVariant1? value) => new MlFeedback(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator MlFeedback(global::Zoo.MlFeedbackVariant2 value) => new MlFeedback((global::Zoo.MlFeedbackVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.MlFeedbackVariant2?(MlFeedback @this) => @this.MlFeedbackVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MlFeedback(global::Zoo.MlFeedbackVariant2? value)
         {
@@ -198,22 +198,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static MlFeedback FromMlFeedbackVariant2(global::Zoo.MlFeedbackVariant2? value) => new MlFeedback(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator MlFeedback(global::Zoo.MlFeedbackVariant3 value) => new MlFeedback((global::Zoo.MlFeedbackVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.MlFeedbackVariant3?(MlFeedback @this) => @this.MlFeedbackVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MlFeedback(global::Zoo.MlFeedbackVariant3? value)
         {
@@ -221,22 +221,22 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static MlFeedback FromMlFeedbackVariant3(global::Zoo.MlFeedbackVariant3? value) => new MlFeedback(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator MlFeedback(global::Zoo.MlFeedbackVariant4 value) => new MlFeedback((global::Zoo.MlFeedbackVariant4?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Zoo.MlFeedbackVariant4?(MlFeedback @this) => @this.MlFeedbackVariant4;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MlFeedback(global::Zoo.MlFeedbackVariant4? value)
         {
@@ -244,12 +244,12 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static MlFeedback FromMlFeedbackVariant4(global::Zoo.MlFeedbackVariant4? value) => new MlFeedback(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MlFeedback(
             global::Zoo.MlFeedbackVariant1? mlFeedbackVariant1,
@@ -265,27 +265,27 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             MlFeedbackVariant4 as object ??
             MlFeedbackVariant3 as object ??
             MlFeedbackVariant2 as object ??
-            MlFeedbackVariant1 as object 
+            MlFeedbackVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             MlFeedbackVariant1?.ToValueString() ??
             MlFeedbackVariant2?.ToValueString() ??
             MlFeedbackVariant3?.ToValueString() ??
-            MlFeedbackVariant4?.ToValueString() 
+            MlFeedbackVariant4?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -293,7 +293,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Zoo.MlFeedbackVariant1?, TResult>? mlFeedbackVariant1 = null,
@@ -328,7 +328,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Zoo.MlFeedbackVariant1?>? mlFeedbackVariant1 = null,
@@ -364,7 +364,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Zoo.MlFeedbackVariant1?>? mlFeedbackVariant1 = null,
@@ -397,7 +397,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -422,7 +422,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(MlFeedback other)
         {
@@ -430,12 +430,12 @@ namespace Zoo
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.MlFeedbackVariant1?>.Default.Equals(MlFeedbackVariant1, other.MlFeedbackVariant1) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.MlFeedbackVariant2?>.Default.Equals(MlFeedbackVariant2, other.MlFeedbackVariant2) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.MlFeedbackVariant3?>.Default.Equals(MlFeedbackVariant3, other.MlFeedbackVariant3) &&
-                global::System.Collections.Generic.EqualityComparer<global::Zoo.MlFeedbackVariant4?>.Default.Equals(MlFeedbackVariant4, other.MlFeedbackVariant4) 
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.MlFeedbackVariant4?>.Default.Equals(MlFeedbackVariant4, other.MlFeedbackVariant4)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(MlFeedback obj1, MlFeedback obj2)
         {
@@ -443,7 +443,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(MlFeedback obj1, MlFeedback obj2)
         {
@@ -451,7 +451,7 @@ namespace Zoo
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {
