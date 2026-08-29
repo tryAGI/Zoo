@@ -1218,7 +1218,7 @@
                     "$ref": "#/components/schemas/Point3d"
                   }
                 ],
-                "description": "The resulting center of mass.",
+                "description": "The resulting center of mass in the KittyCAD coordinate system (+Z up, -Y forward).",
                 "nullable": true
               },
               "completed_at": {
