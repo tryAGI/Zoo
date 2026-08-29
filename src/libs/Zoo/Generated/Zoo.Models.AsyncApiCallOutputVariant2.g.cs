@@ -9,7 +9,7 @@ namespace Zoo
     public sealed partial class AsyncApiCallOutputVariant2
     {
         /// <summary>
-        /// The resulting center of mass.
+        /// The resulting center of mass in the KittyCAD coordinate system (+Z up, -Y forward).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("center_of_mass")]
         public global::Zoo.Point3d? CenterOfMass { get; set; }
@@ -124,7 +124,7 @@ namespace Zoo
         /// The user ID of the user who created the API call.
         /// </param>
         /// <param name="centerOfMass">
-        /// The resulting center of mass.
+        /// The resulting center of mass in the KittyCAD coordinate system (+Z up, -Y forward).
         /// </param>
         /// <param name="completedAt">
         /// The time and date the API call was completed.
