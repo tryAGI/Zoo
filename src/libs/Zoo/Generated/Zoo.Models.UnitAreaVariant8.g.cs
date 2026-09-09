@@ -4,7 +4,7 @@
 namespace Zoo
 {
     /// <summary>
-    /// Square yards &lt;https://en.wikipedia.org/wiki/Square_mile&gt;
+    /// Square yards &lt;https://en.wikipedia.org/wiki/Square_yard&gt;
     /// </summary>
     public enum UnitAreaVariant8
     {
