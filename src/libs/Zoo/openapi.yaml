@@ -2295,7 +2295,7 @@
             "type": "string"
           },
           {
-            "description": "Square yards <https://en.wikipedia.org/wiki/Square_mile>",
+            "description": "Square yards <https://en.wikipedia.org/wiki/Square_yard>",
             "enum": [
               "yd2"
             ],

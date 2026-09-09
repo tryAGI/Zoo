@@ -269,7 +269,7 @@ namespace Zoo
             : throw new global::System.InvalidOperationException($"Expected union variant 'UnitAreaVariant7' but the value was {ToString()}.");
 
         /// <summary>
-        /// Square yards &lt;https://en.wikipedia.org/wiki/Square_mile&gt;
+        /// Square yards &lt;https://en.wikipedia.org/wiki/Square_yard&gt;
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Zoo.UnitAreaVariant8? UnitAreaVariant8 { get; init; }
