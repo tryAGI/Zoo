@@ -118,7 +118,8 @@
         "summary": "Get an async operation.",
         "tags": [
           "api-calls"
-        ]
+        ],
+        "x-billable": false
       }
     },
     "/user/text-to-cad": {
@@ -268,6 +269,7 @@
         "tags": [
           "ml"
         ],
+        "x-billable": false,
         "x-dropshot-pagination": {
           "required": []
         }
@@ -376,7 +378,8 @@
         "summary": "Get a text-to-CAD response.",
         "tags": [
           "ml"
-        ]
+        ],
+        "x-billable": false
       }
     }
   },
