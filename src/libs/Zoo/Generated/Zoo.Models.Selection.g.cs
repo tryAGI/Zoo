@@ -42,8 +42,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.SelectionVariant1 PickSelectionVariant1() => IsSelectionVariant1
-            ? SelectionVariant1!
+        public global::Zoo.SelectionVariant1 PickSelectionVariant1() => SelectionVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SelectionVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.SelectionVariant2 PickSelectionVariant2() => IsSelectionVariant2
-            ? SelectionVariant2!
+        public global::Zoo.SelectionVariant2 PickSelectionVariant2() => SelectionVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SelectionVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.SelectionVariant3 PickSelectionVariant3() => IsSelectionVariant3
-            ? SelectionVariant3!
+        public global::Zoo.SelectionVariant3 PickSelectionVariant3() => SelectionVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SelectionVariant3' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.SelectionVariant4 PickSelectionVariant4() => IsSelectionVariant4
-            ? SelectionVariant4!
+        public global::Zoo.SelectionVariant4 PickSelectionVariant4() => SelectionVariant4 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SelectionVariant4' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.SelectionVariant5 PickSelectionVariant5() => IsSelectionVariant5
-            ? SelectionVariant5!
+        public global::Zoo.SelectionVariant5 PickSelectionVariant5() => SelectionVariant5 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SelectionVariant5' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -372,25 +372,25 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsSelectionVariant1 && selectionVariant1 != null)
+            if (SelectionVariant1 is { } __value0 && selectionVariant1 != null)
             {
-                return selectionVariant1(SelectionVariant1!);
+                return selectionVariant1(__value0);
             }
-            else if (IsSelectionVariant2 && selectionVariant2 != null)
+            else if (SelectionVariant2 is { } __value1 && selectionVariant2 != null)
             {
-                return selectionVariant2(SelectionVariant2!);
+                return selectionVariant2(__value1);
             }
-            else if (IsSelectionVariant3 && selectionVariant3 != null)
+            else if (SelectionVariant3 is { } __value2 && selectionVariant3 != null)
             {
-                return selectionVariant3(SelectionVariant3!);
+                return selectionVariant3(__value2);
             }
-            else if (IsSelectionVariant4 && selectionVariant4 != null)
+            else if (SelectionVariant4 is { } __value3 && selectionVariant4 != null)
             {
-                return selectionVariant4(SelectionVariant4!);
+                return selectionVariant4(__value3);
             }
-            else if (IsSelectionVariant5 && selectionVariant5 != null)
+            else if (SelectionVariant5 is { } __value4 && selectionVariant5 != null)
             {
-                return selectionVariant5(SelectionVariant5!);
+                return selectionVariant5(__value4);
             }
 
             return default(TResult);
@@ -416,25 +416,25 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsSelectionVariant1)
+            if (SelectionVariant1 is { } __value0)
             {
-                selectionVariant1?.Invoke(SelectionVariant1!);
+                selectionVariant1?.Invoke(__value0);
             }
-            else if (IsSelectionVariant2)
+            else if (SelectionVariant2 is { } __value1)
             {
-                selectionVariant2?.Invoke(SelectionVariant2!);
+                selectionVariant2?.Invoke(__value1);
             }
-            else if (IsSelectionVariant3)
+            else if (SelectionVariant3 is { } __value2)
             {
-                selectionVariant3?.Invoke(SelectionVariant3!);
+                selectionVariant3?.Invoke(__value2);
             }
-            else if (IsSelectionVariant4)
+            else if (SelectionVariant4 is { } __value3)
             {
-                selectionVariant4?.Invoke(SelectionVariant4!);
+                selectionVariant4?.Invoke(__value3);
             }
-            else if (IsSelectionVariant5)
+            else if (SelectionVariant5 is { } __value4)
             {
-                selectionVariant5?.Invoke(SelectionVariant5!);
+                selectionVariant5?.Invoke(__value4);
             }
         }
 
@@ -454,25 +454,25 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsSelectionVariant1)
+            if (SelectionVariant1 is { } __value0)
             {
-                selectionVariant1?.Invoke(SelectionVariant1!);
+                selectionVariant1?.Invoke(__value0);
             }
-            else if (IsSelectionVariant2)
+            else if (SelectionVariant2 is { } __value1)
             {
-                selectionVariant2?.Invoke(SelectionVariant2!);
+                selectionVariant2?.Invoke(__value1);
             }
-            else if (IsSelectionVariant3)
+            else if (SelectionVariant3 is { } __value2)
             {
-                selectionVariant3?.Invoke(SelectionVariant3!);
+                selectionVariant3?.Invoke(__value2);
             }
-            else if (IsSelectionVariant4)
+            else if (SelectionVariant4 is { } __value3)
             {
-                selectionVariant4?.Invoke(SelectionVariant4!);
+                selectionVariant4?.Invoke(__value3);
             }
-            else if (IsSelectionVariant5)
+            else if (SelectionVariant5 is { } __value4)
             {
-                selectionVariant5?.Invoke(SelectionVariant5!);
+                selectionVariant5?.Invoke(__value4);
             }
         }
 

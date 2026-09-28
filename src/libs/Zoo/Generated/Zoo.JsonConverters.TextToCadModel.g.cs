@@ -198,19 +198,19 @@ namespace Zoo.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.TextToCadModelVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.TextToCadModelVariant1> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.TextToCadModelVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TextToCadModelVariant1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTextToCadModelVariant1(), typeInfo);
             }
             else if (value.IsTextToCadModelVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.TextToCadModelVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.TextToCadModelVariant2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.TextToCadModelVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TextToCadModelVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTextToCadModelVariant2(), typeInfo);
             }
             else if (value.IsTextToCadModelVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.TextToCadModelVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.TextToCadModelVariant3> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.TextToCadModelVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TextToCadModelVariant3!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTextToCadModelVariant3(), typeInfo);
             }
         }
     }

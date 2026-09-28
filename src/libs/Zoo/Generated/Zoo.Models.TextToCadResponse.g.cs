@@ -42,8 +42,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.TextToCadResponseVariant1 PickTextToCadResponseVariant1() => IsTextToCadResponseVariant1
-            ? TextToCadResponseVariant1!
+        public global::Zoo.TextToCadResponseVariant1 PickTextToCadResponseVariant1() => TextToCadResponseVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TextToCadResponseVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.TextToCadResponseVariant2 PickTextToCadResponseVariant2() => IsTextToCadResponseVariant2
-            ? TextToCadResponseVariant2!
+        public global::Zoo.TextToCadResponseVariant2 PickTextToCadResponseVariant2() => TextToCadResponseVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TextToCadResponseVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.TextToCadResponseVariant3 PickTextToCadResponseVariant3() => IsTextToCadResponseVariant3
-            ? TextToCadResponseVariant3!
+        public global::Zoo.TextToCadResponseVariant3 PickTextToCadResponseVariant3() => TextToCadResponseVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TextToCadResponseVariant3' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -242,17 +242,17 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsTextToCadResponseVariant1 && textToCadResponseVariant1 != null)
+            if (TextToCadResponseVariant1 is { } __value0 && textToCadResponseVariant1 != null)
             {
-                return textToCadResponseVariant1(TextToCadResponseVariant1!);
+                return textToCadResponseVariant1(__value0);
             }
-            else if (IsTextToCadResponseVariant2 && textToCadResponseVariant2 != null)
+            else if (TextToCadResponseVariant2 is { } __value1 && textToCadResponseVariant2 != null)
             {
-                return textToCadResponseVariant2(TextToCadResponseVariant2!);
+                return textToCadResponseVariant2(__value1);
             }
-            else if (IsTextToCadResponseVariant3 && textToCadResponseVariant3 != null)
+            else if (TextToCadResponseVariant3 is { } __value2 && textToCadResponseVariant3 != null)
             {
-                return textToCadResponseVariant3(TextToCadResponseVariant3!);
+                return textToCadResponseVariant3(__value2);
             }
 
             return default(TResult);
@@ -274,17 +274,17 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsTextToCadResponseVariant1)
+            if (TextToCadResponseVariant1 is { } __value0)
             {
-                textToCadResponseVariant1?.Invoke(TextToCadResponseVariant1!);
+                textToCadResponseVariant1?.Invoke(__value0);
             }
-            else if (IsTextToCadResponseVariant2)
+            else if (TextToCadResponseVariant2 is { } __value1)
             {
-                textToCadResponseVariant2?.Invoke(TextToCadResponseVariant2!);
+                textToCadResponseVariant2?.Invoke(__value1);
             }
-            else if (IsTextToCadResponseVariant3)
+            else if (TextToCadResponseVariant3 is { } __value2)
             {
-                textToCadResponseVariant3?.Invoke(TextToCadResponseVariant3!);
+                textToCadResponseVariant3?.Invoke(__value2);
             }
         }
 
@@ -302,17 +302,17 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsTextToCadResponseVariant1)
+            if (TextToCadResponseVariant1 is { } __value0)
             {
-                textToCadResponseVariant1?.Invoke(TextToCadResponseVariant1!);
+                textToCadResponseVariant1?.Invoke(__value0);
             }
-            else if (IsTextToCadResponseVariant2)
+            else if (TextToCadResponseVariant2 is { } __value1)
             {
-                textToCadResponseVariant2?.Invoke(TextToCadResponseVariant2!);
+                textToCadResponseVariant2?.Invoke(__value1);
             }
-            else if (IsTextToCadResponseVariant3)
+            else if (TextToCadResponseVariant3 is { } __value2)
             {
-                textToCadResponseVariant3?.Invoke(TextToCadResponseVariant3!);
+                textToCadResponseVariant3?.Invoke(__value2);
             }
         }
 

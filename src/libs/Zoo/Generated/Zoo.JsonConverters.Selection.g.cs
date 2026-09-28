@@ -246,31 +246,31 @@ namespace Zoo.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.SelectionVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.SelectionVariant1?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.SelectionVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SelectionVariant1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSelectionVariant1(), typeInfo);
             }
             else if (value.IsSelectionVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.SelectionVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.SelectionVariant2?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.SelectionVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SelectionVariant2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSelectionVariant2(), typeInfo);
             }
             else if (value.IsSelectionVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.SelectionVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.SelectionVariant3?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.SelectionVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SelectionVariant3!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSelectionVariant3(), typeInfo);
             }
             else if (value.IsSelectionVariant4)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.SelectionVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.SelectionVariant4?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.SelectionVariant4).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SelectionVariant4!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSelectionVariant4(), typeInfo);
             }
             else if (value.IsSelectionVariant5)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.SelectionVariant5), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.SelectionVariant5?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.SelectionVariant5).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SelectionVariant5!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSelectionVariant5(), typeInfo);
             }
         }
     }

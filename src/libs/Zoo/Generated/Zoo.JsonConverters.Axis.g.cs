@@ -149,13 +149,13 @@ namespace Zoo.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.AxisVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.AxisVariant1> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.AxisVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AxisVariant1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAxisVariant1(), typeInfo);
             }
             else if (value.IsAxisVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.AxisVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.AxisVariant2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.AxisVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AxisVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAxisVariant2(), typeInfo);
             }
         }
     }

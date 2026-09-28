@@ -42,8 +42,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.UnitDensityVariant1 PickUnitDensityVariant1() => IsUnitDensityVariant1
-            ? UnitDensityVariant1!.Value
+        public global::Zoo.UnitDensityVariant1 PickUnitDensityVariant1() => UnitDensityVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UnitDensityVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.UnitDensityVariant2 PickUnitDensityVariant2() => IsUnitDensityVariant2
-            ? UnitDensityVariant2!.Value
+        public global::Zoo.UnitDensityVariant2 PickUnitDensityVariant2() => UnitDensityVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UnitDensityVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsUnitDensityVariant1 && unitDensityVariant1 != null)
+            if (UnitDensityVariant1 is { } __value0 && unitDensityVariant1 != null)
             {
-                return unitDensityVariant1(UnitDensityVariant1!);
+                return unitDensityVariant1(__value0);
             }
-            else if (IsUnitDensityVariant2 && unitDensityVariant2 != null)
+            else if (UnitDensityVariant2 is { } __value1 && unitDensityVariant2 != null)
             {
-                return unitDensityVariant2(UnitDensityVariant2!);
+                return unitDensityVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsUnitDensityVariant1)
+            if (UnitDensityVariant1 is { } __value0)
             {
-                unitDensityVariant1?.Invoke(UnitDensityVariant1!);
+                unitDensityVariant1?.Invoke(__value0);
             }
-            else if (IsUnitDensityVariant2)
+            else if (UnitDensityVariant2 is { } __value1)
             {
-                unitDensityVariant2?.Invoke(UnitDensityVariant2!);
+                unitDensityVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsUnitDensityVariant1)
+            if (UnitDensityVariant1 is { } __value0)
             {
-                unitDensityVariant1?.Invoke(UnitDensityVariant1!);
+                unitDensityVariant1?.Invoke(__value0);
             }
-            else if (IsUnitDensityVariant2)
+            else if (UnitDensityVariant2 is { } __value1)
             {
-                unitDensityVariant2?.Invoke(UnitDensityVariant2!);
+                unitDensityVariant2?.Invoke(__value1);
             }
         }
 

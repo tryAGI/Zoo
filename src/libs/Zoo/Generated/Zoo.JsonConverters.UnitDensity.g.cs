@@ -149,13 +149,13 @@ namespace Zoo.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.UnitDensityVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.UnitDensityVariant1> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.UnitDensityVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UnitDensityVariant1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickUnitDensityVariant1(), typeInfo);
             }
             else if (value.IsUnitDensityVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.UnitDensityVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.UnitDensityVariant2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.UnitDensityVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UnitDensityVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickUnitDensityVariant2(), typeInfo);
             }
         }
     }

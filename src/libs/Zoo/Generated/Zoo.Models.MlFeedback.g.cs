@@ -42,8 +42,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.MlFeedbackVariant1 PickMlFeedbackVariant1() => IsMlFeedbackVariant1
-            ? MlFeedbackVariant1!.Value
+        public global::Zoo.MlFeedbackVariant1 PickMlFeedbackVariant1() => MlFeedbackVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'MlFeedbackVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.MlFeedbackVariant2 PickMlFeedbackVariant2() => IsMlFeedbackVariant2
-            ? MlFeedbackVariant2!.Value
+        public global::Zoo.MlFeedbackVariant2 PickMlFeedbackVariant2() => MlFeedbackVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'MlFeedbackVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.MlFeedbackVariant3 PickMlFeedbackVariant3() => IsMlFeedbackVariant3
-            ? MlFeedbackVariant3!.Value
+        public global::Zoo.MlFeedbackVariant3 PickMlFeedbackVariant3() => MlFeedbackVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'MlFeedbackVariant3' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.MlFeedbackVariant4 PickMlFeedbackVariant4() => IsMlFeedbackVariant4
-            ? MlFeedbackVariant4!.Value
+        public global::Zoo.MlFeedbackVariant4 PickMlFeedbackVariant4() => MlFeedbackVariant4 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'MlFeedbackVariant4' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -307,21 +307,21 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsMlFeedbackVariant1 && mlFeedbackVariant1 != null)
+            if (MlFeedbackVariant1 is { } __value0 && mlFeedbackVariant1 != null)
             {
-                return mlFeedbackVariant1(MlFeedbackVariant1!);
+                return mlFeedbackVariant1(__value0);
             }
-            else if (IsMlFeedbackVariant2 && mlFeedbackVariant2 != null)
+            else if (MlFeedbackVariant2 is { } __value1 && mlFeedbackVariant2 != null)
             {
-                return mlFeedbackVariant2(MlFeedbackVariant2!);
+                return mlFeedbackVariant2(__value1);
             }
-            else if (IsMlFeedbackVariant3 && mlFeedbackVariant3 != null)
+            else if (MlFeedbackVariant3 is { } __value2 && mlFeedbackVariant3 != null)
             {
-                return mlFeedbackVariant3(MlFeedbackVariant3!);
+                return mlFeedbackVariant3(__value2);
             }
-            else if (IsMlFeedbackVariant4 && mlFeedbackVariant4 != null)
+            else if (MlFeedbackVariant4 is { } __value3 && mlFeedbackVariant4 != null)
             {
-                return mlFeedbackVariant4(MlFeedbackVariant4!);
+                return mlFeedbackVariant4(__value3);
             }
 
             return default(TResult);
@@ -345,21 +345,21 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsMlFeedbackVariant1)
+            if (MlFeedbackVariant1 is { } __value0)
             {
-                mlFeedbackVariant1?.Invoke(MlFeedbackVariant1!);
+                mlFeedbackVariant1?.Invoke(__value0);
             }
-            else if (IsMlFeedbackVariant2)
+            else if (MlFeedbackVariant2 is { } __value1)
             {
-                mlFeedbackVariant2?.Invoke(MlFeedbackVariant2!);
+                mlFeedbackVariant2?.Invoke(__value1);
             }
-            else if (IsMlFeedbackVariant3)
+            else if (MlFeedbackVariant3 is { } __value2)
             {
-                mlFeedbackVariant3?.Invoke(MlFeedbackVariant3!);
+                mlFeedbackVariant3?.Invoke(__value2);
             }
-            else if (IsMlFeedbackVariant4)
+            else if (MlFeedbackVariant4 is { } __value3)
             {
-                mlFeedbackVariant4?.Invoke(MlFeedbackVariant4!);
+                mlFeedbackVariant4?.Invoke(__value3);
             }
         }
 
@@ -378,21 +378,21 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsMlFeedbackVariant1)
+            if (MlFeedbackVariant1 is { } __value0)
             {
-                mlFeedbackVariant1?.Invoke(MlFeedbackVariant1!);
+                mlFeedbackVariant1?.Invoke(__value0);
             }
-            else if (IsMlFeedbackVariant2)
+            else if (MlFeedbackVariant2 is { } __value1)
             {
-                mlFeedbackVariant2?.Invoke(MlFeedbackVariant2!);
+                mlFeedbackVariant2?.Invoke(__value1);
             }
-            else if (IsMlFeedbackVariant3)
+            else if (MlFeedbackVariant3 is { } __value2)
             {
-                mlFeedbackVariant3?.Invoke(MlFeedbackVariant3!);
+                mlFeedbackVariant3?.Invoke(__value2);
             }
-            else if (IsMlFeedbackVariant4)
+            else if (MlFeedbackVariant4 is { } __value3)
             {
-                mlFeedbackVariant4?.Invoke(MlFeedbackVariant4!);
+                mlFeedbackVariant4?.Invoke(__value3);
             }
         }
 

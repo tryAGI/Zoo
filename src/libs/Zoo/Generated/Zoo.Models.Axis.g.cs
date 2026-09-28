@@ -44,8 +44,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.AxisVariant1 PickAxisVariant1() => IsAxisVariant1
-            ? AxisVariant1!.Value
+        public global::Zoo.AxisVariant1 PickAxisVariant1() => AxisVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AxisVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -81,8 +81,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.AxisVariant2 PickAxisVariant2() => IsAxisVariant2
-            ? AxisVariant2!.Value
+        public global::Zoo.AxisVariant2 PickAxisVariant2() => AxisVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AxisVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -179,13 +179,13 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsAxisVariant1 && axisVariant1 != null)
+            if (AxisVariant1 is { } __value0 && axisVariant1 != null)
             {
-                return axisVariant1(AxisVariant1!);
+                return axisVariant1(__value0);
             }
-            else if (IsAxisVariant2 && axisVariant2 != null)
+            else if (AxisVariant2 is { } __value1 && axisVariant2 != null)
             {
-                return axisVariant2(AxisVariant2!);
+                return axisVariant2(__value1);
             }
 
             return default(TResult);
@@ -205,13 +205,13 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsAxisVariant1)
+            if (AxisVariant1 is { } __value0)
             {
-                axisVariant1?.Invoke(AxisVariant1!);
+                axisVariant1?.Invoke(__value0);
             }
-            else if (IsAxisVariant2)
+            else if (AxisVariant2 is { } __value1)
             {
-                axisVariant2?.Invoke(AxisVariant2!);
+                axisVariant2?.Invoke(__value1);
             }
         }
 
@@ -228,13 +228,13 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsAxisVariant1)
+            if (AxisVariant1 is { } __value0)
             {
-                axisVariant1?.Invoke(AxisVariant1!);
+                axisVariant1?.Invoke(__value0);
             }
-            else if (IsAxisVariant2)
+            else if (AxisVariant2 is { } __value1)
             {
-                axisVariant2?.Invoke(AxisVariant2!);
+                axisVariant2?.Invoke(__value1);
             }
         }
 

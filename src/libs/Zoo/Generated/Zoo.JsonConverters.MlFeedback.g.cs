@@ -247,25 +247,25 @@ namespace Zoo.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.MlFeedbackVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.MlFeedbackVariant1> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.MlFeedbackVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.MlFeedbackVariant1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickMlFeedbackVariant1(), typeInfo);
             }
             else if (value.IsMlFeedbackVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.MlFeedbackVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.MlFeedbackVariant2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.MlFeedbackVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.MlFeedbackVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickMlFeedbackVariant2(), typeInfo);
             }
             else if (value.IsMlFeedbackVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.MlFeedbackVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.MlFeedbackVariant3> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.MlFeedbackVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.MlFeedbackVariant3!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickMlFeedbackVariant3(), typeInfo);
             }
             else if (value.IsMlFeedbackVariant4)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.MlFeedbackVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.MlFeedbackVariant4> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.MlFeedbackVariant4).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.MlFeedbackVariant4!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickMlFeedbackVariant4(), typeInfo);
             }
         }
     }

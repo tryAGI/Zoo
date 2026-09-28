@@ -42,8 +42,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.InputFormat3dVariant1 PickInputFormat3dVariant1() => IsInputFormat3dVariant1
-            ? InputFormat3dVariant1!
+        public global::Zoo.InputFormat3dVariant1 PickInputFormat3dVariant1() => InputFormat3dVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InputFormat3dVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.InputFormat3dVariant2 PickInputFormat3dVariant2() => IsInputFormat3dVariant2
-            ? InputFormat3dVariant2!
+        public global::Zoo.InputFormat3dVariant2 PickInputFormat3dVariant2() => InputFormat3dVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InputFormat3dVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.InputFormat3dVariant3 PickInputFormat3dVariant3() => IsInputFormat3dVariant3
-            ? InputFormat3dVariant3!
+        public global::Zoo.InputFormat3dVariant3 PickInputFormat3dVariant3() => InputFormat3dVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InputFormat3dVariant3' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.InputFormat3dVariant4 PickInputFormat3dVariant4() => IsInputFormat3dVariant4
-            ? InputFormat3dVariant4!
+        public global::Zoo.InputFormat3dVariant4 PickInputFormat3dVariant4() => InputFormat3dVariant4 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InputFormat3dVariant4' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.InputFormat3dVariant5 PickInputFormat3dVariant5() => IsInputFormat3dVariant5
-            ? InputFormat3dVariant5!
+        public global::Zoo.InputFormat3dVariant5 PickInputFormat3dVariant5() => InputFormat3dVariant5 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InputFormat3dVariant5' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.InputFormat3dVariant6 PickInputFormat3dVariant6() => IsInputFormat3dVariant6
-            ? InputFormat3dVariant6!
+        public global::Zoo.InputFormat3dVariant6 PickInputFormat3dVariant6() => InputFormat3dVariant6 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InputFormat3dVariant6' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.InputFormat3dVariant7 PickInputFormat3dVariant7() => IsInputFormat3dVariant7
-            ? InputFormat3dVariant7!
+        public global::Zoo.InputFormat3dVariant7 PickInputFormat3dVariant7() => InputFormat3dVariant7 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InputFormat3dVariant7' but the value was {ToString()}.");
 
         /// <summary>
@@ -301,8 +301,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.InputFormat3dVariant8 PickInputFormat3dVariant8() => IsInputFormat3dVariant8
-            ? InputFormat3dVariant8!
+        public global::Zoo.InputFormat3dVariant8 PickInputFormat3dVariant8() => InputFormat3dVariant8 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InputFormat3dVariant8' but the value was {ToString()}.");
 
         /// <summary>
@@ -338,8 +338,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.InputFormat3dVariant9 PickInputFormat3dVariant9() => IsInputFormat3dVariant9
-            ? InputFormat3dVariant9!
+        public global::Zoo.InputFormat3dVariant9 PickInputFormat3dVariant9() => InputFormat3dVariant9 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InputFormat3dVariant9' but the value was {ToString()}.");
 
         /// <summary>
@@ -375,8 +375,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.InputFormat3dVariant10 PickInputFormat3dVariant10() => IsInputFormat3dVariant10
-            ? InputFormat3dVariant10!
+        public global::Zoo.InputFormat3dVariant10 PickInputFormat3dVariant10() => InputFormat3dVariant10 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InputFormat3dVariant10' but the value was {ToString()}.");
 
         /// <summary>
@@ -412,8 +412,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.InputFormat3dVariant11 PickInputFormat3dVariant11() => IsInputFormat3dVariant11
-            ? InputFormat3dVariant11!
+        public global::Zoo.InputFormat3dVariant11 PickInputFormat3dVariant11() => InputFormat3dVariant11 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InputFormat3dVariant11' but the value was {ToString()}.");
 
         /// <summary>
@@ -449,8 +449,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.InputFormat3dVariant12 PickInputFormat3dVariant12() => IsInputFormat3dVariant12
-            ? InputFormat3dVariant12!
+        public global::Zoo.InputFormat3dVariant12 PickInputFormat3dVariant12() => InputFormat3dVariant12 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InputFormat3dVariant12' but the value was {ToString()}.");
 
         /// <summary>
@@ -486,8 +486,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.InputFormat3dVariant13 PickInputFormat3dVariant13() => IsInputFormat3dVariant13
-            ? InputFormat3dVariant13!
+        public global::Zoo.InputFormat3dVariant13 PickInputFormat3dVariant13() => InputFormat3dVariant13 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InputFormat3dVariant13' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -892,57 +892,57 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsInputFormat3dVariant1 && inputFormat3dVariant1 != null)
+            if (InputFormat3dVariant1 is { } __value0 && inputFormat3dVariant1 != null)
             {
-                return inputFormat3dVariant1(InputFormat3dVariant1!);
+                return inputFormat3dVariant1(__value0);
             }
-            else if (IsInputFormat3dVariant2 && inputFormat3dVariant2 != null)
+            else if (InputFormat3dVariant2 is { } __value1 && inputFormat3dVariant2 != null)
             {
-                return inputFormat3dVariant2(InputFormat3dVariant2!);
+                return inputFormat3dVariant2(__value1);
             }
-            else if (IsInputFormat3dVariant3 && inputFormat3dVariant3 != null)
+            else if (InputFormat3dVariant3 is { } __value2 && inputFormat3dVariant3 != null)
             {
-                return inputFormat3dVariant3(InputFormat3dVariant3!);
+                return inputFormat3dVariant3(__value2);
             }
-            else if (IsInputFormat3dVariant4 && inputFormat3dVariant4 != null)
+            else if (InputFormat3dVariant4 is { } __value3 && inputFormat3dVariant4 != null)
             {
-                return inputFormat3dVariant4(InputFormat3dVariant4!);
+                return inputFormat3dVariant4(__value3);
             }
-            else if (IsInputFormat3dVariant5 && inputFormat3dVariant5 != null)
+            else if (InputFormat3dVariant5 is { } __value4 && inputFormat3dVariant5 != null)
             {
-                return inputFormat3dVariant5(InputFormat3dVariant5!);
+                return inputFormat3dVariant5(__value4);
             }
-            else if (IsInputFormat3dVariant6 && inputFormat3dVariant6 != null)
+            else if (InputFormat3dVariant6 is { } __value5 && inputFormat3dVariant6 != null)
             {
-                return inputFormat3dVariant6(InputFormat3dVariant6!);
+                return inputFormat3dVariant6(__value5);
             }
-            else if (IsInputFormat3dVariant7 && inputFormat3dVariant7 != null)
+            else if (InputFormat3dVariant7 is { } __value6 && inputFormat3dVariant7 != null)
             {
-                return inputFormat3dVariant7(InputFormat3dVariant7!);
+                return inputFormat3dVariant7(__value6);
             }
-            else if (IsInputFormat3dVariant8 && inputFormat3dVariant8 != null)
+            else if (InputFormat3dVariant8 is { } __value7 && inputFormat3dVariant8 != null)
             {
-                return inputFormat3dVariant8(InputFormat3dVariant8!);
+                return inputFormat3dVariant8(__value7);
             }
-            else if (IsInputFormat3dVariant9 && inputFormat3dVariant9 != null)
+            else if (InputFormat3dVariant9 is { } __value8 && inputFormat3dVariant9 != null)
             {
-                return inputFormat3dVariant9(InputFormat3dVariant9!);
+                return inputFormat3dVariant9(__value8);
             }
-            else if (IsInputFormat3dVariant10 && inputFormat3dVariant10 != null)
+            else if (InputFormat3dVariant10 is { } __value9 && inputFormat3dVariant10 != null)
             {
-                return inputFormat3dVariant10(InputFormat3dVariant10!);
+                return inputFormat3dVariant10(__value9);
             }
-            else if (IsInputFormat3dVariant11 && inputFormat3dVariant11 != null)
+            else if (InputFormat3dVariant11 is { } __value10 && inputFormat3dVariant11 != null)
             {
-                return inputFormat3dVariant11(InputFormat3dVariant11!);
+                return inputFormat3dVariant11(__value10);
             }
-            else if (IsInputFormat3dVariant12 && inputFormat3dVariant12 != null)
+            else if (InputFormat3dVariant12 is { } __value11 && inputFormat3dVariant12 != null)
             {
-                return inputFormat3dVariant12(InputFormat3dVariant12!);
+                return inputFormat3dVariant12(__value11);
             }
-            else if (IsInputFormat3dVariant13 && inputFormat3dVariant13 != null)
+            else if (InputFormat3dVariant13 is { } __value12 && inputFormat3dVariant13 != null)
             {
-                return inputFormat3dVariant13(InputFormat3dVariant13!);
+                return inputFormat3dVariant13(__value12);
             }
 
             return default(TResult);
@@ -984,57 +984,57 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsInputFormat3dVariant1)
+            if (InputFormat3dVariant1 is { } __value0)
             {
-                inputFormat3dVariant1?.Invoke(InputFormat3dVariant1!);
+                inputFormat3dVariant1?.Invoke(__value0);
             }
-            else if (IsInputFormat3dVariant2)
+            else if (InputFormat3dVariant2 is { } __value1)
             {
-                inputFormat3dVariant2?.Invoke(InputFormat3dVariant2!);
+                inputFormat3dVariant2?.Invoke(__value1);
             }
-            else if (IsInputFormat3dVariant3)
+            else if (InputFormat3dVariant3 is { } __value2)
             {
-                inputFormat3dVariant3?.Invoke(InputFormat3dVariant3!);
+                inputFormat3dVariant3?.Invoke(__value2);
             }
-            else if (IsInputFormat3dVariant4)
+            else if (InputFormat3dVariant4 is { } __value3)
             {
-                inputFormat3dVariant4?.Invoke(InputFormat3dVariant4!);
+                inputFormat3dVariant4?.Invoke(__value3);
             }
-            else if (IsInputFormat3dVariant5)
+            else if (InputFormat3dVariant5 is { } __value4)
             {
-                inputFormat3dVariant5?.Invoke(InputFormat3dVariant5!);
+                inputFormat3dVariant5?.Invoke(__value4);
             }
-            else if (IsInputFormat3dVariant6)
+            else if (InputFormat3dVariant6 is { } __value5)
             {
-                inputFormat3dVariant6?.Invoke(InputFormat3dVariant6!);
+                inputFormat3dVariant6?.Invoke(__value5);
             }
-            else if (IsInputFormat3dVariant7)
+            else if (InputFormat3dVariant7 is { } __value6)
             {
-                inputFormat3dVariant7?.Invoke(InputFormat3dVariant7!);
+                inputFormat3dVariant7?.Invoke(__value6);
             }
-            else if (IsInputFormat3dVariant8)
+            else if (InputFormat3dVariant8 is { } __value7)
             {
-                inputFormat3dVariant8?.Invoke(InputFormat3dVariant8!);
+                inputFormat3dVariant8?.Invoke(__value7);
             }
-            else if (IsInputFormat3dVariant9)
+            else if (InputFormat3dVariant9 is { } __value8)
             {
-                inputFormat3dVariant9?.Invoke(InputFormat3dVariant9!);
+                inputFormat3dVariant9?.Invoke(__value8);
             }
-            else if (IsInputFormat3dVariant10)
+            else if (InputFormat3dVariant10 is { } __value9)
             {
-                inputFormat3dVariant10?.Invoke(InputFormat3dVariant10!);
+                inputFormat3dVariant10?.Invoke(__value9);
             }
-            else if (IsInputFormat3dVariant11)
+            else if (InputFormat3dVariant11 is { } __value10)
             {
-                inputFormat3dVariant11?.Invoke(InputFormat3dVariant11!);
+                inputFormat3dVariant11?.Invoke(__value10);
             }
-            else if (IsInputFormat3dVariant12)
+            else if (InputFormat3dVariant12 is { } __value11)
             {
-                inputFormat3dVariant12?.Invoke(InputFormat3dVariant12!);
+                inputFormat3dVariant12?.Invoke(__value11);
             }
-            else if (IsInputFormat3dVariant13)
+            else if (InputFormat3dVariant13 is { } __value12)
             {
-                inputFormat3dVariant13?.Invoke(InputFormat3dVariant13!);
+                inputFormat3dVariant13?.Invoke(__value12);
             }
         }
 
@@ -1062,57 +1062,57 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsInputFormat3dVariant1)
+            if (InputFormat3dVariant1 is { } __value0)
             {
-                inputFormat3dVariant1?.Invoke(InputFormat3dVariant1!);
+                inputFormat3dVariant1?.Invoke(__value0);
             }
-            else if (IsInputFormat3dVariant2)
+            else if (InputFormat3dVariant2 is { } __value1)
             {
-                inputFormat3dVariant2?.Invoke(InputFormat3dVariant2!);
+                inputFormat3dVariant2?.Invoke(__value1);
             }
-            else if (IsInputFormat3dVariant3)
+            else if (InputFormat3dVariant3 is { } __value2)
             {
-                inputFormat3dVariant3?.Invoke(InputFormat3dVariant3!);
+                inputFormat3dVariant3?.Invoke(__value2);
             }
-            else if (IsInputFormat3dVariant4)
+            else if (InputFormat3dVariant4 is { } __value3)
             {
-                inputFormat3dVariant4?.Invoke(InputFormat3dVariant4!);
+                inputFormat3dVariant4?.Invoke(__value3);
             }
-            else if (IsInputFormat3dVariant5)
+            else if (InputFormat3dVariant5 is { } __value4)
             {
-                inputFormat3dVariant5?.Invoke(InputFormat3dVariant5!);
+                inputFormat3dVariant5?.Invoke(__value4);
             }
-            else if (IsInputFormat3dVariant6)
+            else if (InputFormat3dVariant6 is { } __value5)
             {
-                inputFormat3dVariant6?.Invoke(InputFormat3dVariant6!);
+                inputFormat3dVariant6?.Invoke(__value5);
             }
-            else if (IsInputFormat3dVariant7)
+            else if (InputFormat3dVariant7 is { } __value6)
             {
-                inputFormat3dVariant7?.Invoke(InputFormat3dVariant7!);
+                inputFormat3dVariant7?.Invoke(__value6);
             }
-            else if (IsInputFormat3dVariant8)
+            else if (InputFormat3dVariant8 is { } __value7)
             {
-                inputFormat3dVariant8?.Invoke(InputFormat3dVariant8!);
+                inputFormat3dVariant8?.Invoke(__value7);
             }
-            else if (IsInputFormat3dVariant9)
+            else if (InputFormat3dVariant9 is { } __value8)
             {
-                inputFormat3dVariant9?.Invoke(InputFormat3dVariant9!);
+                inputFormat3dVariant9?.Invoke(__value8);
             }
-            else if (IsInputFormat3dVariant10)
+            else if (InputFormat3dVariant10 is { } __value9)
             {
-                inputFormat3dVariant10?.Invoke(InputFormat3dVariant10!);
+                inputFormat3dVariant10?.Invoke(__value9);
             }
-            else if (IsInputFormat3dVariant11)
+            else if (InputFormat3dVariant11 is { } __value10)
             {
-                inputFormat3dVariant11?.Invoke(InputFormat3dVariant11!);
+                inputFormat3dVariant11?.Invoke(__value10);
             }
-            else if (IsInputFormat3dVariant12)
+            else if (InputFormat3dVariant12 is { } __value11)
             {
-                inputFormat3dVariant12?.Invoke(InputFormat3dVariant12!);
+                inputFormat3dVariant12?.Invoke(__value11);
             }
-            else if (IsInputFormat3dVariant13)
+            else if (InputFormat3dVariant13 is { } __value12)
             {
-                inputFormat3dVariant13?.Invoke(InputFormat3dVariant13!);
+                inputFormat3dVariant13?.Invoke(__value12);
             }
         }
 

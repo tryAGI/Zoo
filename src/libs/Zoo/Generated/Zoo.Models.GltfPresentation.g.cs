@@ -42,8 +42,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.GltfPresentationVariant1 PickGltfPresentationVariant1() => IsGltfPresentationVariant1
-            ? GltfPresentationVariant1!.Value
+        public global::Zoo.GltfPresentationVariant1 PickGltfPresentationVariant1() => GltfPresentationVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GltfPresentationVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -80,8 +80,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.GltfPresentationVariant2 PickGltfPresentationVariant2() => IsGltfPresentationVariant2
-            ? GltfPresentationVariant2!.Value
+        public global::Zoo.GltfPresentationVariant2 PickGltfPresentationVariant2() => GltfPresentationVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GltfPresentationVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -178,13 +178,13 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsGltfPresentationVariant1 && gltfPresentationVariant1 != null)
+            if (GltfPresentationVariant1 is { } __value0 && gltfPresentationVariant1 != null)
             {
-                return gltfPresentationVariant1(GltfPresentationVariant1!);
+                return gltfPresentationVariant1(__value0);
             }
-            else if (IsGltfPresentationVariant2 && gltfPresentationVariant2 != null)
+            else if (GltfPresentationVariant2 is { } __value1 && gltfPresentationVariant2 != null)
             {
-                return gltfPresentationVariant2(GltfPresentationVariant2!);
+                return gltfPresentationVariant2(__value1);
             }
 
             return default(TResult);
@@ -204,13 +204,13 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsGltfPresentationVariant1)
+            if (GltfPresentationVariant1 is { } __value0)
             {
-                gltfPresentationVariant1?.Invoke(GltfPresentationVariant1!);
+                gltfPresentationVariant1?.Invoke(__value0);
             }
-            else if (IsGltfPresentationVariant2)
+            else if (GltfPresentationVariant2 is { } __value1)
             {
-                gltfPresentationVariant2?.Invoke(GltfPresentationVariant2!);
+                gltfPresentationVariant2?.Invoke(__value1);
             }
         }
 
@@ -227,13 +227,13 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsGltfPresentationVariant1)
+            if (GltfPresentationVariant1 is { } __value0)
             {
-                gltfPresentationVariant1?.Invoke(GltfPresentationVariant1!);
+                gltfPresentationVariant1?.Invoke(__value0);
             }
-            else if (IsGltfPresentationVariant2)
+            else if (GltfPresentationVariant2 is { } __value1)
             {
-                gltfPresentationVariant2?.Invoke(GltfPresentationVariant2!);
+                gltfPresentationVariant2?.Invoke(__value1);
             }
         }
 

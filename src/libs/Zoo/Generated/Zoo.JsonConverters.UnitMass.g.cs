@@ -198,19 +198,19 @@ namespace Zoo.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.UnitMassVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.UnitMassVariant1> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.UnitMassVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UnitMassVariant1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickUnitMassVariant1(), typeInfo);
             }
             else if (value.IsUnitMassVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.UnitMassVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.UnitMassVariant2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.UnitMassVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UnitMassVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickUnitMassVariant2(), typeInfo);
             }
             else if (value.IsUnitMassVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.UnitMassVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.UnitMassVariant3> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.UnitMassVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UnitMassVariant3!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickUnitMassVariant3(), typeInfo);
             }
         }
     }

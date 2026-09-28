@@ -42,8 +42,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.DirectionVariant1 PickDirectionVariant1() => IsDirectionVariant1
-            ? DirectionVariant1!.Value
+        public global::Zoo.DirectionVariant1 PickDirectionVariant1() => DirectionVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'DirectionVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.DirectionVariant2 PickDirectionVariant2() => IsDirectionVariant2
-            ? DirectionVariant2!.Value
+        public global::Zoo.DirectionVariant2 PickDirectionVariant2() => DirectionVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'DirectionVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsDirectionVariant1 && directionVariant1 != null)
+            if (DirectionVariant1 is { } __value0 && directionVariant1 != null)
             {
-                return directionVariant1(DirectionVariant1!);
+                return directionVariant1(__value0);
             }
-            else if (IsDirectionVariant2 && directionVariant2 != null)
+            else if (DirectionVariant2 is { } __value1 && directionVariant2 != null)
             {
-                return directionVariant2(DirectionVariant2!);
+                return directionVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsDirectionVariant1)
+            if (DirectionVariant1 is { } __value0)
             {
-                directionVariant1?.Invoke(DirectionVariant1!);
+                directionVariant1?.Invoke(__value0);
             }
-            else if (IsDirectionVariant2)
+            else if (DirectionVariant2 is { } __value1)
             {
-                directionVariant2?.Invoke(DirectionVariant2!);
+                directionVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsDirectionVariant1)
+            if (DirectionVariant1 is { } __value0)
             {
-                directionVariant1?.Invoke(DirectionVariant1!);
+                directionVariant1?.Invoke(__value0);
             }
-            else if (IsDirectionVariant2)
+            else if (DirectionVariant2 is { } __value1)
             {
-                directionVariant2?.Invoke(DirectionVariant2!);
+                directionVariant2?.Invoke(__value1);
             }
         }
 

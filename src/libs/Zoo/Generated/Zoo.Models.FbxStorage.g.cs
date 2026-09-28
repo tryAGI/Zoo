@@ -42,8 +42,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.FbxStorageVariant1 PickFbxStorageVariant1() => IsFbxStorageVariant1
-            ? FbxStorageVariant1!.Value
+        public global::Zoo.FbxStorageVariant1 PickFbxStorageVariant1() => FbxStorageVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FbxStorageVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.FbxStorageVariant2 PickFbxStorageVariant2() => IsFbxStorageVariant2
-            ? FbxStorageVariant2!.Value
+        public global::Zoo.FbxStorageVariant2 PickFbxStorageVariant2() => FbxStorageVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FbxStorageVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsFbxStorageVariant1 && fbxStorageVariant1 != null)
+            if (FbxStorageVariant1 is { } __value0 && fbxStorageVariant1 != null)
             {
-                return fbxStorageVariant1(FbxStorageVariant1!);
+                return fbxStorageVariant1(__value0);
             }
-            else if (IsFbxStorageVariant2 && fbxStorageVariant2 != null)
+            else if (FbxStorageVariant2 is { } __value1 && fbxStorageVariant2 != null)
             {
-                return fbxStorageVariant2(FbxStorageVariant2!);
+                return fbxStorageVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsFbxStorageVariant1)
+            if (FbxStorageVariant1 is { } __value0)
             {
-                fbxStorageVariant1?.Invoke(FbxStorageVariant1!);
+                fbxStorageVariant1?.Invoke(__value0);
             }
-            else if (IsFbxStorageVariant2)
+            else if (FbxStorageVariant2 is { } __value1)
             {
-                fbxStorageVariant2?.Invoke(FbxStorageVariant2!);
+                fbxStorageVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsFbxStorageVariant1)
+            if (FbxStorageVariant1 is { } __value0)
             {
-                fbxStorageVariant1?.Invoke(FbxStorageVariant1!);
+                fbxStorageVariant1?.Invoke(__value0);
             }
-            else if (IsFbxStorageVariant2)
+            else if (FbxStorageVariant2 is { } __value1)
             {
-                fbxStorageVariant2?.Invoke(FbxStorageVariant2!);
+                fbxStorageVariant2?.Invoke(__value1);
             }
         }
 

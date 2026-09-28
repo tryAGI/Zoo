@@ -149,13 +149,13 @@ namespace Zoo.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.CreatedAtSortModeVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.CreatedAtSortModeVariant1> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.CreatedAtSortModeVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CreatedAtSortModeVariant1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCreatedAtSortModeVariant1(), typeInfo);
             }
             else if (value.IsCreatedAtSortModeVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.CreatedAtSortModeVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.CreatedAtSortModeVariant2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.CreatedAtSortModeVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CreatedAtSortModeVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCreatedAtSortModeVariant2(), typeInfo);
             }
         }
     }

@@ -42,8 +42,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.AsyncApiCallOutputVariant1 PickAsyncApiCallOutputVariant1() => IsAsyncApiCallOutputVariant1
-            ? AsyncApiCallOutputVariant1!
+        public global::Zoo.AsyncApiCallOutputVariant1 PickAsyncApiCallOutputVariant1() => AsyncApiCallOutputVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AsyncApiCallOutputVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.AsyncApiCallOutputVariant2 PickAsyncApiCallOutputVariant2() => IsAsyncApiCallOutputVariant2
-            ? AsyncApiCallOutputVariant2!
+        public global::Zoo.AsyncApiCallOutputVariant2 PickAsyncApiCallOutputVariant2() => AsyncApiCallOutputVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AsyncApiCallOutputVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.AsyncApiCallOutputVariant3 PickAsyncApiCallOutputVariant3() => IsAsyncApiCallOutputVariant3
-            ? AsyncApiCallOutputVariant3!
+        public global::Zoo.AsyncApiCallOutputVariant3 PickAsyncApiCallOutputVariant3() => AsyncApiCallOutputVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AsyncApiCallOutputVariant3' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.AsyncApiCallOutputVariant4 PickAsyncApiCallOutputVariant4() => IsAsyncApiCallOutputVariant4
-            ? AsyncApiCallOutputVariant4!
+        public global::Zoo.AsyncApiCallOutputVariant4 PickAsyncApiCallOutputVariant4() => AsyncApiCallOutputVariant4 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AsyncApiCallOutputVariant4' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.AsyncApiCallOutputVariant5 PickAsyncApiCallOutputVariant5() => IsAsyncApiCallOutputVariant5
-            ? AsyncApiCallOutputVariant5!
+        public global::Zoo.AsyncApiCallOutputVariant5 PickAsyncApiCallOutputVariant5() => AsyncApiCallOutputVariant5 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AsyncApiCallOutputVariant5' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.AsyncApiCallOutputVariant6 PickAsyncApiCallOutputVariant6() => IsAsyncApiCallOutputVariant6
-            ? AsyncApiCallOutputVariant6!
+        public global::Zoo.AsyncApiCallOutputVariant6 PickAsyncApiCallOutputVariant6() => AsyncApiCallOutputVariant6 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AsyncApiCallOutputVariant6' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.AsyncApiCallOutputVariant7 PickAsyncApiCallOutputVariant7() => IsAsyncApiCallOutputVariant7
-            ? AsyncApiCallOutputVariant7!
+        public global::Zoo.AsyncApiCallOutputVariant7 PickAsyncApiCallOutputVariant7() => AsyncApiCallOutputVariant7 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AsyncApiCallOutputVariant7' but the value was {ToString()}.");
 
         /// <summary>
@@ -301,8 +301,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.AsyncApiCallOutputVariant8 PickAsyncApiCallOutputVariant8() => IsAsyncApiCallOutputVariant8
-            ? AsyncApiCallOutputVariant8!
+        public global::Zoo.AsyncApiCallOutputVariant8 PickAsyncApiCallOutputVariant8() => AsyncApiCallOutputVariant8 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AsyncApiCallOutputVariant8' but the value was {ToString()}.");
 
         /// <summary>
@@ -338,8 +338,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.AsyncApiCallOutputVariant9 PickAsyncApiCallOutputVariant9() => IsAsyncApiCallOutputVariant9
-            ? AsyncApiCallOutputVariant9!
+        public global::Zoo.AsyncApiCallOutputVariant9 PickAsyncApiCallOutputVariant9() => AsyncApiCallOutputVariant9 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AsyncApiCallOutputVariant9' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -632,41 +632,41 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsAsyncApiCallOutputVariant1 && asyncApiCallOutputVariant1 != null)
+            if (AsyncApiCallOutputVariant1 is { } __value0 && asyncApiCallOutputVariant1 != null)
             {
-                return asyncApiCallOutputVariant1(AsyncApiCallOutputVariant1!);
+                return asyncApiCallOutputVariant1(__value0);
             }
-            else if (IsAsyncApiCallOutputVariant2 && asyncApiCallOutputVariant2 != null)
+            else if (AsyncApiCallOutputVariant2 is { } __value1 && asyncApiCallOutputVariant2 != null)
             {
-                return asyncApiCallOutputVariant2(AsyncApiCallOutputVariant2!);
+                return asyncApiCallOutputVariant2(__value1);
             }
-            else if (IsAsyncApiCallOutputVariant3 && asyncApiCallOutputVariant3 != null)
+            else if (AsyncApiCallOutputVariant3 is { } __value2 && asyncApiCallOutputVariant3 != null)
             {
-                return asyncApiCallOutputVariant3(AsyncApiCallOutputVariant3!);
+                return asyncApiCallOutputVariant3(__value2);
             }
-            else if (IsAsyncApiCallOutputVariant4 && asyncApiCallOutputVariant4 != null)
+            else if (AsyncApiCallOutputVariant4 is { } __value3 && asyncApiCallOutputVariant4 != null)
             {
-                return asyncApiCallOutputVariant4(AsyncApiCallOutputVariant4!);
+                return asyncApiCallOutputVariant4(__value3);
             }
-            else if (IsAsyncApiCallOutputVariant5 && asyncApiCallOutputVariant5 != null)
+            else if (AsyncApiCallOutputVariant5 is { } __value4 && asyncApiCallOutputVariant5 != null)
             {
-                return asyncApiCallOutputVariant5(AsyncApiCallOutputVariant5!);
+                return asyncApiCallOutputVariant5(__value4);
             }
-            else if (IsAsyncApiCallOutputVariant6 && asyncApiCallOutputVariant6 != null)
+            else if (AsyncApiCallOutputVariant6 is { } __value5 && asyncApiCallOutputVariant6 != null)
             {
-                return asyncApiCallOutputVariant6(AsyncApiCallOutputVariant6!);
+                return asyncApiCallOutputVariant6(__value5);
             }
-            else if (IsAsyncApiCallOutputVariant7 && asyncApiCallOutputVariant7 != null)
+            else if (AsyncApiCallOutputVariant7 is { } __value6 && asyncApiCallOutputVariant7 != null)
             {
-                return asyncApiCallOutputVariant7(AsyncApiCallOutputVariant7!);
+                return asyncApiCallOutputVariant7(__value6);
             }
-            else if (IsAsyncApiCallOutputVariant8 && asyncApiCallOutputVariant8 != null)
+            else if (AsyncApiCallOutputVariant8 is { } __value7 && asyncApiCallOutputVariant8 != null)
             {
-                return asyncApiCallOutputVariant8(AsyncApiCallOutputVariant8!);
+                return asyncApiCallOutputVariant8(__value7);
             }
-            else if (IsAsyncApiCallOutputVariant9 && asyncApiCallOutputVariant9 != null)
+            else if (AsyncApiCallOutputVariant9 is { } __value8 && asyncApiCallOutputVariant9 != null)
             {
-                return asyncApiCallOutputVariant9(AsyncApiCallOutputVariant9!);
+                return asyncApiCallOutputVariant9(__value8);
             }
 
             return default(TResult);
@@ -700,41 +700,41 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsAsyncApiCallOutputVariant1)
+            if (AsyncApiCallOutputVariant1 is { } __value0)
             {
-                asyncApiCallOutputVariant1?.Invoke(AsyncApiCallOutputVariant1!);
+                asyncApiCallOutputVariant1?.Invoke(__value0);
             }
-            else if (IsAsyncApiCallOutputVariant2)
+            else if (AsyncApiCallOutputVariant2 is { } __value1)
             {
-                asyncApiCallOutputVariant2?.Invoke(AsyncApiCallOutputVariant2!);
+                asyncApiCallOutputVariant2?.Invoke(__value1);
             }
-            else if (IsAsyncApiCallOutputVariant3)
+            else if (AsyncApiCallOutputVariant3 is { } __value2)
             {
-                asyncApiCallOutputVariant3?.Invoke(AsyncApiCallOutputVariant3!);
+                asyncApiCallOutputVariant3?.Invoke(__value2);
             }
-            else if (IsAsyncApiCallOutputVariant4)
+            else if (AsyncApiCallOutputVariant4 is { } __value3)
             {
-                asyncApiCallOutputVariant4?.Invoke(AsyncApiCallOutputVariant4!);
+                asyncApiCallOutputVariant4?.Invoke(__value3);
             }
-            else if (IsAsyncApiCallOutputVariant5)
+            else if (AsyncApiCallOutputVariant5 is { } __value4)
             {
-                asyncApiCallOutputVariant5?.Invoke(AsyncApiCallOutputVariant5!);
+                asyncApiCallOutputVariant5?.Invoke(__value4);
             }
-            else if (IsAsyncApiCallOutputVariant6)
+            else if (AsyncApiCallOutputVariant6 is { } __value5)
             {
-                asyncApiCallOutputVariant6?.Invoke(AsyncApiCallOutputVariant6!);
+                asyncApiCallOutputVariant6?.Invoke(__value5);
             }
-            else if (IsAsyncApiCallOutputVariant7)
+            else if (AsyncApiCallOutputVariant7 is { } __value6)
             {
-                asyncApiCallOutputVariant7?.Invoke(AsyncApiCallOutputVariant7!);
+                asyncApiCallOutputVariant7?.Invoke(__value6);
             }
-            else if (IsAsyncApiCallOutputVariant8)
+            else if (AsyncApiCallOutputVariant8 is { } __value7)
             {
-                asyncApiCallOutputVariant8?.Invoke(AsyncApiCallOutputVariant8!);
+                asyncApiCallOutputVariant8?.Invoke(__value7);
             }
-            else if (IsAsyncApiCallOutputVariant9)
+            else if (AsyncApiCallOutputVariant9 is { } __value8)
             {
-                asyncApiCallOutputVariant9?.Invoke(AsyncApiCallOutputVariant9!);
+                asyncApiCallOutputVariant9?.Invoke(__value8);
             }
         }
 
@@ -758,41 +758,41 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsAsyncApiCallOutputVariant1)
+            if (AsyncApiCallOutputVariant1 is { } __value0)
             {
-                asyncApiCallOutputVariant1?.Invoke(AsyncApiCallOutputVariant1!);
+                asyncApiCallOutputVariant1?.Invoke(__value0);
             }
-            else if (IsAsyncApiCallOutputVariant2)
+            else if (AsyncApiCallOutputVariant2 is { } __value1)
             {
-                asyncApiCallOutputVariant2?.Invoke(AsyncApiCallOutputVariant2!);
+                asyncApiCallOutputVariant2?.Invoke(__value1);
             }
-            else if (IsAsyncApiCallOutputVariant3)
+            else if (AsyncApiCallOutputVariant3 is { } __value2)
             {
-                asyncApiCallOutputVariant3?.Invoke(AsyncApiCallOutputVariant3!);
+                asyncApiCallOutputVariant3?.Invoke(__value2);
             }
-            else if (IsAsyncApiCallOutputVariant4)
+            else if (AsyncApiCallOutputVariant4 is { } __value3)
             {
-                asyncApiCallOutputVariant4?.Invoke(AsyncApiCallOutputVariant4!);
+                asyncApiCallOutputVariant4?.Invoke(__value3);
             }
-            else if (IsAsyncApiCallOutputVariant5)
+            else if (AsyncApiCallOutputVariant5 is { } __value4)
             {
-                asyncApiCallOutputVariant5?.Invoke(AsyncApiCallOutputVariant5!);
+                asyncApiCallOutputVariant5?.Invoke(__value4);
             }
-            else if (IsAsyncApiCallOutputVariant6)
+            else if (AsyncApiCallOutputVariant6 is { } __value5)
             {
-                asyncApiCallOutputVariant6?.Invoke(AsyncApiCallOutputVariant6!);
+                asyncApiCallOutputVariant6?.Invoke(__value5);
             }
-            else if (IsAsyncApiCallOutputVariant7)
+            else if (AsyncApiCallOutputVariant7 is { } __value6)
             {
-                asyncApiCallOutputVariant7?.Invoke(AsyncApiCallOutputVariant7!);
+                asyncApiCallOutputVariant7?.Invoke(__value6);
             }
-            else if (IsAsyncApiCallOutputVariant8)
+            else if (AsyncApiCallOutputVariant8 is { } __value7)
             {
-                asyncApiCallOutputVariant8?.Invoke(AsyncApiCallOutputVariant8!);
+                asyncApiCallOutputVariant8?.Invoke(__value7);
             }
-            else if (IsAsyncApiCallOutputVariant9)
+            else if (AsyncApiCallOutputVariant9 is { } __value8)
             {
-                asyncApiCallOutputVariant9?.Invoke(AsyncApiCallOutputVariant9!);
+                asyncApiCallOutputVariant9?.Invoke(__value8);
             }
         }
 

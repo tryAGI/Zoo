@@ -296,31 +296,31 @@ namespace Zoo.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.ApiCallStatusVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.ApiCallStatusVariant1> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.ApiCallStatusVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ApiCallStatusVariant1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickApiCallStatusVariant1(), typeInfo);
             }
             else if (value.IsApiCallStatusVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.ApiCallStatusVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.ApiCallStatusVariant2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.ApiCallStatusVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ApiCallStatusVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickApiCallStatusVariant2(), typeInfo);
             }
             else if (value.IsApiCallStatusVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.ApiCallStatusVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.ApiCallStatusVariant3> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.ApiCallStatusVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ApiCallStatusVariant3!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickApiCallStatusVariant3(), typeInfo);
             }
             else if (value.IsApiCallStatusVariant4)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.ApiCallStatusVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.ApiCallStatusVariant4> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.ApiCallStatusVariant4).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ApiCallStatusVariant4!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickApiCallStatusVariant4(), typeInfo);
             }
             else if (value.IsApiCallStatusVariant5)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.ApiCallStatusVariant5), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.ApiCallStatusVariant5> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.ApiCallStatusVariant5).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ApiCallStatusVariant5!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickApiCallStatusVariant5(), typeInfo);
             }
         }
     }

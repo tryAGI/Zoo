@@ -345,37 +345,37 @@ namespace Zoo.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.UnitLengthVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.UnitLengthVariant1> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.UnitLengthVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UnitLengthVariant1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickUnitLengthVariant1(), typeInfo);
             }
             else if (value.IsUnitLengthVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.UnitLengthVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.UnitLengthVariant2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.UnitLengthVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UnitLengthVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickUnitLengthVariant2(), typeInfo);
             }
             else if (value.IsUnitLengthVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.UnitLengthVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.UnitLengthVariant3> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.UnitLengthVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UnitLengthVariant3!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickUnitLengthVariant3(), typeInfo);
             }
             else if (value.IsUnitLengthVariant4)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.UnitLengthVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.UnitLengthVariant4> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.UnitLengthVariant4).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UnitLengthVariant4!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickUnitLengthVariant4(), typeInfo);
             }
             else if (value.IsUnitLengthVariant5)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.UnitLengthVariant5), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.UnitLengthVariant5> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.UnitLengthVariant5).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UnitLengthVariant5!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickUnitLengthVariant5(), typeInfo);
             }
             else if (value.IsUnitLengthVariant6)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.UnitLengthVariant6), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.UnitLengthVariant6> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.UnitLengthVariant6).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UnitLengthVariant6!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickUnitLengthVariant6(), typeInfo);
             }
         }
     }

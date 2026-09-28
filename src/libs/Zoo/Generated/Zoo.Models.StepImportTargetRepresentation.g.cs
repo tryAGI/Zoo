@@ -42,8 +42,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.StepImportTargetRepresentationVariant1 PickStepImportTargetRepresentationVariant1() => IsStepImportTargetRepresentationVariant1
-            ? StepImportTargetRepresentationVariant1!.Value
+        public global::Zoo.StepImportTargetRepresentationVariant1 PickStepImportTargetRepresentationVariant1() => StepImportTargetRepresentationVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StepImportTargetRepresentationVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.StepImportTargetRepresentationVariant2 PickStepImportTargetRepresentationVariant2() => IsStepImportTargetRepresentationVariant2
-            ? StepImportTargetRepresentationVariant2!.Value
+        public global::Zoo.StepImportTargetRepresentationVariant2 PickStepImportTargetRepresentationVariant2() => StepImportTargetRepresentationVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StepImportTargetRepresentationVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsStepImportTargetRepresentationVariant1 && stepImportTargetRepresentationVariant1 != null)
+            if (StepImportTargetRepresentationVariant1 is { } __value0 && stepImportTargetRepresentationVariant1 != null)
             {
-                return stepImportTargetRepresentationVariant1(StepImportTargetRepresentationVariant1!);
+                return stepImportTargetRepresentationVariant1(__value0);
             }
-            else if (IsStepImportTargetRepresentationVariant2 && stepImportTargetRepresentationVariant2 != null)
+            else if (StepImportTargetRepresentationVariant2 is { } __value1 && stepImportTargetRepresentationVariant2 != null)
             {
-                return stepImportTargetRepresentationVariant2(StepImportTargetRepresentationVariant2!);
+                return stepImportTargetRepresentationVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsStepImportTargetRepresentationVariant1)
+            if (StepImportTargetRepresentationVariant1 is { } __value0)
             {
-                stepImportTargetRepresentationVariant1?.Invoke(StepImportTargetRepresentationVariant1!);
+                stepImportTargetRepresentationVariant1?.Invoke(__value0);
             }
-            else if (IsStepImportTargetRepresentationVariant2)
+            else if (StepImportTargetRepresentationVariant2 is { } __value1)
             {
-                stepImportTargetRepresentationVariant2?.Invoke(StepImportTargetRepresentationVariant2!);
+                stepImportTargetRepresentationVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsStepImportTargetRepresentationVariant1)
+            if (StepImportTargetRepresentationVariant1 is { } __value0)
             {
-                stepImportTargetRepresentationVariant1?.Invoke(StepImportTargetRepresentationVariant1!);
+                stepImportTargetRepresentationVariant1?.Invoke(__value0);
             }
-            else if (IsStepImportTargetRepresentationVariant2)
+            else if (StepImportTargetRepresentationVariant2 is { } __value1)
             {
-                stepImportTargetRepresentationVariant2?.Invoke(StepImportTargetRepresentationVariant2!);
+                stepImportTargetRepresentationVariant2?.Invoke(__value1);
             }
         }
 

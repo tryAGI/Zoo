@@ -298,37 +298,37 @@ namespace Zoo.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.OutputFormat3dVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.OutputFormat3dVariant1?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.OutputFormat3dVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OutputFormat3dVariant1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickOutputFormat3dVariant1(), typeInfo);
             }
             else if (value.IsOutputFormat3dVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.OutputFormat3dVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.OutputFormat3dVariant2?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.OutputFormat3dVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OutputFormat3dVariant2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickOutputFormat3dVariant2(), typeInfo);
             }
             else if (value.IsOutputFormat3dVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.OutputFormat3dVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.OutputFormat3dVariant3?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.OutputFormat3dVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OutputFormat3dVariant3!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickOutputFormat3dVariant3(), typeInfo);
             }
             else if (value.IsOutputFormat3dVariant4)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.OutputFormat3dVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.OutputFormat3dVariant4?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.OutputFormat3dVariant4).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OutputFormat3dVariant4!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickOutputFormat3dVariant4(), typeInfo);
             }
             else if (value.IsOutputFormat3dVariant5)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.OutputFormat3dVariant5), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.OutputFormat3dVariant5?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.OutputFormat3dVariant5).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OutputFormat3dVariant5!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickOutputFormat3dVariant5(), typeInfo);
             }
             else if (value.IsOutputFormat3dVariant6)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.OutputFormat3dVariant6), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.OutputFormat3dVariant6?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.OutputFormat3dVariant6).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OutputFormat3dVariant6!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickOutputFormat3dVariant6(), typeInfo);
             }
         }
     }

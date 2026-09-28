@@ -43,8 +43,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.CreatedAtSortModeVariant1 PickCreatedAtSortModeVariant1() => IsCreatedAtSortModeVariant1
-            ? CreatedAtSortModeVariant1!.Value
+        public global::Zoo.CreatedAtSortModeVariant1 PickCreatedAtSortModeVariant1() => CreatedAtSortModeVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CreatedAtSortModeVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -80,8 +80,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.CreatedAtSortModeVariant2 PickCreatedAtSortModeVariant2() => IsCreatedAtSortModeVariant2
-            ? CreatedAtSortModeVariant2!.Value
+        public global::Zoo.CreatedAtSortModeVariant2 PickCreatedAtSortModeVariant2() => CreatedAtSortModeVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CreatedAtSortModeVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -178,13 +178,13 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsCreatedAtSortModeVariant1 && createdAtSortModeVariant1 != null)
+            if (CreatedAtSortModeVariant1 is { } __value0 && createdAtSortModeVariant1 != null)
             {
-                return createdAtSortModeVariant1(CreatedAtSortModeVariant1!);
+                return createdAtSortModeVariant1(__value0);
             }
-            else if (IsCreatedAtSortModeVariant2 && createdAtSortModeVariant2 != null)
+            else if (CreatedAtSortModeVariant2 is { } __value1 && createdAtSortModeVariant2 != null)
             {
-                return createdAtSortModeVariant2(CreatedAtSortModeVariant2!);
+                return createdAtSortModeVariant2(__value1);
             }
 
             return default(TResult);
@@ -204,13 +204,13 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsCreatedAtSortModeVariant1)
+            if (CreatedAtSortModeVariant1 is { } __value0)
             {
-                createdAtSortModeVariant1?.Invoke(CreatedAtSortModeVariant1!);
+                createdAtSortModeVariant1?.Invoke(__value0);
             }
-            else if (IsCreatedAtSortModeVariant2)
+            else if (CreatedAtSortModeVariant2 is { } __value1)
             {
-                createdAtSortModeVariant2?.Invoke(CreatedAtSortModeVariant2!);
+                createdAtSortModeVariant2?.Invoke(__value1);
             }
         }
 
@@ -227,13 +227,13 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsCreatedAtSortModeVariant1)
+            if (CreatedAtSortModeVariant1 is { } __value0)
             {
-                createdAtSortModeVariant1?.Invoke(CreatedAtSortModeVariant1!);
+                createdAtSortModeVariant1?.Invoke(__value0);
             }
-            else if (IsCreatedAtSortModeVariant2)
+            else if (CreatedAtSortModeVariant2 is { } __value1)
             {
-                createdAtSortModeVariant2?.Invoke(CreatedAtSortModeVariant2!);
+                createdAtSortModeVariant2?.Invoke(__value1);
             }
         }
 
