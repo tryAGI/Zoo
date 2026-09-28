@@ -43,8 +43,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.GltfStorageVariant1 PickGltfStorageVariant1() => IsGltfStorageVariant1
-            ? GltfStorageVariant1!.Value
+        public global::Zoo.GltfStorageVariant1 PickGltfStorageVariant1() => GltfStorageVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GltfStorageVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -81,8 +81,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.GltfStorageVariant2 PickGltfStorageVariant2() => IsGltfStorageVariant2
-            ? GltfStorageVariant2!.Value
+        public global::Zoo.GltfStorageVariant2 PickGltfStorageVariant2() => GltfStorageVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GltfStorageVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -120,8 +120,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.GltfStorageVariant3 PickGltfStorageVariant3() => IsGltfStorageVariant3
-            ? GltfStorageVariant3!.Value
+        public global::Zoo.GltfStorageVariant3 PickGltfStorageVariant3() => GltfStorageVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GltfStorageVariant3' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -246,17 +246,17 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsGltfStorageVariant1 && gltfStorageVariant1 != null)
+            if (GltfStorageVariant1 is { } __value0 && gltfStorageVariant1 != null)
             {
-                return gltfStorageVariant1(GltfStorageVariant1!);
+                return gltfStorageVariant1(__value0);
             }
-            else if (IsGltfStorageVariant2 && gltfStorageVariant2 != null)
+            else if (GltfStorageVariant2 is { } __value1 && gltfStorageVariant2 != null)
             {
-                return gltfStorageVariant2(GltfStorageVariant2!);
+                return gltfStorageVariant2(__value1);
             }
-            else if (IsGltfStorageVariant3 && gltfStorageVariant3 != null)
+            else if (GltfStorageVariant3 is { } __value2 && gltfStorageVariant3 != null)
             {
-                return gltfStorageVariant3(GltfStorageVariant3!);
+                return gltfStorageVariant3(__value2);
             }
 
             return default(TResult);
@@ -278,17 +278,17 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsGltfStorageVariant1)
+            if (GltfStorageVariant1 is { } __value0)
             {
-                gltfStorageVariant1?.Invoke(GltfStorageVariant1!);
+                gltfStorageVariant1?.Invoke(__value0);
             }
-            else if (IsGltfStorageVariant2)
+            else if (GltfStorageVariant2 is { } __value1)
             {
-                gltfStorageVariant2?.Invoke(GltfStorageVariant2!);
+                gltfStorageVariant2?.Invoke(__value1);
             }
-            else if (IsGltfStorageVariant3)
+            else if (GltfStorageVariant3 is { } __value2)
             {
-                gltfStorageVariant3?.Invoke(GltfStorageVariant3!);
+                gltfStorageVariant3?.Invoke(__value2);
             }
         }
 
@@ -306,17 +306,17 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsGltfStorageVariant1)
+            if (GltfStorageVariant1 is { } __value0)
             {
-                gltfStorageVariant1?.Invoke(GltfStorageVariant1!);
+                gltfStorageVariant1?.Invoke(__value0);
             }
-            else if (IsGltfStorageVariant2)
+            else if (GltfStorageVariant2 is { } __value1)
             {
-                gltfStorageVariant2?.Invoke(GltfStorageVariant2!);
+                gltfStorageVariant2?.Invoke(__value1);
             }
-            else if (IsGltfStorageVariant3)
+            else if (GltfStorageVariant3 is { } __value2)
             {
-                gltfStorageVariant3?.Invoke(GltfStorageVariant3!);
+                gltfStorageVariant3?.Invoke(__value2);
             }
         }
 

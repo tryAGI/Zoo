@@ -216,19 +216,19 @@ namespace Zoo.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.TextToCadResponseVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.TextToCadResponseVariant1?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.TextToCadResponseVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TextToCadResponseVariant1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTextToCadResponseVariant1(), typeInfo);
             }
             else if (value.IsTextToCadResponseVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.TextToCadResponseVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.TextToCadResponseVariant2?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.TextToCadResponseVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TextToCadResponseVariant2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTextToCadResponseVariant2(), typeInfo);
             }
             else if (value.IsTextToCadResponseVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.TextToCadResponseVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.TextToCadResponseVariant3?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.TextToCadResponseVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TextToCadResponseVariant3!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTextToCadResponseVariant3(), typeInfo);
             }
         }
     }

@@ -42,8 +42,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.FileImportFormatVariant1 PickFileImportFormatVariant1() => IsFileImportFormatVariant1
-            ? FileImportFormatVariant1!.Value
+        public global::Zoo.FileImportFormatVariant1 PickFileImportFormatVariant1() => FileImportFormatVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FileImportFormatVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.FileImportFormatVariant2 PickFileImportFormatVariant2() => IsFileImportFormatVariant2
-            ? FileImportFormatVariant2!.Value
+        public global::Zoo.FileImportFormatVariant2 PickFileImportFormatVariant2() => FileImportFormatVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FileImportFormatVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.FileImportFormatVariant3 PickFileImportFormatVariant3() => IsFileImportFormatVariant3
-            ? FileImportFormatVariant3!.Value
+        public global::Zoo.FileImportFormatVariant3 PickFileImportFormatVariant3() => FileImportFormatVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FileImportFormatVariant3' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.FileImportFormatVariant4 PickFileImportFormatVariant4() => IsFileImportFormatVariant4
-            ? FileImportFormatVariant4!.Value
+        public global::Zoo.FileImportFormatVariant4 PickFileImportFormatVariant4() => FileImportFormatVariant4 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FileImportFormatVariant4' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.FileImportFormatVariant5 PickFileImportFormatVariant5() => IsFileImportFormatVariant5
-            ? FileImportFormatVariant5!.Value
+        public global::Zoo.FileImportFormatVariant5 PickFileImportFormatVariant5() => FileImportFormatVariant5 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FileImportFormatVariant5' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.FileImportFormatVariant6 PickFileImportFormatVariant6() => IsFileImportFormatVariant6
-            ? FileImportFormatVariant6!.Value
+        public global::Zoo.FileImportFormatVariant6 PickFileImportFormatVariant6() => FileImportFormatVariant6 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FileImportFormatVariant6' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.FileImportFormatVariant7 PickFileImportFormatVariant7() => IsFileImportFormatVariant7
-            ? FileImportFormatVariant7!.Value
+        public global::Zoo.FileImportFormatVariant7 PickFileImportFormatVariant7() => FileImportFormatVariant7 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FileImportFormatVariant7' but the value was {ToString()}.");
 
         /// <summary>
@@ -301,8 +301,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.FileImportFormatVariant8 PickFileImportFormatVariant8() => IsFileImportFormatVariant8
-            ? FileImportFormatVariant8!.Value
+        public global::Zoo.FileImportFormatVariant8 PickFileImportFormatVariant8() => FileImportFormatVariant8 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FileImportFormatVariant8' but the value was {ToString()}.");
 
         /// <summary>
@@ -338,8 +338,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.FileImportFormatVariant9 PickFileImportFormatVariant9() => IsFileImportFormatVariant9
-            ? FileImportFormatVariant9!.Value
+        public global::Zoo.FileImportFormatVariant9 PickFileImportFormatVariant9() => FileImportFormatVariant9 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FileImportFormatVariant9' but the value was {ToString()}.");
 
         /// <summary>
@@ -375,8 +375,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.FileImportFormatVariant10 PickFileImportFormatVariant10() => IsFileImportFormatVariant10
-            ? FileImportFormatVariant10!.Value
+        public global::Zoo.FileImportFormatVariant10 PickFileImportFormatVariant10() => FileImportFormatVariant10 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FileImportFormatVariant10' but the value was {ToString()}.");
 
         /// <summary>
@@ -412,8 +412,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.FileImportFormatVariant11 PickFileImportFormatVariant11() => IsFileImportFormatVariant11
-            ? FileImportFormatVariant11!.Value
+        public global::Zoo.FileImportFormatVariant11 PickFileImportFormatVariant11() => FileImportFormatVariant11 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FileImportFormatVariant11' but the value was {ToString()}.");
 
         /// <summary>
@@ -449,8 +449,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.FileImportFormatVariant12 PickFileImportFormatVariant12() => IsFileImportFormatVariant12
-            ? FileImportFormatVariant12!.Value
+        public global::Zoo.FileImportFormatVariant12 PickFileImportFormatVariant12() => FileImportFormatVariant12 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FileImportFormatVariant12' but the value was {ToString()}.");
 
         /// <summary>
@@ -486,8 +486,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.FileImportFormatVariant13 PickFileImportFormatVariant13() => IsFileImportFormatVariant13
-            ? FileImportFormatVariant13!.Value
+        public global::Zoo.FileImportFormatVariant13 PickFileImportFormatVariant13() => FileImportFormatVariant13 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FileImportFormatVariant13' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -892,57 +892,57 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsFileImportFormatVariant1 && fileImportFormatVariant1 != null)
+            if (FileImportFormatVariant1 is { } __value0 && fileImportFormatVariant1 != null)
             {
-                return fileImportFormatVariant1(FileImportFormatVariant1!);
+                return fileImportFormatVariant1(__value0);
             }
-            else if (IsFileImportFormatVariant2 && fileImportFormatVariant2 != null)
+            else if (FileImportFormatVariant2 is { } __value1 && fileImportFormatVariant2 != null)
             {
-                return fileImportFormatVariant2(FileImportFormatVariant2!);
+                return fileImportFormatVariant2(__value1);
             }
-            else if (IsFileImportFormatVariant3 && fileImportFormatVariant3 != null)
+            else if (FileImportFormatVariant3 is { } __value2 && fileImportFormatVariant3 != null)
             {
-                return fileImportFormatVariant3(FileImportFormatVariant3!);
+                return fileImportFormatVariant3(__value2);
             }
-            else if (IsFileImportFormatVariant4 && fileImportFormatVariant4 != null)
+            else if (FileImportFormatVariant4 is { } __value3 && fileImportFormatVariant4 != null)
             {
-                return fileImportFormatVariant4(FileImportFormatVariant4!);
+                return fileImportFormatVariant4(__value3);
             }
-            else if (IsFileImportFormatVariant5 && fileImportFormatVariant5 != null)
+            else if (FileImportFormatVariant5 is { } __value4 && fileImportFormatVariant5 != null)
             {
-                return fileImportFormatVariant5(FileImportFormatVariant5!);
+                return fileImportFormatVariant5(__value4);
             }
-            else if (IsFileImportFormatVariant6 && fileImportFormatVariant6 != null)
+            else if (FileImportFormatVariant6 is { } __value5 && fileImportFormatVariant6 != null)
             {
-                return fileImportFormatVariant6(FileImportFormatVariant6!);
+                return fileImportFormatVariant6(__value5);
             }
-            else if (IsFileImportFormatVariant7 && fileImportFormatVariant7 != null)
+            else if (FileImportFormatVariant7 is { } __value6 && fileImportFormatVariant7 != null)
             {
-                return fileImportFormatVariant7(FileImportFormatVariant7!);
+                return fileImportFormatVariant7(__value6);
             }
-            else if (IsFileImportFormatVariant8 && fileImportFormatVariant8 != null)
+            else if (FileImportFormatVariant8 is { } __value7 && fileImportFormatVariant8 != null)
             {
-                return fileImportFormatVariant8(FileImportFormatVariant8!);
+                return fileImportFormatVariant8(__value7);
             }
-            else if (IsFileImportFormatVariant9 && fileImportFormatVariant9 != null)
+            else if (FileImportFormatVariant9 is { } __value8 && fileImportFormatVariant9 != null)
             {
-                return fileImportFormatVariant9(FileImportFormatVariant9!);
+                return fileImportFormatVariant9(__value8);
             }
-            else if (IsFileImportFormatVariant10 && fileImportFormatVariant10 != null)
+            else if (FileImportFormatVariant10 is { } __value9 && fileImportFormatVariant10 != null)
             {
-                return fileImportFormatVariant10(FileImportFormatVariant10!);
+                return fileImportFormatVariant10(__value9);
             }
-            else if (IsFileImportFormatVariant11 && fileImportFormatVariant11 != null)
+            else if (FileImportFormatVariant11 is { } __value10 && fileImportFormatVariant11 != null)
             {
-                return fileImportFormatVariant11(FileImportFormatVariant11!);
+                return fileImportFormatVariant11(__value10);
             }
-            else if (IsFileImportFormatVariant12 && fileImportFormatVariant12 != null)
+            else if (FileImportFormatVariant12 is { } __value11 && fileImportFormatVariant12 != null)
             {
-                return fileImportFormatVariant12(FileImportFormatVariant12!);
+                return fileImportFormatVariant12(__value11);
             }
-            else if (IsFileImportFormatVariant13 && fileImportFormatVariant13 != null)
+            else if (FileImportFormatVariant13 is { } __value12 && fileImportFormatVariant13 != null)
             {
-                return fileImportFormatVariant13(FileImportFormatVariant13!);
+                return fileImportFormatVariant13(__value12);
             }
 
             return default(TResult);
@@ -984,57 +984,57 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsFileImportFormatVariant1)
+            if (FileImportFormatVariant1 is { } __value0)
             {
-                fileImportFormatVariant1?.Invoke(FileImportFormatVariant1!);
+                fileImportFormatVariant1?.Invoke(__value0);
             }
-            else if (IsFileImportFormatVariant2)
+            else if (FileImportFormatVariant2 is { } __value1)
             {
-                fileImportFormatVariant2?.Invoke(FileImportFormatVariant2!);
+                fileImportFormatVariant2?.Invoke(__value1);
             }
-            else if (IsFileImportFormatVariant3)
+            else if (FileImportFormatVariant3 is { } __value2)
             {
-                fileImportFormatVariant3?.Invoke(FileImportFormatVariant3!);
+                fileImportFormatVariant3?.Invoke(__value2);
             }
-            else if (IsFileImportFormatVariant4)
+            else if (FileImportFormatVariant4 is { } __value3)
             {
-                fileImportFormatVariant4?.Invoke(FileImportFormatVariant4!);
+                fileImportFormatVariant4?.Invoke(__value3);
             }
-            else if (IsFileImportFormatVariant5)
+            else if (FileImportFormatVariant5 is { } __value4)
             {
-                fileImportFormatVariant5?.Invoke(FileImportFormatVariant5!);
+                fileImportFormatVariant5?.Invoke(__value4);
             }
-            else if (IsFileImportFormatVariant6)
+            else if (FileImportFormatVariant6 is { } __value5)
             {
-                fileImportFormatVariant6?.Invoke(FileImportFormatVariant6!);
+                fileImportFormatVariant6?.Invoke(__value5);
             }
-            else if (IsFileImportFormatVariant7)
+            else if (FileImportFormatVariant7 is { } __value6)
             {
-                fileImportFormatVariant7?.Invoke(FileImportFormatVariant7!);
+                fileImportFormatVariant7?.Invoke(__value6);
             }
-            else if (IsFileImportFormatVariant8)
+            else if (FileImportFormatVariant8 is { } __value7)
             {
-                fileImportFormatVariant8?.Invoke(FileImportFormatVariant8!);
+                fileImportFormatVariant8?.Invoke(__value7);
             }
-            else if (IsFileImportFormatVariant9)
+            else if (FileImportFormatVariant9 is { } __value8)
             {
-                fileImportFormatVariant9?.Invoke(FileImportFormatVariant9!);
+                fileImportFormatVariant9?.Invoke(__value8);
             }
-            else if (IsFileImportFormatVariant10)
+            else if (FileImportFormatVariant10 is { } __value9)
             {
-                fileImportFormatVariant10?.Invoke(FileImportFormatVariant10!);
+                fileImportFormatVariant10?.Invoke(__value9);
             }
-            else if (IsFileImportFormatVariant11)
+            else if (FileImportFormatVariant11 is { } __value10)
             {
-                fileImportFormatVariant11?.Invoke(FileImportFormatVariant11!);
+                fileImportFormatVariant11?.Invoke(__value10);
             }
-            else if (IsFileImportFormatVariant12)
+            else if (FileImportFormatVariant12 is { } __value11)
             {
-                fileImportFormatVariant12?.Invoke(FileImportFormatVariant12!);
+                fileImportFormatVariant12?.Invoke(__value11);
             }
-            else if (IsFileImportFormatVariant13)
+            else if (FileImportFormatVariant13 is { } __value12)
             {
-                fileImportFormatVariant13?.Invoke(FileImportFormatVariant13!);
+                fileImportFormatVariant13?.Invoke(__value12);
             }
         }
 
@@ -1062,57 +1062,57 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsFileImportFormatVariant1)
+            if (FileImportFormatVariant1 is { } __value0)
             {
-                fileImportFormatVariant1?.Invoke(FileImportFormatVariant1!);
+                fileImportFormatVariant1?.Invoke(__value0);
             }
-            else if (IsFileImportFormatVariant2)
+            else if (FileImportFormatVariant2 is { } __value1)
             {
-                fileImportFormatVariant2?.Invoke(FileImportFormatVariant2!);
+                fileImportFormatVariant2?.Invoke(__value1);
             }
-            else if (IsFileImportFormatVariant3)
+            else if (FileImportFormatVariant3 is { } __value2)
             {
-                fileImportFormatVariant3?.Invoke(FileImportFormatVariant3!);
+                fileImportFormatVariant3?.Invoke(__value2);
             }
-            else if (IsFileImportFormatVariant4)
+            else if (FileImportFormatVariant4 is { } __value3)
             {
-                fileImportFormatVariant4?.Invoke(FileImportFormatVariant4!);
+                fileImportFormatVariant4?.Invoke(__value3);
             }
-            else if (IsFileImportFormatVariant5)
+            else if (FileImportFormatVariant5 is { } __value4)
             {
-                fileImportFormatVariant5?.Invoke(FileImportFormatVariant5!);
+                fileImportFormatVariant5?.Invoke(__value4);
             }
-            else if (IsFileImportFormatVariant6)
+            else if (FileImportFormatVariant6 is { } __value5)
             {
-                fileImportFormatVariant6?.Invoke(FileImportFormatVariant6!);
+                fileImportFormatVariant6?.Invoke(__value5);
             }
-            else if (IsFileImportFormatVariant7)
+            else if (FileImportFormatVariant7 is { } __value6)
             {
-                fileImportFormatVariant7?.Invoke(FileImportFormatVariant7!);
+                fileImportFormatVariant7?.Invoke(__value6);
             }
-            else if (IsFileImportFormatVariant8)
+            else if (FileImportFormatVariant8 is { } __value7)
             {
-                fileImportFormatVariant8?.Invoke(FileImportFormatVariant8!);
+                fileImportFormatVariant8?.Invoke(__value7);
             }
-            else if (IsFileImportFormatVariant9)
+            else if (FileImportFormatVariant9 is { } __value8)
             {
-                fileImportFormatVariant9?.Invoke(FileImportFormatVariant9!);
+                fileImportFormatVariant9?.Invoke(__value8);
             }
-            else if (IsFileImportFormatVariant10)
+            else if (FileImportFormatVariant10 is { } __value9)
             {
-                fileImportFormatVariant10?.Invoke(FileImportFormatVariant10!);
+                fileImportFormatVariant10?.Invoke(__value9);
             }
-            else if (IsFileImportFormatVariant11)
+            else if (FileImportFormatVariant11 is { } __value10)
             {
-                fileImportFormatVariant11?.Invoke(FileImportFormatVariant11!);
+                fileImportFormatVariant11?.Invoke(__value10);
             }
-            else if (IsFileImportFormatVariant12)
+            else if (FileImportFormatVariant12 is { } __value11)
             {
-                fileImportFormatVariant12?.Invoke(FileImportFormatVariant12!);
+                fileImportFormatVariant12?.Invoke(__value11);
             }
-            else if (IsFileImportFormatVariant13)
+            else if (FileImportFormatVariant13 is { } __value12)
             {
-                fileImportFormatVariant13?.Invoke(FileImportFormatVariant13!);
+                fileImportFormatVariant13?.Invoke(__value12);
             }
         }
 

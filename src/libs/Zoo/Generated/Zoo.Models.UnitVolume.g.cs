@@ -42,8 +42,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.UnitVolumeVariant1 PickUnitVolumeVariant1() => IsUnitVolumeVariant1
-            ? UnitVolumeVariant1!.Value
+        public global::Zoo.UnitVolumeVariant1 PickUnitVolumeVariant1() => UnitVolumeVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UnitVolumeVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.UnitVolumeVariant2 PickUnitVolumeVariant2() => IsUnitVolumeVariant2
-            ? UnitVolumeVariant2!.Value
+        public global::Zoo.UnitVolumeVariant2 PickUnitVolumeVariant2() => UnitVolumeVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UnitVolumeVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.UnitVolumeVariant3 PickUnitVolumeVariant3() => IsUnitVolumeVariant3
-            ? UnitVolumeVariant3!.Value
+        public global::Zoo.UnitVolumeVariant3 PickUnitVolumeVariant3() => UnitVolumeVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UnitVolumeVariant3' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.UnitVolumeVariant4 PickUnitVolumeVariant4() => IsUnitVolumeVariant4
-            ? UnitVolumeVariant4!.Value
+        public global::Zoo.UnitVolumeVariant4 PickUnitVolumeVariant4() => UnitVolumeVariant4 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UnitVolumeVariant4' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.UnitVolumeVariant5 PickUnitVolumeVariant5() => IsUnitVolumeVariant5
-            ? UnitVolumeVariant5!.Value
+        public global::Zoo.UnitVolumeVariant5 PickUnitVolumeVariant5() => UnitVolumeVariant5 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UnitVolumeVariant5' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.UnitVolumeVariant6 PickUnitVolumeVariant6() => IsUnitVolumeVariant6
-            ? UnitVolumeVariant6!.Value
+        public global::Zoo.UnitVolumeVariant6 PickUnitVolumeVariant6() => UnitVolumeVariant6 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UnitVolumeVariant6' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.UnitVolumeVariant7 PickUnitVolumeVariant7() => IsUnitVolumeVariant7
-            ? UnitVolumeVariant7!.Value
+        public global::Zoo.UnitVolumeVariant7 PickUnitVolumeVariant7() => UnitVolumeVariant7 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UnitVolumeVariant7' but the value was {ToString()}.");
 
         /// <summary>
@@ -301,8 +301,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.UnitVolumeVariant8 PickUnitVolumeVariant8() => IsUnitVolumeVariant8
-            ? UnitVolumeVariant8!.Value
+        public global::Zoo.UnitVolumeVariant8 PickUnitVolumeVariant8() => UnitVolumeVariant8 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UnitVolumeVariant8' but the value was {ToString()}.");
 
         /// <summary>
@@ -338,8 +338,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.UnitVolumeVariant9 PickUnitVolumeVariant9() => IsUnitVolumeVariant9
-            ? UnitVolumeVariant9!.Value
+        public global::Zoo.UnitVolumeVariant9 PickUnitVolumeVariant9() => UnitVolumeVariant9 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UnitVolumeVariant9' but the value was {ToString()}.");
 
         /// <summary>
@@ -375,8 +375,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.UnitVolumeVariant10 PickUnitVolumeVariant10() => IsUnitVolumeVariant10
-            ? UnitVolumeVariant10!.Value
+        public global::Zoo.UnitVolumeVariant10 PickUnitVolumeVariant10() => UnitVolumeVariant10 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UnitVolumeVariant10' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -697,45 +697,45 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsUnitVolumeVariant1 && unitVolumeVariant1 != null)
+            if (UnitVolumeVariant1 is { } __value0 && unitVolumeVariant1 != null)
             {
-                return unitVolumeVariant1(UnitVolumeVariant1!);
+                return unitVolumeVariant1(__value0);
             }
-            else if (IsUnitVolumeVariant2 && unitVolumeVariant2 != null)
+            else if (UnitVolumeVariant2 is { } __value1 && unitVolumeVariant2 != null)
             {
-                return unitVolumeVariant2(UnitVolumeVariant2!);
+                return unitVolumeVariant2(__value1);
             }
-            else if (IsUnitVolumeVariant3 && unitVolumeVariant3 != null)
+            else if (UnitVolumeVariant3 is { } __value2 && unitVolumeVariant3 != null)
             {
-                return unitVolumeVariant3(UnitVolumeVariant3!);
+                return unitVolumeVariant3(__value2);
             }
-            else if (IsUnitVolumeVariant4 && unitVolumeVariant4 != null)
+            else if (UnitVolumeVariant4 is { } __value3 && unitVolumeVariant4 != null)
             {
-                return unitVolumeVariant4(UnitVolumeVariant4!);
+                return unitVolumeVariant4(__value3);
             }
-            else if (IsUnitVolumeVariant5 && unitVolumeVariant5 != null)
+            else if (UnitVolumeVariant5 is { } __value4 && unitVolumeVariant5 != null)
             {
-                return unitVolumeVariant5(UnitVolumeVariant5!);
+                return unitVolumeVariant5(__value4);
             }
-            else if (IsUnitVolumeVariant6 && unitVolumeVariant6 != null)
+            else if (UnitVolumeVariant6 is { } __value5 && unitVolumeVariant6 != null)
             {
-                return unitVolumeVariant6(UnitVolumeVariant6!);
+                return unitVolumeVariant6(__value5);
             }
-            else if (IsUnitVolumeVariant7 && unitVolumeVariant7 != null)
+            else if (UnitVolumeVariant7 is { } __value6 && unitVolumeVariant7 != null)
             {
-                return unitVolumeVariant7(UnitVolumeVariant7!);
+                return unitVolumeVariant7(__value6);
             }
-            else if (IsUnitVolumeVariant8 && unitVolumeVariant8 != null)
+            else if (UnitVolumeVariant8 is { } __value7 && unitVolumeVariant8 != null)
             {
-                return unitVolumeVariant8(UnitVolumeVariant8!);
+                return unitVolumeVariant8(__value7);
             }
-            else if (IsUnitVolumeVariant9 && unitVolumeVariant9 != null)
+            else if (UnitVolumeVariant9 is { } __value8 && unitVolumeVariant9 != null)
             {
-                return unitVolumeVariant9(UnitVolumeVariant9!);
+                return unitVolumeVariant9(__value8);
             }
-            else if (IsUnitVolumeVariant10 && unitVolumeVariant10 != null)
+            else if (UnitVolumeVariant10 is { } __value9 && unitVolumeVariant10 != null)
             {
-                return unitVolumeVariant10(UnitVolumeVariant10!);
+                return unitVolumeVariant10(__value9);
             }
 
             return default(TResult);
@@ -771,45 +771,45 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsUnitVolumeVariant1)
+            if (UnitVolumeVariant1 is { } __value0)
             {
-                unitVolumeVariant1?.Invoke(UnitVolumeVariant1!);
+                unitVolumeVariant1?.Invoke(__value0);
             }
-            else if (IsUnitVolumeVariant2)
+            else if (UnitVolumeVariant2 is { } __value1)
             {
-                unitVolumeVariant2?.Invoke(UnitVolumeVariant2!);
+                unitVolumeVariant2?.Invoke(__value1);
             }
-            else if (IsUnitVolumeVariant3)
+            else if (UnitVolumeVariant3 is { } __value2)
             {
-                unitVolumeVariant3?.Invoke(UnitVolumeVariant3!);
+                unitVolumeVariant3?.Invoke(__value2);
             }
-            else if (IsUnitVolumeVariant4)
+            else if (UnitVolumeVariant4 is { } __value3)
             {
-                unitVolumeVariant4?.Invoke(UnitVolumeVariant4!);
+                unitVolumeVariant4?.Invoke(__value3);
             }
-            else if (IsUnitVolumeVariant5)
+            else if (UnitVolumeVariant5 is { } __value4)
             {
-                unitVolumeVariant5?.Invoke(UnitVolumeVariant5!);
+                unitVolumeVariant5?.Invoke(__value4);
             }
-            else if (IsUnitVolumeVariant6)
+            else if (UnitVolumeVariant6 is { } __value5)
             {
-                unitVolumeVariant6?.Invoke(UnitVolumeVariant6!);
+                unitVolumeVariant6?.Invoke(__value5);
             }
-            else if (IsUnitVolumeVariant7)
+            else if (UnitVolumeVariant7 is { } __value6)
             {
-                unitVolumeVariant7?.Invoke(UnitVolumeVariant7!);
+                unitVolumeVariant7?.Invoke(__value6);
             }
-            else if (IsUnitVolumeVariant8)
+            else if (UnitVolumeVariant8 is { } __value7)
             {
-                unitVolumeVariant8?.Invoke(UnitVolumeVariant8!);
+                unitVolumeVariant8?.Invoke(__value7);
             }
-            else if (IsUnitVolumeVariant9)
+            else if (UnitVolumeVariant9 is { } __value8)
             {
-                unitVolumeVariant9?.Invoke(UnitVolumeVariant9!);
+                unitVolumeVariant9?.Invoke(__value8);
             }
-            else if (IsUnitVolumeVariant10)
+            else if (UnitVolumeVariant10 is { } __value9)
             {
-                unitVolumeVariant10?.Invoke(UnitVolumeVariant10!);
+                unitVolumeVariant10?.Invoke(__value9);
             }
         }
 
@@ -834,45 +834,45 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsUnitVolumeVariant1)
+            if (UnitVolumeVariant1 is { } __value0)
             {
-                unitVolumeVariant1?.Invoke(UnitVolumeVariant1!);
+                unitVolumeVariant1?.Invoke(__value0);
             }
-            else if (IsUnitVolumeVariant2)
+            else if (UnitVolumeVariant2 is { } __value1)
             {
-                unitVolumeVariant2?.Invoke(UnitVolumeVariant2!);
+                unitVolumeVariant2?.Invoke(__value1);
             }
-            else if (IsUnitVolumeVariant3)
+            else if (UnitVolumeVariant3 is { } __value2)
             {
-                unitVolumeVariant3?.Invoke(UnitVolumeVariant3!);
+                unitVolumeVariant3?.Invoke(__value2);
             }
-            else if (IsUnitVolumeVariant4)
+            else if (UnitVolumeVariant4 is { } __value3)
             {
-                unitVolumeVariant4?.Invoke(UnitVolumeVariant4!);
+                unitVolumeVariant4?.Invoke(__value3);
             }
-            else if (IsUnitVolumeVariant5)
+            else if (UnitVolumeVariant5 is { } __value4)
             {
-                unitVolumeVariant5?.Invoke(UnitVolumeVariant5!);
+                unitVolumeVariant5?.Invoke(__value4);
             }
-            else if (IsUnitVolumeVariant6)
+            else if (UnitVolumeVariant6 is { } __value5)
             {
-                unitVolumeVariant6?.Invoke(UnitVolumeVariant6!);
+                unitVolumeVariant6?.Invoke(__value5);
             }
-            else if (IsUnitVolumeVariant7)
+            else if (UnitVolumeVariant7 is { } __value6)
             {
-                unitVolumeVariant7?.Invoke(UnitVolumeVariant7!);
+                unitVolumeVariant7?.Invoke(__value6);
             }
-            else if (IsUnitVolumeVariant8)
+            else if (UnitVolumeVariant8 is { } __value7)
             {
-                unitVolumeVariant8?.Invoke(UnitVolumeVariant8!);
+                unitVolumeVariant8?.Invoke(__value7);
             }
-            else if (IsUnitVolumeVariant9)
+            else if (UnitVolumeVariant9 is { } __value8)
             {
-                unitVolumeVariant9?.Invoke(UnitVolumeVariant9!);
+                unitVolumeVariant9?.Invoke(__value8);
             }
-            else if (IsUnitVolumeVariant10)
+            else if (UnitVolumeVariant10 is { } __value9)
             {
-                unitVolumeVariant10?.Invoke(UnitVolumeVariant10!);
+                unitVolumeVariant10?.Invoke(__value9);
             }
         }
 

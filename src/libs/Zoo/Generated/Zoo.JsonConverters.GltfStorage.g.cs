@@ -198,19 +198,19 @@ namespace Zoo.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.GltfStorageVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.GltfStorageVariant1> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.GltfStorageVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GltfStorageVariant1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGltfStorageVariant1(), typeInfo);
             }
             else if (value.IsGltfStorageVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.GltfStorageVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.GltfStorageVariant2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.GltfStorageVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GltfStorageVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGltfStorageVariant2(), typeInfo);
             }
             else if (value.IsGltfStorageVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.GltfStorageVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.GltfStorageVariant3> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.GltfStorageVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GltfStorageVariant3!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGltfStorageVariant3(), typeInfo);
             }
         }
     }

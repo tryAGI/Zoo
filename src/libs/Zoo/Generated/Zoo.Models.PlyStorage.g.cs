@@ -42,8 +42,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.PlyStorageVariant1 PickPlyStorageVariant1() => IsPlyStorageVariant1
-            ? PlyStorageVariant1!.Value
+        public global::Zoo.PlyStorageVariant1 PickPlyStorageVariant1() => PlyStorageVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PlyStorageVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.PlyStorageVariant2 PickPlyStorageVariant2() => IsPlyStorageVariant2
-            ? PlyStorageVariant2!.Value
+        public global::Zoo.PlyStorageVariant2 PickPlyStorageVariant2() => PlyStorageVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PlyStorageVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.PlyStorageVariant3 PickPlyStorageVariant3() => IsPlyStorageVariant3
-            ? PlyStorageVariant3!.Value
+        public global::Zoo.PlyStorageVariant3 PickPlyStorageVariant3() => PlyStorageVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PlyStorageVariant3' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -242,17 +242,17 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsPlyStorageVariant1 && plyStorageVariant1 != null)
+            if (PlyStorageVariant1 is { } __value0 && plyStorageVariant1 != null)
             {
-                return plyStorageVariant1(PlyStorageVariant1!);
+                return plyStorageVariant1(__value0);
             }
-            else if (IsPlyStorageVariant2 && plyStorageVariant2 != null)
+            else if (PlyStorageVariant2 is { } __value1 && plyStorageVariant2 != null)
             {
-                return plyStorageVariant2(PlyStorageVariant2!);
+                return plyStorageVariant2(__value1);
             }
-            else if (IsPlyStorageVariant3 && plyStorageVariant3 != null)
+            else if (PlyStorageVariant3 is { } __value2 && plyStorageVariant3 != null)
             {
-                return plyStorageVariant3(PlyStorageVariant3!);
+                return plyStorageVariant3(__value2);
             }
 
             return default(TResult);
@@ -274,17 +274,17 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsPlyStorageVariant1)
+            if (PlyStorageVariant1 is { } __value0)
             {
-                plyStorageVariant1?.Invoke(PlyStorageVariant1!);
+                plyStorageVariant1?.Invoke(__value0);
             }
-            else if (IsPlyStorageVariant2)
+            else if (PlyStorageVariant2 is { } __value1)
             {
-                plyStorageVariant2?.Invoke(PlyStorageVariant2!);
+                plyStorageVariant2?.Invoke(__value1);
             }
-            else if (IsPlyStorageVariant3)
+            else if (PlyStorageVariant3 is { } __value2)
             {
-                plyStorageVariant3?.Invoke(PlyStorageVariant3!);
+                plyStorageVariant3?.Invoke(__value2);
             }
         }
 
@@ -302,17 +302,17 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsPlyStorageVariant1)
+            if (PlyStorageVariant1 is { } __value0)
             {
-                plyStorageVariant1?.Invoke(PlyStorageVariant1!);
+                plyStorageVariant1?.Invoke(__value0);
             }
-            else if (IsPlyStorageVariant2)
+            else if (PlyStorageVariant2 is { } __value1)
             {
-                plyStorageVariant2?.Invoke(PlyStorageVariant2!);
+                plyStorageVariant2?.Invoke(__value1);
             }
-            else if (IsPlyStorageVariant3)
+            else if (PlyStorageVariant3 is { } __value2)
             {
-                plyStorageVariant3?.Invoke(PlyStorageVariant3!);
+                plyStorageVariant3?.Invoke(__value2);
             }
         }
 

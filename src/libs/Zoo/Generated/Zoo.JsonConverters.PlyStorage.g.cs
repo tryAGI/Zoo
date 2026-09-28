@@ -198,19 +198,19 @@ namespace Zoo.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.PlyStorageVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.PlyStorageVariant1> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.PlyStorageVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PlyStorageVariant1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickPlyStorageVariant1(), typeInfo);
             }
             else if (value.IsPlyStorageVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.PlyStorageVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.PlyStorageVariant2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.PlyStorageVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PlyStorageVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickPlyStorageVariant2(), typeInfo);
             }
             else if (value.IsPlyStorageVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.PlyStorageVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.PlyStorageVariant3> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.PlyStorageVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PlyStorageVariant3!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickPlyStorageVariant3(), typeInfo);
             }
         }
     }

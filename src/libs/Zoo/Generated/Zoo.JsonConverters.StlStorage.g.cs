@@ -149,13 +149,13 @@ namespace Zoo.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.StlStorageVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.StlStorageVariant1> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.StlStorageVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StlStorageVariant1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStlStorageVariant1(), typeInfo);
             }
             else if (value.IsStlStorageVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.StlStorageVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.StlStorageVariant2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.StlStorageVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StlStorageVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStlStorageVariant2(), typeInfo);
             }
         }
     }

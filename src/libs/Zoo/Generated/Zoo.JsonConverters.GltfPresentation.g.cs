@@ -149,13 +149,13 @@ namespace Zoo.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.GltfPresentationVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.GltfPresentationVariant1> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.GltfPresentationVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GltfPresentationVariant1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGltfPresentationVariant1(), typeInfo);
             }
             else if (value.IsGltfPresentationVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.GltfPresentationVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.GltfPresentationVariant2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.GltfPresentationVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GltfPresentationVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGltfPresentationVariant2(), typeInfo);
             }
         }
     }

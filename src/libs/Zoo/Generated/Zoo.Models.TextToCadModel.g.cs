@@ -42,8 +42,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.TextToCadModelVariant1 PickTextToCadModelVariant1() => IsTextToCadModelVariant1
-            ? TextToCadModelVariant1!.Value
+        public global::Zoo.TextToCadModelVariant1 PickTextToCadModelVariant1() => TextToCadModelVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TextToCadModelVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.TextToCadModelVariant2 PickTextToCadModelVariant2() => IsTextToCadModelVariant2
-            ? TextToCadModelVariant2!.Value
+        public global::Zoo.TextToCadModelVariant2 PickTextToCadModelVariant2() => TextToCadModelVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TextToCadModelVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.TextToCadModelVariant3 PickTextToCadModelVariant3() => IsTextToCadModelVariant3
-            ? TextToCadModelVariant3!.Value
+        public global::Zoo.TextToCadModelVariant3 PickTextToCadModelVariant3() => TextToCadModelVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TextToCadModelVariant3' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -242,17 +242,17 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsTextToCadModelVariant1 && textToCadModelVariant1 != null)
+            if (TextToCadModelVariant1 is { } __value0 && textToCadModelVariant1 != null)
             {
-                return textToCadModelVariant1(TextToCadModelVariant1!);
+                return textToCadModelVariant1(__value0);
             }
-            else if (IsTextToCadModelVariant2 && textToCadModelVariant2 != null)
+            else if (TextToCadModelVariant2 is { } __value1 && textToCadModelVariant2 != null)
             {
-                return textToCadModelVariant2(TextToCadModelVariant2!);
+                return textToCadModelVariant2(__value1);
             }
-            else if (IsTextToCadModelVariant3 && textToCadModelVariant3 != null)
+            else if (TextToCadModelVariant3 is { } __value2 && textToCadModelVariant3 != null)
             {
-                return textToCadModelVariant3(TextToCadModelVariant3!);
+                return textToCadModelVariant3(__value2);
             }
 
             return default(TResult);
@@ -274,17 +274,17 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsTextToCadModelVariant1)
+            if (TextToCadModelVariant1 is { } __value0)
             {
-                textToCadModelVariant1?.Invoke(TextToCadModelVariant1!);
+                textToCadModelVariant1?.Invoke(__value0);
             }
-            else if (IsTextToCadModelVariant2)
+            else if (TextToCadModelVariant2 is { } __value1)
             {
-                textToCadModelVariant2?.Invoke(TextToCadModelVariant2!);
+                textToCadModelVariant2?.Invoke(__value1);
             }
-            else if (IsTextToCadModelVariant3)
+            else if (TextToCadModelVariant3 is { } __value2)
             {
-                textToCadModelVariant3?.Invoke(TextToCadModelVariant3!);
+                textToCadModelVariant3?.Invoke(__value2);
             }
         }
 
@@ -302,17 +302,17 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsTextToCadModelVariant1)
+            if (TextToCadModelVariant1 is { } __value0)
             {
-                textToCadModelVariant1?.Invoke(TextToCadModelVariant1!);
+                textToCadModelVariant1?.Invoke(__value0);
             }
-            else if (IsTextToCadModelVariant2)
+            else if (TextToCadModelVariant2 is { } __value1)
             {
-                textToCadModelVariant2?.Invoke(TextToCadModelVariant2!);
+                textToCadModelVariant2?.Invoke(__value1);
             }
-            else if (IsTextToCadModelVariant3)
+            else if (TextToCadModelVariant3 is { } __value2)
             {
-                textToCadModelVariant3?.Invoke(TextToCadModelVariant3!);
+                textToCadModelVariant3?.Invoke(__value2);
             }
         }
 

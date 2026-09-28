@@ -42,8 +42,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.UnitAreaVariant1 PickUnitAreaVariant1() => IsUnitAreaVariant1
-            ? UnitAreaVariant1!.Value
+        public global::Zoo.UnitAreaVariant1 PickUnitAreaVariant1() => UnitAreaVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UnitAreaVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.UnitAreaVariant2 PickUnitAreaVariant2() => IsUnitAreaVariant2
-            ? UnitAreaVariant2!.Value
+        public global::Zoo.UnitAreaVariant2 PickUnitAreaVariant2() => UnitAreaVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UnitAreaVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.UnitAreaVariant3 PickUnitAreaVariant3() => IsUnitAreaVariant3
-            ? UnitAreaVariant3!.Value
+        public global::Zoo.UnitAreaVariant3 PickUnitAreaVariant3() => UnitAreaVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UnitAreaVariant3' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.UnitAreaVariant4 PickUnitAreaVariant4() => IsUnitAreaVariant4
-            ? UnitAreaVariant4!.Value
+        public global::Zoo.UnitAreaVariant4 PickUnitAreaVariant4() => UnitAreaVariant4 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UnitAreaVariant4' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.UnitAreaVariant5 PickUnitAreaVariant5() => IsUnitAreaVariant5
-            ? UnitAreaVariant5!.Value
+        public global::Zoo.UnitAreaVariant5 PickUnitAreaVariant5() => UnitAreaVariant5 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UnitAreaVariant5' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.UnitAreaVariant6 PickUnitAreaVariant6() => IsUnitAreaVariant6
-            ? UnitAreaVariant6!.Value
+        public global::Zoo.UnitAreaVariant6 PickUnitAreaVariant6() => UnitAreaVariant6 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UnitAreaVariant6' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.UnitAreaVariant7 PickUnitAreaVariant7() => IsUnitAreaVariant7
-            ? UnitAreaVariant7!.Value
+        public global::Zoo.UnitAreaVariant7 PickUnitAreaVariant7() => UnitAreaVariant7 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UnitAreaVariant7' but the value was {ToString()}.");
 
         /// <summary>
@@ -301,8 +301,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.UnitAreaVariant8 PickUnitAreaVariant8() => IsUnitAreaVariant8
-            ? UnitAreaVariant8!.Value
+        public global::Zoo.UnitAreaVariant8 PickUnitAreaVariant8() => UnitAreaVariant8 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UnitAreaVariant8' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -567,37 +567,37 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsUnitAreaVariant1 && unitAreaVariant1 != null)
+            if (UnitAreaVariant1 is { } __value0 && unitAreaVariant1 != null)
             {
-                return unitAreaVariant1(UnitAreaVariant1!);
+                return unitAreaVariant1(__value0);
             }
-            else if (IsUnitAreaVariant2 && unitAreaVariant2 != null)
+            else if (UnitAreaVariant2 is { } __value1 && unitAreaVariant2 != null)
             {
-                return unitAreaVariant2(UnitAreaVariant2!);
+                return unitAreaVariant2(__value1);
             }
-            else if (IsUnitAreaVariant3 && unitAreaVariant3 != null)
+            else if (UnitAreaVariant3 is { } __value2 && unitAreaVariant3 != null)
             {
-                return unitAreaVariant3(UnitAreaVariant3!);
+                return unitAreaVariant3(__value2);
             }
-            else if (IsUnitAreaVariant4 && unitAreaVariant4 != null)
+            else if (UnitAreaVariant4 is { } __value3 && unitAreaVariant4 != null)
             {
-                return unitAreaVariant4(UnitAreaVariant4!);
+                return unitAreaVariant4(__value3);
             }
-            else if (IsUnitAreaVariant5 && unitAreaVariant5 != null)
+            else if (UnitAreaVariant5 is { } __value4 && unitAreaVariant5 != null)
             {
-                return unitAreaVariant5(UnitAreaVariant5!);
+                return unitAreaVariant5(__value4);
             }
-            else if (IsUnitAreaVariant6 && unitAreaVariant6 != null)
+            else if (UnitAreaVariant6 is { } __value5 && unitAreaVariant6 != null)
             {
-                return unitAreaVariant6(UnitAreaVariant6!);
+                return unitAreaVariant6(__value5);
             }
-            else if (IsUnitAreaVariant7 && unitAreaVariant7 != null)
+            else if (UnitAreaVariant7 is { } __value6 && unitAreaVariant7 != null)
             {
-                return unitAreaVariant7(UnitAreaVariant7!);
+                return unitAreaVariant7(__value6);
             }
-            else if (IsUnitAreaVariant8 && unitAreaVariant8 != null)
+            else if (UnitAreaVariant8 is { } __value7 && unitAreaVariant8 != null)
             {
-                return unitAreaVariant8(UnitAreaVariant8!);
+                return unitAreaVariant8(__value7);
             }
 
             return default(TResult);
@@ -629,37 +629,37 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsUnitAreaVariant1)
+            if (UnitAreaVariant1 is { } __value0)
             {
-                unitAreaVariant1?.Invoke(UnitAreaVariant1!);
+                unitAreaVariant1?.Invoke(__value0);
             }
-            else if (IsUnitAreaVariant2)
+            else if (UnitAreaVariant2 is { } __value1)
             {
-                unitAreaVariant2?.Invoke(UnitAreaVariant2!);
+                unitAreaVariant2?.Invoke(__value1);
             }
-            else if (IsUnitAreaVariant3)
+            else if (UnitAreaVariant3 is { } __value2)
             {
-                unitAreaVariant3?.Invoke(UnitAreaVariant3!);
+                unitAreaVariant3?.Invoke(__value2);
             }
-            else if (IsUnitAreaVariant4)
+            else if (UnitAreaVariant4 is { } __value3)
             {
-                unitAreaVariant4?.Invoke(UnitAreaVariant4!);
+                unitAreaVariant4?.Invoke(__value3);
             }
-            else if (IsUnitAreaVariant5)
+            else if (UnitAreaVariant5 is { } __value4)
             {
-                unitAreaVariant5?.Invoke(UnitAreaVariant5!);
+                unitAreaVariant5?.Invoke(__value4);
             }
-            else if (IsUnitAreaVariant6)
+            else if (UnitAreaVariant6 is { } __value5)
             {
-                unitAreaVariant6?.Invoke(UnitAreaVariant6!);
+                unitAreaVariant6?.Invoke(__value5);
             }
-            else if (IsUnitAreaVariant7)
+            else if (UnitAreaVariant7 is { } __value6)
             {
-                unitAreaVariant7?.Invoke(UnitAreaVariant7!);
+                unitAreaVariant7?.Invoke(__value6);
             }
-            else if (IsUnitAreaVariant8)
+            else if (UnitAreaVariant8 is { } __value7)
             {
-                unitAreaVariant8?.Invoke(UnitAreaVariant8!);
+                unitAreaVariant8?.Invoke(__value7);
             }
         }
 
@@ -682,37 +682,37 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsUnitAreaVariant1)
+            if (UnitAreaVariant1 is { } __value0)
             {
-                unitAreaVariant1?.Invoke(UnitAreaVariant1!);
+                unitAreaVariant1?.Invoke(__value0);
             }
-            else if (IsUnitAreaVariant2)
+            else if (UnitAreaVariant2 is { } __value1)
             {
-                unitAreaVariant2?.Invoke(UnitAreaVariant2!);
+                unitAreaVariant2?.Invoke(__value1);
             }
-            else if (IsUnitAreaVariant3)
+            else if (UnitAreaVariant3 is { } __value2)
             {
-                unitAreaVariant3?.Invoke(UnitAreaVariant3!);
+                unitAreaVariant3?.Invoke(__value2);
             }
-            else if (IsUnitAreaVariant4)
+            else if (UnitAreaVariant4 is { } __value3)
             {
-                unitAreaVariant4?.Invoke(UnitAreaVariant4!);
+                unitAreaVariant4?.Invoke(__value3);
             }
-            else if (IsUnitAreaVariant5)
+            else if (UnitAreaVariant5 is { } __value4)
             {
-                unitAreaVariant5?.Invoke(UnitAreaVariant5!);
+                unitAreaVariant5?.Invoke(__value4);
             }
-            else if (IsUnitAreaVariant6)
+            else if (UnitAreaVariant6 is { } __value5)
             {
-                unitAreaVariant6?.Invoke(UnitAreaVariant6!);
+                unitAreaVariant6?.Invoke(__value5);
             }
-            else if (IsUnitAreaVariant7)
+            else if (UnitAreaVariant7 is { } __value6)
             {
-                unitAreaVariant7?.Invoke(UnitAreaVariant7!);
+                unitAreaVariant7?.Invoke(__value6);
             }
-            else if (IsUnitAreaVariant8)
+            else if (UnitAreaVariant8 is { } __value7)
             {
-                unitAreaVariant8?.Invoke(UnitAreaVariant8!);
+                unitAreaVariant8?.Invoke(__value7);
             }
         }
 

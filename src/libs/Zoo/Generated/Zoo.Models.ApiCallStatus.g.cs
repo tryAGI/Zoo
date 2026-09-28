@@ -42,8 +42,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.ApiCallStatusVariant1 PickApiCallStatusVariant1() => IsApiCallStatusVariant1
-            ? ApiCallStatusVariant1!.Value
+        public global::Zoo.ApiCallStatusVariant1 PickApiCallStatusVariant1() => ApiCallStatusVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ApiCallStatusVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.ApiCallStatusVariant2 PickApiCallStatusVariant2() => IsApiCallStatusVariant2
-            ? ApiCallStatusVariant2!.Value
+        public global::Zoo.ApiCallStatusVariant2 PickApiCallStatusVariant2() => ApiCallStatusVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ApiCallStatusVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.ApiCallStatusVariant3 PickApiCallStatusVariant3() => IsApiCallStatusVariant3
-            ? ApiCallStatusVariant3!.Value
+        public global::Zoo.ApiCallStatusVariant3 PickApiCallStatusVariant3() => ApiCallStatusVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ApiCallStatusVariant3' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.ApiCallStatusVariant4 PickApiCallStatusVariant4() => IsApiCallStatusVariant4
-            ? ApiCallStatusVariant4!.Value
+        public global::Zoo.ApiCallStatusVariant4 PickApiCallStatusVariant4() => ApiCallStatusVariant4 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ApiCallStatusVariant4' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.ApiCallStatusVariant5 PickApiCallStatusVariant5() => IsApiCallStatusVariant5
-            ? ApiCallStatusVariant5!.Value
+        public global::Zoo.ApiCallStatusVariant5 PickApiCallStatusVariant5() => ApiCallStatusVariant5 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ApiCallStatusVariant5' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -372,25 +372,25 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsApiCallStatusVariant1 && apiCallStatusVariant1 != null)
+            if (ApiCallStatusVariant1 is { } __value0 && apiCallStatusVariant1 != null)
             {
-                return apiCallStatusVariant1(ApiCallStatusVariant1!);
+                return apiCallStatusVariant1(__value0);
             }
-            else if (IsApiCallStatusVariant2 && apiCallStatusVariant2 != null)
+            else if (ApiCallStatusVariant2 is { } __value1 && apiCallStatusVariant2 != null)
             {
-                return apiCallStatusVariant2(ApiCallStatusVariant2!);
+                return apiCallStatusVariant2(__value1);
             }
-            else if (IsApiCallStatusVariant3 && apiCallStatusVariant3 != null)
+            else if (ApiCallStatusVariant3 is { } __value2 && apiCallStatusVariant3 != null)
             {
-                return apiCallStatusVariant3(ApiCallStatusVariant3!);
+                return apiCallStatusVariant3(__value2);
             }
-            else if (IsApiCallStatusVariant4 && apiCallStatusVariant4 != null)
+            else if (ApiCallStatusVariant4 is { } __value3 && apiCallStatusVariant4 != null)
             {
-                return apiCallStatusVariant4(ApiCallStatusVariant4!);
+                return apiCallStatusVariant4(__value3);
             }
-            else if (IsApiCallStatusVariant5 && apiCallStatusVariant5 != null)
+            else if (ApiCallStatusVariant5 is { } __value4 && apiCallStatusVariant5 != null)
             {
-                return apiCallStatusVariant5(ApiCallStatusVariant5!);
+                return apiCallStatusVariant5(__value4);
             }
 
             return default(TResult);
@@ -416,25 +416,25 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsApiCallStatusVariant1)
+            if (ApiCallStatusVariant1 is { } __value0)
             {
-                apiCallStatusVariant1?.Invoke(ApiCallStatusVariant1!);
+                apiCallStatusVariant1?.Invoke(__value0);
             }
-            else if (IsApiCallStatusVariant2)
+            else if (ApiCallStatusVariant2 is { } __value1)
             {
-                apiCallStatusVariant2?.Invoke(ApiCallStatusVariant2!);
+                apiCallStatusVariant2?.Invoke(__value1);
             }
-            else if (IsApiCallStatusVariant3)
+            else if (ApiCallStatusVariant3 is { } __value2)
             {
-                apiCallStatusVariant3?.Invoke(ApiCallStatusVariant3!);
+                apiCallStatusVariant3?.Invoke(__value2);
             }
-            else if (IsApiCallStatusVariant4)
+            else if (ApiCallStatusVariant4 is { } __value3)
             {
-                apiCallStatusVariant4?.Invoke(ApiCallStatusVariant4!);
+                apiCallStatusVariant4?.Invoke(__value3);
             }
-            else if (IsApiCallStatusVariant5)
+            else if (ApiCallStatusVariant5 is { } __value4)
             {
-                apiCallStatusVariant5?.Invoke(ApiCallStatusVariant5!);
+                apiCallStatusVariant5?.Invoke(__value4);
             }
         }
 
@@ -454,25 +454,25 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsApiCallStatusVariant1)
+            if (ApiCallStatusVariant1 is { } __value0)
             {
-                apiCallStatusVariant1?.Invoke(ApiCallStatusVariant1!);
+                apiCallStatusVariant1?.Invoke(__value0);
             }
-            else if (IsApiCallStatusVariant2)
+            else if (ApiCallStatusVariant2 is { } __value1)
             {
-                apiCallStatusVariant2?.Invoke(ApiCallStatusVariant2!);
+                apiCallStatusVariant2?.Invoke(__value1);
             }
-            else if (IsApiCallStatusVariant3)
+            else if (ApiCallStatusVariant3 is { } __value2)
             {
-                apiCallStatusVariant3?.Invoke(ApiCallStatusVariant3!);
+                apiCallStatusVariant3?.Invoke(__value2);
             }
-            else if (IsApiCallStatusVariant4)
+            else if (ApiCallStatusVariant4 is { } __value3)
             {
-                apiCallStatusVariant4?.Invoke(ApiCallStatusVariant4!);
+                apiCallStatusVariant4?.Invoke(__value3);
             }
-            else if (IsApiCallStatusVariant5)
+            else if (ApiCallStatusVariant5 is { } __value4)
             {
-                apiCallStatusVariant5?.Invoke(ApiCallStatusVariant5!);
+                apiCallStatusVariant5?.Invoke(__value4);
             }
         }
 

@@ -42,8 +42,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.StlStorageVariant1 PickStlStorageVariant1() => IsStlStorageVariant1
-            ? StlStorageVariant1!.Value
+        public global::Zoo.StlStorageVariant1 PickStlStorageVariant1() => StlStorageVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StlStorageVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -80,8 +80,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.StlStorageVariant2 PickStlStorageVariant2() => IsStlStorageVariant2
-            ? StlStorageVariant2!.Value
+        public global::Zoo.StlStorageVariant2 PickStlStorageVariant2() => StlStorageVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StlStorageVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -178,13 +178,13 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsStlStorageVariant1 && stlStorageVariant1 != null)
+            if (StlStorageVariant1 is { } __value0 && stlStorageVariant1 != null)
             {
-                return stlStorageVariant1(StlStorageVariant1!);
+                return stlStorageVariant1(__value0);
             }
-            else if (IsStlStorageVariant2 && stlStorageVariant2 != null)
+            else if (StlStorageVariant2 is { } __value1 && stlStorageVariant2 != null)
             {
-                return stlStorageVariant2(StlStorageVariant2!);
+                return stlStorageVariant2(__value1);
             }
 
             return default(TResult);
@@ -204,13 +204,13 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsStlStorageVariant1)
+            if (StlStorageVariant1 is { } __value0)
             {
-                stlStorageVariant1?.Invoke(StlStorageVariant1!);
+                stlStorageVariant1?.Invoke(__value0);
             }
-            else if (IsStlStorageVariant2)
+            else if (StlStorageVariant2 is { } __value1)
             {
-                stlStorageVariant2?.Invoke(StlStorageVariant2!);
+                stlStorageVariant2?.Invoke(__value1);
             }
         }
 
@@ -227,13 +227,13 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsStlStorageVariant1)
+            if (StlStorageVariant1 is { } __value0)
             {
-                stlStorageVariant1?.Invoke(StlStorageVariant1!);
+                stlStorageVariant1?.Invoke(__value0);
             }
-            else if (IsStlStorageVariant2)
+            else if (StlStorageVariant2 is { } __value1)
             {
-                stlStorageVariant2?.Invoke(StlStorageVariant2!);
+                stlStorageVariant2?.Invoke(__value1);
             }
         }
 

@@ -688,79 +688,79 @@ namespace Zoo.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.FileImportFormatVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.FileImportFormatVariant1> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.FileImportFormatVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FileImportFormatVariant1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFileImportFormatVariant1(), typeInfo);
             }
             else if (value.IsFileImportFormatVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.FileImportFormatVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.FileImportFormatVariant2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.FileImportFormatVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FileImportFormatVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFileImportFormatVariant2(), typeInfo);
             }
             else if (value.IsFileImportFormatVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.FileImportFormatVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.FileImportFormatVariant3> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.FileImportFormatVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FileImportFormatVariant3!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFileImportFormatVariant3(), typeInfo);
             }
             else if (value.IsFileImportFormatVariant4)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.FileImportFormatVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.FileImportFormatVariant4> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.FileImportFormatVariant4).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FileImportFormatVariant4!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFileImportFormatVariant4(), typeInfo);
             }
             else if (value.IsFileImportFormatVariant5)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.FileImportFormatVariant5), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.FileImportFormatVariant5> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.FileImportFormatVariant5).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FileImportFormatVariant5!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFileImportFormatVariant5(), typeInfo);
             }
             else if (value.IsFileImportFormatVariant6)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.FileImportFormatVariant6), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.FileImportFormatVariant6> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.FileImportFormatVariant6).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FileImportFormatVariant6!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFileImportFormatVariant6(), typeInfo);
             }
             else if (value.IsFileImportFormatVariant7)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.FileImportFormatVariant7), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.FileImportFormatVariant7> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.FileImportFormatVariant7).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FileImportFormatVariant7!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFileImportFormatVariant7(), typeInfo);
             }
             else if (value.IsFileImportFormatVariant8)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.FileImportFormatVariant8), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.FileImportFormatVariant8> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.FileImportFormatVariant8).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FileImportFormatVariant8!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFileImportFormatVariant8(), typeInfo);
             }
             else if (value.IsFileImportFormatVariant9)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.FileImportFormatVariant9), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.FileImportFormatVariant9> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.FileImportFormatVariant9).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FileImportFormatVariant9!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFileImportFormatVariant9(), typeInfo);
             }
             else if (value.IsFileImportFormatVariant10)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.FileImportFormatVariant10), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.FileImportFormatVariant10> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.FileImportFormatVariant10).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FileImportFormatVariant10!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFileImportFormatVariant10(), typeInfo);
             }
             else if (value.IsFileImportFormatVariant11)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.FileImportFormatVariant11), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.FileImportFormatVariant11> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.FileImportFormatVariant11).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FileImportFormatVariant11!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFileImportFormatVariant11(), typeInfo);
             }
             else if (value.IsFileImportFormatVariant12)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.FileImportFormatVariant12), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.FileImportFormatVariant12> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.FileImportFormatVariant12).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FileImportFormatVariant12!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFileImportFormatVariant12(), typeInfo);
             }
             else if (value.IsFileImportFormatVariant13)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.FileImportFormatVariant13), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.FileImportFormatVariant13> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.FileImportFormatVariant13).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FileImportFormatVariant13!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFileImportFormatVariant13(), typeInfo);
             }
         }
     }

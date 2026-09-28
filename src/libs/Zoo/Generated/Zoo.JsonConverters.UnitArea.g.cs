@@ -443,49 +443,49 @@ namespace Zoo.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.UnitAreaVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.UnitAreaVariant1> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.UnitAreaVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UnitAreaVariant1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickUnitAreaVariant1(), typeInfo);
             }
             else if (value.IsUnitAreaVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.UnitAreaVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.UnitAreaVariant2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.UnitAreaVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UnitAreaVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickUnitAreaVariant2(), typeInfo);
             }
             else if (value.IsUnitAreaVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.UnitAreaVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.UnitAreaVariant3> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.UnitAreaVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UnitAreaVariant3!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickUnitAreaVariant3(), typeInfo);
             }
             else if (value.IsUnitAreaVariant4)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.UnitAreaVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.UnitAreaVariant4> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.UnitAreaVariant4).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UnitAreaVariant4!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickUnitAreaVariant4(), typeInfo);
             }
             else if (value.IsUnitAreaVariant5)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.UnitAreaVariant5), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.UnitAreaVariant5> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.UnitAreaVariant5).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UnitAreaVariant5!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickUnitAreaVariant5(), typeInfo);
             }
             else if (value.IsUnitAreaVariant6)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.UnitAreaVariant6), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.UnitAreaVariant6> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.UnitAreaVariant6).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UnitAreaVariant6!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickUnitAreaVariant6(), typeInfo);
             }
             else if (value.IsUnitAreaVariant7)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.UnitAreaVariant7), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.UnitAreaVariant7> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.UnitAreaVariant7).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UnitAreaVariant7!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickUnitAreaVariant7(), typeInfo);
             }
             else if (value.IsUnitAreaVariant8)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.UnitAreaVariant8), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.UnitAreaVariant8> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.UnitAreaVariant8).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UnitAreaVariant8!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickUnitAreaVariant8(), typeInfo);
             }
         }
     }

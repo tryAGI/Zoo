@@ -42,8 +42,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.UnitMassVariant1 PickUnitMassVariant1() => IsUnitMassVariant1
-            ? UnitMassVariant1!.Value
+        public global::Zoo.UnitMassVariant1 PickUnitMassVariant1() => UnitMassVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UnitMassVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.UnitMassVariant2 PickUnitMassVariant2() => IsUnitMassVariant2
-            ? UnitMassVariant2!.Value
+        public global::Zoo.UnitMassVariant2 PickUnitMassVariant2() => UnitMassVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UnitMassVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public global::Zoo.UnitMassVariant3 PickUnitMassVariant3() => IsUnitMassVariant3
-            ? UnitMassVariant3!.Value
+        public global::Zoo.UnitMassVariant3 PickUnitMassVariant3() => UnitMassVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UnitMassVariant3' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -242,17 +242,17 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsUnitMassVariant1 && unitMassVariant1 != null)
+            if (UnitMassVariant1 is { } __value0 && unitMassVariant1 != null)
             {
-                return unitMassVariant1(UnitMassVariant1!);
+                return unitMassVariant1(__value0);
             }
-            else if (IsUnitMassVariant2 && unitMassVariant2 != null)
+            else if (UnitMassVariant2 is { } __value1 && unitMassVariant2 != null)
             {
-                return unitMassVariant2(UnitMassVariant2!);
+                return unitMassVariant2(__value1);
             }
-            else if (IsUnitMassVariant3 && unitMassVariant3 != null)
+            else if (UnitMassVariant3 is { } __value2 && unitMassVariant3 != null)
             {
-                return unitMassVariant3(UnitMassVariant3!);
+                return unitMassVariant3(__value2);
             }
 
             return default(TResult);
@@ -274,17 +274,17 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsUnitMassVariant1)
+            if (UnitMassVariant1 is { } __value0)
             {
-                unitMassVariant1?.Invoke(UnitMassVariant1!);
+                unitMassVariant1?.Invoke(__value0);
             }
-            else if (IsUnitMassVariant2)
+            else if (UnitMassVariant2 is { } __value1)
             {
-                unitMassVariant2?.Invoke(UnitMassVariant2!);
+                unitMassVariant2?.Invoke(__value1);
             }
-            else if (IsUnitMassVariant3)
+            else if (UnitMassVariant3 is { } __value2)
             {
-                unitMassVariant3?.Invoke(UnitMassVariant3!);
+                unitMassVariant3?.Invoke(__value2);
             }
         }
 
@@ -302,17 +302,17 @@ namespace Zoo
                 Validate();
             }
 
-            if (IsUnitMassVariant1)
+            if (UnitMassVariant1 is { } __value0)
             {
-                unitMassVariant1?.Invoke(UnitMassVariant1!);
+                unitMassVariant1?.Invoke(__value0);
             }
-            else if (IsUnitMassVariant2)
+            else if (UnitMassVariant2 is { } __value1)
             {
-                unitMassVariant2?.Invoke(UnitMassVariant2!);
+                unitMassVariant2?.Invoke(__value1);
             }
-            else if (IsUnitMassVariant3)
+            else if (UnitMassVariant3 is { } __value2)
             {
-                unitMassVariant3?.Invoke(UnitMassVariant3!);
+                unitMassVariant3?.Invoke(__value2);
             }
         }
 

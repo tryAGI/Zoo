@@ -149,13 +149,13 @@ namespace Zoo.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.StepImportTargetRepresentationVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.StepImportTargetRepresentationVariant1> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.StepImportTargetRepresentationVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StepImportTargetRepresentationVariant1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStepImportTargetRepresentationVariant1(), typeInfo);
             }
             else if (value.IsStepImportTargetRepresentationVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.StepImportTargetRepresentationVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.StepImportTargetRepresentationVariant2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.StepImportTargetRepresentationVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StepImportTargetRepresentationVariant2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStepImportTargetRepresentationVariant2(), typeInfo);
             }
         }
     }
