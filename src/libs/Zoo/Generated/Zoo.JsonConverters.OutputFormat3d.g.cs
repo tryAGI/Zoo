@@ -32,6 +32,7 @@ namespace Zoo.JsonConverters
             if (__jsonProps.Contains("storage")) __score0++;
             if (__jsonProps.Contains("type")) __score0++;
             var __score1 = 0;
+            if (__jsonProps.Contains("include_uuids")) __score1++;
             if (__jsonProps.Contains("presentation")) __score1++;
             if (__jsonProps.Contains("storage")) __score1++;
             if (__jsonProps.Contains("type")) __score1++;
