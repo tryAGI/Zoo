@@ -9,6 +9,13 @@ namespace Zoo
     public sealed partial class OutputFormat3dVariant2
     {
         /// <summary>
+        /// Include engine UUIDs in glTF extras. Defaults to false.<br/>
+        /// Default Value: false
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("include_uuids")]
+        public bool? IncludeUuids { get; set; }
+
+        /// <summary>
         /// Specifies how the JSON will be presented.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("presentation")]
@@ -46,6 +53,10 @@ namespace Zoo
         /// <param name="storage">
         /// Specifies which kind of glTF 2.0 will be exported.
         /// </param>
+        /// <param name="includeUuids">
+        /// Include engine UUIDs in glTF extras. Defaults to false.<br/>
+        /// Default Value: false
+        /// </param>
         /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -53,8 +64,10 @@ namespace Zoo
         public OutputFormat3dVariant2(
             global::Zoo.GltfPresentation presentation,
             global::Zoo.GltfStorage storage,
+            bool? includeUuids,
             global::Zoo.OutputFormat3dVariant2Type type)
         {
+            this.IncludeUuids = includeUuids;
             this.Presentation = presentation;
             this.Storage = storage;
             this.Type = type;
