@@ -112,19 +112,13 @@ namespace Zoo.JsonConverters
             if (__jsonProps.Contains("updated_at")) __score5++;
             if (__jsonProps.Contains("user_id")) __score5++;
             var __score6 = 0;
-            if (__jsonProps.Contains("code")) __score6++;
+            if (__jsonProps.Contains("bounding_box")) __score6++;
             if (__jsonProps.Contains("completed_at")) __score6++;
-            if (__jsonProps.Contains("conversation_id")) __score6++;
             if (__jsonProps.Contains("created_at")) __score6++;
             if (__jsonProps.Contains("error")) __score6++;
-            if (__jsonProps.Contains("feedback")) __score6++;
             if (__jsonProps.Contains("id")) __score6++;
-            if (__jsonProps.Contains("kcl_version")) __score6++;
-            if (__jsonProps.Contains("model")) __score6++;
-            if (__jsonProps.Contains("model_version")) __score6++;
-            if (__jsonProps.Contains("output_format")) __score6++;
-            if (__jsonProps.Contains("outputs")) __score6++;
-            if (__jsonProps.Contains("prompt")) __score6++;
+            if (__jsonProps.Contains("output_unit")) __score6++;
+            if (__jsonProps.Contains("src_format")) __score6++;
             if (__jsonProps.Contains("started_at")) __score6++;
             if (__jsonProps.Contains("status")) __score6++;
             if (__jsonProps.Contains("type")) __score6++;
@@ -138,28 +132,28 @@ namespace Zoo.JsonConverters
             if (__jsonProps.Contains("error")) __score7++;
             if (__jsonProps.Contains("feedback")) __score7++;
             if (__jsonProps.Contains("id")) __score7++;
+            if (__jsonProps.Contains("kcl_version")) __score7++;
             if (__jsonProps.Contains("model")) __score7++;
             if (__jsonProps.Contains("model_version")) __score7++;
-            if (__jsonProps.Contains("original_source_code")) __score7++;
+            if (__jsonProps.Contains("output_format")) __score7++;
+            if (__jsonProps.Contains("outputs")) __score7++;
             if (__jsonProps.Contains("prompt")) __score7++;
-            if (__jsonProps.Contains("source_ranges")) __score7++;
             if (__jsonProps.Contains("started_at")) __score7++;
             if (__jsonProps.Contains("status")) __score7++;
             if (__jsonProps.Contains("type")) __score7++;
             if (__jsonProps.Contains("updated_at")) __score7++;
             if (__jsonProps.Contains("user_id")) __score7++;
             var __score8 = 0;
+            if (__jsonProps.Contains("code")) __score8++;
             if (__jsonProps.Contains("completed_at")) __score8++;
             if (__jsonProps.Contains("conversation_id")) __score8++;
             if (__jsonProps.Contains("created_at")) __score8++;
             if (__jsonProps.Contains("error")) __score8++;
             if (__jsonProps.Contains("feedback")) __score8++;
             if (__jsonProps.Contains("id")) __score8++;
-            if (__jsonProps.Contains("kcl_version")) __score8++;
             if (__jsonProps.Contains("model")) __score8++;
             if (__jsonProps.Contains("model_version")) __score8++;
-            if (__jsonProps.Contains("outputs")) __score8++;
-            if (__jsonProps.Contains("project_name")) __score8++;
+            if (__jsonProps.Contains("original_source_code")) __score8++;
             if (__jsonProps.Contains("prompt")) __score8++;
             if (__jsonProps.Contains("source_ranges")) __score8++;
             if (__jsonProps.Contains("started_at")) __score8++;
@@ -167,6 +161,25 @@ namespace Zoo.JsonConverters
             if (__jsonProps.Contains("type")) __score8++;
             if (__jsonProps.Contains("updated_at")) __score8++;
             if (__jsonProps.Contains("user_id")) __score8++;
+            var __score9 = 0;
+            if (__jsonProps.Contains("completed_at")) __score9++;
+            if (__jsonProps.Contains("conversation_id")) __score9++;
+            if (__jsonProps.Contains("created_at")) __score9++;
+            if (__jsonProps.Contains("error")) __score9++;
+            if (__jsonProps.Contains("feedback")) __score9++;
+            if (__jsonProps.Contains("id")) __score9++;
+            if (__jsonProps.Contains("kcl_version")) __score9++;
+            if (__jsonProps.Contains("model")) __score9++;
+            if (__jsonProps.Contains("model_version")) __score9++;
+            if (__jsonProps.Contains("outputs")) __score9++;
+            if (__jsonProps.Contains("project_name")) __score9++;
+            if (__jsonProps.Contains("prompt")) __score9++;
+            if (__jsonProps.Contains("source_ranges")) __score9++;
+            if (__jsonProps.Contains("started_at")) __score9++;
+            if (__jsonProps.Contains("status")) __score9++;
+            if (__jsonProps.Contains("type")) __score9++;
+            if (__jsonProps.Contains("updated_at")) __score9++;
+            if (__jsonProps.Contains("user_id")) __score9++;
             var __bestScore = 0;
             var __bestIndex = -1;
             if (__score0 > __bestScore) { __bestScore = __score0; __bestIndex = 0; }
@@ -178,6 +191,7 @@ namespace Zoo.JsonConverters
             if (__score6 > __bestScore) { __bestScore = __score6; __bestIndex = 6; }
             if (__score7 > __bestScore) { __bestScore = __score7; __bestIndex = 7; }
             if (__score8 > __bestScore) { __bestScore = __score8; __bestIndex = 8; }
+            if (__score9 > __bestScore) { __bestScore = __score9; __bestIndex = 9; }
 
             global::Zoo.AsyncApiCallOutputVariant1? asyncApiCallOutputVariant1 = default;
             global::Zoo.AsyncApiCallOutputVariant2? asyncApiCallOutputVariant2 = default;
@@ -188,6 +202,7 @@ namespace Zoo.JsonConverters
             global::Zoo.AsyncApiCallOutputVariant7? asyncApiCallOutputVariant7 = default;
             global::Zoo.AsyncApiCallOutputVariant8? asyncApiCallOutputVariant8 = default;
             global::Zoo.AsyncApiCallOutputVariant9? asyncApiCallOutputVariant9 = default;
+            global::Zoo.AsyncApiCallOutputVariant10? asyncApiCallOutputVariant10 = default;
             if (__bestIndex >= 0)
             {
                 if (__bestIndex == 0)
@@ -325,9 +340,24 @@ namespace Zoo.JsonConverters
                     {
                     }
                 }
+                else if (__bestIndex == 9)
+                {
+                    try
+                    {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.AsyncApiCallOutputVariant10), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.AsyncApiCallOutputVariant10> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.AsyncApiCallOutputVariant10).Name}");
+                        asyncApiCallOutputVariant10 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
             }
 
-            if (asyncApiCallOutputVariant1 == null && asyncApiCallOutputVariant2 == null && asyncApiCallOutputVariant3 == null && asyncApiCallOutputVariant4 == null && asyncApiCallOutputVariant5 == null && asyncApiCallOutputVariant6 == null && asyncApiCallOutputVariant7 == null && asyncApiCallOutputVariant8 == null && asyncApiCallOutputVariant9 == null)
+            if (asyncApiCallOutputVariant1 == null && asyncApiCallOutputVariant2 == null && asyncApiCallOutputVariant3 == null && asyncApiCallOutputVariant4 == null && asyncApiCallOutputVariant5 == null && asyncApiCallOutputVariant6 == null && asyncApiCallOutputVariant7 == null && asyncApiCallOutputVariant8 == null && asyncApiCallOutputVariant9 == null && asyncApiCallOutputVariant10 == null)
             {
                 try
                 {
@@ -344,7 +374,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (asyncApiCallOutputVariant1 == null && asyncApiCallOutputVariant2 == null && asyncApiCallOutputVariant3 == null && asyncApiCallOutputVariant4 == null && asyncApiCallOutputVariant5 == null && asyncApiCallOutputVariant6 == null && asyncApiCallOutputVariant7 == null && asyncApiCallOutputVariant8 == null && asyncApiCallOutputVariant9 == null)
+            if (asyncApiCallOutputVariant1 == null && asyncApiCallOutputVariant2 == null && asyncApiCallOutputVariant3 == null && asyncApiCallOutputVariant4 == null && asyncApiCallOutputVariant5 == null && asyncApiCallOutputVariant6 == null && asyncApiCallOutputVariant7 == null && asyncApiCallOutputVariant8 == null && asyncApiCallOutputVariant9 == null && asyncApiCallOutputVariant10 == null)
             {
                 try
                 {
@@ -361,7 +391,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (asyncApiCallOutputVariant1 == null && asyncApiCallOutputVariant2 == null && asyncApiCallOutputVariant3 == null && asyncApiCallOutputVariant4 == null && asyncApiCallOutputVariant5 == null && asyncApiCallOutputVariant6 == null && asyncApiCallOutputVariant7 == null && asyncApiCallOutputVariant8 == null && asyncApiCallOutputVariant9 == null)
+            if (asyncApiCallOutputVariant1 == null && asyncApiCallOutputVariant2 == null && asyncApiCallOutputVariant3 == null && asyncApiCallOutputVariant4 == null && asyncApiCallOutputVariant5 == null && asyncApiCallOutputVariant6 == null && asyncApiCallOutputVariant7 == null && asyncApiCallOutputVariant8 == null && asyncApiCallOutputVariant9 == null && asyncApiCallOutputVariant10 == null)
             {
                 try
                 {
@@ -378,7 +408,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (asyncApiCallOutputVariant1 == null && asyncApiCallOutputVariant2 == null && asyncApiCallOutputVariant3 == null && asyncApiCallOutputVariant4 == null && asyncApiCallOutputVariant5 == null && asyncApiCallOutputVariant6 == null && asyncApiCallOutputVariant7 == null && asyncApiCallOutputVariant8 == null && asyncApiCallOutputVariant9 == null)
+            if (asyncApiCallOutputVariant1 == null && asyncApiCallOutputVariant2 == null && asyncApiCallOutputVariant3 == null && asyncApiCallOutputVariant4 == null && asyncApiCallOutputVariant5 == null && asyncApiCallOutputVariant6 == null && asyncApiCallOutputVariant7 == null && asyncApiCallOutputVariant8 == null && asyncApiCallOutputVariant9 == null && asyncApiCallOutputVariant10 == null)
             {
                 try
                 {
@@ -395,7 +425,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (asyncApiCallOutputVariant1 == null && asyncApiCallOutputVariant2 == null && asyncApiCallOutputVariant3 == null && asyncApiCallOutputVariant4 == null && asyncApiCallOutputVariant5 == null && asyncApiCallOutputVariant6 == null && asyncApiCallOutputVariant7 == null && asyncApiCallOutputVariant8 == null && asyncApiCallOutputVariant9 == null)
+            if (asyncApiCallOutputVariant1 == null && asyncApiCallOutputVariant2 == null && asyncApiCallOutputVariant3 == null && asyncApiCallOutputVariant4 == null && asyncApiCallOutputVariant5 == null && asyncApiCallOutputVariant6 == null && asyncApiCallOutputVariant7 == null && asyncApiCallOutputVariant8 == null && asyncApiCallOutputVariant9 == null && asyncApiCallOutputVariant10 == null)
             {
                 try
                 {
@@ -412,7 +442,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (asyncApiCallOutputVariant1 == null && asyncApiCallOutputVariant2 == null && asyncApiCallOutputVariant3 == null && asyncApiCallOutputVariant4 == null && asyncApiCallOutputVariant5 == null && asyncApiCallOutputVariant6 == null && asyncApiCallOutputVariant7 == null && asyncApiCallOutputVariant8 == null && asyncApiCallOutputVariant9 == null)
+            if (asyncApiCallOutputVariant1 == null && asyncApiCallOutputVariant2 == null && asyncApiCallOutputVariant3 == null && asyncApiCallOutputVariant4 == null && asyncApiCallOutputVariant5 == null && asyncApiCallOutputVariant6 == null && asyncApiCallOutputVariant7 == null && asyncApiCallOutputVariant8 == null && asyncApiCallOutputVariant9 == null && asyncApiCallOutputVariant10 == null)
             {
                 try
                 {
@@ -429,7 +459,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (asyncApiCallOutputVariant1 == null && asyncApiCallOutputVariant2 == null && asyncApiCallOutputVariant3 == null && asyncApiCallOutputVariant4 == null && asyncApiCallOutputVariant5 == null && asyncApiCallOutputVariant6 == null && asyncApiCallOutputVariant7 == null && asyncApiCallOutputVariant8 == null && asyncApiCallOutputVariant9 == null)
+            if (asyncApiCallOutputVariant1 == null && asyncApiCallOutputVariant2 == null && asyncApiCallOutputVariant3 == null && asyncApiCallOutputVariant4 == null && asyncApiCallOutputVariant5 == null && asyncApiCallOutputVariant6 == null && asyncApiCallOutputVariant7 == null && asyncApiCallOutputVariant8 == null && asyncApiCallOutputVariant9 == null && asyncApiCallOutputVariant10 == null)
             {
                 try
                 {
@@ -446,7 +476,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (asyncApiCallOutputVariant1 == null && asyncApiCallOutputVariant2 == null && asyncApiCallOutputVariant3 == null && asyncApiCallOutputVariant4 == null && asyncApiCallOutputVariant5 == null && asyncApiCallOutputVariant6 == null && asyncApiCallOutputVariant7 == null && asyncApiCallOutputVariant8 == null && asyncApiCallOutputVariant9 == null)
+            if (asyncApiCallOutputVariant1 == null && asyncApiCallOutputVariant2 == null && asyncApiCallOutputVariant3 == null && asyncApiCallOutputVariant4 == null && asyncApiCallOutputVariant5 == null && asyncApiCallOutputVariant6 == null && asyncApiCallOutputVariant7 == null && asyncApiCallOutputVariant8 == null && asyncApiCallOutputVariant9 == null && asyncApiCallOutputVariant10 == null)
             {
                 try
                 {
@@ -463,7 +493,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (asyncApiCallOutputVariant1 == null && asyncApiCallOutputVariant2 == null && asyncApiCallOutputVariant3 == null && asyncApiCallOutputVariant4 == null && asyncApiCallOutputVariant5 == null && asyncApiCallOutputVariant6 == null && asyncApiCallOutputVariant7 == null && asyncApiCallOutputVariant8 == null && asyncApiCallOutputVariant9 == null)
+            if (asyncApiCallOutputVariant1 == null && asyncApiCallOutputVariant2 == null && asyncApiCallOutputVariant3 == null && asyncApiCallOutputVariant4 == null && asyncApiCallOutputVariant5 == null && asyncApiCallOutputVariant6 == null && asyncApiCallOutputVariant7 == null && asyncApiCallOutputVariant8 == null && asyncApiCallOutputVariant9 == null && asyncApiCallOutputVariant10 == null)
             {
                 try
                 {
@@ -471,6 +501,23 @@ namespace Zoo.JsonConverters
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.AsyncApiCallOutputVariant9), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.AsyncApiCallOutputVariant9> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.AsyncApiCallOutputVariant9).Name}");
                     asyncApiCallOutputVariant9 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (asyncApiCallOutputVariant1 == null && asyncApiCallOutputVariant2 == null && asyncApiCallOutputVariant3 == null && asyncApiCallOutputVariant4 == null && asyncApiCallOutputVariant5 == null && asyncApiCallOutputVariant6 == null && asyncApiCallOutputVariant7 == null && asyncApiCallOutputVariant8 == null && asyncApiCallOutputVariant9 == null && asyncApiCallOutputVariant10 == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.AsyncApiCallOutputVariant10), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.AsyncApiCallOutputVariant10> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.AsyncApiCallOutputVariant10).Name}");
+                    asyncApiCallOutputVariant10 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -497,7 +544,9 @@ namespace Zoo.JsonConverters
 
                 asyncApiCallOutputVariant8,
 
-                asyncApiCallOutputVariant9
+                asyncApiCallOutputVariant9,
+
+                asyncApiCallOutputVariant10
                 );
 
             return __value;
@@ -565,6 +614,12 @@ namespace Zoo.JsonConverters
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.AsyncApiCallOutputVariant9), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.AsyncApiCallOutputVariant9?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.AsyncApiCallOutputVariant9).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAsyncApiCallOutputVariant9(), typeInfo);
+            }
+            else if (value.IsAsyncApiCallOutputVariant10)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.AsyncApiCallOutputVariant10), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.AsyncApiCallOutputVariant10?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.AsyncApiCallOutputVariant10).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAsyncApiCallOutputVariant10(), typeInfo);
             }
         }
     }

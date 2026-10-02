@@ -4,28 +4,21 @@
 namespace Zoo
 {
     /// <summary>
-    /// Text to CAD.
+    /// A file bounding box.
     /// </summary>
     public sealed partial class AsyncApiCallOutputVariant7
     {
         /// <summary>
-        /// The code for the model. This is optional but will be required in the future once we are at v1.
+        /// The resulting axis-aligned bounding box in the KittyCAD coordinate system (+Z up, -Y forward).
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("code")]
-        public string? Code { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("bounding_box")]
+        public global::Zoo.BoundingBox? BoundingBox { get; set; }
 
         /// <summary>
         /// The time and date the API call was completed.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("completed_at")]
         public global::System.DateTime? CompletedAt { get; set; }
-
-        /// <summary>
-        /// The conversation ID Conversations group different prompts together.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("conversation_id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Guid ConversationId { get; set; }
 
         /// <summary>
         /// The time and date the API call was created.
@@ -41,13 +34,6 @@ namespace Zoo
         public string? Error { get; set; }
 
         /// <summary>
-        /// Feedback from the user, if any.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("feedback")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Zoo.JsonConverters.MlFeedbackJsonConverter))]
-        public global::Zoo.MlFeedback? Feedback { get; set; }
-
-        /// <summary>
         /// The unique identifier of the API call.<br/>
         /// This is the same as the API call ID.
         /// </summary>
@@ -56,46 +42,20 @@ namespace Zoo
         public required global::System.Guid Id { get; set; }
 
         /// <summary>
-        /// The version of kcl requested.
+        /// The output unit for the bounding box.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("kcl_version")]
-        public string? KclVersion { get; set; }
-
-        /// <summary>
-        /// The model being used.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("model")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Zoo.JsonConverters.TextToCadModelJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonPropertyName("output_unit")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Zoo.JsonConverters.UnitLengthJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Zoo.TextToCadModel Model { get; set; }
+        public required global::Zoo.UnitLength OutputUnit { get; set; }
 
         /// <summary>
-        /// The version of the model.
+        /// The source format of the file.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("model_version")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("src_format")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Zoo.JsonConverters.FileImportFormatJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ModelVersion { get; set; }
-
-        /// <summary>
-        /// The output format of the model.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("output_format")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Zoo.JsonConverters.FileExportFormatJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Zoo.FileExportFormat OutputFormat { get; set; }
-
-        /// <summary>
-        /// The output of the model in the given file format the user requested, base64 encoded. The key of the map is the path of the output file.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("outputs")]
-        public global::System.Collections.Generic.Dictionary<string, byte[]>? Outputs { get; set; }
-
-        /// <summary>
-        /// The prompt.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("prompt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Prompt { get; set; }
+        public required global::Zoo.FileImportFormat SrcFormat { get; set; }
 
         /// <summary>
         /// The time and date the API call was started.
@@ -141,9 +101,6 @@ namespace Zoo
         /// <summary>
         /// Initializes a new instance of the <see cref="AsyncApiCallOutputVariant7" /> class.
         /// </summary>
-        /// <param name="conversationId">
-        /// The conversation ID Conversations group different prompts together.
-        /// </param>
         /// <param name="createdAt">
         /// The time and date the API call was created.
         /// </param>
@@ -151,17 +108,11 @@ namespace Zoo
         /// The unique identifier of the API call.<br/>
         /// This is the same as the API call ID.
         /// </param>
-        /// <param name="model">
-        /// The model being used.
+        /// <param name="outputUnit">
+        /// The output unit for the bounding box.
         /// </param>
-        /// <param name="modelVersion">
-        /// The version of the model.
-        /// </param>
-        /// <param name="outputFormat">
-        /// The output format of the model.
-        /// </param>
-        /// <param name="prompt">
-        /// The prompt.
+        /// <param name="srcFormat">
+        /// The source format of the file.
         /// </param>
         /// <param name="status">
         /// The status of the API call.
@@ -172,23 +123,14 @@ namespace Zoo
         /// <param name="userId">
         /// The user ID of the user who created the API call.
         /// </param>
-        /// <param name="code">
-        /// The code for the model. This is optional but will be required in the future once we are at v1.
+        /// <param name="boundingBox">
+        /// The resulting axis-aligned bounding box in the KittyCAD coordinate system (+Z up, -Y forward).
         /// </param>
         /// <param name="completedAt">
         /// The time and date the API call was completed.
         /// </param>
         /// <param name="error">
         /// The error the function returned, if any.
-        /// </param>
-        /// <param name="feedback">
-        /// Feedback from the user, if any.
-        /// </param>
-        /// <param name="kclVersion">
-        /// The version of kcl requested.
-        /// </param>
-        /// <param name="outputs">
-        /// The output of the model in the given file format the user requested, base64 encoded. The key of the map is the path of the output file.
         /// </param>
         /// <param name="startedAt">
         /// The time and date the API call was started.
@@ -198,38 +140,26 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AsyncApiCallOutputVariant7(
-            global::System.Guid conversationId,
             global::System.DateTime createdAt,
             global::System.Guid id,
-            global::Zoo.TextToCadModel model,
-            string modelVersion,
-            global::Zoo.FileExportFormat outputFormat,
-            string prompt,
+            global::Zoo.UnitLength outputUnit,
+            global::Zoo.FileImportFormat srcFormat,
             global::Zoo.ApiCallStatus status,
             global::System.DateTime updatedAt,
             global::System.Guid userId,
-            string? code,
+            global::Zoo.BoundingBox? boundingBox,
             global::System.DateTime? completedAt,
             string? error,
-            global::Zoo.MlFeedback? feedback,
-            string? kclVersion,
-            global::System.Collections.Generic.Dictionary<string, byte[]>? outputs,
             global::System.DateTime? startedAt,
             global::Zoo.AsyncApiCallOutputVariant7Type type)
         {
-            this.Code = code;
+            this.BoundingBox = boundingBox;
             this.CompletedAt = completedAt;
-            this.ConversationId = conversationId;
             this.CreatedAt = createdAt;
             this.Error = error;
-            this.Feedback = feedback;
             this.Id = id;
-            this.KclVersion = kclVersion;
-            this.Model = model;
-            this.ModelVersion = modelVersion ?? throw new global::System.ArgumentNullException(nameof(modelVersion));
-            this.OutputFormat = outputFormat;
-            this.Outputs = outputs;
-            this.Prompt = prompt ?? throw new global::System.ArgumentNullException(nameof(prompt));
+            this.OutputUnit = outputUnit;
+            this.SrcFormat = srcFormat;
             this.StartedAt = startedAt;
             this.Status = status;
             this.Type = type;

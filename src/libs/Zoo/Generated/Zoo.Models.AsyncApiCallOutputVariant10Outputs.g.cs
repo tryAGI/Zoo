@@ -6,7 +6,7 @@ namespace Zoo
     /// <summary>
     /// The output files. Returns a map of the file name to the file contents. The file contents are not encoded since kcl files are not binary.
     /// </summary>
-    public sealed partial class AsyncApiCallOutputVariant9Outputs
+    public sealed partial class AsyncApiCallOutputVariant10Outputs
     {
 
         /// <summary>
