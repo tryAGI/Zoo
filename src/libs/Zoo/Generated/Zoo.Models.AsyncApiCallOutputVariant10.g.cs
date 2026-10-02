@@ -4,16 +4,10 @@
 namespace Zoo
 {
     /// <summary>
-    /// Text to CAD.
+    /// Text to CAD multi-file iteration.
     /// </summary>
-    public sealed partial class AsyncApiCallOutputVariant8
+    public sealed partial class AsyncApiCallOutputVariant10
     {
-        /// <summary>
-        /// The code for the model. This is optional but will be required in the future once we are at v1.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("code")]
-        public string? Code { get; set; }
-
         /// <summary>
         /// The time and date the API call was completed.
         /// </summary>
@@ -56,7 +50,7 @@ namespace Zoo
         public required global::System.Guid Id { get; set; }
 
         /// <summary>
-        /// The version of kcl requested.
+        /// The version of kcl to use. If empty, the latest version will be used.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("kcl_version")]
         public string? KclVersion { get; set; }
@@ -77,25 +71,29 @@ namespace Zoo
         public required string ModelVersion { get; set; }
 
         /// <summary>
-        /// The output format of the model.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("output_format")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Zoo.JsonConverters.FileExportFormatJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Zoo.FileExportFormat OutputFormat { get; set; }
-
-        /// <summary>
-        /// The output of the model in the given file format the user requested, base64 encoded. The key of the map is the path of the output file.
+        /// The output files. Returns a map of the file name to the file contents. The file contents are not encoded since kcl files are not binary.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("outputs")]
-        public global::System.Collections.Generic.Dictionary<string, byte[]>? Outputs { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, string>? Outputs { get; set; }
 
         /// <summary>
-        /// The prompt.
+        /// The project name. This is used to tie the prompt to a project. Which helps us make our models better over time.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("project_name")]
+        public string? ProjectName { get; set; }
+
+        /// <summary>
+        /// The prompt for the overall changes. This is optional if you only want changes on specific source ranges. This will apply to all the files.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("prompt")]
+        public string? Prompt { get; set; }
+
+        /// <summary>
+        /// The source ranges the user suggested to change.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("source_ranges")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Prompt { get; set; }
+        public required global::System.Collections.Generic.IList<global::Zoo.SourceRangePrompt> SourceRanges { get; set; }
 
         /// <summary>
         /// The time and date the API call was started.
@@ -115,8 +113,8 @@ namespace Zoo
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Zoo.JsonConverters.AsyncApiCallOutputVariant8TypeJsonConverter))]
-        public global::Zoo.AsyncApiCallOutputVariant8Type Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Zoo.JsonConverters.AsyncApiCallOutputVariant10TypeJsonConverter))]
+        public global::Zoo.AsyncApiCallOutputVariant10Type Type { get; set; }
 
         /// <summary>
         /// The time and date the API call was last updated.
@@ -139,7 +137,7 @@ namespace Zoo
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AsyncApiCallOutputVariant8" /> class.
+        /// Initializes a new instance of the <see cref="AsyncApiCallOutputVariant10" /> class.
         /// </summary>
         /// <param name="conversationId">
         /// The conversation ID Conversations group different prompts together.
@@ -157,11 +155,8 @@ namespace Zoo
         /// <param name="modelVersion">
         /// The version of the model.
         /// </param>
-        /// <param name="outputFormat">
-        /// The output format of the model.
-        /// </param>
-        /// <param name="prompt">
-        /// The prompt.
+        /// <param name="sourceRanges">
+        /// The source ranges the user suggested to change.
         /// </param>
         /// <param name="status">
         /// The status of the API call.
@@ -171,9 +166,6 @@ namespace Zoo
         /// </param>
         /// <param name="userId">
         /// The user ID of the user who created the API call.
-        /// </param>
-        /// <param name="code">
-        /// The code for the model. This is optional but will be required in the future once we are at v1.
         /// </param>
         /// <param name="completedAt">
         /// The time and date the API call was completed.
@@ -185,10 +177,16 @@ namespace Zoo
         /// Feedback from the user, if any.
         /// </param>
         /// <param name="kclVersion">
-        /// The version of kcl requested.
+        /// The version of kcl to use. If empty, the latest version will be used.
         /// </param>
         /// <param name="outputs">
-        /// The output of the model in the given file format the user requested, base64 encoded. The key of the map is the path of the output file.
+        /// The output files. Returns a map of the file name to the file contents. The file contents are not encoded since kcl files are not binary.
+        /// </param>
+        /// <param name="projectName">
+        /// The project name. This is used to tie the prompt to a project. Which helps us make our models better over time.
+        /// </param>
+        /// <param name="prompt">
+        /// The prompt for the overall changes. This is optional if you only want changes on specific source ranges. This will apply to all the files.
         /// </param>
         /// <param name="startedAt">
         /// The time and date the API call was started.
@@ -197,27 +195,26 @@ namespace Zoo
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public AsyncApiCallOutputVariant8(
+        public AsyncApiCallOutputVariant10(
             global::System.Guid conversationId,
             global::System.DateTime createdAt,
             global::System.Guid id,
             global::Zoo.TextToCadModel model,
             string modelVersion,
-            global::Zoo.FileExportFormat outputFormat,
-            string prompt,
+            global::System.Collections.Generic.IList<global::Zoo.SourceRangePrompt> sourceRanges,
             global::Zoo.ApiCallStatus status,
             global::System.DateTime updatedAt,
             global::System.Guid userId,
-            string? code,
             global::System.DateTime? completedAt,
             string? error,
             global::Zoo.MlFeedback? feedback,
             string? kclVersion,
-            global::System.Collections.Generic.Dictionary<string, byte[]>? outputs,
+            global::System.Collections.Generic.Dictionary<string, string>? outputs,
+            string? projectName,
+            string? prompt,
             global::System.DateTime? startedAt,
-            global::Zoo.AsyncApiCallOutputVariant8Type type)
+            global::Zoo.AsyncApiCallOutputVariant10Type type)
         {
-            this.Code = code;
             this.CompletedAt = completedAt;
             this.ConversationId = conversationId;
             this.CreatedAt = createdAt;
@@ -227,9 +224,10 @@ namespace Zoo
             this.KclVersion = kclVersion;
             this.Model = model;
             this.ModelVersion = modelVersion ?? throw new global::System.ArgumentNullException(nameof(modelVersion));
-            this.OutputFormat = outputFormat;
             this.Outputs = outputs;
-            this.Prompt = prompt ?? throw new global::System.ArgumentNullException(nameof(prompt));
+            this.ProjectName = projectName;
+            this.Prompt = prompt;
+            this.SourceRanges = sourceRanges ?? throw new global::System.ArgumentNullException(nameof(sourceRanges));
             this.StartedAt = startedAt;
             this.Status = status;
             this.Type = type;
@@ -238,9 +236,9 @@ namespace Zoo
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AsyncApiCallOutputVariant8" /> class.
+        /// Initializes a new instance of the <see cref="AsyncApiCallOutputVariant10" /> class.
         /// </summary>
-        public AsyncApiCallOutputVariant8()
+        public AsyncApiCallOutputVariant10()
         {
         }
 

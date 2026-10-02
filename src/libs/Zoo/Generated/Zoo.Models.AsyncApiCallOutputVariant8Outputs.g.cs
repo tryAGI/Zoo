@@ -6,7 +6,7 @@ namespace Zoo
     /// <summary>
     /// The output of the model in the given file format the user requested, base64 encoded. The key of the map is the path of the output file.
     /// </summary>
-    public sealed partial class AsyncApiCallOutputVariant7Outputs
+    public sealed partial class AsyncApiCallOutputVariant8Outputs
     {
 
         /// <summary>

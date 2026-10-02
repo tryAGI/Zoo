@@ -11,7 +11,7 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        TextToCadMultiFileIteration,
+        TextToCadIteration,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Zoo
         {
             return value switch
             {
-                AsyncApiCallOutputVariant9Type.TextToCadMultiFileIteration => "text_to_cad_multi_file_iteration",
+                AsyncApiCallOutputVariant9Type.TextToCadIteration => "text_to_cad_iteration",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Zoo
         {
             return value switch
             {
-                "text_to_cad_multi_file_iteration" => AsyncApiCallOutputVariant9Type.TextToCadMultiFileIteration,
+                "text_to_cad_iteration" => AsyncApiCallOutputVariant9Type.TextToCadIteration,
                 _ => null,
             };
         }

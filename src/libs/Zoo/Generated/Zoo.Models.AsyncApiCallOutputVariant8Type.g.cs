@@ -11,7 +11,7 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        TextToCadIteration,
+        TextToCad,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Zoo
         {
             return value switch
             {
-                AsyncApiCallOutputVariant8Type.TextToCadIteration => "text_to_cad_iteration",
+                AsyncApiCallOutputVariant8Type.TextToCad => "text_to_cad",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Zoo
         {
             return value switch
             {
-                "text_to_cad_iteration" => AsyncApiCallOutputVariant8Type.TextToCadIteration,
+                "text_to_cad" => AsyncApiCallOutputVariant8Type.TextToCad,
                 _ => null,
             };
         }

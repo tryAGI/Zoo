@@ -4,10 +4,17 @@
 namespace Zoo
 {
     /// <summary>
-    /// Text to CAD multi-file iteration.
+    /// Text to CAD iteration.
     /// </summary>
     public sealed partial class AsyncApiCallOutputVariant9
     {
+        /// <summary>
+        /// The code for the new model.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("code")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Code { get; set; }
+
         /// <summary>
         /// The time and date the API call was completed.
         /// </summary>
@@ -50,12 +57,6 @@ namespace Zoo
         public required global::System.Guid Id { get; set; }
 
         /// <summary>
-        /// The version of kcl to use. If empty, the latest version will be used.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("kcl_version")]
-        public string? KclVersion { get; set; }
-
-        /// <summary>
         /// The model being used.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("model")]
@@ -71,19 +72,14 @@ namespace Zoo
         public required string ModelVersion { get; set; }
 
         /// <summary>
-        /// The output files. Returns a map of the file name to the file contents. The file contents are not encoded since kcl files are not binary.
+        /// The original source code for the model, previous to the changes.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("outputs")]
-        public global::System.Collections.Generic.Dictionary<string, string>? Outputs { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("original_source_code")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string OriginalSourceCode { get; set; }
 
         /// <summary>
-        /// The project name. This is used to tie the prompt to a project. Which helps us make our models better over time.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("project_name")]
-        public string? ProjectName { get; set; }
-
-        /// <summary>
-        /// The prompt for the overall changes. This is optional if you only want changes on specific source ranges. This will apply to all the files.
+        /// The prompt for the overall changes. This is optional if you only want changes on specific source ranges.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("prompt")]
         public string? Prompt { get; set; }
@@ -139,6 +135,9 @@ namespace Zoo
         /// <summary>
         /// Initializes a new instance of the <see cref="AsyncApiCallOutputVariant9" /> class.
         /// </summary>
+        /// <param name="code">
+        /// The code for the new model.
+        /// </param>
         /// <param name="conversationId">
         /// The conversation ID Conversations group different prompts together.
         /// </param>
@@ -154,6 +153,9 @@ namespace Zoo
         /// </param>
         /// <param name="modelVersion">
         /// The version of the model.
+        /// </param>
+        /// <param name="originalSourceCode">
+        /// The original source code for the model, previous to the changes.
         /// </param>
         /// <param name="sourceRanges">
         /// The source ranges the user suggested to change.
@@ -176,17 +178,8 @@ namespace Zoo
         /// <param name="feedback">
         /// Feedback from the user, if any.
         /// </param>
-        /// <param name="kclVersion">
-        /// The version of kcl to use. If empty, the latest version will be used.
-        /// </param>
-        /// <param name="outputs">
-        /// The output files. Returns a map of the file name to the file contents. The file contents are not encoded since kcl files are not binary.
-        /// </param>
-        /// <param name="projectName">
-        /// The project name. This is used to tie the prompt to a project. Which helps us make our models better over time.
-        /// </param>
         /// <param name="prompt">
-        /// The prompt for the overall changes. This is optional if you only want changes on specific source ranges. This will apply to all the files.
+        /// The prompt for the overall changes. This is optional if you only want changes on specific source ranges.
         /// </param>
         /// <param name="startedAt">
         /// The time and date the API call was started.
@@ -196,11 +189,13 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AsyncApiCallOutputVariant9(
+            string code,
             global::System.Guid conversationId,
             global::System.DateTime createdAt,
             global::System.Guid id,
             global::Zoo.TextToCadModel model,
             string modelVersion,
+            string originalSourceCode,
             global::System.Collections.Generic.IList<global::Zoo.SourceRangePrompt> sourceRanges,
             global::Zoo.ApiCallStatus status,
             global::System.DateTime updatedAt,
@@ -208,24 +203,20 @@ namespace Zoo
             global::System.DateTime? completedAt,
             string? error,
             global::Zoo.MlFeedback? feedback,
-            string? kclVersion,
-            global::System.Collections.Generic.Dictionary<string, string>? outputs,
-            string? projectName,
             string? prompt,
             global::System.DateTime? startedAt,
             global::Zoo.AsyncApiCallOutputVariant9Type type)
         {
+            this.Code = code ?? throw new global::System.ArgumentNullException(nameof(code));
             this.CompletedAt = completedAt;
             this.ConversationId = conversationId;
             this.CreatedAt = createdAt;
             this.Error = error;
             this.Feedback = feedback;
             this.Id = id;
-            this.KclVersion = kclVersion;
             this.Model = model;
             this.ModelVersion = modelVersion ?? throw new global::System.ArgumentNullException(nameof(modelVersion));
-            this.Outputs = outputs;
-            this.ProjectName = projectName;
+            this.OriginalSourceCode = originalSourceCode ?? throw new global::System.ArgumentNullException(nameof(originalSourceCode));
             this.Prompt = prompt;
             this.SourceRanges = sourceRanges ?? throw new global::System.ArgumentNullException(nameof(sourceRanges));
             this.StartedAt = startedAt;

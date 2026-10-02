@@ -232,7 +232,7 @@ namespace Zoo
             : throw new global::System.InvalidOperationException($"Expected union variant 'AsyncApiCallOutputVariant6' but the value was {ToString()}.");
 
         /// <summary>
-        /// Text to CAD.
+        /// A file bounding box.
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Zoo.AsyncApiCallOutputVariant7? AsyncApiCallOutputVariant7 { get; init; }
@@ -269,7 +269,7 @@ namespace Zoo
             : throw new global::System.InvalidOperationException($"Expected union variant 'AsyncApiCallOutputVariant7' but the value was {ToString()}.");
 
         /// <summary>
-        /// Text to CAD iteration.
+        /// Text to CAD.
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Zoo.AsyncApiCallOutputVariant8? AsyncApiCallOutputVariant8 { get; init; }
@@ -306,7 +306,7 @@ namespace Zoo
             : throw new global::System.InvalidOperationException($"Expected union variant 'AsyncApiCallOutputVariant8' but the value was {ToString()}.");
 
         /// <summary>
-        /// Text to CAD multi-file iteration.
+        /// Text to CAD iteration.
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Zoo.AsyncApiCallOutputVariant9? AsyncApiCallOutputVariant9 { get; init; }
@@ -341,6 +341,43 @@ namespace Zoo
         public global::Zoo.AsyncApiCallOutputVariant9 PickAsyncApiCallOutputVariant9() => AsyncApiCallOutputVariant9 is { } value
             ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AsyncApiCallOutputVariant9' but the value was {ToString()}.");
+
+        /// <summary>
+        /// Text to CAD multi-file iteration.
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Zoo.AsyncApiCallOutputVariant10? AsyncApiCallOutputVariant10 { get; init; }
+#else
+        public global::Zoo.AsyncApiCallOutputVariant10? AsyncApiCallOutputVariant10 { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AsyncApiCallOutputVariant10))]
+#endif
+        public bool IsAsyncApiCallOutputVariant10 => AsyncApiCallOutputVariant10 != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickAsyncApiCallOutputVariant10(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.AsyncApiCallOutputVariant10? value)
+        {
+            value = AsyncApiCallOutputVariant10;
+            return IsAsyncApiCallOutputVariant10;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Zoo.AsyncApiCallOutputVariant10 PickAsyncApiCallOutputVariant10() => AsyncApiCallOutputVariant10 is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AsyncApiCallOutputVariant10' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -551,6 +588,29 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
+        public static implicit operator AsyncApiCallOutput(global::Zoo.AsyncApiCallOutputVariant10 value) => new AsyncApiCallOutput((global::Zoo.AsyncApiCallOutputVariant10?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::Zoo.AsyncApiCallOutputVariant10?(AsyncApiCallOutput @this) => @this.AsyncApiCallOutputVariant10;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public AsyncApiCallOutput(global::Zoo.AsyncApiCallOutputVariant10? value)
+        {
+            AsyncApiCallOutputVariant10 = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static AsyncApiCallOutput FromAsyncApiCallOutputVariant10(global::Zoo.AsyncApiCallOutputVariant10? value) => new AsyncApiCallOutput(value);
+
+        /// <summary>
+        ///
+        /// </summary>
         public AsyncApiCallOutput(
             global::Zoo.AsyncApiCallOutputVariant1? asyncApiCallOutputVariant1,
             global::Zoo.AsyncApiCallOutputVariant2? asyncApiCallOutputVariant2,
@@ -560,7 +620,8 @@ namespace Zoo
             global::Zoo.AsyncApiCallOutputVariant6? asyncApiCallOutputVariant6,
             global::Zoo.AsyncApiCallOutputVariant7? asyncApiCallOutputVariant7,
             global::Zoo.AsyncApiCallOutputVariant8? asyncApiCallOutputVariant8,
-            global::Zoo.AsyncApiCallOutputVariant9? asyncApiCallOutputVariant9
+            global::Zoo.AsyncApiCallOutputVariant9? asyncApiCallOutputVariant9,
+            global::Zoo.AsyncApiCallOutputVariant10? asyncApiCallOutputVariant10
             )
         {
             AsyncApiCallOutputVariant1 = asyncApiCallOutputVariant1;
@@ -572,12 +633,14 @@ namespace Zoo
             AsyncApiCallOutputVariant7 = asyncApiCallOutputVariant7;
             AsyncApiCallOutputVariant8 = asyncApiCallOutputVariant8;
             AsyncApiCallOutputVariant9 = asyncApiCallOutputVariant9;
+            AsyncApiCallOutputVariant10 = asyncApiCallOutputVariant10;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
+            AsyncApiCallOutputVariant10 as object ??
             AsyncApiCallOutputVariant9 as object ??
             AsyncApiCallOutputVariant8 as object ??
             AsyncApiCallOutputVariant7 as object ??
@@ -601,7 +664,8 @@ namespace Zoo
             AsyncApiCallOutputVariant6?.ToString() ??
             AsyncApiCallOutputVariant7?.ToString() ??
             AsyncApiCallOutputVariant8?.ToString() ??
-            AsyncApiCallOutputVariant9?.ToString()
+            AsyncApiCallOutputVariant9?.ToString() ??
+            AsyncApiCallOutputVariant10?.ToString()
             ;
 
         /// <summary>
@@ -609,7 +673,7 @@ namespace Zoo
         /// </summary>
         public bool Validate()
         {
-            return IsAsyncApiCallOutputVariant1 && !IsAsyncApiCallOutputVariant2 && !IsAsyncApiCallOutputVariant3 && !IsAsyncApiCallOutputVariant4 && !IsAsyncApiCallOutputVariant5 && !IsAsyncApiCallOutputVariant6 && !IsAsyncApiCallOutputVariant7 && !IsAsyncApiCallOutputVariant8 && !IsAsyncApiCallOutputVariant9 || !IsAsyncApiCallOutputVariant1 && IsAsyncApiCallOutputVariant2 && !IsAsyncApiCallOutputVariant3 && !IsAsyncApiCallOutputVariant4 && !IsAsyncApiCallOutputVariant5 && !IsAsyncApiCallOutputVariant6 && !IsAsyncApiCallOutputVariant7 && !IsAsyncApiCallOutputVariant8 && !IsAsyncApiCallOutputVariant9 || !IsAsyncApiCallOutputVariant1 && !IsAsyncApiCallOutputVariant2 && IsAsyncApiCallOutputVariant3 && !IsAsyncApiCallOutputVariant4 && !IsAsyncApiCallOutputVariant5 && !IsAsyncApiCallOutputVariant6 && !IsAsyncApiCallOutputVariant7 && !IsAsyncApiCallOutputVariant8 && !IsAsyncApiCallOutputVariant9 || !IsAsyncApiCallOutputVariant1 && !IsAsyncApiCallOutputVariant2 && !IsAsyncApiCallOutputVariant3 && IsAsyncApiCallOutputVariant4 && !IsAsyncApiCallOutputVariant5 && !IsAsyncApiCallOutputVariant6 && !IsAsyncApiCallOutputVariant7 && !IsAsyncApiCallOutputVariant8 && !IsAsyncApiCallOutputVariant9 || !IsAsyncApiCallOutputVariant1 && !IsAsyncApiCallOutputVariant2 && !IsAsyncApiCallOutputVariant3 && !IsAsyncApiCallOutputVariant4 && IsAsyncApiCallOutputVariant5 && !IsAsyncApiCallOutputVariant6 && !IsAsyncApiCallOutputVariant7 && !IsAsyncApiCallOutputVariant8 && !IsAsyncApiCallOutputVariant9 || !IsAsyncApiCallOutputVariant1 && !IsAsyncApiCallOutputVariant2 && !IsAsyncApiCallOutputVariant3 && !IsAsyncApiCallOutputVariant4 && !IsAsyncApiCallOutputVariant5 && IsAsyncApiCallOutputVariant6 && !IsAsyncApiCallOutputVariant7 && !IsAsyncApiCallOutputVariant8 && !IsAsyncApiCallOutputVariant9 || !IsAsyncApiCallOutputVariant1 && !IsAsyncApiCallOutputVariant2 && !IsAsyncApiCallOutputVariant3 && !IsAsyncApiCallOutputVariant4 && !IsAsyncApiCallOutputVariant5 && !IsAsyncApiCallOutputVariant6 && IsAsyncApiCallOutputVariant7 && !IsAsyncApiCallOutputVariant8 && !IsAsyncApiCallOutputVariant9 || !IsAsyncApiCallOutputVariant1 && !IsAsyncApiCallOutputVariant2 && !IsAsyncApiCallOutputVariant3 && !IsAsyncApiCallOutputVariant4 && !IsAsyncApiCallOutputVariant5 && !IsAsyncApiCallOutputVariant6 && !IsAsyncApiCallOutputVariant7 && IsAsyncApiCallOutputVariant8 && !IsAsyncApiCallOutputVariant9 || !IsAsyncApiCallOutputVariant1 && !IsAsyncApiCallOutputVariant2 && !IsAsyncApiCallOutputVariant3 && !IsAsyncApiCallOutputVariant4 && !IsAsyncApiCallOutputVariant5 && !IsAsyncApiCallOutputVariant6 && !IsAsyncApiCallOutputVariant7 && !IsAsyncApiCallOutputVariant8 && IsAsyncApiCallOutputVariant9;
+            return IsAsyncApiCallOutputVariant1 && !IsAsyncApiCallOutputVariant2 && !IsAsyncApiCallOutputVariant3 && !IsAsyncApiCallOutputVariant4 && !IsAsyncApiCallOutputVariant5 && !IsAsyncApiCallOutputVariant6 && !IsAsyncApiCallOutputVariant7 && !IsAsyncApiCallOutputVariant8 && !IsAsyncApiCallOutputVariant9 && !IsAsyncApiCallOutputVariant10 || !IsAsyncApiCallOutputVariant1 && IsAsyncApiCallOutputVariant2 && !IsAsyncApiCallOutputVariant3 && !IsAsyncApiCallOutputVariant4 && !IsAsyncApiCallOutputVariant5 && !IsAsyncApiCallOutputVariant6 && !IsAsyncApiCallOutputVariant7 && !IsAsyncApiCallOutputVariant8 && !IsAsyncApiCallOutputVariant9 && !IsAsyncApiCallOutputVariant10 || !IsAsyncApiCallOutputVariant1 && !IsAsyncApiCallOutputVariant2 && IsAsyncApiCallOutputVariant3 && !IsAsyncApiCallOutputVariant4 && !IsAsyncApiCallOutputVariant5 && !IsAsyncApiCallOutputVariant6 && !IsAsyncApiCallOutputVariant7 && !IsAsyncApiCallOutputVariant8 && !IsAsyncApiCallOutputVariant9 && !IsAsyncApiCallOutputVariant10 || !IsAsyncApiCallOutputVariant1 && !IsAsyncApiCallOutputVariant2 && !IsAsyncApiCallOutputVariant3 && IsAsyncApiCallOutputVariant4 && !IsAsyncApiCallOutputVariant5 && !IsAsyncApiCallOutputVariant6 && !IsAsyncApiCallOutputVariant7 && !IsAsyncApiCallOutputVariant8 && !IsAsyncApiCallOutputVariant9 && !IsAsyncApiCallOutputVariant10 || !IsAsyncApiCallOutputVariant1 && !IsAsyncApiCallOutputVariant2 && !IsAsyncApiCallOutputVariant3 && !IsAsyncApiCallOutputVariant4 && IsAsyncApiCallOutputVariant5 && !IsAsyncApiCallOutputVariant6 && !IsAsyncApiCallOutputVariant7 && !IsAsyncApiCallOutputVariant8 && !IsAsyncApiCallOutputVariant9 && !IsAsyncApiCallOutputVariant10 || !IsAsyncApiCallOutputVariant1 && !IsAsyncApiCallOutputVariant2 && !IsAsyncApiCallOutputVariant3 && !IsAsyncApiCallOutputVariant4 && !IsAsyncApiCallOutputVariant5 && IsAsyncApiCallOutputVariant6 && !IsAsyncApiCallOutputVariant7 && !IsAsyncApiCallOutputVariant8 && !IsAsyncApiCallOutputVariant9 && !IsAsyncApiCallOutputVariant10 || !IsAsyncApiCallOutputVariant1 && !IsAsyncApiCallOutputVariant2 && !IsAsyncApiCallOutputVariant3 && !IsAsyncApiCallOutputVariant4 && !IsAsyncApiCallOutputVariant5 && !IsAsyncApiCallOutputVariant6 && IsAsyncApiCallOutputVariant7 && !IsAsyncApiCallOutputVariant8 && !IsAsyncApiCallOutputVariant9 && !IsAsyncApiCallOutputVariant10 || !IsAsyncApiCallOutputVariant1 && !IsAsyncApiCallOutputVariant2 && !IsAsyncApiCallOutputVariant3 && !IsAsyncApiCallOutputVariant4 && !IsAsyncApiCallOutputVariant5 && !IsAsyncApiCallOutputVariant6 && !IsAsyncApiCallOutputVariant7 && IsAsyncApiCallOutputVariant8 && !IsAsyncApiCallOutputVariant9 && !IsAsyncApiCallOutputVariant10 || !IsAsyncApiCallOutputVariant1 && !IsAsyncApiCallOutputVariant2 && !IsAsyncApiCallOutputVariant3 && !IsAsyncApiCallOutputVariant4 && !IsAsyncApiCallOutputVariant5 && !IsAsyncApiCallOutputVariant6 && !IsAsyncApiCallOutputVariant7 && !IsAsyncApiCallOutputVariant8 && IsAsyncApiCallOutputVariant9 && !IsAsyncApiCallOutputVariant10 || !IsAsyncApiCallOutputVariant1 && !IsAsyncApiCallOutputVariant2 && !IsAsyncApiCallOutputVariant3 && !IsAsyncApiCallOutputVariant4 && !IsAsyncApiCallOutputVariant5 && !IsAsyncApiCallOutputVariant6 && !IsAsyncApiCallOutputVariant7 && !IsAsyncApiCallOutputVariant8 && !IsAsyncApiCallOutputVariant9 && IsAsyncApiCallOutputVariant10;
         }
 
         /// <summary>
@@ -625,6 +689,7 @@ namespace Zoo
             global::System.Func<global::Zoo.AsyncApiCallOutputVariant7, TResult>? asyncApiCallOutputVariant7 = null,
             global::System.Func<global::Zoo.AsyncApiCallOutputVariant8, TResult>? asyncApiCallOutputVariant8 = null,
             global::System.Func<global::Zoo.AsyncApiCallOutputVariant9, TResult>? asyncApiCallOutputVariant9 = null,
+            global::System.Func<global::Zoo.AsyncApiCallOutputVariant10, TResult>? asyncApiCallOutputVariant10 = null,
             bool validate = true)
         {
             if (validate)
@@ -668,6 +733,10 @@ namespace Zoo
             {
                 return asyncApiCallOutputVariant9(__value8);
             }
+            else if (AsyncApiCallOutputVariant10 is { } __value9 && asyncApiCallOutputVariant10 != null)
+            {
+                return asyncApiCallOutputVariant10(__value9);
+            }
 
             return default(TResult);
         }
@@ -693,6 +762,8 @@ namespace Zoo
             global::System.Action<global::Zoo.AsyncApiCallOutputVariant8>? asyncApiCallOutputVariant8 = null,
 
             global::System.Action<global::Zoo.AsyncApiCallOutputVariant9>? asyncApiCallOutputVariant9 = null,
+
+            global::System.Action<global::Zoo.AsyncApiCallOutputVariant10>? asyncApiCallOutputVariant10 = null,
             bool validate = true)
         {
             if (validate)
@@ -735,6 +806,10 @@ namespace Zoo
             else if (AsyncApiCallOutputVariant9 is { } __value8)
             {
                 asyncApiCallOutputVariant9?.Invoke(__value8);
+            }
+            else if (AsyncApiCallOutputVariant10 is { } __value9)
+            {
+                asyncApiCallOutputVariant10?.Invoke(__value9);
             }
         }
 
@@ -751,6 +826,7 @@ namespace Zoo
             global::System.Action<global::Zoo.AsyncApiCallOutputVariant7>? asyncApiCallOutputVariant7 = null,
             global::System.Action<global::Zoo.AsyncApiCallOutputVariant8>? asyncApiCallOutputVariant8 = null,
             global::System.Action<global::Zoo.AsyncApiCallOutputVariant9>? asyncApiCallOutputVariant9 = null,
+            global::System.Action<global::Zoo.AsyncApiCallOutputVariant10>? asyncApiCallOutputVariant10 = null,
             bool validate = true)
         {
             if (validate)
@@ -793,6 +869,10 @@ namespace Zoo
             else if (AsyncApiCallOutputVariant9 is { } __value8)
             {
                 asyncApiCallOutputVariant9?.Invoke(__value8);
+            }
+            else if (AsyncApiCallOutputVariant10 is { } __value9)
+            {
+                asyncApiCallOutputVariant10?.Invoke(__value9);
             }
         }
 
@@ -821,6 +901,8 @@ namespace Zoo
                 typeof(global::Zoo.AsyncApiCallOutputVariant8),
                 AsyncApiCallOutputVariant9,
                 typeof(global::Zoo.AsyncApiCallOutputVariant9),
+                AsyncApiCallOutputVariant10,
+                typeof(global::Zoo.AsyncApiCallOutputVariant10),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -845,7 +927,8 @@ namespace Zoo
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.AsyncApiCallOutputVariant6?>.Default.Equals(AsyncApiCallOutputVariant6, other.AsyncApiCallOutputVariant6) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.AsyncApiCallOutputVariant7?>.Default.Equals(AsyncApiCallOutputVariant7, other.AsyncApiCallOutputVariant7) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.AsyncApiCallOutputVariant8?>.Default.Equals(AsyncApiCallOutputVariant8, other.AsyncApiCallOutputVariant8) &&
-                global::System.Collections.Generic.EqualityComparer<global::Zoo.AsyncApiCallOutputVariant9?>.Default.Equals(AsyncApiCallOutputVariant9, other.AsyncApiCallOutputVariant9)
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.AsyncApiCallOutputVariant9?>.Default.Equals(AsyncApiCallOutputVariant9, other.AsyncApiCallOutputVariant9) &&
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.AsyncApiCallOutputVariant10?>.Default.Equals(AsyncApiCallOutputVariant10, other.AsyncApiCallOutputVariant10)
                 ;
         }
 

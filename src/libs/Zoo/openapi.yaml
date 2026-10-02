@@ -1741,6 +1741,108 @@
             "type": "object"
           },
           {
+            "description": "A file bounding box.",
+            "properties": {
+              "bounding_box": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/BoundingBox"
+                  }
+                ],
+                "description": "The resulting axis-aligned bounding box in the KittyCAD coordinate system (+Z up, -Y forward).",
+                "nullable": true
+              },
+              "completed_at": {
+                "description": "The time and date the API call was completed.",
+                "format": "date-time",
+                "nullable": true,
+                "title": "DateTime",
+                "type": "string"
+              },
+              "created_at": {
+                "description": "The time and date the API call was created.",
+                "format": "date-time",
+                "title": "DateTime",
+                "type": "string"
+              },
+              "error": {
+                "description": "The error the function returned, if any.",
+                "nullable": true,
+                "type": "string"
+              },
+              "id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The unique identifier of the API call.\n\nThis is the same as the API call ID."
+              },
+              "output_unit": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/UnitLength"
+                  }
+                ],
+                "description": "The output unit for the bounding box."
+              },
+              "src_format": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/FileImportFormat"
+                  }
+                ],
+                "description": "The source format of the file."
+              },
+              "started_at": {
+                "description": "The time and date the API call was started.",
+                "format": "date-time",
+                "nullable": true,
+                "title": "DateTime",
+                "type": "string"
+              },
+              "status": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ApiCallStatus"
+                  }
+                ],
+                "description": "The status of the API call."
+              },
+              "type": {
+                "enum": [
+                  "file_bounding_box"
+                ],
+                "type": "string"
+              },
+              "updated_at": {
+                "description": "The time and date the API call was last updated.",
+                "format": "date-time",
+                "title": "DateTime",
+                "type": "string"
+              },
+              "user_id": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/Uuid"
+                  }
+                ],
+                "description": "The user ID of the user who created the API call."
+              }
+            },
+            "required": [
+              "created_at",
+              "id",
+              "output_unit",
+              "src_format",
+              "status",
+              "type",
+              "updated_at",
+              "user_id"
+            ],
+            "type": "object"
+          },
+          {
             "description": "Text to CAD.",
             "properties": {
               "code": {
@@ -2245,6 +2347,102 @@
           }
         ]
       },
+      "UnitLength": {
+        "description": "The valid types of length units.",
+        "oneOf": [
+          {
+            "description": "Centimeters <https://en.wikipedia.org/wiki/Centimeter>",
+            "enum": [
+              "cm"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Feet <https://en.wikipedia.org/wiki/Foot_(unit)>",
+            "enum": [
+              "ft"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Inches <https://en.wikipedia.org/wiki/Inch>",
+            "enum": [
+              "in"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Meters <https://en.wikipedia.org/wiki/Meter>",
+            "enum": [
+              "m"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Millimeters <https://en.wikipedia.org/wiki/Millimeter>",
+            "enum": [
+              "mm"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "Yards <https://en.wikipedia.org/wiki/Yard>",
+            "enum": [
+              "yd"
+            ],
+            "type": "string"
+          }
+        ]
+      },
+      "BoundingBox": {
+        "description": "The response from the 'BoundingBox'.",
+        "properties": {
+          "center": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Point3d"
+              }
+            ],
+            "description": "Center of the box."
+          },
+          "dimensions": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Point3d"
+              }
+            ],
+            "description": "Dimensions of the box along each axis."
+          }
+        },
+        "required": [
+          "center",
+          "dimensions"
+        ],
+        "type": "object"
+      },
+      "Point3d": {
+        "description": "A point in 3D space",
+        "properties": {
+          "x": {
+            "format": "float",
+            "type": "number"
+          },
+          "y": {
+            "format": "float",
+            "type": "number"
+          },
+          "z": {
+            "format": "float",
+            "type": "number"
+          }
+        },
+        "required": [
+          "x",
+          "y",
+          "z"
+        ],
+        "type": "object"
+      },
       "UnitArea": {
         "description": "The valid types of area units.",
         "oneOf": [
@@ -2425,76 +2623,6 @@
             "type": "string"
           }
         ]
-      },
-      "UnitLength": {
-        "description": "The valid types of length units.",
-        "oneOf": [
-          {
-            "description": "Centimeters <https://en.wikipedia.org/wiki/Centimeter>",
-            "enum": [
-              "cm"
-            ],
-            "type": "string"
-          },
-          {
-            "description": "Feet <https://en.wikipedia.org/wiki/Foot_(unit)>",
-            "enum": [
-              "ft"
-            ],
-            "type": "string"
-          },
-          {
-            "description": "Inches <https://en.wikipedia.org/wiki/Inch>",
-            "enum": [
-              "in"
-            ],
-            "type": "string"
-          },
-          {
-            "description": "Meters <https://en.wikipedia.org/wiki/Meter>",
-            "enum": [
-              "m"
-            ],
-            "type": "string"
-          },
-          {
-            "description": "Millimeters <https://en.wikipedia.org/wiki/Millimeter>",
-            "enum": [
-              "mm"
-            ],
-            "type": "string"
-          },
-          {
-            "description": "Yards <https://en.wikipedia.org/wiki/Yard>",
-            "enum": [
-              "yd"
-            ],
-            "type": "string"
-          }
-        ]
-      },
-      "Point3d": {
-        "description": "A point in 3D space",
-        "properties": {
-          "x": {
-            "format": "float",
-            "type": "number"
-          },
-          "y": {
-            "format": "float",
-            "type": "number"
-          },
-          "z": {
-            "format": "float",
-            "type": "number"
-          }
-        },
-        "required": [
-          "x",
-          "y",
-          "z"
-        ],
-        "type": "object"
       },
       "InputFormat3d": {
         "description": "Input format specifier.",
