@@ -216,6 +216,10 @@ namespace Zoo.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 1)
@@ -232,6 +236,10 @@ namespace Zoo.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -250,6 +258,10 @@ namespace Zoo.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 3)
@@ -266,6 +278,10 @@ namespace Zoo.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -284,6 +300,10 @@ namespace Zoo.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 5)
@@ -300,6 +320,10 @@ namespace Zoo.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -318,6 +342,10 @@ namespace Zoo.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 7)
@@ -334,6 +362,10 @@ namespace Zoo.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -352,6 +384,10 @@ namespace Zoo.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 9)
@@ -368,6 +404,10 @@ namespace Zoo.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
 
@@ -386,6 +426,10 @@ namespace Zoo.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 11)
@@ -403,6 +447,10 @@ namespace Zoo.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
 
                 else if (__bestIndex == 12)
@@ -419,6 +467,10 @@ namespace Zoo.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
             }
@@ -438,6 +490,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null)
@@ -454,6 +510,10 @@ namespace Zoo.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -472,6 +532,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null)
@@ -488,6 +552,10 @@ namespace Zoo.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -506,6 +574,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null)
@@ -522,6 +594,10 @@ namespace Zoo.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -540,6 +616,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null)
@@ -556,6 +636,10 @@ namespace Zoo.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -574,6 +658,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null)
@@ -590,6 +678,10 @@ namespace Zoo.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -608,6 +700,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null)
@@ -625,6 +721,10 @@ namespace Zoo.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null)
@@ -641,6 +741,10 @@ namespace Zoo.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
