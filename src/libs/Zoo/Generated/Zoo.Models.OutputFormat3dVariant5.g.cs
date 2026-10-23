@@ -33,6 +33,14 @@ namespace Zoo
         public global::Zoo.StepPresentation? Presentation { get; set; }
 
         /// <summary>
+        /// STEP application protocol schema. Defaults to AP242.<br/>
+        /// Default Value: ap242
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("schema")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Zoo.JsonConverters.StepSchemaJsonConverter))]
+        public global::Zoo.StepSchema? Schema { get; set; }
+
+        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
@@ -71,6 +79,10 @@ namespace Zoo
         /// Presentation style.<br/>
         /// Default Value: pretty
         /// </param>
+        /// <param name="schema">
+        /// STEP application protocol schema. Defaults to AP242.<br/>
+        /// Default Value: ap242
+        /// </param>
         /// <param name="type"></param>
         /// <param name="units">
         /// Export length unit.<br/>
@@ -84,12 +96,14 @@ namespace Zoo
             global::Zoo.CoordinateSystem? coords,
             global::System.DateTime? created,
             global::Zoo.StepPresentation? presentation,
+            global::Zoo.StepSchema? schema,
             global::Zoo.OutputFormat3dVariant5Type type,
             global::Zoo.UnitLength? units)
         {
             this.Coords = coords;
             this.Created = created;
             this.Presentation = presentation;
+            this.Schema = schema;
             this.Type = type;
             this.Units = units;
         }
