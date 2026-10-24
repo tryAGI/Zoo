@@ -443,18 +443,6 @@ namespace Zoo
 
             typeof(global::Zoo.JsonConverters.SelectionVariant5TypeNullableJsonConverter),
 
-            typeof(global::Zoo.JsonConverters.StepSchemaVariant1JsonConverter),
-
-            typeof(global::Zoo.JsonConverters.StepSchemaVariant1NullableJsonConverter),
-
-            typeof(global::Zoo.JsonConverters.StepSchemaVariant2JsonConverter),
-
-            typeof(global::Zoo.JsonConverters.StepSchemaVariant2NullableJsonConverter),
-
-            typeof(global::Zoo.JsonConverters.StepSchemaVariant3JsonConverter),
-
-            typeof(global::Zoo.JsonConverters.StepSchemaVariant3NullableJsonConverter),
-
             typeof(global::Zoo.JsonConverters.StepPresentationVariant1JsonConverter),
 
             typeof(global::Zoo.JsonConverters.StepPresentationVariant1NullableJsonConverter),
@@ -542,8 +530,6 @@ namespace Zoo
             typeof(global::Zoo.JsonConverters.StlStorageJsonConverter),
 
             typeof(global::Zoo.JsonConverters.SelectionJsonConverter),
-
-            typeof(global::Zoo.JsonConverters.StepSchemaJsonConverter),
 
             typeof(global::Zoo.JsonConverters.StepPresentationJsonConverter),
 
@@ -735,7 +721,6 @@ namespace Zoo
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.OutputFormat3dVariant4Type), TypeInfoPropertyName = "OutputFormat3dVariant4Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.OutputFormat3dVariant5))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.StepPresentation), TypeInfoPropertyName = "StepPresentation2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.StepSchema), TypeInfoPropertyName = "StepSchema2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.OutputFormat3dVariant5Type), TypeInfoPropertyName = "OutputFormat3dVariant5Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.OutputFormat3dVariant6))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.StlStorage), TypeInfoPropertyName = "StlStorage2")]
@@ -752,9 +737,6 @@ namespace Zoo
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.SelectionVariant4Type), TypeInfoPropertyName = "SelectionVariant4Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.SelectionVariant5))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.SelectionVariant5Type), TypeInfoPropertyName = "SelectionVariant5Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.StepSchemaVariant1), TypeInfoPropertyName = "StepSchemaVariant12")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.StepSchemaVariant2), TypeInfoPropertyName = "StepSchemaVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.StepSchemaVariant3), TypeInfoPropertyName = "StepSchemaVariant32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.StepPresentationVariant1), TypeInfoPropertyName = "StepPresentationVariant12")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.StepPresentationVariant2), TypeInfoPropertyName = "StepPresentationVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.PlyStorageVariant1), TypeInfoPropertyName = "PlyStorageVariant12")]
