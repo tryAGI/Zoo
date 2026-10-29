@@ -16,20 +16,20 @@ namespace Zoo
         public bool? IncludeUuids { get; set; }
 
         /// <summary>
-        /// Specifies how the JSON will be presented.
+        /// Specifies how the JSON will be presented.<br/>
+        /// Default Value: pretty
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("presentation")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Zoo.JsonConverters.GltfPresentationJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Zoo.GltfPresentation Presentation { get; set; }
+        public global::Zoo.GltfPresentation? Presentation { get; set; }
 
         /// <summary>
-        /// Specifies which kind of glTF 2.0 will be exported.
+        /// Specifies which kind of glTF 2.0 will be exported.<br/>
+        /// Default Value: embedded
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("storage")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Zoo.JsonConverters.GltfStorageJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Zoo.GltfStorage Storage { get; set; }
+        public global::Zoo.GltfStorage? Storage { get; set; }
 
         /// <summary>
         ///
@@ -37,6 +37,12 @@ namespace Zoo
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Zoo.JsonConverters.OutputFormat3dVariant2TypeJsonConverter))]
         public global::Zoo.OutputFormat3dVariant2Type Type { get; set; }
+
+        /// <summary>
+        /// Named views in the scene.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("views")]
+        public global::System.Collections.Generic.Dictionary<string, global::Zoo.NamedView>? Views { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,30 +53,37 @@ namespace Zoo
         /// <summary>
         /// Initializes a new instance of the <see cref="OutputFormat3dVariant2" /> class.
         /// </summary>
-        /// <param name="presentation">
-        /// Specifies how the JSON will be presented.
-        /// </param>
-        /// <param name="storage">
-        /// Specifies which kind of glTF 2.0 will be exported.
-        /// </param>
         /// <param name="includeUuids">
         /// Include engine UUIDs in glTF extras. Defaults to false.<br/>
         /// Default Value: false
         /// </param>
+        /// <param name="presentation">
+        /// Specifies how the JSON will be presented.<br/>
+        /// Default Value: pretty
+        /// </param>
+        /// <param name="storage">
+        /// Specifies which kind of glTF 2.0 will be exported.<br/>
+        /// Default Value: embedded
+        /// </param>
         /// <param name="type"></param>
+        /// <param name="views">
+        /// Named views in the scene.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public OutputFormat3dVariant2(
-            global::Zoo.GltfPresentation presentation,
-            global::Zoo.GltfStorage storage,
             bool? includeUuids,
-            global::Zoo.OutputFormat3dVariant2Type type)
+            global::Zoo.GltfPresentation? presentation,
+            global::Zoo.GltfStorage? storage,
+            global::Zoo.OutputFormat3dVariant2Type type,
+            global::System.Collections.Generic.Dictionary<string, global::Zoo.NamedView>? views)
         {
             this.IncludeUuids = includeUuids;
             this.Presentation = presentation;
             this.Storage = storage;
             this.Type = type;
+            this.Views = views;
         }
 
         /// <summary>

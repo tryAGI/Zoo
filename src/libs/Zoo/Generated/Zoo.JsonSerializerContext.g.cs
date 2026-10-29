@@ -443,6 +443,22 @@ namespace Zoo
 
             typeof(global::Zoo.JsonConverters.SelectionVariant5TypeNullableJsonConverter),
 
+            typeof(global::Zoo.JsonConverters.ProjectionVariant1TypeJsonConverter),
+
+            typeof(global::Zoo.JsonConverters.ProjectionVariant1TypeNullableJsonConverter),
+
+            typeof(global::Zoo.JsonConverters.ProjectionVariant2TypeJsonConverter),
+
+            typeof(global::Zoo.JsonConverters.ProjectionVariant2TypeNullableJsonConverter),
+
+            typeof(global::Zoo.JsonConverters.VisibilityVariant1JsonConverter),
+
+            typeof(global::Zoo.JsonConverters.VisibilityVariant1NullableJsonConverter),
+
+            typeof(global::Zoo.JsonConverters.VisibilityVariant2JsonConverter),
+
+            typeof(global::Zoo.JsonConverters.VisibilityVariant2NullableJsonConverter),
+
             typeof(global::Zoo.JsonConverters.StepSchemaVariant1JsonConverter),
 
             typeof(global::Zoo.JsonConverters.StepSchemaVariant1NullableJsonConverter),
@@ -542,6 +558,10 @@ namespace Zoo
             typeof(global::Zoo.JsonConverters.StlStorageJsonConverter),
 
             typeof(global::Zoo.JsonConverters.SelectionJsonConverter),
+
+            typeof(global::Zoo.JsonConverters.ProjectionJsonConverter),
+
+            typeof(global::Zoo.JsonConverters.VisibilityJsonConverter),
 
             typeof(global::Zoo.JsonConverters.StepSchemaJsonConverter),
 
@@ -659,7 +679,6 @@ namespace Zoo
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.UnitLengthVariant4), TypeInfoPropertyName = "UnitLengthVariant42")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.UnitLengthVariant5), TypeInfoPropertyName = "UnitLengthVariant52")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.UnitLengthVariant6), TypeInfoPropertyName = "UnitLengthVariant62")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(float))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.UnitAreaVariant1), TypeInfoPropertyName = "UnitAreaVariant12")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.UnitAreaVariant2), TypeInfoPropertyName = "UnitAreaVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.UnitAreaVariant3), TypeInfoPropertyName = "UnitAreaVariant32")]
@@ -728,6 +747,8 @@ namespace Zoo
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.GltfPresentation), TypeInfoPropertyName = "GltfPresentation2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.GltfStorage), TypeInfoPropertyName = "GltfStorage2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.OutputFormat3dVariant2Type), TypeInfoPropertyName = "OutputFormat3dVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Zoo.NamedView>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.NamedView))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.OutputFormat3dVariant3))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.OutputFormat3dVariant3Type), TypeInfoPropertyName = "OutputFormat3dVariant3Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.OutputFormat3dVariant4))]
@@ -753,6 +774,15 @@ namespace Zoo
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.SelectionVariant4Type), TypeInfoPropertyName = "SelectionVariant4Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.SelectionVariant5))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.SelectionVariant5Type), TypeInfoPropertyName = "SelectionVariant5Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.Visibility), TypeInfoPropertyName = "Visibility2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::System.Guid>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.Projection), TypeInfoPropertyName = "Projection2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.ProjectionVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.ProjectionVariant1Type), TypeInfoPropertyName = "ProjectionVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.ProjectionVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.ProjectionVariant2Type), TypeInfoPropertyName = "ProjectionVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.VisibilityVariant1), TypeInfoPropertyName = "VisibilityVariant12")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.VisibilityVariant2), TypeInfoPropertyName = "VisibilityVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.StepSchemaVariant1), TypeInfoPropertyName = "StepSchemaVariant12")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.StepSchemaVariant2), TypeInfoPropertyName = "StepSchemaVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.StepSchemaVariant3), TypeInfoPropertyName = "StepSchemaVariant32")]
@@ -770,6 +800,7 @@ namespace Zoo
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.FbxStorageVariant2), TypeInfoPropertyName = "FbxStorageVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Zoo.SourceRangePrompt>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Zoo.TextToCadResponse>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::System.Guid>))]
     public sealed partial class SourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
