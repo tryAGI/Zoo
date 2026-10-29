@@ -13,21 +13,21 @@ namespace Zoo
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("x")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required float X { get; set; }
+        public required double X { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("y")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required float Y { get; set; }
+        public required double Y { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("z")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required float Z { get; set; }
+        public required double Z { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,9 +45,9 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public Point3d(
-            float x,
-            float y,
-            float z)
+            double x,
+            double y,
+            double z)
         {
             this.X = x;
             this.Y = y;

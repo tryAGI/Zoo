@@ -36,6 +36,7 @@ namespace Zoo.JsonConverters
             if (__jsonProps.Contains("presentation")) __score1++;
             if (__jsonProps.Contains("storage")) __score1++;
             if (__jsonProps.Contains("type")) __score1++;
+            if (__jsonProps.Contains("views")) __score1++;
             var __score2 = 0;
             if (__jsonProps.Contains("coords")) __score2++;
             if (__jsonProps.Contains("type")) __score2++;
@@ -53,6 +54,7 @@ namespace Zoo.JsonConverters
             if (__jsonProps.Contains("schema")) __score4++;
             if (__jsonProps.Contains("type")) __score4++;
             if (__jsonProps.Contains("units")) __score4++;
+            if (__jsonProps.Contains("views")) __score4++;
             var __score5 = 0;
             if (__jsonProps.Contains("coords")) __score5++;
             if (__jsonProps.Contains("selection")) __score5++;

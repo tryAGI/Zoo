@@ -2424,15 +2424,15 @@
         "description": "A point in 3D space",
         "properties": {
           "x": {
-            "format": "float",
+            "format": "double",
             "type": "number"
           },
           "y": {
-            "format": "float",
+            "format": "double",
             "type": "number"
           },
           "z": {
-            "format": "float",
+            "format": "double",
             "type": "number"
           }
         },
@@ -3227,6 +3227,7 @@
                     "$ref": "#/components/schemas/GltfPresentation"
                   }
                 ],
+                "default": "pretty",
                 "description": "Specifies how the JSON will be presented."
               },
               "storage": {
@@ -3235,6 +3236,7 @@
                     "$ref": "#/components/schemas/GltfStorage"
                   }
                 ],
+                "default": "embedded",
                 "description": "Specifies which kind of glTF 2.0 will be exported."
               },
               "type": {
@@ -3242,11 +3244,16 @@
                   "gltf"
                 ],
                 "type": "string"
+              },
+              "views": {
+                "additionalProperties": {
+                  "$ref": "#/components/schemas/NamedView"
+                },
+                "description": "Named views in the scene.",
+                "type": "object"
               }
             },
             "required": [
-              "presentation",
-              "storage",
               "type"
             ],
             "type": "object"
@@ -3395,6 +3402,13 @@
                 ],
                 "default": "m",
                 "description": "Export length unit.\n\nDefaults to meters."
+              },
+              "views": {
+                "additionalProperties": {
+                  "$ref": "#/components/schemas/NamedView"
+                },
+                "description": "Named views in the scene.",
+                "type": "object"
               }
             },
             "required": [
@@ -3575,6 +3589,126 @@
               "type"
             ],
             "type": "object"
+          }
+        ]
+      },
+      "NamedView": {
+        "description": "Options for exporting glTF 2.0.",
+        "properties": {
+          "baseline": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Visibility"
+              }
+            ],
+            "description": "Baseline visibility.\n\nDetermines whether entities are visible or by default."
+          },
+          "except_ids": {
+            "description": "Exceptions to the baseline visibility.",
+            "items": {
+              "$ref": "#/components/schemas/ModelingCmdId"
+            },
+            "type": "array"
+          },
+          "projection": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Projection"
+              }
+            ],
+            "description": "Projection kind."
+          },
+          "target": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Point3d"
+              }
+            ],
+            "description": "Target point."
+          },
+          "up": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Point3d"
+              }
+            ],
+            "description": "Up direction."
+          },
+          "vantage": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Point3d"
+              }
+            ],
+            "description": "Vantage point."
+          }
+        },
+        "required": [
+          "baseline",
+          "except_ids",
+          "projection",
+          "target",
+          "up",
+          "vantage"
+        ],
+        "type": "object"
+      },
+      "Projection": {
+        "description": "Data item selection.",
+        "oneOf": [
+          {
+            "description": "Orthographic (parallel) projection.",
+            "properties": {
+              "type": {
+                "enum": [
+                  "orthographic"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "type"
+            ],
+            "type": "object"
+          },
+          {
+            "description": "Perspective projection.",
+            "properties": {
+              "type": {
+                "enum": [
+                  "perspective"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "type"
+            ],
+            "type": "object"
+          }
+        ]
+      },
+      "ModelingCmdId": {
+        "description": "All commands have unique IDs. These should be randomly generated.",
+        "format": "uuid",
+        "type": "string"
+      },
+      "Visibility": {
+        "description": "Identifies the visibility of entities.",
+        "oneOf": [
+          {
+            "description": "The entity is visible.",
+            "enum": [
+              "show"
+            ],
+            "type": "string"
+          },
+          {
+            "description": "The entity is hidden.",
+            "enum": [
+              "hide"
+            ],
+            "type": "string"
           }
         ]
       },

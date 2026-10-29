@@ -57,6 +57,12 @@ namespace Zoo
         public global::Zoo.UnitLength? Units { get; set; }
 
         /// <summary>
+        /// Named views in the scene.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("views")]
+        public global::System.Collections.Generic.Dictionary<string, global::Zoo.NamedView>? Views { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -89,6 +95,9 @@ namespace Zoo
         /// Defaults to meters.<br/>
         /// Default Value: m
         /// </param>
+        /// <param name="views">
+        /// Named views in the scene.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -98,7 +107,8 @@ namespace Zoo
             global::Zoo.StepPresentation? presentation,
             global::Zoo.StepSchema? schema,
             global::Zoo.OutputFormat3dVariant5Type type,
-            global::Zoo.UnitLength? units)
+            global::Zoo.UnitLength? units,
+            global::System.Collections.Generic.Dictionary<string, global::Zoo.NamedView>? views)
         {
             this.Coords = coords;
             this.Created = created;
@@ -106,6 +116,7 @@ namespace Zoo
             this.Schema = schema;
             this.Type = type;
             this.Units = units;
+            this.Views = views;
         }
 
         /// <summary>
