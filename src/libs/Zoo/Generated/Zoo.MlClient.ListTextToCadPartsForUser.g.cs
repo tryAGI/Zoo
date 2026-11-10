@@ -27,7 +27,7 @@ namespace Zoo
             };
         partial void PrepareListTextToCadPartsForUserArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref int? limit,
+            ref long? limit,
             ref string? pageToken,
             ref global::Zoo.CreatedAtSortMode? sortBy,
             ref bool? noModels,
@@ -36,7 +36,7 @@ namespace Zoo
         partial void PrepareListTextToCadPartsForUserRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            int? limit,
+            long? limit,
             string? pageToken,
             global::Zoo.CreatedAtSortMode? sortBy,
             bool? noModels,
@@ -72,7 +72,7 @@ namespace Zoo
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Zoo.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Zoo.TextToCadResponseResultsPage> ListTextToCadPartsForUserAsync(
-            int? limit = default,
+            long? limit = default,
             string? pageToken = default,
             global::Zoo.CreatedAtSortMode? sortBy = default,
             bool? noModels = default,
@@ -115,7 +115,7 @@ namespace Zoo
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Zoo.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Zoo.AutoSDKHttpResponse<global::Zoo.TextToCadResponseResultsPage>> ListTextToCadPartsForUserAsResponseAsync(
-            int? limit = default,
+            long? limit = default,
             string? pageToken = default,
             global::Zoo.CreatedAtSortMode? sortBy = default,
             bool? noModels = default,

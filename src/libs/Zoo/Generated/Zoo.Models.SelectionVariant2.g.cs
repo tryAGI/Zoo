@@ -13,7 +13,7 @@ namespace Zoo
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("index")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Index { get; set; }
+        public required long Index { get; set; }
 
         /// <summary>
         ///
@@ -39,7 +39,7 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public SelectionVariant2(
-            int index,
+            long index,
             global::Zoo.SelectionVariant2Type type)
         {
             this.Index = index;
