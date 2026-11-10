@@ -25,7 +25,7 @@ namespace Zoo
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Zoo.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Zoo.TextToCadResponseResultsPage> ListTextToCadPartsForUserAsync(
-            int? limit = default,
+            long? limit = default,
             string? pageToken = default,
             global::Zoo.CreatedAtSortMode? sortBy = default,
             bool? noModels = default,
@@ -54,7 +54,7 @@ namespace Zoo
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Zoo.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Zoo.AutoSDKHttpResponse<global::Zoo.TextToCadResponseResultsPage>> ListTextToCadPartsForUserAsResponseAsync(
-            int? limit = default,
+            long? limit = default,
             string? pageToken = default,
             global::Zoo.CreatedAtSortMode? sortBy = default,
             bool? noModels = default,

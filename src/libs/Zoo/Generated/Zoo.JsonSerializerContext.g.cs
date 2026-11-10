@@ -511,6 +511,26 @@ namespace Zoo
 
             typeof(global::Zoo.JsonConverters.GltfPresentationVariant2NullableJsonConverter),
 
+            typeof(global::Zoo.JsonConverters.GltfExportExtraVariant1JsonConverter),
+
+            typeof(global::Zoo.JsonConverters.GltfExportExtraVariant1NullableJsonConverter),
+
+            typeof(global::Zoo.JsonConverters.GltfExportExtraVariant2JsonConverter),
+
+            typeof(global::Zoo.JsonConverters.GltfExportExtraVariant2NullableJsonConverter),
+
+            typeof(global::Zoo.JsonConverters.GltfExportExtraVariant3JsonConverter),
+
+            typeof(global::Zoo.JsonConverters.GltfExportExtraVariant3NullableJsonConverter),
+
+            typeof(global::Zoo.JsonConverters.GltfExportExtraVariant4JsonConverter),
+
+            typeof(global::Zoo.JsonConverters.GltfExportExtraVariant4NullableJsonConverter),
+
+            typeof(global::Zoo.JsonConverters.GltfExportExtraVariant5JsonConverter),
+
+            typeof(global::Zoo.JsonConverters.GltfExportExtraVariant5NullableJsonConverter),
+
             typeof(global::Zoo.JsonConverters.FbxStorageVariant1JsonConverter),
 
             typeof(global::Zoo.JsonConverters.FbxStorageVariant1NullableJsonConverter),
@@ -573,6 +593,8 @@ namespace Zoo
 
             typeof(global::Zoo.JsonConverters.GltfPresentationJsonConverter),
 
+            typeof(global::Zoo.JsonConverters.GltfExportExtraJsonConverter),
+
             typeof(global::Zoo.JsonConverters.FbxStorageJsonConverter),
 
             typeof(global::Zoo.JsonConverters.UnixTimestampJsonConverter),
@@ -608,7 +630,7 @@ namespace Zoo
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.ApiCallStatusVariant5), TypeInfoPropertyName = "ApiCallStatusVariant52")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.SourceRange))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.SourcePosition))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(int))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(long))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.TextToCadModelVariant1), TypeInfoPropertyName = "TextToCadModelVariant12")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.TextToCadModelVariant2), TypeInfoPropertyName = "TextToCadModelVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.TextToCadModelVariant3), TypeInfoPropertyName = "TextToCadModelVariant32")]
@@ -744,6 +766,8 @@ namespace Zoo
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.FbxStorage), TypeInfoPropertyName = "FbxStorage2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.OutputFormat3dVariant1Type), TypeInfoPropertyName = "OutputFormat3dVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.OutputFormat3dVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Zoo.GltfExportExtra>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.GltfExportExtra), TypeInfoPropertyName = "GltfExportExtra2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.GltfPresentation), TypeInfoPropertyName = "GltfPresentation2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.GltfStorage), TypeInfoPropertyName = "GltfStorage2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.OutputFormat3dVariant2Type), TypeInfoPropertyName = "OutputFormat3dVariant2Type2")]
@@ -796,10 +820,16 @@ namespace Zoo
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.GltfStorageVariant3), TypeInfoPropertyName = "GltfStorageVariant32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.GltfPresentationVariant1), TypeInfoPropertyName = "GltfPresentationVariant12")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.GltfPresentationVariant2), TypeInfoPropertyName = "GltfPresentationVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.GltfExportExtraVariant1), TypeInfoPropertyName = "GltfExportExtraVariant12")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.GltfExportExtraVariant2), TypeInfoPropertyName = "GltfExportExtraVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.GltfExportExtraVariant3), TypeInfoPropertyName = "GltfExportExtraVariant32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.GltfExportExtraVariant4), TypeInfoPropertyName = "GltfExportExtraVariant42")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.GltfExportExtraVariant5), TypeInfoPropertyName = "GltfExportExtraVariant52")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.FbxStorageVariant1), TypeInfoPropertyName = "FbxStorageVariant12")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.FbxStorageVariant2), TypeInfoPropertyName = "FbxStorageVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Zoo.SourceRangePrompt>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Zoo.TextToCadResponse>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Zoo.GltfExportExtra>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::System.Guid>))]
     public sealed partial class SourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
     {

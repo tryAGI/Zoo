@@ -1,4 +1,6 @@
 
+#pragma warning disable CS0618 // Type or member is obsolete
+
 #nullable enable
 
 namespace Zoo
@@ -9,10 +11,18 @@ namespace Zoo
     public sealed partial class OutputFormat3dVariant2
     {
         /// <summary>
-        /// Include engine UUIDs in glTF extras. Defaults to false.<br/>
+        /// Additional data to include in the exported glTF. Defaults to an empty set.<br/>
+        /// Default Value: []
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("extras")]
+        public global::System.Collections.Generic.IList<global::Zoo.GltfExportExtra>? Extras { get; set; }
+
+        /// <summary>
+        /// Include geometry UUIDs. Setting this to true is equivalent to adding `geometry_uuids` to `extras`.<br/>
         /// Default Value: false
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("include_uuids")]
+        [global::System.Obsolete("This property marked as deprecated.")]
         public bool? IncludeUuids { get; set; }
 
         /// <summary>
@@ -53,9 +63,9 @@ namespace Zoo
         /// <summary>
         /// Initializes a new instance of the <see cref="OutputFormat3dVariant2" /> class.
         /// </summary>
-        /// <param name="includeUuids">
-        /// Include engine UUIDs in glTF extras. Defaults to false.<br/>
-        /// Default Value: false
+        /// <param name="extras">
+        /// Additional data to include in the exported glTF. Defaults to an empty set.<br/>
+        /// Default Value: []
         /// </param>
         /// <param name="presentation">
         /// Specifies how the JSON will be presented.<br/>
@@ -73,13 +83,13 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public OutputFormat3dVariant2(
-            bool? includeUuids,
+            global::System.Collections.Generic.IList<global::Zoo.GltfExportExtra>? extras,
             global::Zoo.GltfPresentation? presentation,
             global::Zoo.GltfStorage? storage,
             global::Zoo.OutputFormat3dVariant2Type type,
             global::System.Collections.Generic.Dictionary<string, global::Zoo.NamedView>? views)
         {
-            this.IncludeUuids = includeUuids;
+            this.Extras = extras;
             this.Presentation = presentation;
             this.Storage = storage;
             this.Type = type;

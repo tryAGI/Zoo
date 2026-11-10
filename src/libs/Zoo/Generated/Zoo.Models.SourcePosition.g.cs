@@ -13,14 +13,14 @@ namespace Zoo
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("column")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Column { get; set; }
+        public required long Column { get; set; }
 
         /// <summary>
         /// The line number.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("line")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required int Line { get; set; }
+        public required long Line { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -41,8 +41,8 @@ namespace Zoo
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public SourcePosition(
-            int column,
-            int line)
+            long column,
+            long line)
         {
             this.Column = column;
             this.Line = line;
