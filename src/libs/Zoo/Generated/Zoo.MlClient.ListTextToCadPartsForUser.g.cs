@@ -404,13 +404,13 @@ namespace Zoo
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_4XX = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_4XX = global::Zoo.Error.FromJson(__content_4XX, JsonSerializerContext);
+                                        __value_4XX = __content_4XX is not { Length: > 0 } ? null : global::Zoo.Error.FromJson(__content_4XX, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_4XX = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_4XX = global::Zoo.Error.FromJson(__content_4XX, JsonSerializerContext);
+                                        __value_4XX = __content_4XX is not { Length: > 0 } ? null : global::Zoo.Error.FromJson(__content_4XX, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -421,7 +421,7 @@ namespace Zoo
 
                                 throw global::Zoo.ApiException<global::Zoo.Error>.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_4XX ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_4XX is { Length: > 0 } ? __content_4XX : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_4XX,
                                     responseBody: __content_4XX,
                                     responseObject: __value_4XX,
@@ -441,13 +441,13 @@ namespace Zoo
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_5XX = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_5XX = global::Zoo.Error.FromJson(__content_5XX, JsonSerializerContext);
+                                        __value_5XX = __content_5XX is not { Length: > 0 } ? null : global::Zoo.Error.FromJson(__content_5XX, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_5XX = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_5XX = global::Zoo.Error.FromJson(__content_5XX, JsonSerializerContext);
+                                        __value_5XX = __content_5XX is not { Length: > 0 } ? null : global::Zoo.Error.FromJson(__content_5XX, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -458,7 +458,7 @@ namespace Zoo
 
                                 throw global::Zoo.ApiException<global::Zoo.Error>.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_5XX ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_5XX is { Length: > 0 } ? __content_5XX : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_5XX,
                                     responseBody: __content_5XX,
                                     responseObject: __value_5XX,
@@ -501,7 +501,7 @@ namespace Zoo
                                 {
                                     throw global::Zoo.ApiException.Create(
                                         statusCode: __response.StatusCode,
-                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        message: __content is { Length: > 0 } ? __content : __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
                                         responseBody: __content,
                                         responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -546,7 +546,7 @@ namespace Zoo
 
                                     throw global::Zoo.ApiException.Create(
                                         statusCode: __response.StatusCode,
-                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        message: __content is { Length: > 0 } ? __content : __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
                                         responseBody: __content,
                                         responseHeaders: global::System.Linq.Enumerable.ToDictionary(
