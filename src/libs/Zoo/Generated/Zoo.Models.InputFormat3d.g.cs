@@ -489,43 +489,6 @@ namespace Zoo
         public global::Zoo.InputFormat3dVariant13 PickInputFormat3dVariant13() => InputFormat3dVariant13 is { } value
             ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InputFormat3dVariant13' but the value was {ToString()}.");
-
-        /// <summary>
-        /// Rhino (3dm) file format
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::Zoo.InputFormat3dVariant14? InputFormat3dVariant14 { get; init; }
-#else
-        public global::Zoo.InputFormat3dVariant14? InputFormat3dVariant14 { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InputFormat3dVariant14))]
-#endif
-        public bool IsInputFormat3dVariant14 => InputFormat3dVariant14 != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickInputFormat3dVariant14(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::Zoo.InputFormat3dVariant14? value)
-        {
-            value = InputFormat3dVariant14;
-            return IsInputFormat3dVariant14;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Zoo.InputFormat3dVariant14 PickInputFormat3dVariant14() => InputFormat3dVariant14 is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'InputFormat3dVariant14' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -828,29 +791,6 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator InputFormat3d(global::Zoo.InputFormat3dVariant14 value) => new InputFormat3d((global::Zoo.InputFormat3dVariant14?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::Zoo.InputFormat3dVariant14?(InputFormat3d @this) => @this.InputFormat3dVariant14;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public InputFormat3d(global::Zoo.InputFormat3dVariant14? value)
-        {
-            InputFormat3dVariant14 = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static InputFormat3d FromInputFormat3dVariant14(global::Zoo.InputFormat3dVariant14? value) => new InputFormat3d(value);
-
-        /// <summary>
-        ///
-        /// </summary>
         public InputFormat3d(
             global::Zoo.InputFormat3dVariant1? inputFormat3dVariant1,
             global::Zoo.InputFormat3dVariant2? inputFormat3dVariant2,
@@ -864,8 +804,7 @@ namespace Zoo
             global::Zoo.InputFormat3dVariant10? inputFormat3dVariant10,
             global::Zoo.InputFormat3dVariant11? inputFormat3dVariant11,
             global::Zoo.InputFormat3dVariant12? inputFormat3dVariant12,
-            global::Zoo.InputFormat3dVariant13? inputFormat3dVariant13,
-            global::Zoo.InputFormat3dVariant14? inputFormat3dVariant14
+            global::Zoo.InputFormat3dVariant13? inputFormat3dVariant13
             )
         {
             InputFormat3dVariant1 = inputFormat3dVariant1;
@@ -881,14 +820,12 @@ namespace Zoo
             InputFormat3dVariant11 = inputFormat3dVariant11;
             InputFormat3dVariant12 = inputFormat3dVariant12;
             InputFormat3dVariant13 = inputFormat3dVariant13;
-            InputFormat3dVariant14 = inputFormat3dVariant14;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            InputFormat3dVariant14 as object ??
             InputFormat3dVariant13 as object ??
             InputFormat3dVariant12 as object ??
             InputFormat3dVariant11 as object ??
@@ -920,8 +857,7 @@ namespace Zoo
             InputFormat3dVariant10?.ToString() ??
             InputFormat3dVariant11?.ToString() ??
             InputFormat3dVariant12?.ToString() ??
-            InputFormat3dVariant13?.ToString() ??
-            InputFormat3dVariant14?.ToString()
+            InputFormat3dVariant13?.ToString()
             ;
 
         /// <summary>
@@ -929,7 +865,7 @@ namespace Zoo
         /// </summary>
         public bool Validate()
         {
-            return IsInputFormat3dVariant1 && !IsInputFormat3dVariant2 && !IsInputFormat3dVariant3 && !IsInputFormat3dVariant4 && !IsInputFormat3dVariant5 && !IsInputFormat3dVariant6 && !IsInputFormat3dVariant7 && !IsInputFormat3dVariant8 && !IsInputFormat3dVariant9 && !IsInputFormat3dVariant10 && !IsInputFormat3dVariant11 && !IsInputFormat3dVariant12 && !IsInputFormat3dVariant13 && !IsInputFormat3dVariant14 || !IsInputFormat3dVariant1 && IsInputFormat3dVariant2 && !IsInputFormat3dVariant3 && !IsInputFormat3dVariant4 && !IsInputFormat3dVariant5 && !IsInputFormat3dVariant6 && !IsInputFormat3dVariant7 && !IsInputFormat3dVariant8 && !IsInputFormat3dVariant9 && !IsInputFormat3dVariant10 && !IsInputFormat3dVariant11 && !IsInputFormat3dVariant12 && !IsInputFormat3dVariant13 && !IsInputFormat3dVariant14 || !IsInputFormat3dVariant1 && !IsInputFormat3dVariant2 && IsInputFormat3dVariant3 && !IsInputFormat3dVariant4 && !IsInputFormat3dVariant5 && !IsInputFormat3dVariant6 && !IsInputFormat3dVariant7 && !IsInputFormat3dVariant8 && !IsInputFormat3dVariant9 && !IsInputFormat3dVariant10 && !IsInputFormat3dVariant11 && !IsInputFormat3dVariant12 && !IsInputFormat3dVariant13 && !IsInputFormat3dVariant14 || !IsInputFormat3dVariant1 && !IsInputFormat3dVariant2 && !IsInputFormat3dVariant3 && IsInputFormat3dVariant4 && !IsInputFormat3dVariant5 && !IsInputFormat3dVariant6 && !IsInputFormat3dVariant7 && !IsInputFormat3dVariant8 && !IsInputFormat3dVariant9 && !IsInputFormat3dVariant10 && !IsInputFormat3dVariant11 && !IsInputFormat3dVariant12 && !IsInputFormat3dVariant13 && !IsInputFormat3dVariant14 || !IsInputFormat3dVariant1 && !IsInputFormat3dVariant2 && !IsInputFormat3dVariant3 && !IsInputFormat3dVariant4 && IsInputFormat3dVariant5 && !IsInputFormat3dVariant6 && !IsInputFormat3dVariant7 && !IsInputFormat3dVariant8 && !IsInputFormat3dVariant9 && !IsInputFormat3dVariant10 && !IsInputFormat3dVariant11 && !IsInputFormat3dVariant12 && !IsInputFormat3dVariant13 && !IsInputFormat3dVariant14 || !IsInputFormat3dVariant1 && !IsInputFormat3dVariant2 && !IsInputFormat3dVariant3 && !IsInputFormat3dVariant4 && !IsInputFormat3dVariant5 && IsInputFormat3dVariant6 && !IsInputFormat3dVariant7 && !IsInputFormat3dVariant8 && !IsInputFormat3dVariant9 && !IsInputFormat3dVariant10 && !IsInputFormat3dVariant11 && !IsInputFormat3dVariant12 && !IsInputFormat3dVariant13 && !IsInputFormat3dVariant14 || !IsInputFormat3dVariant1 && !IsInputFormat3dVariant2 && !IsInputFormat3dVariant3 && !IsInputFormat3dVariant4 && !IsInputFormat3dVariant5 && !IsInputFormat3dVariant6 && IsInputFormat3dVariant7 && !IsInputFormat3dVariant8 && !IsInputFormat3dVariant9 && !IsInputFormat3dVariant10 && !IsInputFormat3dVariant11 && !IsInputFormat3dVariant12 && !IsInputFormat3dVariant13 && !IsInputFormat3dVariant14 || !IsInputFormat3dVariant1 && !IsInputFormat3dVariant2 && !IsInputFormat3dVariant3 && !IsInputFormat3dVariant4 && !IsInputFormat3dVariant5 && !IsInputFormat3dVariant6 && !IsInputFormat3dVariant7 && IsInputFormat3dVariant8 && !IsInputFormat3dVariant9 && !IsInputFormat3dVariant10 && !IsInputFormat3dVariant11 && !IsInputFormat3dVariant12 && !IsInputFormat3dVariant13 && !IsInputFormat3dVariant14 || !IsInputFormat3dVariant1 && !IsInputFormat3dVariant2 && !IsInputFormat3dVariant3 && !IsInputFormat3dVariant4 && !IsInputFormat3dVariant5 && !IsInputFormat3dVariant6 && !IsInputFormat3dVariant7 && !IsInputFormat3dVariant8 && IsInputFormat3dVariant9 && !IsInputFormat3dVariant10 && !IsInputFormat3dVariant11 && !IsInputFormat3dVariant12 && !IsInputFormat3dVariant13 && !IsInputFormat3dVariant14 || !IsInputFormat3dVariant1 && !IsInputFormat3dVariant2 && !IsInputFormat3dVariant3 && !IsInputFormat3dVariant4 && !IsInputFormat3dVariant5 && !IsInputFormat3dVariant6 && !IsInputFormat3dVariant7 && !IsInputFormat3dVariant8 && !IsInputFormat3dVariant9 && IsInputFormat3dVariant10 && !IsInputFormat3dVariant11 && !IsInputFormat3dVariant12 && !IsInputFormat3dVariant13 && !IsInputFormat3dVariant14 || !IsInputFormat3dVariant1 && !IsInputFormat3dVariant2 && !IsInputFormat3dVariant3 && !IsInputFormat3dVariant4 && !IsInputFormat3dVariant5 && !IsInputFormat3dVariant6 && !IsInputFormat3dVariant7 && !IsInputFormat3dVariant8 && !IsInputFormat3dVariant9 && !IsInputFormat3dVariant10 && IsInputFormat3dVariant11 && !IsInputFormat3dVariant12 && !IsInputFormat3dVariant13 && !IsInputFormat3dVariant14 || !IsInputFormat3dVariant1 && !IsInputFormat3dVariant2 && !IsInputFormat3dVariant3 && !IsInputFormat3dVariant4 && !IsInputFormat3dVariant5 && !IsInputFormat3dVariant6 && !IsInputFormat3dVariant7 && !IsInputFormat3dVariant8 && !IsInputFormat3dVariant9 && !IsInputFormat3dVariant10 && !IsInputFormat3dVariant11 && IsInputFormat3dVariant12 && !IsInputFormat3dVariant13 && !IsInputFormat3dVariant14 || !IsInputFormat3dVariant1 && !IsInputFormat3dVariant2 && !IsInputFormat3dVariant3 && !IsInputFormat3dVariant4 && !IsInputFormat3dVariant5 && !IsInputFormat3dVariant6 && !IsInputFormat3dVariant7 && !IsInputFormat3dVariant8 && !IsInputFormat3dVariant9 && !IsInputFormat3dVariant10 && !IsInputFormat3dVariant11 && !IsInputFormat3dVariant12 && IsInputFormat3dVariant13 && !IsInputFormat3dVariant14 || !IsInputFormat3dVariant1 && !IsInputFormat3dVariant2 && !IsInputFormat3dVariant3 && !IsInputFormat3dVariant4 && !IsInputFormat3dVariant5 && !IsInputFormat3dVariant6 && !IsInputFormat3dVariant7 && !IsInputFormat3dVariant8 && !IsInputFormat3dVariant9 && !IsInputFormat3dVariant10 && !IsInputFormat3dVariant11 && !IsInputFormat3dVariant12 && !IsInputFormat3dVariant13 && IsInputFormat3dVariant14;
+            return IsInputFormat3dVariant1 && !IsInputFormat3dVariant2 && !IsInputFormat3dVariant3 && !IsInputFormat3dVariant4 && !IsInputFormat3dVariant5 && !IsInputFormat3dVariant6 && !IsInputFormat3dVariant7 && !IsInputFormat3dVariant8 && !IsInputFormat3dVariant9 && !IsInputFormat3dVariant10 && !IsInputFormat3dVariant11 && !IsInputFormat3dVariant12 && !IsInputFormat3dVariant13 || !IsInputFormat3dVariant1 && IsInputFormat3dVariant2 && !IsInputFormat3dVariant3 && !IsInputFormat3dVariant4 && !IsInputFormat3dVariant5 && !IsInputFormat3dVariant6 && !IsInputFormat3dVariant7 && !IsInputFormat3dVariant8 && !IsInputFormat3dVariant9 && !IsInputFormat3dVariant10 && !IsInputFormat3dVariant11 && !IsInputFormat3dVariant12 && !IsInputFormat3dVariant13 || !IsInputFormat3dVariant1 && !IsInputFormat3dVariant2 && IsInputFormat3dVariant3 && !IsInputFormat3dVariant4 && !IsInputFormat3dVariant5 && !IsInputFormat3dVariant6 && !IsInputFormat3dVariant7 && !IsInputFormat3dVariant8 && !IsInputFormat3dVariant9 && !IsInputFormat3dVariant10 && !IsInputFormat3dVariant11 && !IsInputFormat3dVariant12 && !IsInputFormat3dVariant13 || !IsInputFormat3dVariant1 && !IsInputFormat3dVariant2 && !IsInputFormat3dVariant3 && IsInputFormat3dVariant4 && !IsInputFormat3dVariant5 && !IsInputFormat3dVariant6 && !IsInputFormat3dVariant7 && !IsInputFormat3dVariant8 && !IsInputFormat3dVariant9 && !IsInputFormat3dVariant10 && !IsInputFormat3dVariant11 && !IsInputFormat3dVariant12 && !IsInputFormat3dVariant13 || !IsInputFormat3dVariant1 && !IsInputFormat3dVariant2 && !IsInputFormat3dVariant3 && !IsInputFormat3dVariant4 && IsInputFormat3dVariant5 && !IsInputFormat3dVariant6 && !IsInputFormat3dVariant7 && !IsInputFormat3dVariant8 && !IsInputFormat3dVariant9 && !IsInputFormat3dVariant10 && !IsInputFormat3dVariant11 && !IsInputFormat3dVariant12 && !IsInputFormat3dVariant13 || !IsInputFormat3dVariant1 && !IsInputFormat3dVariant2 && !IsInputFormat3dVariant3 && !IsInputFormat3dVariant4 && !IsInputFormat3dVariant5 && IsInputFormat3dVariant6 && !IsInputFormat3dVariant7 && !IsInputFormat3dVariant8 && !IsInputFormat3dVariant9 && !IsInputFormat3dVariant10 && !IsInputFormat3dVariant11 && !IsInputFormat3dVariant12 && !IsInputFormat3dVariant13 || !IsInputFormat3dVariant1 && !IsInputFormat3dVariant2 && !IsInputFormat3dVariant3 && !IsInputFormat3dVariant4 && !IsInputFormat3dVariant5 && !IsInputFormat3dVariant6 && IsInputFormat3dVariant7 && !IsInputFormat3dVariant8 && !IsInputFormat3dVariant9 && !IsInputFormat3dVariant10 && !IsInputFormat3dVariant11 && !IsInputFormat3dVariant12 && !IsInputFormat3dVariant13 || !IsInputFormat3dVariant1 && !IsInputFormat3dVariant2 && !IsInputFormat3dVariant3 && !IsInputFormat3dVariant4 && !IsInputFormat3dVariant5 && !IsInputFormat3dVariant6 && !IsInputFormat3dVariant7 && IsInputFormat3dVariant8 && !IsInputFormat3dVariant9 && !IsInputFormat3dVariant10 && !IsInputFormat3dVariant11 && !IsInputFormat3dVariant12 && !IsInputFormat3dVariant13 || !IsInputFormat3dVariant1 && !IsInputFormat3dVariant2 && !IsInputFormat3dVariant3 && !IsInputFormat3dVariant4 && !IsInputFormat3dVariant5 && !IsInputFormat3dVariant6 && !IsInputFormat3dVariant7 && !IsInputFormat3dVariant8 && IsInputFormat3dVariant9 && !IsInputFormat3dVariant10 && !IsInputFormat3dVariant11 && !IsInputFormat3dVariant12 && !IsInputFormat3dVariant13 || !IsInputFormat3dVariant1 && !IsInputFormat3dVariant2 && !IsInputFormat3dVariant3 && !IsInputFormat3dVariant4 && !IsInputFormat3dVariant5 && !IsInputFormat3dVariant6 && !IsInputFormat3dVariant7 && !IsInputFormat3dVariant8 && !IsInputFormat3dVariant9 && IsInputFormat3dVariant10 && !IsInputFormat3dVariant11 && !IsInputFormat3dVariant12 && !IsInputFormat3dVariant13 || !IsInputFormat3dVariant1 && !IsInputFormat3dVariant2 && !IsInputFormat3dVariant3 && !IsInputFormat3dVariant4 && !IsInputFormat3dVariant5 && !IsInputFormat3dVariant6 && !IsInputFormat3dVariant7 && !IsInputFormat3dVariant8 && !IsInputFormat3dVariant9 && !IsInputFormat3dVariant10 && IsInputFormat3dVariant11 && !IsInputFormat3dVariant12 && !IsInputFormat3dVariant13 || !IsInputFormat3dVariant1 && !IsInputFormat3dVariant2 && !IsInputFormat3dVariant3 && !IsInputFormat3dVariant4 && !IsInputFormat3dVariant5 && !IsInputFormat3dVariant6 && !IsInputFormat3dVariant7 && !IsInputFormat3dVariant8 && !IsInputFormat3dVariant9 && !IsInputFormat3dVariant10 && !IsInputFormat3dVariant11 && IsInputFormat3dVariant12 && !IsInputFormat3dVariant13 || !IsInputFormat3dVariant1 && !IsInputFormat3dVariant2 && !IsInputFormat3dVariant3 && !IsInputFormat3dVariant4 && !IsInputFormat3dVariant5 && !IsInputFormat3dVariant6 && !IsInputFormat3dVariant7 && !IsInputFormat3dVariant8 && !IsInputFormat3dVariant9 && !IsInputFormat3dVariant10 && !IsInputFormat3dVariant11 && !IsInputFormat3dVariant12 && IsInputFormat3dVariant13;
         }
 
         /// <summary>
@@ -949,7 +885,6 @@ namespace Zoo
             global::System.Func<global::Zoo.InputFormat3dVariant11, TResult>? inputFormat3dVariant11 = null,
             global::System.Func<global::Zoo.InputFormat3dVariant12, TResult>? inputFormat3dVariant12 = null,
             global::System.Func<global::Zoo.InputFormat3dVariant13, TResult>? inputFormat3dVariant13 = null,
-            global::System.Func<global::Zoo.InputFormat3dVariant14, TResult>? inputFormat3dVariant14 = null,
             bool validate = true)
         {
             if (validate)
@@ -1009,10 +944,6 @@ namespace Zoo
             {
                 return inputFormat3dVariant13(__value12);
             }
-            else if (InputFormat3dVariant14 is { } __value13 && inputFormat3dVariant14 != null)
-            {
-                return inputFormat3dVariant14(__value13);
-            }
 
             return default(TResult);
         }
@@ -1046,8 +977,6 @@ namespace Zoo
             global::System.Action<global::Zoo.InputFormat3dVariant12>? inputFormat3dVariant12 = null,
 
             global::System.Action<global::Zoo.InputFormat3dVariant13>? inputFormat3dVariant13 = null,
-
-            global::System.Action<global::Zoo.InputFormat3dVariant14>? inputFormat3dVariant14 = null,
             bool validate = true)
         {
             if (validate)
@@ -1106,10 +1035,6 @@ namespace Zoo
             else if (InputFormat3dVariant13 is { } __value12)
             {
                 inputFormat3dVariant13?.Invoke(__value12);
-            }
-            else if (InputFormat3dVariant14 is { } __value13)
-            {
-                inputFormat3dVariant14?.Invoke(__value13);
             }
         }
 
@@ -1130,7 +1055,6 @@ namespace Zoo
             global::System.Action<global::Zoo.InputFormat3dVariant11>? inputFormat3dVariant11 = null,
             global::System.Action<global::Zoo.InputFormat3dVariant12>? inputFormat3dVariant12 = null,
             global::System.Action<global::Zoo.InputFormat3dVariant13>? inputFormat3dVariant13 = null,
-            global::System.Action<global::Zoo.InputFormat3dVariant14>? inputFormat3dVariant14 = null,
             bool validate = true)
         {
             if (validate)
@@ -1189,10 +1113,6 @@ namespace Zoo
             else if (InputFormat3dVariant13 is { } __value12)
             {
                 inputFormat3dVariant13?.Invoke(__value12);
-            }
-            else if (InputFormat3dVariant14 is { } __value13)
-            {
-                inputFormat3dVariant14?.Invoke(__value13);
             }
         }
 
@@ -1229,8 +1149,6 @@ namespace Zoo
                 typeof(global::Zoo.InputFormat3dVariant12),
                 InputFormat3dVariant13,
                 typeof(global::Zoo.InputFormat3dVariant13),
-                InputFormat3dVariant14,
-                typeof(global::Zoo.InputFormat3dVariant14),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -1259,8 +1177,7 @@ namespace Zoo
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.InputFormat3dVariant10?>.Default.Equals(InputFormat3dVariant10, other.InputFormat3dVariant10) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.InputFormat3dVariant11?>.Default.Equals(InputFormat3dVariant11, other.InputFormat3dVariant11) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.InputFormat3dVariant12?>.Default.Equals(InputFormat3dVariant12, other.InputFormat3dVariant12) &&
-                global::System.Collections.Generic.EqualityComparer<global::Zoo.InputFormat3dVariant13?>.Default.Equals(InputFormat3dVariant13, other.InputFormat3dVariant13) &&
-                global::System.Collections.Generic.EqualityComparer<global::Zoo.InputFormat3dVariant14?>.Default.Equals(InputFormat3dVariant14, other.InputFormat3dVariant14)
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.InputFormat3dVariant13?>.Default.Equals(InputFormat3dVariant13, other.InputFormat3dVariant13)
                 ;
         }
 
