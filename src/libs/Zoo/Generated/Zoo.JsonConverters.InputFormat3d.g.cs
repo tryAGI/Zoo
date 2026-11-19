@@ -76,6 +76,10 @@ namespace Zoo.JsonConverters
             if (__jsonProps.Contains("coords")) __score12++;
             if (__jsonProps.Contains("type")) __score12++;
             if (__jsonProps.Contains("units")) __score12++;
+            var __score13 = 0;
+            if (__jsonProps.Contains("coords")) __score13++;
+            if (__jsonProps.Contains("type")) __score13++;
+            if (__jsonProps.Contains("units")) __score13++;
             var __bestScore = 0;
             var __bestIndex = -1;
             if (__score0 > __bestScore) { __bestScore = __score0; __bestIndex = 0; }
@@ -91,6 +95,7 @@ namespace Zoo.JsonConverters
             if (__score10 > __bestScore) { __bestScore = __score10; __bestIndex = 10; }
             if (__score11 > __bestScore) { __bestScore = __score11; __bestIndex = 11; }
             if (__score12 > __bestScore) { __bestScore = __score12; __bestIndex = 12; }
+            if (__score13 > __bestScore) { __bestScore = __score13; __bestIndex = 13; }
 
             global::Zoo.InputFormat3dVariant1? inputFormat3dVariant1 = default;
             global::Zoo.InputFormat3dVariant2? inputFormat3dVariant2 = default;
@@ -105,6 +110,7 @@ namespace Zoo.JsonConverters
             global::Zoo.InputFormat3dVariant11? inputFormat3dVariant11 = default;
             global::Zoo.InputFormat3dVariant12? inputFormat3dVariant12 = default;
             global::Zoo.InputFormat3dVariant13? inputFormat3dVariant13 = default;
+            global::Zoo.InputFormat3dVariant14? inputFormat3dVariant14 = default;
             if (__bestIndex >= 0)
             {
                 if (__bestIndex == 0)
@@ -354,9 +360,28 @@ namespace Zoo.JsonConverters
                         // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
+                else if (__bestIndex == 13)
+                {
+                    try
+                    {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.InputFormat3dVariant14), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.InputFormat3dVariant14> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.InputFormat3dVariant14).Name}");
+                        inputFormat3dVariant14 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
+                }
             }
 
-            if (inputFormat3dVariant1 == null && inputFormat3dVariant2 == null && inputFormat3dVariant3 == null && inputFormat3dVariant4 == null && inputFormat3dVariant5 == null && inputFormat3dVariant6 == null && inputFormat3dVariant7 == null && inputFormat3dVariant8 == null && inputFormat3dVariant9 == null && inputFormat3dVariant10 == null && inputFormat3dVariant11 == null && inputFormat3dVariant12 == null && inputFormat3dVariant13 == null)
+            if (inputFormat3dVariant1 == null && inputFormat3dVariant2 == null && inputFormat3dVariant3 == null && inputFormat3dVariant4 == null && inputFormat3dVariant5 == null && inputFormat3dVariant6 == null && inputFormat3dVariant7 == null && inputFormat3dVariant8 == null && inputFormat3dVariant9 == null && inputFormat3dVariant10 == null && inputFormat3dVariant11 == null && inputFormat3dVariant12 == null && inputFormat3dVariant13 == null && inputFormat3dVariant14 == null)
             {
                 try
                 {
@@ -377,7 +402,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (inputFormat3dVariant1 == null && inputFormat3dVariant2 == null && inputFormat3dVariant3 == null && inputFormat3dVariant4 == null && inputFormat3dVariant5 == null && inputFormat3dVariant6 == null && inputFormat3dVariant7 == null && inputFormat3dVariant8 == null && inputFormat3dVariant9 == null && inputFormat3dVariant10 == null && inputFormat3dVariant11 == null && inputFormat3dVariant12 == null && inputFormat3dVariant13 == null)
+            if (inputFormat3dVariant1 == null && inputFormat3dVariant2 == null && inputFormat3dVariant3 == null && inputFormat3dVariant4 == null && inputFormat3dVariant5 == null && inputFormat3dVariant6 == null && inputFormat3dVariant7 == null && inputFormat3dVariant8 == null && inputFormat3dVariant9 == null && inputFormat3dVariant10 == null && inputFormat3dVariant11 == null && inputFormat3dVariant12 == null && inputFormat3dVariant13 == null && inputFormat3dVariant14 == null)
             {
                 try
                 {
@@ -398,7 +423,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (inputFormat3dVariant1 == null && inputFormat3dVariant2 == null && inputFormat3dVariant3 == null && inputFormat3dVariant4 == null && inputFormat3dVariant5 == null && inputFormat3dVariant6 == null && inputFormat3dVariant7 == null && inputFormat3dVariant8 == null && inputFormat3dVariant9 == null && inputFormat3dVariant10 == null && inputFormat3dVariant11 == null && inputFormat3dVariant12 == null && inputFormat3dVariant13 == null)
+            if (inputFormat3dVariant1 == null && inputFormat3dVariant2 == null && inputFormat3dVariant3 == null && inputFormat3dVariant4 == null && inputFormat3dVariant5 == null && inputFormat3dVariant6 == null && inputFormat3dVariant7 == null && inputFormat3dVariant8 == null && inputFormat3dVariant9 == null && inputFormat3dVariant10 == null && inputFormat3dVariant11 == null && inputFormat3dVariant12 == null && inputFormat3dVariant13 == null && inputFormat3dVariant14 == null)
             {
                 try
                 {
@@ -419,7 +444,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (inputFormat3dVariant1 == null && inputFormat3dVariant2 == null && inputFormat3dVariant3 == null && inputFormat3dVariant4 == null && inputFormat3dVariant5 == null && inputFormat3dVariant6 == null && inputFormat3dVariant7 == null && inputFormat3dVariant8 == null && inputFormat3dVariant9 == null && inputFormat3dVariant10 == null && inputFormat3dVariant11 == null && inputFormat3dVariant12 == null && inputFormat3dVariant13 == null)
+            if (inputFormat3dVariant1 == null && inputFormat3dVariant2 == null && inputFormat3dVariant3 == null && inputFormat3dVariant4 == null && inputFormat3dVariant5 == null && inputFormat3dVariant6 == null && inputFormat3dVariant7 == null && inputFormat3dVariant8 == null && inputFormat3dVariant9 == null && inputFormat3dVariant10 == null && inputFormat3dVariant11 == null && inputFormat3dVariant12 == null && inputFormat3dVariant13 == null && inputFormat3dVariant14 == null)
             {
                 try
                 {
@@ -440,7 +465,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (inputFormat3dVariant1 == null && inputFormat3dVariant2 == null && inputFormat3dVariant3 == null && inputFormat3dVariant4 == null && inputFormat3dVariant5 == null && inputFormat3dVariant6 == null && inputFormat3dVariant7 == null && inputFormat3dVariant8 == null && inputFormat3dVariant9 == null && inputFormat3dVariant10 == null && inputFormat3dVariant11 == null && inputFormat3dVariant12 == null && inputFormat3dVariant13 == null)
+            if (inputFormat3dVariant1 == null && inputFormat3dVariant2 == null && inputFormat3dVariant3 == null && inputFormat3dVariant4 == null && inputFormat3dVariant5 == null && inputFormat3dVariant6 == null && inputFormat3dVariant7 == null && inputFormat3dVariant8 == null && inputFormat3dVariant9 == null && inputFormat3dVariant10 == null && inputFormat3dVariant11 == null && inputFormat3dVariant12 == null && inputFormat3dVariant13 == null && inputFormat3dVariant14 == null)
             {
                 try
                 {
@@ -461,7 +486,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (inputFormat3dVariant1 == null && inputFormat3dVariant2 == null && inputFormat3dVariant3 == null && inputFormat3dVariant4 == null && inputFormat3dVariant5 == null && inputFormat3dVariant6 == null && inputFormat3dVariant7 == null && inputFormat3dVariant8 == null && inputFormat3dVariant9 == null && inputFormat3dVariant10 == null && inputFormat3dVariant11 == null && inputFormat3dVariant12 == null && inputFormat3dVariant13 == null)
+            if (inputFormat3dVariant1 == null && inputFormat3dVariant2 == null && inputFormat3dVariant3 == null && inputFormat3dVariant4 == null && inputFormat3dVariant5 == null && inputFormat3dVariant6 == null && inputFormat3dVariant7 == null && inputFormat3dVariant8 == null && inputFormat3dVariant9 == null && inputFormat3dVariant10 == null && inputFormat3dVariant11 == null && inputFormat3dVariant12 == null && inputFormat3dVariant13 == null && inputFormat3dVariant14 == null)
             {
                 try
                 {
@@ -482,7 +507,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (inputFormat3dVariant1 == null && inputFormat3dVariant2 == null && inputFormat3dVariant3 == null && inputFormat3dVariant4 == null && inputFormat3dVariant5 == null && inputFormat3dVariant6 == null && inputFormat3dVariant7 == null && inputFormat3dVariant8 == null && inputFormat3dVariant9 == null && inputFormat3dVariant10 == null && inputFormat3dVariant11 == null && inputFormat3dVariant12 == null && inputFormat3dVariant13 == null)
+            if (inputFormat3dVariant1 == null && inputFormat3dVariant2 == null && inputFormat3dVariant3 == null && inputFormat3dVariant4 == null && inputFormat3dVariant5 == null && inputFormat3dVariant6 == null && inputFormat3dVariant7 == null && inputFormat3dVariant8 == null && inputFormat3dVariant9 == null && inputFormat3dVariant10 == null && inputFormat3dVariant11 == null && inputFormat3dVariant12 == null && inputFormat3dVariant13 == null && inputFormat3dVariant14 == null)
             {
                 try
                 {
@@ -503,7 +528,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (inputFormat3dVariant1 == null && inputFormat3dVariant2 == null && inputFormat3dVariant3 == null && inputFormat3dVariant4 == null && inputFormat3dVariant5 == null && inputFormat3dVariant6 == null && inputFormat3dVariant7 == null && inputFormat3dVariant8 == null && inputFormat3dVariant9 == null && inputFormat3dVariant10 == null && inputFormat3dVariant11 == null && inputFormat3dVariant12 == null && inputFormat3dVariant13 == null)
+            if (inputFormat3dVariant1 == null && inputFormat3dVariant2 == null && inputFormat3dVariant3 == null && inputFormat3dVariant4 == null && inputFormat3dVariant5 == null && inputFormat3dVariant6 == null && inputFormat3dVariant7 == null && inputFormat3dVariant8 == null && inputFormat3dVariant9 == null && inputFormat3dVariant10 == null && inputFormat3dVariant11 == null && inputFormat3dVariant12 == null && inputFormat3dVariant13 == null && inputFormat3dVariant14 == null)
             {
                 try
                 {
@@ -524,7 +549,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (inputFormat3dVariant1 == null && inputFormat3dVariant2 == null && inputFormat3dVariant3 == null && inputFormat3dVariant4 == null && inputFormat3dVariant5 == null && inputFormat3dVariant6 == null && inputFormat3dVariant7 == null && inputFormat3dVariant8 == null && inputFormat3dVariant9 == null && inputFormat3dVariant10 == null && inputFormat3dVariant11 == null && inputFormat3dVariant12 == null && inputFormat3dVariant13 == null)
+            if (inputFormat3dVariant1 == null && inputFormat3dVariant2 == null && inputFormat3dVariant3 == null && inputFormat3dVariant4 == null && inputFormat3dVariant5 == null && inputFormat3dVariant6 == null && inputFormat3dVariant7 == null && inputFormat3dVariant8 == null && inputFormat3dVariant9 == null && inputFormat3dVariant10 == null && inputFormat3dVariant11 == null && inputFormat3dVariant12 == null && inputFormat3dVariant13 == null && inputFormat3dVariant14 == null)
             {
                 try
                 {
@@ -545,7 +570,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (inputFormat3dVariant1 == null && inputFormat3dVariant2 == null && inputFormat3dVariant3 == null && inputFormat3dVariant4 == null && inputFormat3dVariant5 == null && inputFormat3dVariant6 == null && inputFormat3dVariant7 == null && inputFormat3dVariant8 == null && inputFormat3dVariant9 == null && inputFormat3dVariant10 == null && inputFormat3dVariant11 == null && inputFormat3dVariant12 == null && inputFormat3dVariant13 == null)
+            if (inputFormat3dVariant1 == null && inputFormat3dVariant2 == null && inputFormat3dVariant3 == null && inputFormat3dVariant4 == null && inputFormat3dVariant5 == null && inputFormat3dVariant6 == null && inputFormat3dVariant7 == null && inputFormat3dVariant8 == null && inputFormat3dVariant9 == null && inputFormat3dVariant10 == null && inputFormat3dVariant11 == null && inputFormat3dVariant12 == null && inputFormat3dVariant13 == null && inputFormat3dVariant14 == null)
             {
                 try
                 {
@@ -566,7 +591,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (inputFormat3dVariant1 == null && inputFormat3dVariant2 == null && inputFormat3dVariant3 == null && inputFormat3dVariant4 == null && inputFormat3dVariant5 == null && inputFormat3dVariant6 == null && inputFormat3dVariant7 == null && inputFormat3dVariant8 == null && inputFormat3dVariant9 == null && inputFormat3dVariant10 == null && inputFormat3dVariant11 == null && inputFormat3dVariant12 == null && inputFormat3dVariant13 == null)
+            if (inputFormat3dVariant1 == null && inputFormat3dVariant2 == null && inputFormat3dVariant3 == null && inputFormat3dVariant4 == null && inputFormat3dVariant5 == null && inputFormat3dVariant6 == null && inputFormat3dVariant7 == null && inputFormat3dVariant8 == null && inputFormat3dVariant9 == null && inputFormat3dVariant10 == null && inputFormat3dVariant11 == null && inputFormat3dVariant12 == null && inputFormat3dVariant13 == null && inputFormat3dVariant14 == null)
             {
                 try
                 {
@@ -587,7 +612,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (inputFormat3dVariant1 == null && inputFormat3dVariant2 == null && inputFormat3dVariant3 == null && inputFormat3dVariant4 == null && inputFormat3dVariant5 == null && inputFormat3dVariant6 == null && inputFormat3dVariant7 == null && inputFormat3dVariant8 == null && inputFormat3dVariant9 == null && inputFormat3dVariant10 == null && inputFormat3dVariant11 == null && inputFormat3dVariant12 == null && inputFormat3dVariant13 == null)
+            if (inputFormat3dVariant1 == null && inputFormat3dVariant2 == null && inputFormat3dVariant3 == null && inputFormat3dVariant4 == null && inputFormat3dVariant5 == null && inputFormat3dVariant6 == null && inputFormat3dVariant7 == null && inputFormat3dVariant8 == null && inputFormat3dVariant9 == null && inputFormat3dVariant10 == null && inputFormat3dVariant11 == null && inputFormat3dVariant12 == null && inputFormat3dVariant13 == null && inputFormat3dVariant14 == null)
             {
                 try
                 {
@@ -608,7 +633,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (inputFormat3dVariant1 == null && inputFormat3dVariant2 == null && inputFormat3dVariant3 == null && inputFormat3dVariant4 == null && inputFormat3dVariant5 == null && inputFormat3dVariant6 == null && inputFormat3dVariant7 == null && inputFormat3dVariant8 == null && inputFormat3dVariant9 == null && inputFormat3dVariant10 == null && inputFormat3dVariant11 == null && inputFormat3dVariant12 == null && inputFormat3dVariant13 == null)
+            if (inputFormat3dVariant1 == null && inputFormat3dVariant2 == null && inputFormat3dVariant3 == null && inputFormat3dVariant4 == null && inputFormat3dVariant5 == null && inputFormat3dVariant6 == null && inputFormat3dVariant7 == null && inputFormat3dVariant8 == null && inputFormat3dVariant9 == null && inputFormat3dVariant10 == null && inputFormat3dVariant11 == null && inputFormat3dVariant12 == null && inputFormat3dVariant13 == null && inputFormat3dVariant14 == null)
             {
                 try
                 {
@@ -616,6 +641,27 @@ namespace Zoo.JsonConverters
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.InputFormat3dVariant13), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.InputFormat3dVariant13> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.InputFormat3dVariant13).Name}");
                     inputFormat3dVariant13 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
+            }
+
+            if (inputFormat3dVariant1 == null && inputFormat3dVariant2 == null && inputFormat3dVariant3 == null && inputFormat3dVariant4 == null && inputFormat3dVariant5 == null && inputFormat3dVariant6 == null && inputFormat3dVariant7 == null && inputFormat3dVariant8 == null && inputFormat3dVariant9 == null && inputFormat3dVariant10 == null && inputFormat3dVariant11 == null && inputFormat3dVariant12 == null && inputFormat3dVariant13 == null && inputFormat3dVariant14 == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.InputFormat3dVariant14), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.InputFormat3dVariant14> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.InputFormat3dVariant14).Name}");
+                    inputFormat3dVariant14 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -654,7 +700,9 @@ namespace Zoo.JsonConverters
 
                 inputFormat3dVariant12,
 
-                inputFormat3dVariant13
+                inputFormat3dVariant13,
+
+                inputFormat3dVariant14
                 );
 
             return __value;
@@ -746,6 +794,12 @@ namespace Zoo.JsonConverters
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.InputFormat3dVariant13), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.InputFormat3dVariant13?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.InputFormat3dVariant13).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickInputFormat3dVariant13(), typeInfo);
+            }
+            else if (value.IsInputFormat3dVariant14)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.InputFormat3dVariant14), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.InputFormat3dVariant14?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.InputFormat3dVariant14).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickInputFormat3dVariant14(), typeInfo);
             }
         }
     }

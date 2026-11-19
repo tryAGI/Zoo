@@ -104,6 +104,17 @@ namespace Zoo.JsonConverters
                     }
                 }
             }
+            var __score7 = 0;
+            {
+                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.FileExportFormatVariant8), options);
+                if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
+                {
+                    foreach (var __prop in __ti.Properties)
+                    {
+                        if (__jsonProps.Contains(__prop.Name)) __score7++;
+                    }
+                }
+            }
             var __bestScore = 0;
             var __bestIndex = -1;
             if (__score0 > __bestScore) { __bestScore = __score0; __bestIndex = 0; }
@@ -113,6 +124,7 @@ namespace Zoo.JsonConverters
             if (__score4 > __bestScore) { __bestScore = __score4; __bestIndex = 4; }
             if (__score5 > __bestScore) { __bestScore = __score5; __bestIndex = 5; }
             if (__score6 > __bestScore) { __bestScore = __score6; __bestIndex = 6; }
+            if (__score7 > __bestScore) { __bestScore = __score7; __bestIndex = 7; }
 
             global::Zoo.FileExportFormatVariant1? fileExportFormatVariant1 = default;
             global::Zoo.FileExportFormatVariant2? fileExportFormatVariant2 = default;
@@ -121,6 +133,7 @@ namespace Zoo.JsonConverters
             global::Zoo.FileExportFormatVariant5? fileExportFormatVariant5 = default;
             global::Zoo.FileExportFormatVariant6? fileExportFormatVariant6 = default;
             global::Zoo.FileExportFormatVariant7? fileExportFormatVariant7 = default;
+            global::Zoo.FileExportFormatVariant8? fileExportFormatVariant8 = default;
             if (__bestIndex >= 0)
             {
                 if (__bestIndex == 0)
@@ -269,9 +282,30 @@ namespace Zoo.JsonConverters
                         // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
+
+                else if (__bestIndex == 7)
+                {
+                    try
+                    {
+
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.FileExportFormatVariant8), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.FileExportFormatVariant8> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.FileExportFormatVariant8).Name}");
+                        fileExportFormatVariant8 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
+                }
             }
 
-            if (fileExportFormatVariant1 == null && fileExportFormatVariant2 == null && fileExportFormatVariant3 == null && fileExportFormatVariant4 == null && fileExportFormatVariant5 == null && fileExportFormatVariant6 == null && fileExportFormatVariant7 == null)
+            if (fileExportFormatVariant1 == null && fileExportFormatVariant2 == null && fileExportFormatVariant3 == null && fileExportFormatVariant4 == null && fileExportFormatVariant5 == null && fileExportFormatVariant6 == null && fileExportFormatVariant7 == null && fileExportFormatVariant8 == null)
             {
                 try
                 {
@@ -292,7 +326,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (fileExportFormatVariant1 == null && fileExportFormatVariant2 == null && fileExportFormatVariant3 == null && fileExportFormatVariant4 == null && fileExportFormatVariant5 == null && fileExportFormatVariant6 == null && fileExportFormatVariant7 == null)
+            if (fileExportFormatVariant1 == null && fileExportFormatVariant2 == null && fileExportFormatVariant3 == null && fileExportFormatVariant4 == null && fileExportFormatVariant5 == null && fileExportFormatVariant6 == null && fileExportFormatVariant7 == null && fileExportFormatVariant8 == null)
             {
                 try
                 {
@@ -313,7 +347,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (fileExportFormatVariant1 == null && fileExportFormatVariant2 == null && fileExportFormatVariant3 == null && fileExportFormatVariant4 == null && fileExportFormatVariant5 == null && fileExportFormatVariant6 == null && fileExportFormatVariant7 == null)
+            if (fileExportFormatVariant1 == null && fileExportFormatVariant2 == null && fileExportFormatVariant3 == null && fileExportFormatVariant4 == null && fileExportFormatVariant5 == null && fileExportFormatVariant6 == null && fileExportFormatVariant7 == null && fileExportFormatVariant8 == null)
             {
                 try
                 {
@@ -334,7 +368,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (fileExportFormatVariant1 == null && fileExportFormatVariant2 == null && fileExportFormatVariant3 == null && fileExportFormatVariant4 == null && fileExportFormatVariant5 == null && fileExportFormatVariant6 == null && fileExportFormatVariant7 == null)
+            if (fileExportFormatVariant1 == null && fileExportFormatVariant2 == null && fileExportFormatVariant3 == null && fileExportFormatVariant4 == null && fileExportFormatVariant5 == null && fileExportFormatVariant6 == null && fileExportFormatVariant7 == null && fileExportFormatVariant8 == null)
             {
                 try
                 {
@@ -355,7 +389,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (fileExportFormatVariant1 == null && fileExportFormatVariant2 == null && fileExportFormatVariant3 == null && fileExportFormatVariant4 == null && fileExportFormatVariant5 == null && fileExportFormatVariant6 == null && fileExportFormatVariant7 == null)
+            if (fileExportFormatVariant1 == null && fileExportFormatVariant2 == null && fileExportFormatVariant3 == null && fileExportFormatVariant4 == null && fileExportFormatVariant5 == null && fileExportFormatVariant6 == null && fileExportFormatVariant7 == null && fileExportFormatVariant8 == null)
             {
                 try
                 {
@@ -376,7 +410,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (fileExportFormatVariant1 == null && fileExportFormatVariant2 == null && fileExportFormatVariant3 == null && fileExportFormatVariant4 == null && fileExportFormatVariant5 == null && fileExportFormatVariant6 == null && fileExportFormatVariant7 == null)
+            if (fileExportFormatVariant1 == null && fileExportFormatVariant2 == null && fileExportFormatVariant3 == null && fileExportFormatVariant4 == null && fileExportFormatVariant5 == null && fileExportFormatVariant6 == null && fileExportFormatVariant7 == null && fileExportFormatVariant8 == null)
             {
                 try
                 {
@@ -397,7 +431,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (fileExportFormatVariant1 == null && fileExportFormatVariant2 == null && fileExportFormatVariant3 == null && fileExportFormatVariant4 == null && fileExportFormatVariant5 == null && fileExportFormatVariant6 == null && fileExportFormatVariant7 == null)
+            if (fileExportFormatVariant1 == null && fileExportFormatVariant2 == null && fileExportFormatVariant3 == null && fileExportFormatVariant4 == null && fileExportFormatVariant5 == null && fileExportFormatVariant6 == null && fileExportFormatVariant7 == null && fileExportFormatVariant8 == null)
             {
                 try
                 {
@@ -405,6 +439,27 @@ namespace Zoo.JsonConverters
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.FileExportFormatVariant7), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.FileExportFormatVariant7> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.FileExportFormatVariant7).Name}");
                     fileExportFormatVariant7 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
+            }
+
+            if (fileExportFormatVariant1 == null && fileExportFormatVariant2 == null && fileExportFormatVariant3 == null && fileExportFormatVariant4 == null && fileExportFormatVariant5 == null && fileExportFormatVariant6 == null && fileExportFormatVariant7 == null && fileExportFormatVariant8 == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.FileExportFormatVariant8), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.FileExportFormatVariant8> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.FileExportFormatVariant8).Name}");
+                    fileExportFormatVariant8 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -431,7 +486,9 @@ namespace Zoo.JsonConverters
 
                 fileExportFormatVariant6,
 
-                fileExportFormatVariant7
+                fileExportFormatVariant7,
+
+                fileExportFormatVariant8
                 );
 
             return __value;
@@ -487,6 +544,12 @@ namespace Zoo.JsonConverters
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.FileExportFormatVariant7), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.FileExportFormatVariant7> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.FileExportFormatVariant7).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFileExportFormatVariant7(), typeInfo);
+            }
+            else if (value.IsFileExportFormatVariant8)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.FileExportFormatVariant8), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.FileExportFormatVariant8> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.FileExportFormatVariant8).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFileExportFormatVariant8(), typeInfo);
             }
         }
     }
