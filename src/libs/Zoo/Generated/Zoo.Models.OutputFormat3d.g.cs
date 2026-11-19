@@ -230,43 +230,6 @@ namespace Zoo
         public global::Zoo.OutputFormat3dVariant6 PickOutputFormat3dVariant6() => OutputFormat3dVariant6 is { } value
             ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'OutputFormat3dVariant6' but the value was {ToString()}.");
-
-        /// <summary>
-        /// Rhino (3dm) file format
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::Zoo.OutputFormat3dVariant7? OutputFormat3dVariant7 { get; init; }
-#else
-        public global::Zoo.OutputFormat3dVariant7? OutputFormat3dVariant7 { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(OutputFormat3dVariant7))]
-#endif
-        public bool IsOutputFormat3dVariant7 => OutputFormat3dVariant7 != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickOutputFormat3dVariant7(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::Zoo.OutputFormat3dVariant7? value)
-        {
-            value = OutputFormat3dVariant7;
-            return IsOutputFormat3dVariant7;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Zoo.OutputFormat3dVariant7 PickOutputFormat3dVariant7() => OutputFormat3dVariant7 is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'OutputFormat3dVariant7' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -408,37 +371,13 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator OutputFormat3d(global::Zoo.OutputFormat3dVariant7 value) => new OutputFormat3d((global::Zoo.OutputFormat3dVariant7?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::Zoo.OutputFormat3dVariant7?(OutputFormat3d @this) => @this.OutputFormat3dVariant7;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public OutputFormat3d(global::Zoo.OutputFormat3dVariant7? value)
-        {
-            OutputFormat3dVariant7 = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static OutputFormat3d FromOutputFormat3dVariant7(global::Zoo.OutputFormat3dVariant7? value) => new OutputFormat3d(value);
-
-        /// <summary>
-        ///
-        /// </summary>
         public OutputFormat3d(
             global::Zoo.OutputFormat3dVariant1? outputFormat3dVariant1,
             global::Zoo.OutputFormat3dVariant2? outputFormat3dVariant2,
             global::Zoo.OutputFormat3dVariant3? outputFormat3dVariant3,
             global::Zoo.OutputFormat3dVariant4? outputFormat3dVariant4,
             global::Zoo.OutputFormat3dVariant5? outputFormat3dVariant5,
-            global::Zoo.OutputFormat3dVariant6? outputFormat3dVariant6,
-            global::Zoo.OutputFormat3dVariant7? outputFormat3dVariant7
+            global::Zoo.OutputFormat3dVariant6? outputFormat3dVariant6
             )
         {
             OutputFormat3dVariant1 = outputFormat3dVariant1;
@@ -447,14 +386,12 @@ namespace Zoo
             OutputFormat3dVariant4 = outputFormat3dVariant4;
             OutputFormat3dVariant5 = outputFormat3dVariant5;
             OutputFormat3dVariant6 = outputFormat3dVariant6;
-            OutputFormat3dVariant7 = outputFormat3dVariant7;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            OutputFormat3dVariant7 as object ??
             OutputFormat3dVariant6 as object ??
             OutputFormat3dVariant5 as object ??
             OutputFormat3dVariant4 as object ??
@@ -472,8 +409,7 @@ namespace Zoo
             OutputFormat3dVariant3?.ToString() ??
             OutputFormat3dVariant4?.ToString() ??
             OutputFormat3dVariant5?.ToString() ??
-            OutputFormat3dVariant6?.ToString() ??
-            OutputFormat3dVariant7?.ToString()
+            OutputFormat3dVariant6?.ToString()
             ;
 
         /// <summary>
@@ -481,7 +417,7 @@ namespace Zoo
         /// </summary>
         public bool Validate()
         {
-            return IsOutputFormat3dVariant1 && !IsOutputFormat3dVariant2 && !IsOutputFormat3dVariant3 && !IsOutputFormat3dVariant4 && !IsOutputFormat3dVariant5 && !IsOutputFormat3dVariant6 && !IsOutputFormat3dVariant7 || !IsOutputFormat3dVariant1 && IsOutputFormat3dVariant2 && !IsOutputFormat3dVariant3 && !IsOutputFormat3dVariant4 && !IsOutputFormat3dVariant5 && !IsOutputFormat3dVariant6 && !IsOutputFormat3dVariant7 || !IsOutputFormat3dVariant1 && !IsOutputFormat3dVariant2 && IsOutputFormat3dVariant3 && !IsOutputFormat3dVariant4 && !IsOutputFormat3dVariant5 && !IsOutputFormat3dVariant6 && !IsOutputFormat3dVariant7 || !IsOutputFormat3dVariant1 && !IsOutputFormat3dVariant2 && !IsOutputFormat3dVariant3 && IsOutputFormat3dVariant4 && !IsOutputFormat3dVariant5 && !IsOutputFormat3dVariant6 && !IsOutputFormat3dVariant7 || !IsOutputFormat3dVariant1 && !IsOutputFormat3dVariant2 && !IsOutputFormat3dVariant3 && !IsOutputFormat3dVariant4 && IsOutputFormat3dVariant5 && !IsOutputFormat3dVariant6 && !IsOutputFormat3dVariant7 || !IsOutputFormat3dVariant1 && !IsOutputFormat3dVariant2 && !IsOutputFormat3dVariant3 && !IsOutputFormat3dVariant4 && !IsOutputFormat3dVariant5 && IsOutputFormat3dVariant6 && !IsOutputFormat3dVariant7 || !IsOutputFormat3dVariant1 && !IsOutputFormat3dVariant2 && !IsOutputFormat3dVariant3 && !IsOutputFormat3dVariant4 && !IsOutputFormat3dVariant5 && !IsOutputFormat3dVariant6 && IsOutputFormat3dVariant7;
+            return IsOutputFormat3dVariant1 && !IsOutputFormat3dVariant2 && !IsOutputFormat3dVariant3 && !IsOutputFormat3dVariant4 && !IsOutputFormat3dVariant5 && !IsOutputFormat3dVariant6 || !IsOutputFormat3dVariant1 && IsOutputFormat3dVariant2 && !IsOutputFormat3dVariant3 && !IsOutputFormat3dVariant4 && !IsOutputFormat3dVariant5 && !IsOutputFormat3dVariant6 || !IsOutputFormat3dVariant1 && !IsOutputFormat3dVariant2 && IsOutputFormat3dVariant3 && !IsOutputFormat3dVariant4 && !IsOutputFormat3dVariant5 && !IsOutputFormat3dVariant6 || !IsOutputFormat3dVariant1 && !IsOutputFormat3dVariant2 && !IsOutputFormat3dVariant3 && IsOutputFormat3dVariant4 && !IsOutputFormat3dVariant5 && !IsOutputFormat3dVariant6 || !IsOutputFormat3dVariant1 && !IsOutputFormat3dVariant2 && !IsOutputFormat3dVariant3 && !IsOutputFormat3dVariant4 && IsOutputFormat3dVariant5 && !IsOutputFormat3dVariant6 || !IsOutputFormat3dVariant1 && !IsOutputFormat3dVariant2 && !IsOutputFormat3dVariant3 && !IsOutputFormat3dVariant4 && !IsOutputFormat3dVariant5 && IsOutputFormat3dVariant6;
         }
 
         /// <summary>
@@ -494,7 +430,6 @@ namespace Zoo
             global::System.Func<global::Zoo.OutputFormat3dVariant4, TResult>? outputFormat3dVariant4 = null,
             global::System.Func<global::Zoo.OutputFormat3dVariant5, TResult>? outputFormat3dVariant5 = null,
             global::System.Func<global::Zoo.OutputFormat3dVariant6, TResult>? outputFormat3dVariant6 = null,
-            global::System.Func<global::Zoo.OutputFormat3dVariant7, TResult>? outputFormat3dVariant7 = null,
             bool validate = true)
         {
             if (validate)
@@ -526,10 +461,6 @@ namespace Zoo
             {
                 return outputFormat3dVariant6(__value5);
             }
-            else if (OutputFormat3dVariant7 is { } __value6 && outputFormat3dVariant7 != null)
-            {
-                return outputFormat3dVariant7(__value6);
-            }
 
             return default(TResult);
         }
@@ -549,8 +480,6 @@ namespace Zoo
             global::System.Action<global::Zoo.OutputFormat3dVariant5>? outputFormat3dVariant5 = null,
 
             global::System.Action<global::Zoo.OutputFormat3dVariant6>? outputFormat3dVariant6 = null,
-
-            global::System.Action<global::Zoo.OutputFormat3dVariant7>? outputFormat3dVariant7 = null,
             bool validate = true)
         {
             if (validate)
@@ -581,10 +510,6 @@ namespace Zoo
             else if (OutputFormat3dVariant6 is { } __value5)
             {
                 outputFormat3dVariant6?.Invoke(__value5);
-            }
-            else if (OutputFormat3dVariant7 is { } __value6)
-            {
-                outputFormat3dVariant7?.Invoke(__value6);
             }
         }
 
@@ -598,7 +523,6 @@ namespace Zoo
             global::System.Action<global::Zoo.OutputFormat3dVariant4>? outputFormat3dVariant4 = null,
             global::System.Action<global::Zoo.OutputFormat3dVariant5>? outputFormat3dVariant5 = null,
             global::System.Action<global::Zoo.OutputFormat3dVariant6>? outputFormat3dVariant6 = null,
-            global::System.Action<global::Zoo.OutputFormat3dVariant7>? outputFormat3dVariant7 = null,
             bool validate = true)
         {
             if (validate)
@@ -629,10 +553,6 @@ namespace Zoo
             else if (OutputFormat3dVariant6 is { } __value5)
             {
                 outputFormat3dVariant6?.Invoke(__value5);
-            }
-            else if (OutputFormat3dVariant7 is { } __value6)
-            {
-                outputFormat3dVariant7?.Invoke(__value6);
             }
         }
 
@@ -655,8 +575,6 @@ namespace Zoo
                 typeof(global::Zoo.OutputFormat3dVariant5),
                 OutputFormat3dVariant6,
                 typeof(global::Zoo.OutputFormat3dVariant6),
-                OutputFormat3dVariant7,
-                typeof(global::Zoo.OutputFormat3dVariant7),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -678,8 +596,7 @@ namespace Zoo
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.OutputFormat3dVariant3?>.Default.Equals(OutputFormat3dVariant3, other.OutputFormat3dVariant3) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.OutputFormat3dVariant4?>.Default.Equals(OutputFormat3dVariant4, other.OutputFormat3dVariant4) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.OutputFormat3dVariant5?>.Default.Equals(OutputFormat3dVariant5, other.OutputFormat3dVariant5) &&
-                global::System.Collections.Generic.EqualityComparer<global::Zoo.OutputFormat3dVariant6?>.Default.Equals(OutputFormat3dVariant6, other.OutputFormat3dVariant6) &&
-                global::System.Collections.Generic.EqualityComparer<global::Zoo.OutputFormat3dVariant7?>.Default.Equals(OutputFormat3dVariant7, other.OutputFormat3dVariant7)
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.OutputFormat3dVariant6?>.Default.Equals(OutputFormat3dVariant6, other.OutputFormat3dVariant6)
                 ;
         }
 

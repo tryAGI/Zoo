@@ -1046,13 +1046,6 @@
               "stl"
             ],
             "type": "string"
-          },
-          {
-            "description": "The 3DM file format. <https://deepwiki.com/mcneel/rhino3dm/6.1-3dm-file-format>",
-            "enum": [
-              "rhino"
-            ],
-            "type": "string"
           }
         ]
       },
@@ -2351,13 +2344,6 @@
               "stl"
             ],
             "type": "string"
-          },
-          {
-            "description": "The 3DM file format. <https://deepwiki.com/mcneel/rhino3dm/6.1-3dm-file-format>",
-            "enum": [
-              "rhino"
-            ],
-            "type": "string"
           }
         ]
       },
@@ -3082,39 +3068,6 @@
               "units"
             ],
             "type": "object"
-          },
-          {
-            "description": "Rhino (3dm) file format",
-            "properties": {
-              "coords": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/CoordinateSystem"
-                  }
-                ],
-                "description": "Co-ordinate system of input data.\n\nDefaults to the [KittyCAD co-ordinate system].\n\n[KittyCAD co-ordinate system]: ../coord/constant.KITTYCAD.html"
-              },
-              "type": {
-                "enum": [
-                  "rhino"
-                ],
-                "type": "string"
-              },
-              "units": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/UnitLength"
-                  }
-                ],
-                "description": "The units of the input data.\n\nThis is very important for correct scaling and when calculating physics properties like mass, etc.\n\nDefaults to millimeters."
-              }
-            },
-            "required": [
-              "coords",
-              "type",
-              "units"
-            ],
-            "type": "object"
           }
         ]
       },
@@ -3519,39 +3472,6 @@
               "coords",
               "selection",
               "storage",
-              "type",
-              "units"
-            ],
-            "type": "object"
-          },
-          {
-            "description": "Rhino (3dm) file format",
-            "properties": {
-              "coords": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/CoordinateSystem"
-                  }
-                ],
-                "description": "Co-ordinate system of output data.\n\nDefaults to the [KittyCAD co-ordinate system].\n\n[KittyCAD co-ordinate system]: ../coord/constant.KITTYCAD.html"
-              },
-              "type": {
-                "enum": [
-                  "rhino"
-                ],
-                "type": "string"
-              },
-              "units": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/UnitLength"
-                  }
-                ],
-                "description": "Export length unit.\n\nDefaults to millimeters."
-              }
-            },
-            "required": [
-              "coords",
               "type",
               "units"
             ],
