@@ -170,17 +170,6 @@ namespace Zoo.JsonConverters
                     }
                 }
             }
-            var __score13 = 0;
-            {
-                var __ti = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.FileImportFormatVariant14), options);
-                if (__ti != null && __ti.Kind == global::System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.Object)
-                {
-                    foreach (var __prop in __ti.Properties)
-                    {
-                        if (__jsonProps.Contains(__prop.Name)) __score13++;
-                    }
-                }
-            }
             var __bestScore = 0;
             var __bestIndex = -1;
             if (__score0 > __bestScore) { __bestScore = __score0; __bestIndex = 0; }
@@ -196,7 +185,6 @@ namespace Zoo.JsonConverters
             if (__score10 > __bestScore) { __bestScore = __score10; __bestIndex = 10; }
             if (__score11 > __bestScore) { __bestScore = __score11; __bestIndex = 11; }
             if (__score12 > __bestScore) { __bestScore = __score12; __bestIndex = 12; }
-            if (__score13 > __bestScore) { __bestScore = __score13; __bestIndex = 13; }
 
             global::Zoo.FileImportFormatVariant1? fileImportFormatVariant1 = default;
             global::Zoo.FileImportFormatVariant2? fileImportFormatVariant2 = default;
@@ -211,7 +199,6 @@ namespace Zoo.JsonConverters
             global::Zoo.FileImportFormatVariant11? fileImportFormatVariant11 = default;
             global::Zoo.FileImportFormatVariant12? fileImportFormatVariant12 = default;
             global::Zoo.FileImportFormatVariant13? fileImportFormatVariant13 = default;
-            global::Zoo.FileImportFormatVariant14? fileImportFormatVariant14 = default;
             if (__bestIndex >= 0)
             {
                 if (__bestIndex == 0)
@@ -486,30 +473,9 @@ namespace Zoo.JsonConverters
                         // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
-
-                else if (__bestIndex == 13)
-                {
-                    try
-                    {
-
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.FileImportFormatVariant14), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.FileImportFormatVariant14> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.FileImportFormatVariant14).Name}");
-                        fileImportFormatVariant14 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
-                    }
-                    catch (global::System.Text.Json.JsonException)
-                    {
-                    }
-                    catch (global::System.InvalidOperationException)
-                    {
-                    }
-                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
-                    {
-                        // Legacy enum converters signal an incompatible JSON token with this exception.
-                    }
-                }
             }
 
-            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null && fileImportFormatVariant14 == null)
+            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null)
             {
                 try
                 {
@@ -530,7 +496,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null && fileImportFormatVariant14 == null)
+            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null)
             {
                 try
                 {
@@ -551,7 +517,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null && fileImportFormatVariant14 == null)
+            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null)
             {
                 try
                 {
@@ -572,7 +538,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null && fileImportFormatVariant14 == null)
+            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null)
             {
                 try
                 {
@@ -593,7 +559,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null && fileImportFormatVariant14 == null)
+            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null)
             {
                 try
                 {
@@ -614,7 +580,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null && fileImportFormatVariant14 == null)
+            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null)
             {
                 try
                 {
@@ -635,7 +601,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null && fileImportFormatVariant14 == null)
+            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null)
             {
                 try
                 {
@@ -656,7 +622,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null && fileImportFormatVariant14 == null)
+            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null)
             {
                 try
                 {
@@ -677,7 +643,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null && fileImportFormatVariant14 == null)
+            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null)
             {
                 try
                 {
@@ -698,7 +664,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null && fileImportFormatVariant14 == null)
+            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null)
             {
                 try
                 {
@@ -719,7 +685,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null && fileImportFormatVariant14 == null)
+            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null)
             {
                 try
                 {
@@ -740,7 +706,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null && fileImportFormatVariant14 == null)
+            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null)
             {
                 try
                 {
@@ -761,7 +727,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null && fileImportFormatVariant14 == null)
+            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null)
             {
                 try
                 {
@@ -769,27 +735,6 @@ namespace Zoo.JsonConverters
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.FileImportFormatVariant13), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.FileImportFormatVariant13> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.FileImportFormatVariant13).Name}");
                     fileImportFormatVariant13 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
-                }
-                catch (global::System.Text.Json.JsonException)
-                {
-                }
-                catch (global::System.InvalidOperationException)
-                {
-                }
-                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
-                {
-                    // Legacy enum converters signal an incompatible JSON token with this exception.
-                }
-            }
-
-            if (fileImportFormatVariant1 == null && fileImportFormatVariant2 == null && fileImportFormatVariant3 == null && fileImportFormatVariant4 == null && fileImportFormatVariant5 == null && fileImportFormatVariant6 == null && fileImportFormatVariant7 == null && fileImportFormatVariant8 == null && fileImportFormatVariant9 == null && fileImportFormatVariant10 == null && fileImportFormatVariant11 == null && fileImportFormatVariant12 == null && fileImportFormatVariant13 == null && fileImportFormatVariant14 == null)
-            {
-                try
-                {
-
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.FileImportFormatVariant14), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.FileImportFormatVariant14> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.FileImportFormatVariant14).Name}");
-                    fileImportFormatVariant14 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -828,9 +773,7 @@ namespace Zoo.JsonConverters
 
                 fileImportFormatVariant12,
 
-                fileImportFormatVariant13,
-
-                fileImportFormatVariant14
+                fileImportFormatVariant13
                 );
 
             return __value;
@@ -922,12 +865,6 @@ namespace Zoo.JsonConverters
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.FileImportFormatVariant13), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.FileImportFormatVariant13> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.FileImportFormatVariant13).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFileImportFormatVariant13(), typeInfo);
-            }
-            else if (value.IsFileImportFormatVariant14)
-            {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.FileImportFormatVariant14), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.FileImportFormatVariant14> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.FileImportFormatVariant14).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFileImportFormatVariant14(), typeInfo);
             }
         }
     }

@@ -55,7 +55,6 @@ namespace Zoo
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.FileExportFormatVariant5), TypeInfoPropertyName = "FileExportFormatVariant52")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.FileExportFormatVariant6), TypeInfoPropertyName = "FileExportFormatVariant62")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.FileExportFormatVariant7), TypeInfoPropertyName = "FileExportFormatVariant72")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.FileExportFormatVariant8), TypeInfoPropertyName = "FileExportFormatVariant82")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.TextToCadResponseResultsPage))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Zoo.TextToCadResponse>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.CreatedAtSortMode), TypeInfoPropertyName = "CreatedAtSortMode2")]
@@ -92,7 +91,6 @@ namespace Zoo
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.FileExportFormatVariant5?), TypeInfoPropertyName = "NullableFileExportFormatVariant52")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.FileExportFormatVariant6?), TypeInfoPropertyName = "NullableFileExportFormatVariant62")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.FileExportFormatVariant7?), TypeInfoPropertyName = "NullableFileExportFormatVariant72")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.FileExportFormatVariant8?), TypeInfoPropertyName = "NullableFileExportFormatVariant82")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.CreatedAtSortMode?), TypeInfoPropertyName = "NullableCreatedAtSortMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.CreatedAtSortModeVariant1?), TypeInfoPropertyName = "NullableCreatedAtSortModeVariant12")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Zoo.CreatedAtSortModeVariant2?), TypeInfoPropertyName = "NullableCreatedAtSortModeVariant22")]
@@ -261,10 +259,6 @@ namespace Zoo
                     || typeToConvert == typeof(global::Zoo.FileExportFormatVariant7)
 
                     || typeToConvert == typeof(global::Zoo.FileExportFormatVariant7?)
-
-                    || typeToConvert == typeof(global::Zoo.FileExportFormatVariant8)
-
-                    || typeToConvert == typeof(global::Zoo.FileExportFormatVariant8?)
 
                     || typeToConvert == typeof(global::Zoo.CreatedAtSortModeVariant1)
 
@@ -497,16 +491,6 @@ namespace Zoo
                 if (typeToConvert == typeof(global::Zoo.FileExportFormatVariant7?))
                 {
                     return new global::Zoo.JsonConverters.FileExportFormatVariant7NullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Zoo.FileExportFormatVariant8))
-                {
-                    return new global::Zoo.JsonConverters.FileExportFormatVariant8JsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Zoo.FileExportFormatVariant8?))
-                {
-                    return new global::Zoo.JsonConverters.FileExportFormatVariant8NullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Zoo.CreatedAtSortModeVariant1))
