@@ -62,6 +62,10 @@ namespace Zoo.JsonConverters
             if (__jsonProps.Contains("storage")) __score5++;
             if (__jsonProps.Contains("type")) __score5++;
             if (__jsonProps.Contains("units")) __score5++;
+            var __score6 = 0;
+            if (__jsonProps.Contains("coords")) __score6++;
+            if (__jsonProps.Contains("type")) __score6++;
+            if (__jsonProps.Contains("units")) __score6++;
             var __bestScore = 0;
             var __bestIndex = -1;
             if (__score0 > __bestScore) { __bestScore = __score0; __bestIndex = 0; }
@@ -70,6 +74,7 @@ namespace Zoo.JsonConverters
             if (__score3 > __bestScore) { __bestScore = __score3; __bestIndex = 3; }
             if (__score4 > __bestScore) { __bestScore = __score4; __bestIndex = 4; }
             if (__score5 > __bestScore) { __bestScore = __score5; __bestIndex = 5; }
+            if (__score6 > __bestScore) { __bestScore = __score6; __bestIndex = 6; }
 
             global::Zoo.OutputFormat3dVariant1? outputFormat3dVariant1 = default;
             global::Zoo.OutputFormat3dVariant2? outputFormat3dVariant2 = default;
@@ -77,6 +82,7 @@ namespace Zoo.JsonConverters
             global::Zoo.OutputFormat3dVariant4? outputFormat3dVariant4 = default;
             global::Zoo.OutputFormat3dVariant5? outputFormat3dVariant5 = default;
             global::Zoo.OutputFormat3dVariant6? outputFormat3dVariant6 = default;
+            global::Zoo.OutputFormat3dVariant7? outputFormat3dVariant7 = default;
             if (__bestIndex >= 0)
             {
                 if (__bestIndex == 0)
@@ -193,9 +199,28 @@ namespace Zoo.JsonConverters
                         // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
+                else if (__bestIndex == 6)
+                {
+                    try
+                    {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.OutputFormat3dVariant7), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.OutputFormat3dVariant7> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.OutputFormat3dVariant7).Name}");
+                        outputFormat3dVariant7 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
+                }
             }
 
-            if (outputFormat3dVariant1 == null && outputFormat3dVariant2 == null && outputFormat3dVariant3 == null && outputFormat3dVariant4 == null && outputFormat3dVariant5 == null && outputFormat3dVariant6 == null)
+            if (outputFormat3dVariant1 == null && outputFormat3dVariant2 == null && outputFormat3dVariant3 == null && outputFormat3dVariant4 == null && outputFormat3dVariant5 == null && outputFormat3dVariant6 == null && outputFormat3dVariant7 == null)
             {
                 try
                 {
@@ -216,7 +241,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (outputFormat3dVariant1 == null && outputFormat3dVariant2 == null && outputFormat3dVariant3 == null && outputFormat3dVariant4 == null && outputFormat3dVariant5 == null && outputFormat3dVariant6 == null)
+            if (outputFormat3dVariant1 == null && outputFormat3dVariant2 == null && outputFormat3dVariant3 == null && outputFormat3dVariant4 == null && outputFormat3dVariant5 == null && outputFormat3dVariant6 == null && outputFormat3dVariant7 == null)
             {
                 try
                 {
@@ -237,7 +262,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (outputFormat3dVariant1 == null && outputFormat3dVariant2 == null && outputFormat3dVariant3 == null && outputFormat3dVariant4 == null && outputFormat3dVariant5 == null && outputFormat3dVariant6 == null)
+            if (outputFormat3dVariant1 == null && outputFormat3dVariant2 == null && outputFormat3dVariant3 == null && outputFormat3dVariant4 == null && outputFormat3dVariant5 == null && outputFormat3dVariant6 == null && outputFormat3dVariant7 == null)
             {
                 try
                 {
@@ -258,7 +283,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (outputFormat3dVariant1 == null && outputFormat3dVariant2 == null && outputFormat3dVariant3 == null && outputFormat3dVariant4 == null && outputFormat3dVariant5 == null && outputFormat3dVariant6 == null)
+            if (outputFormat3dVariant1 == null && outputFormat3dVariant2 == null && outputFormat3dVariant3 == null && outputFormat3dVariant4 == null && outputFormat3dVariant5 == null && outputFormat3dVariant6 == null && outputFormat3dVariant7 == null)
             {
                 try
                 {
@@ -279,7 +304,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (outputFormat3dVariant1 == null && outputFormat3dVariant2 == null && outputFormat3dVariant3 == null && outputFormat3dVariant4 == null && outputFormat3dVariant5 == null && outputFormat3dVariant6 == null)
+            if (outputFormat3dVariant1 == null && outputFormat3dVariant2 == null && outputFormat3dVariant3 == null && outputFormat3dVariant4 == null && outputFormat3dVariant5 == null && outputFormat3dVariant6 == null && outputFormat3dVariant7 == null)
             {
                 try
                 {
@@ -300,7 +325,7 @@ namespace Zoo.JsonConverters
                 }
             }
 
-            if (outputFormat3dVariant1 == null && outputFormat3dVariant2 == null && outputFormat3dVariant3 == null && outputFormat3dVariant4 == null && outputFormat3dVariant5 == null && outputFormat3dVariant6 == null)
+            if (outputFormat3dVariant1 == null && outputFormat3dVariant2 == null && outputFormat3dVariant3 == null && outputFormat3dVariant4 == null && outputFormat3dVariant5 == null && outputFormat3dVariant6 == null && outputFormat3dVariant7 == null)
             {
                 try
                 {
@@ -308,6 +333,27 @@ namespace Zoo.JsonConverters
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.OutputFormat3dVariant6), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.OutputFormat3dVariant6> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.OutputFormat3dVariant6).Name}");
                     outputFormat3dVariant6 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
+            }
+
+            if (outputFormat3dVariant1 == null && outputFormat3dVariant2 == null && outputFormat3dVariant3 == null && outputFormat3dVariant4 == null && outputFormat3dVariant5 == null && outputFormat3dVariant6 == null && outputFormat3dVariant7 == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.OutputFormat3dVariant7), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.OutputFormat3dVariant7> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.OutputFormat3dVariant7).Name}");
+                    outputFormat3dVariant7 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -332,7 +378,9 @@ namespace Zoo.JsonConverters
 
                 outputFormat3dVariant5,
 
-                outputFormat3dVariant6
+                outputFormat3dVariant6,
+
+                outputFormat3dVariant7
                 );
 
             return __value;
@@ -382,6 +430,12 @@ namespace Zoo.JsonConverters
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.OutputFormat3dVariant6), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.OutputFormat3dVariant6?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.OutputFormat3dVariant6).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickOutputFormat3dVariant6(), typeInfo);
+            }
+            else if (value.IsOutputFormat3dVariant7)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Zoo.OutputFormat3dVariant7), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Zoo.OutputFormat3dVariant7?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Zoo.OutputFormat3dVariant7).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickOutputFormat3dVariant7(), typeInfo);
             }
         }
     }

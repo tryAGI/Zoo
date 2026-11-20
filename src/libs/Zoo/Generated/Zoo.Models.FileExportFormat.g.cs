@@ -272,6 +272,43 @@ namespace Zoo
         public global::Zoo.FileExportFormatVariant7 PickFileExportFormatVariant7() => FileExportFormatVariant7 is { } value
             ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FileExportFormatVariant7' but the value was {ToString()}.");
+
+        /// <summary>
+        /// The 3DM file format. &lt;https://deepwiki.com/mcneel/rhino3dm/6.1-3dm-file-format&gt;
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Zoo.FileExportFormatVariant8? FileExportFormatVariant8 { get; init; }
+#else
+        public global::Zoo.FileExportFormatVariant8? FileExportFormatVariant8 { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FileExportFormatVariant8))]
+#endif
+        public bool IsFileExportFormatVariant8 => FileExportFormatVariant8 != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickFileExportFormatVariant8(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.FileExportFormatVariant8? value)
+        {
+            value = FileExportFormatVariant8;
+            return IsFileExportFormatVariant8;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Zoo.FileExportFormatVariant8 PickFileExportFormatVariant8() => FileExportFormatVariant8 is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FileExportFormatVariant8' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -436,6 +473,29 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
+        public static implicit operator FileExportFormat(global::Zoo.FileExportFormatVariant8 value) => new FileExportFormat((global::Zoo.FileExportFormatVariant8?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::Zoo.FileExportFormatVariant8?(FileExportFormat @this) => @this.FileExportFormatVariant8;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public FileExportFormat(global::Zoo.FileExportFormatVariant8? value)
+        {
+            FileExportFormatVariant8 = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static FileExportFormat FromFileExportFormatVariant8(global::Zoo.FileExportFormatVariant8? value) => new FileExportFormat(value);
+
+        /// <summary>
+        ///
+        /// </summary>
         public FileExportFormat(
             global::Zoo.FileExportFormatVariant1? fileExportFormatVariant1,
             global::Zoo.FileExportFormatVariant2? fileExportFormatVariant2,
@@ -443,7 +503,8 @@ namespace Zoo
             global::Zoo.FileExportFormatVariant4? fileExportFormatVariant4,
             global::Zoo.FileExportFormatVariant5? fileExportFormatVariant5,
             global::Zoo.FileExportFormatVariant6? fileExportFormatVariant6,
-            global::Zoo.FileExportFormatVariant7? fileExportFormatVariant7
+            global::Zoo.FileExportFormatVariant7? fileExportFormatVariant7,
+            global::Zoo.FileExportFormatVariant8? fileExportFormatVariant8
             )
         {
             FileExportFormatVariant1 = fileExportFormatVariant1;
@@ -453,12 +514,14 @@ namespace Zoo
             FileExportFormatVariant5 = fileExportFormatVariant5;
             FileExportFormatVariant6 = fileExportFormatVariant6;
             FileExportFormatVariant7 = fileExportFormatVariant7;
+            FileExportFormatVariant8 = fileExportFormatVariant8;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
+            FileExportFormatVariant8 as object ??
             FileExportFormatVariant7 as object ??
             FileExportFormatVariant6 as object ??
             FileExportFormatVariant5 as object ??
@@ -478,7 +541,8 @@ namespace Zoo
             FileExportFormatVariant4?.ToValueString() ??
             FileExportFormatVariant5?.ToValueString() ??
             FileExportFormatVariant6?.ToValueString() ??
-            FileExportFormatVariant7?.ToValueString()
+            FileExportFormatVariant7?.ToValueString() ??
+            FileExportFormatVariant8?.ToValueString()
             ;
 
         /// <summary>
@@ -486,7 +550,7 @@ namespace Zoo
         /// </summary>
         public bool Validate()
         {
-            return IsFileExportFormatVariant1 && !IsFileExportFormatVariant2 && !IsFileExportFormatVariant3 && !IsFileExportFormatVariant4 && !IsFileExportFormatVariant5 && !IsFileExportFormatVariant6 && !IsFileExportFormatVariant7 || !IsFileExportFormatVariant1 && IsFileExportFormatVariant2 && !IsFileExportFormatVariant3 && !IsFileExportFormatVariant4 && !IsFileExportFormatVariant5 && !IsFileExportFormatVariant6 && !IsFileExportFormatVariant7 || !IsFileExportFormatVariant1 && !IsFileExportFormatVariant2 && IsFileExportFormatVariant3 && !IsFileExportFormatVariant4 && !IsFileExportFormatVariant5 && !IsFileExportFormatVariant6 && !IsFileExportFormatVariant7 || !IsFileExportFormatVariant1 && !IsFileExportFormatVariant2 && !IsFileExportFormatVariant3 && IsFileExportFormatVariant4 && !IsFileExportFormatVariant5 && !IsFileExportFormatVariant6 && !IsFileExportFormatVariant7 || !IsFileExportFormatVariant1 && !IsFileExportFormatVariant2 && !IsFileExportFormatVariant3 && !IsFileExportFormatVariant4 && IsFileExportFormatVariant5 && !IsFileExportFormatVariant6 && !IsFileExportFormatVariant7 || !IsFileExportFormatVariant1 && !IsFileExportFormatVariant2 && !IsFileExportFormatVariant3 && !IsFileExportFormatVariant4 && !IsFileExportFormatVariant5 && IsFileExportFormatVariant6 && !IsFileExportFormatVariant7 || !IsFileExportFormatVariant1 && !IsFileExportFormatVariant2 && !IsFileExportFormatVariant3 && !IsFileExportFormatVariant4 && !IsFileExportFormatVariant5 && !IsFileExportFormatVariant6 && IsFileExportFormatVariant7;
+            return IsFileExportFormatVariant1 && !IsFileExportFormatVariant2 && !IsFileExportFormatVariant3 && !IsFileExportFormatVariant4 && !IsFileExportFormatVariant5 && !IsFileExportFormatVariant6 && !IsFileExportFormatVariant7 && !IsFileExportFormatVariant8 || !IsFileExportFormatVariant1 && IsFileExportFormatVariant2 && !IsFileExportFormatVariant3 && !IsFileExportFormatVariant4 && !IsFileExportFormatVariant5 && !IsFileExportFormatVariant6 && !IsFileExportFormatVariant7 && !IsFileExportFormatVariant8 || !IsFileExportFormatVariant1 && !IsFileExportFormatVariant2 && IsFileExportFormatVariant3 && !IsFileExportFormatVariant4 && !IsFileExportFormatVariant5 && !IsFileExportFormatVariant6 && !IsFileExportFormatVariant7 && !IsFileExportFormatVariant8 || !IsFileExportFormatVariant1 && !IsFileExportFormatVariant2 && !IsFileExportFormatVariant3 && IsFileExportFormatVariant4 && !IsFileExportFormatVariant5 && !IsFileExportFormatVariant6 && !IsFileExportFormatVariant7 && !IsFileExportFormatVariant8 || !IsFileExportFormatVariant1 && !IsFileExportFormatVariant2 && !IsFileExportFormatVariant3 && !IsFileExportFormatVariant4 && IsFileExportFormatVariant5 && !IsFileExportFormatVariant6 && !IsFileExportFormatVariant7 && !IsFileExportFormatVariant8 || !IsFileExportFormatVariant1 && !IsFileExportFormatVariant2 && !IsFileExportFormatVariant3 && !IsFileExportFormatVariant4 && !IsFileExportFormatVariant5 && IsFileExportFormatVariant6 && !IsFileExportFormatVariant7 && !IsFileExportFormatVariant8 || !IsFileExportFormatVariant1 && !IsFileExportFormatVariant2 && !IsFileExportFormatVariant3 && !IsFileExportFormatVariant4 && !IsFileExportFormatVariant5 && !IsFileExportFormatVariant6 && IsFileExportFormatVariant7 && !IsFileExportFormatVariant8 || !IsFileExportFormatVariant1 && !IsFileExportFormatVariant2 && !IsFileExportFormatVariant3 && !IsFileExportFormatVariant4 && !IsFileExportFormatVariant5 && !IsFileExportFormatVariant6 && !IsFileExportFormatVariant7 && IsFileExportFormatVariant8;
         }
 
         /// <summary>
@@ -500,6 +564,7 @@ namespace Zoo
             global::System.Func<global::Zoo.FileExportFormatVariant5?, TResult>? fileExportFormatVariant5 = null,
             global::System.Func<global::Zoo.FileExportFormatVariant6?, TResult>? fileExportFormatVariant6 = null,
             global::System.Func<global::Zoo.FileExportFormatVariant7?, TResult>? fileExportFormatVariant7 = null,
+            global::System.Func<global::Zoo.FileExportFormatVariant8?, TResult>? fileExportFormatVariant8 = null,
             bool validate = true)
         {
             if (validate)
@@ -535,6 +600,10 @@ namespace Zoo
             {
                 return fileExportFormatVariant7(__value6);
             }
+            else if (FileExportFormatVariant8 is { } __value7 && fileExportFormatVariant8 != null)
+            {
+                return fileExportFormatVariant8(__value7);
+            }
 
             return default(TResult);
         }
@@ -556,6 +625,8 @@ namespace Zoo
             global::System.Action<global::Zoo.FileExportFormatVariant6?>? fileExportFormatVariant6 = null,
 
             global::System.Action<global::Zoo.FileExportFormatVariant7?>? fileExportFormatVariant7 = null,
+
+            global::System.Action<global::Zoo.FileExportFormatVariant8?>? fileExportFormatVariant8 = null,
             bool validate = true)
         {
             if (validate)
@@ -590,6 +661,10 @@ namespace Zoo
             else if (FileExportFormatVariant7 is { } __value6)
             {
                 fileExportFormatVariant7?.Invoke(__value6);
+            }
+            else if (FileExportFormatVariant8 is { } __value7)
+            {
+                fileExportFormatVariant8?.Invoke(__value7);
             }
         }
 
@@ -604,6 +679,7 @@ namespace Zoo
             global::System.Action<global::Zoo.FileExportFormatVariant5?>? fileExportFormatVariant5 = null,
             global::System.Action<global::Zoo.FileExportFormatVariant6?>? fileExportFormatVariant6 = null,
             global::System.Action<global::Zoo.FileExportFormatVariant7?>? fileExportFormatVariant7 = null,
+            global::System.Action<global::Zoo.FileExportFormatVariant8?>? fileExportFormatVariant8 = null,
             bool validate = true)
         {
             if (validate)
@@ -638,6 +714,10 @@ namespace Zoo
             else if (FileExportFormatVariant7 is { } __value6)
             {
                 fileExportFormatVariant7?.Invoke(__value6);
+            }
+            else if (FileExportFormatVariant8 is { } __value7)
+            {
+                fileExportFormatVariant8?.Invoke(__value7);
             }
         }
 
@@ -662,6 +742,8 @@ namespace Zoo
                 typeof(global::Zoo.FileExportFormatVariant6),
                 FileExportFormatVariant7,
                 typeof(global::Zoo.FileExportFormatVariant7),
+                FileExportFormatVariant8,
+                typeof(global::Zoo.FileExportFormatVariant8),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -684,7 +766,8 @@ namespace Zoo
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.FileExportFormatVariant4?>.Default.Equals(FileExportFormatVariant4, other.FileExportFormatVariant4) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.FileExportFormatVariant5?>.Default.Equals(FileExportFormatVariant5, other.FileExportFormatVariant5) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.FileExportFormatVariant6?>.Default.Equals(FileExportFormatVariant6, other.FileExportFormatVariant6) &&
-                global::System.Collections.Generic.EqualityComparer<global::Zoo.FileExportFormatVariant7?>.Default.Equals(FileExportFormatVariant7, other.FileExportFormatVariant7)
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.FileExportFormatVariant7?>.Default.Equals(FileExportFormatVariant7, other.FileExportFormatVariant7) &&
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.FileExportFormatVariant8?>.Default.Equals(FileExportFormatVariant8, other.FileExportFormatVariant8)
                 ;
         }
 

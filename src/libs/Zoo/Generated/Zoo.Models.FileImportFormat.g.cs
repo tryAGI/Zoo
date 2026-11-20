@@ -489,6 +489,43 @@ namespace Zoo
         public global::Zoo.FileImportFormatVariant13 PickFileImportFormatVariant13() => FileImportFormatVariant13 is { } value
             ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FileImportFormatVariant13' but the value was {ToString()}.");
+
+        /// <summary>
+        /// The 3DM file format. &lt;https://deepwiki.com/mcneel/rhino3dm/6.1-3dm-file-format&gt;
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Zoo.FileImportFormatVariant14? FileImportFormatVariant14 { get; init; }
+#else
+        public global::Zoo.FileImportFormatVariant14? FileImportFormatVariant14 { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FileImportFormatVariant14))]
+#endif
+        public bool IsFileImportFormatVariant14 => FileImportFormatVariant14 != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickFileImportFormatVariant14(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Zoo.FileImportFormatVariant14? value)
+        {
+            value = FileImportFormatVariant14;
+            return IsFileImportFormatVariant14;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Zoo.FileImportFormatVariant14 PickFileImportFormatVariant14() => FileImportFormatVariant14 is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FileImportFormatVariant14' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -791,6 +828,29 @@ namespace Zoo
         /// <summary>
         ///
         /// </summary>
+        public static implicit operator FileImportFormat(global::Zoo.FileImportFormatVariant14 value) => new FileImportFormat((global::Zoo.FileImportFormatVariant14?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::Zoo.FileImportFormatVariant14?(FileImportFormat @this) => @this.FileImportFormatVariant14;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public FileImportFormat(global::Zoo.FileImportFormatVariant14? value)
+        {
+            FileImportFormatVariant14 = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static FileImportFormat FromFileImportFormatVariant14(global::Zoo.FileImportFormatVariant14? value) => new FileImportFormat(value);
+
+        /// <summary>
+        ///
+        /// </summary>
         public FileImportFormat(
             global::Zoo.FileImportFormatVariant1? fileImportFormatVariant1,
             global::Zoo.FileImportFormatVariant2? fileImportFormatVariant2,
@@ -804,7 +864,8 @@ namespace Zoo
             global::Zoo.FileImportFormatVariant10? fileImportFormatVariant10,
             global::Zoo.FileImportFormatVariant11? fileImportFormatVariant11,
             global::Zoo.FileImportFormatVariant12? fileImportFormatVariant12,
-            global::Zoo.FileImportFormatVariant13? fileImportFormatVariant13
+            global::Zoo.FileImportFormatVariant13? fileImportFormatVariant13,
+            global::Zoo.FileImportFormatVariant14? fileImportFormatVariant14
             )
         {
             FileImportFormatVariant1 = fileImportFormatVariant1;
@@ -820,12 +881,14 @@ namespace Zoo
             FileImportFormatVariant11 = fileImportFormatVariant11;
             FileImportFormatVariant12 = fileImportFormatVariant12;
             FileImportFormatVariant13 = fileImportFormatVariant13;
+            FileImportFormatVariant14 = fileImportFormatVariant14;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
+            FileImportFormatVariant14 as object ??
             FileImportFormatVariant13 as object ??
             FileImportFormatVariant12 as object ??
             FileImportFormatVariant11 as object ??
@@ -857,7 +920,8 @@ namespace Zoo
             FileImportFormatVariant10?.ToValueString() ??
             FileImportFormatVariant11?.ToValueString() ??
             FileImportFormatVariant12?.ToValueString() ??
-            FileImportFormatVariant13?.ToValueString()
+            FileImportFormatVariant13?.ToValueString() ??
+            FileImportFormatVariant14?.ToValueString()
             ;
 
         /// <summary>
@@ -865,7 +929,7 @@ namespace Zoo
         /// </summary>
         public bool Validate()
         {
-            return IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 || !IsFileImportFormatVariant1 && IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && IsFileImportFormatVariant13;
+            return IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 && !IsFileImportFormatVariant14 || !IsFileImportFormatVariant1 && IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 && !IsFileImportFormatVariant14 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 && !IsFileImportFormatVariant14 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 && !IsFileImportFormatVariant14 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 && !IsFileImportFormatVariant14 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 && !IsFileImportFormatVariant14 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 && !IsFileImportFormatVariant14 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 && !IsFileImportFormatVariant14 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 && !IsFileImportFormatVariant14 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 && !IsFileImportFormatVariant14 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 && !IsFileImportFormatVariant14 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 && !IsFileImportFormatVariant14 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && IsFileImportFormatVariant13 && !IsFileImportFormatVariant14 || !IsFileImportFormatVariant1 && !IsFileImportFormatVariant2 && !IsFileImportFormatVariant3 && !IsFileImportFormatVariant4 && !IsFileImportFormatVariant5 && !IsFileImportFormatVariant6 && !IsFileImportFormatVariant7 && !IsFileImportFormatVariant8 && !IsFileImportFormatVariant9 && !IsFileImportFormatVariant10 && !IsFileImportFormatVariant11 && !IsFileImportFormatVariant12 && !IsFileImportFormatVariant13 && IsFileImportFormatVariant14;
         }
 
         /// <summary>
@@ -885,6 +949,7 @@ namespace Zoo
             global::System.Func<global::Zoo.FileImportFormatVariant11?, TResult>? fileImportFormatVariant11 = null,
             global::System.Func<global::Zoo.FileImportFormatVariant12?, TResult>? fileImportFormatVariant12 = null,
             global::System.Func<global::Zoo.FileImportFormatVariant13?, TResult>? fileImportFormatVariant13 = null,
+            global::System.Func<global::Zoo.FileImportFormatVariant14?, TResult>? fileImportFormatVariant14 = null,
             bool validate = true)
         {
             if (validate)
@@ -944,6 +1009,10 @@ namespace Zoo
             {
                 return fileImportFormatVariant13(__value12);
             }
+            else if (FileImportFormatVariant14 is { } __value13 && fileImportFormatVariant14 != null)
+            {
+                return fileImportFormatVariant14(__value13);
+            }
 
             return default(TResult);
         }
@@ -977,6 +1046,8 @@ namespace Zoo
             global::System.Action<global::Zoo.FileImportFormatVariant12?>? fileImportFormatVariant12 = null,
 
             global::System.Action<global::Zoo.FileImportFormatVariant13?>? fileImportFormatVariant13 = null,
+
+            global::System.Action<global::Zoo.FileImportFormatVariant14?>? fileImportFormatVariant14 = null,
             bool validate = true)
         {
             if (validate)
@@ -1035,6 +1106,10 @@ namespace Zoo
             else if (FileImportFormatVariant13 is { } __value12)
             {
                 fileImportFormatVariant13?.Invoke(__value12);
+            }
+            else if (FileImportFormatVariant14 is { } __value13)
+            {
+                fileImportFormatVariant14?.Invoke(__value13);
             }
         }
 
@@ -1055,6 +1130,7 @@ namespace Zoo
             global::System.Action<global::Zoo.FileImportFormatVariant11?>? fileImportFormatVariant11 = null,
             global::System.Action<global::Zoo.FileImportFormatVariant12?>? fileImportFormatVariant12 = null,
             global::System.Action<global::Zoo.FileImportFormatVariant13?>? fileImportFormatVariant13 = null,
+            global::System.Action<global::Zoo.FileImportFormatVariant14?>? fileImportFormatVariant14 = null,
             bool validate = true)
         {
             if (validate)
@@ -1113,6 +1189,10 @@ namespace Zoo
             else if (FileImportFormatVariant13 is { } __value12)
             {
                 fileImportFormatVariant13?.Invoke(__value12);
+            }
+            else if (FileImportFormatVariant14 is { } __value13)
+            {
+                fileImportFormatVariant14?.Invoke(__value13);
             }
         }
 
@@ -1149,6 +1229,8 @@ namespace Zoo
                 typeof(global::Zoo.FileImportFormatVariant12),
                 FileImportFormatVariant13,
                 typeof(global::Zoo.FileImportFormatVariant13),
+                FileImportFormatVariant14,
+                typeof(global::Zoo.FileImportFormatVariant14),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -1177,7 +1259,8 @@ namespace Zoo
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.FileImportFormatVariant10?>.Default.Equals(FileImportFormatVariant10, other.FileImportFormatVariant10) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.FileImportFormatVariant11?>.Default.Equals(FileImportFormatVariant11, other.FileImportFormatVariant11) &&
                 global::System.Collections.Generic.EqualityComparer<global::Zoo.FileImportFormatVariant12?>.Default.Equals(FileImportFormatVariant12, other.FileImportFormatVariant12) &&
-                global::System.Collections.Generic.EqualityComparer<global::Zoo.FileImportFormatVariant13?>.Default.Equals(FileImportFormatVariant13, other.FileImportFormatVariant13)
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.FileImportFormatVariant13?>.Default.Equals(FileImportFormatVariant13, other.FileImportFormatVariant13) &&
+                global::System.Collections.Generic.EqualityComparer<global::Zoo.FileImportFormatVariant14?>.Default.Equals(FileImportFormatVariant14, other.FileImportFormatVariant14)
                 ;
         }
 
